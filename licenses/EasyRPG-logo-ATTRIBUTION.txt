@@ -1,0 +1,4 @@
+EasyRPG logo resources are credited to the EasyRPG Project, CC BY-SA 4.0.
+Original source and attribution: https://github.com/EasyRPG/Player/tree/0.8.1.1/resources
+License: https://creativecommons.org/licenses/by-sa/4.0/
+The packaged program retains the original embedded resources; no modified logo is claimed.

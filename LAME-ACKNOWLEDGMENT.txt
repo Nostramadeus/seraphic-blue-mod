@@ -1,0 +1,4 @@
+This Player distribution uses LAME through a separate dynamically linked library.
+LAME Project: https://lame.sourceforge.io/
+Original acknowledgment URL in LAME LICENSE: http://www.mp3dev.org/
+See licenses/dependencies/mingw-w64-x86_64-lame/upstream-LICENSE and upstream-COPYING.

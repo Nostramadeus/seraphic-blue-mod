@@ -1,0 +1,3 @@
+*.lsd
+*.log
+__pycache__/

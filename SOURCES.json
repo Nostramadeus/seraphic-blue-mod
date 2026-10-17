@@ -1,0 +1,956 @@
+{
+  "releaseTag": "v0.1.0-test.1",
+  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/",
+  "sourceBundle": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-dependency-sources-v0.1.0-test.1.zip",
+  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-player-source-v0.1.0-test.1.zip",
+  "packages": [
+    {
+      "pkgbase": "mingw-w64-readline",
+      "version": "8.3.003-1",
+      "srcinfo": "mingw-w64-readline/.SRCINFO",
+      "recipe": "mingw-w64-readline/PKGBUILD",
+      "srcinfoSha256": "5920cf065eebaf49d369c2a285be88f6000b701a0ce803292b1a628aa0beba40",
+      "recipeSha256": "6576d89b1210cae14a077cdcbb2364570f6c60f66bce7a7b08ddd9c54eb8c333",
+      "sourceArchives": [
+        "mingw-w64-readline/readline-8.3.tar.gz"
+      ],
+      "inputs": [
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz",
+          "member": "mingw-w64-readline/readline-8.3.tar.gz",
+          "sha256": "fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc",
+          "recipeSha256": "fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz.sig",
+          "member": "mingw-w64-readline/readline-8.3.tar.gz.sig",
+          "sha256": "9bdfb4c2582cbe401f7d50c1f380889bf4fc1150cdeaad9b5135bbf11e74017c",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        },
+        {
+          "source": "0001-sigwinch.patch",
+          "member": "mingw-w64-readline/0001-sigwinch.patch",
+          "sha256": "2b30dcb0804abb6e7e4f44cd119bddef94c1b1d7ebff43dda401e710eda2fd0f",
+          "recipeSha256": "2b30dcb0804abb6e7e4f44cd119bddef94c1b1d7ebff43dda401e710eda2fd0f",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0002-event-hook.patch",
+          "member": "mingw-w64-readline/0002-event-hook.patch",
+          "sha256": "d537a4b137ef605e6494e4ebf083fa7958166963911d4426791c258488e3a4af",
+          "recipeSha256": "d537a4b137ef605e6494e4ebf083fa7958166963911d4426791c258488e3a4af",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0003-no-winsize.patch",
+          "member": "mingw-w64-readline/0003-no-winsize.patch",
+          "sha256": "20a2e2501718ca1c9db96d99a2e0e30e9a4a069fe01d27053e542e42dbc49e5a",
+          "recipeSha256": "20a2e2501718ca1c9db96d99a2e0e30e9a4a069fe01d27053e542e42dbc49e5a",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0004-locale.patch",
+          "member": "mingw-w64-readline/0004-locale.patch",
+          "sha256": "72ed438ae142ba9d5498652dfdf4fb517265bcf9a67199b7c5b35cc24fa25b9e",
+          "recipeSha256": "72ed438ae142ba9d5498652dfdf4fb517265bcf9a67199b7c5b35cc24fa25b9e",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3-patches/readline83-001",
+          "member": "mingw-w64-readline/readline83-001",
+          "sha256": "21f0a03106dbe697337cd25c70eb0edbaa2bdb6d595b45f83285cdd35bac84de",
+          "recipeSha256": "21f0a03106dbe697337cd25c70eb0edbaa2bdb6d595b45f83285cdd35bac84de",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3-patches/readline83-001.sig",
+          "member": "mingw-w64-readline/readline83-001.sig",
+          "sha256": "e98cc66bf571feba94213aca461dd374d92333ee7074117722eee8494d02f972",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3-patches/readline83-002",
+          "member": "mingw-w64-readline/readline83-002",
+          "sha256": "e27364396ba9f6debf7cbaaf1a669e2b2854241ae07f7eca74ca8a8ba0c97472",
+          "recipeSha256": "e27364396ba9f6debf7cbaaf1a669e2b2854241ae07f7eca74ca8a8ba0c97472",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3-patches/readline83-002.sig",
+          "member": "mingw-w64-readline/readline83-002.sig",
+          "sha256": "4c69c778e4d70aa6b4510188c60667c0008bb4bac59e5334c27bd4200867e62c",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3-patches/readline83-003",
+          "member": "mingw-w64-readline/readline83-003",
+          "sha256": "72dee13601ce38f6746eb15239999a7c56f8e1ff5eb1ec8153a1f213e4acdb29",
+          "recipeSha256": "72dee13601ce38f6746eb15239999a7c56f8e1ff5eb1ec8153a1f213e4acdb29",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/readline/readline-8.3-patches/readline83-003.sig",
+          "member": "mingw-w64-readline/readline83-003.sig",
+          "sha256": "d5bc294e10d6adae09df3c37315ca52f5e68ea7b62e900b3bb96e55141557349",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-readline/.SRCINFO": {
+          "sha256": "5920cf065eebaf49d369c2a285be88f6000b701a0ce803292b1a628aa0beba40",
+          "bytes": 2016
+        },
+        "mingw-w64-readline/PKGBUILD": {
+          "sha256": "6576d89b1210cae14a077cdcbb2364570f6c60f66bce7a7b08ddd9c54eb8c333",
+          "bytes": 3708
+        }
+      },
+      "regularFiles": 14,
+      "uncompressedBytes": 3441698,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-readline-8.3.003-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-readline-8.3.003-1.src.tar.zst",
+      "sha256": "1e2713dd55f795920d5784ab2e7a797dd7ce7392a4cf1991f9b848e25ae1f95d",
+      "bytes": 3355361,
+      "packagesCovered": [
+        "mingw-w64-x86_64-readline"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-termcap",
+      "version": "1.3.1-8",
+      "srcinfo": "mingw-w64-termcap/.SRCINFO",
+      "recipe": "mingw-w64-termcap/PKGBUILD",
+      "srcinfoSha256": "cd04102585d7bada9e8c07ef7da6dd90cad4682e2e5fad363c5d464360cc7903",
+      "recipeSha256": "c8bfcaf027d569d27bf0f2b881e4729914534a786cf198132a847a8d2077e507",
+      "sourceArchives": [
+        "mingw-w64-termcap/termcap-1.3.1.tar.gz"
+      ],
+      "inputs": [
+        {
+          "source": "https://ftp.gnu.org/gnu/termcap/termcap-1.3.1.tar.gz",
+          "member": "mingw-w64-termcap/termcap-1.3.1.tar.gz",
+          "sha256": "91a0e22e5387ca4467b5bcb18edf1c51b930262fd466d5fda396dd9d26719100",
+          "recipeSha256": "91a0e22e5387ca4467b5bcb18edf1c51b930262fd466d5fda396dd9d26719100",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0001-tparam-replace-write-with-fprintf.patch",
+          "member": "mingw-w64-termcap/0001-tparam-replace-write-with-fprintf.patch",
+          "sha256": "47d5da2df6bc7f3401b7e33eb80d40153bca60278e58b503ffb19589acd7c2da",
+          "recipeSha256": "47d5da2df6bc7f3401b7e33eb80d40153bca60278e58b503ffb19589acd7c2da",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-termcap/.SRCINFO": {
+          "sha256": "cd04102585d7bada9e8c07ef7da6dd90cad4682e2e5fad363c5d464360cc7903",
+          "bytes": 661
+        },
+        "mingw-w64-termcap/PKGBUILD": {
+          "sha256": "c8bfcaf027d569d27bf0f2b881e4729914534a786cf198132a847a8d2077e507",
+          "bytes": 2357
+        }
+      },
+      "regularFiles": 4,
+      "uncompressedBytes": 442776,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-termcap-1.3.1-8.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-termcap-1.3.1-8.src.tar.zst",
+      "sha256": "44515323399d2971946eb5cceda63b25690887c37aad995b54a20c4e497818c2",
+      "bytes": 441166,
+      "packagesCovered": [
+        "mingw-w64-x86_64-termcap"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-fluidsynth",
+      "version": "2.6.1-1",
+      "srcinfo": "mingw-w64-fluidsynth/.SRCINFO",
+      "recipe": "mingw-w64-fluidsynth/PKGBUILD",
+      "srcinfoSha256": "ffe56a0629f524c56cb9a71799553fda0b09c361a084f26b4c5d7344b93f72eb",
+      "recipeSha256": "7206f1aae712eaa2f59420abecf6b46a9169b822fd9a42daaedabd89ac4eb8bb",
+      "sourceArchives": [
+        "mingw-w64-fluidsynth/fluidsynth-2.6.1.tar.gz"
+      ],
+      "inputs": [
+        {
+          "source": "https://github.com/FluidSynth/fluidsynth/archive/v2.6.1/fluidsynth-2.6.1.tar.gz",
+          "member": "mingw-w64-fluidsynth/fluidsynth-2.6.1.tar.gz",
+          "sha256": "3d258a3bf97cc20c59eeebfe62c2432fae88adda74d3ad098681c76e0ebf446b",
+          "recipeSha256": "3d258a3bf97cc20c59eeebfe62c2432fae88adda74d3ad098681c76e0ebf446b",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "010-no-undefined.patch",
+          "member": "mingw-w64-fluidsynth/010-no-undefined.patch",
+          "sha256": "b3e748e295eedf39b93fa22fb22a266bacf54ae425cdb7a8537e11afde50bfcb",
+          "recipeSha256": "b3e748e295eedf39b93fa22fb22a266bacf54ae425cdb7a8537e11afde50bfcb",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-fluidsynth/.SRCINFO": {
+          "sha256": "ffe56a0629f524c56cb9a71799553fda0b09c361a084f26b4c5d7344b93f72eb",
+          "bytes": 1122
+        },
+        "mingw-w64-fluidsynth/PKGBUILD": {
+          "sha256": "7206f1aae712eaa2f59420abecf6b46a9169b822fd9a42daaedabd89ac4eb8bb",
+          "bytes": 3353
+        }
+      },
+      "regularFiles": 4,
+      "uncompressedBytes": 2279108,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-fluidsynth-2.6.1-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-fluidsynth-2.6.1-1.src.tar.zst",
+      "sha256": "f928e1dbe4d43bcf44e53a1838dcddf2231145679602e39e64aa186644643328",
+      "bytes": 2274332,
+      "packagesCovered": [
+        "mingw-w64-x86_64-fluidsynth"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-glib2",
+      "version": "2.90.1-1",
+      "srcinfo": "mingw-w64-glib2/.SRCINFO",
+      "recipe": "mingw-w64-glib2/PKGBUILD",
+      "srcinfoSha256": "7425ca1205eb6cf33fa43ce2fa2996a00cb5e7c67ff2c00eb7f229250d0d4d21",
+      "recipeSha256": "ca768ab894a3a5b9c07cbcf56411fbca55e1c60b8243c6e6409f3496ae46e6d8",
+      "sourceArchives": [
+        "mingw-w64-glib2/glib-2.90.1.tar.xz"
+      ],
+      "inputs": [
+        {
+          "source": "https://download.gnome.org/sources/glib/2.90/glib-2.90.1.tar.xz",
+          "member": "mingw-w64-glib2/glib-2.90.1.tar.xz",
+          "sha256": "93c941aa17d5eb1d53fe838365f29a8b4e539c222a256d974ec8f30fc413e396",
+          "recipeSha256": "93c941aa17d5eb1d53fe838365f29a8b4e539c222a256d974ec8f30fc413e396",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://gitlab.gnome.org/GNOME/glib/-/commit/7e69f88480a4bf8d9653efd0310c4c25390a0c8b.patch",
+          "member": "mingw-w64-glib2/7e69f88480a4bf8d9653efd0310c4c25390a0c8b.patch",
+          "sha256": "4902e5748c6954ed38f690f27954db96709e705ff83bbdb4ebf7392a21f65824",
+          "recipeSha256": "4902e5748c6954ed38f690f27954db96709e705ff83bbdb4ebf7392a21f65824",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0002-disable_glib_compile_schemas_warning.patch",
+          "member": "mingw-w64-glib2/0002-disable_glib_compile_schemas_warning.patch",
+          "sha256": "396c25cfd740ffbb72209133c7b9453173167577265a4bb14502678de8d5a8f9",
+          "recipeSha256": "396c25cfd740ffbb72209133c7b9453173167577265a4bb14502678de8d5a8f9",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0004-disable-explicit-ms-bitfields.patch",
+          "member": "mingw-w64-glib2/0004-disable-explicit-ms-bitfields.patch",
+          "sha256": "48e94a9e61f8db9a2dc66556f12c725efe5e247a9ddc5b491f8cb8310a387293",
+          "recipeSha256": "48e94a9e61f8db9a2dc66556f12c725efe5e247a9ddc5b491f8cb8310a387293",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "glib-compile-schemas.hook.in",
+          "member": "mingw-w64-glib2/glib-compile-schemas.hook.in",
+          "sha256": "0c3d54636407e0e13429b73959cace626253cd772e1d4870de0fb92b0b99545a",
+          "recipeSha256": "0c3d54636407e0e13429b73959cace626253cd772e1d4870de0fb92b0b99545a",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "gio-querymodules.hook.in",
+          "member": "mingw-w64-glib2/gio-querymodules.hook.in",
+          "sha256": "f18d27d98709dba8c5f9756672baaf0158fb4353c9edbdc2e80021f88ff34ced",
+          "recipeSha256": "f18d27d98709dba8c5f9756672baaf0158fb4353c9edbdc2e80021f88ff34ced",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "pyscript2exe.py",
+          "member": "mingw-w64-glib2/pyscript2exe.py",
+          "sha256": "3c65bc3dd7337877e14b19bc7c42918bde664a11a860cfc0b9db891f8a1052db",
+          "recipeSha256": "3c65bc3dd7337877e14b19bc7c42918bde664a11a860cfc0b9db891f8a1052db",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-glib2/.SRCINFO": {
+          "sha256": "7425ca1205eb6cf33fa43ce2fa2996a00cb5e7c67ff2c00eb7f229250d0d4d21",
+          "bytes": 1886
+        },
+        "mingw-w64-glib2/PKGBUILD": {
+          "sha256": "ca768ab894a3a5b9c07cbcf56411fbca55e1c60b8243c6e6409f3496ae46e6d8",
+          "bytes": 5284
+        }
+      },
+      "regularFiles": 9,
+      "uncompressedBytes": 5882388,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-glib2-2.90.1-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-glib2-2.90.1-1.src.tar.zst",
+      "sha256": "ac3bc00e4079e6b51dd0a1fb9ccc420fff033b4e9095e4487dbf6cf01312cee6",
+      "bytes": 5875958,
+      "packagesCovered": [
+        "mingw-w64-x86_64-glib2"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-libiconv",
+      "version": "1.19-1",
+      "srcinfo": "mingw-w64-libiconv/.SRCINFO",
+      "recipe": "mingw-w64-libiconv/PKGBUILD",
+      "srcinfoSha256": "0a6eaca4b054fbc935d8f66e0432a5e29abed083d25707d47938ca009947015f",
+      "recipeSha256": "9b3212d06910560fb59e017e0b73a29d392a5082d3a47a613e61509bd7dcd475",
+      "sourceArchives": [
+        "mingw-w64-libiconv/libiconv-1.19.tar.gz"
+      ],
+      "inputs": [
+        {
+          "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz",
+          "member": "mingw-w64-libiconv/libiconv-1.19.tar.gz",
+          "sha256": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6",
+          "recipeSha256": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz.sig",
+          "member": "mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+          "sha256": "30374a9cf2846418fc34977eb2b92094c3edb76021d57de541699e2b5e32dc9b",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        },
+        {
+          "source": "0003-add-cp65001-as-utf8-alias.patch",
+          "member": "mingw-w64-libiconv/0003-add-cp65001-as-utf8-alias.patch",
+          "sha256": "cb2b1cca44c9b9bd11c3bd33997c10d22dff263542275324c88f34b59910ef87",
+          "recipeSha256": "cb2b1cca44c9b9bd11c3bd33997c10d22dff263542275324c88f34b59910ef87",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0002-fix-cr-for-awk-in-configure.all.patch",
+          "member": "mingw-w64-libiconv/0002-fix-cr-for-awk-in-configure.all.patch",
+          "sha256": "89d5c0f666e50a0186cfb142ba7b77e8fe1ac4d65bdfd9ae14ae8d2f0045a87c",
+          "recipeSha256": "89d5c0f666e50a0186cfb142ba7b77e8fe1ac4d65bdfd9ae14ae8d2f0045a87c",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "fix-pointer-buf.patch",
+          "member": "mingw-w64-libiconv/fix-pointer-buf.patch",
+          "sha256": "6b6e2393840f4dc6067587165777b1a07978f4c05247d7c1010a45ad251bbeeb",
+          "recipeSha256": "6b6e2393840f4dc6067587165777b1a07978f4c05247d7c1010a45ad251bbeeb",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "iconv.pc",
+          "member": "mingw-w64-libiconv/iconv.pc",
+          "sha256": "56e7ec406bf42eb66b1d972f20d229f7a76ba00c38c7b4403bf348875704baae",
+          "recipeSha256": "56e7ec406bf42eb66b1d972f20d229f7a76ba00c38c7b4403bf348875704baae",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-libiconv/.SRCINFO": {
+          "sha256": "0a6eaca4b054fbc935d8f66e0432a5e29abed083d25707d47938ca009947015f",
+          "bytes": 1638
+        },
+        "mingw-w64-libiconv/PKGBUILD": {
+          "sha256": "9b3212d06910560fb59e017e0b73a29d392a5082d3a47a613e61509bd7dcd475",
+          "bytes": 4906
+        }
+      },
+      "regularFiles": 8,
+      "uncompressedBytes": 5930712,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-libiconv-1.19-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-libiconv-1.19-1.src.tar.zst",
+      "sha256": "74428280c17094da5b702c29b2e1a0abae59556ea5dfdd65705cc8ccc1e000fb",
+      "bytes": 5131029,
+      "packagesCovered": [
+        "mingw-w64-x86_64-libiconv"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-gettext",
+      "version": "1.0-1",
+      "srcinfo": "mingw-w64-gettext/.SRCINFO",
+      "recipe": "mingw-w64-gettext/PKGBUILD",
+      "srcinfoSha256": "98322e06dc8d20c5ca2c433ced0eb0d6e80adc838976f488de1b8878781f3972",
+      "recipeSha256": "853ef80a50588f29355722a4513f24cf1a5f8de06e0b5ee326580464db539741",
+      "sourceArchives": [
+        "mingw-w64-gettext/gettext-1.0.tar.lz"
+      ],
+      "inputs": [
+        {
+          "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.lz",
+          "member": "mingw-w64-gettext/gettext-1.0.tar.lz",
+          "sha256": "d6342cbe1411a2fe7d139bfed80c2d63b1babc92acfedc72501cc105184f61ee",
+          "recipeSha256": "d6342cbe1411a2fe7d139bfed80c2d63b1babc92acfedc72501cc105184f61ee",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.lz.sig",
+          "member": "mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+          "sha256": "39fae6a06678f1d34f0ad8ccb670435b48af3b062cf8f0b50d39159ac3d1c0b1",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        },
+        {
+          "source": "0005-Fix-compilation-of-pthread_sigmask.c.patch",
+          "member": "mingw-w64-gettext/0005-Fix-compilation-of-pthread_sigmask.c.patch",
+          "sha256": "cbc2f533012d646521afa20f8b256917fce040741ff42cf53fb6dd7123a6670a",
+          "recipeSha256": "cbc2f533012d646521afa20f8b256917fce040741ff42cf53fb6dd7123a6670a",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "122-Use-LF-as-newline-in-envsubst.patch",
+          "member": "mingw-w64-gettext/122-Use-LF-as-newline-in-envsubst.patch",
+          "sha256": "ec39103d851262c02c27b7038f3c538e03afaefc6aa050311d62519d192ff38c",
+          "recipeSha256": "ec39103d851262c02c27b7038f3c538e03afaefc6aa050311d62519d192ff38c",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0021-replace-fsync.patch",
+          "member": "mingw-w64-gettext/0021-replace-fsync.patch",
+          "sha256": "380dbddee2f9e2feee4c1435e8a942b5d11d0125e60c3350ebb10c19b19011aa",
+          "recipeSha256": "380dbddee2f9e2feee4c1435e8a942b5d11d0125e60c3350ebb10c19b19011aa",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0022-libasprintf.patch",
+          "member": "mingw-w64-gettext/0022-libasprintf.patch",
+          "sha256": "c354f6a7021069c99b90f1c6d6f6a4ccf40a01e9f6742b866df2b5a7286cb868",
+          "recipeSha256": "c354f6a7021069c99b90f1c6d6f6a4ccf40a01e9f6742b866df2b5a7286cb868",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0024-disable-gnu-format.patch",
+          "member": "mingw-w64-gettext/0024-disable-gnu-format.patch",
+          "sha256": "ce7ccf6dd3a492cab322253cd67310899b546eccc25821c25cbc047a1a984633",
+          "recipeSha256": "ce7ccf6dd3a492cab322253cd67310899b546eccc25821c25cbc047a1a984633",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0030-fix-build-with-mingw-w64-clang.patch",
+          "member": "mingw-w64-gettext/0030-fix-build-with-mingw-w64-clang.patch",
+          "sha256": "9b1b4f0c65b3bc1a3103c921a02c203cecf533d145f0bd90023406e760f81749",
+          "recipeSha256": "9b1b4f0c65b3bc1a3103c921a02c203cecf533d145f0bd90023406e760f81749",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-gettext/.SRCINFO": {
+          "sha256": "98322e06dc8d20c5ca2c433ced0eb0d6e80adc838976f488de1b8878781f3972",
+          "bytes": 2530
+        },
+        "mingw-w64-gettext/PKGBUILD": {
+          "sha256": "853ef80a50588f29355722a4513f24cf1a5f8de06e0b5ee326580464db539741",
+          "bytes": 8260
+        }
+      },
+      "regularFiles": 10,
+      "uncompressedBytes": 10276604,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-gettext-1.0-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-gettext-1.0-1.src.tar.zst",
+      "sha256": "cca0d0c8f60353faccc5ad40405240014e4a7ccc8b1c6ca9f4626aef3097d26e",
+      "bytes": 10267655,
+      "packagesCovered": [
+        "mingw-w64-x86_64-gettext-runtime"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-lame",
+      "version": "3.100-3",
+      "srcinfo": "mingw-w64-lame/.SRCINFO",
+      "recipe": "mingw-w64-lame/PKGBUILD",
+      "srcinfoSha256": "318cf1ca91e2f6fe558f3160e3bd45d4d8406fdbba1e2ab7e980a07e0a28601d",
+      "recipeSha256": "8ebce80af0c5f0b09006b88fdcd320a8c17d14a52e8a493004abdd1458d21453",
+      "sourceArchives": [
+        "mingw-w64-lame/lame-3.100.tar.gz"
+      ],
+      "inputs": [
+        {
+          "source": "https://downloads.sourceforge.net/lame/lame-3.100.tar.gz",
+          "member": "mingw-w64-lame/lame-3.100.tar.gz",
+          "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+          "recipeSha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0002-07-field-width-fix.all.patch",
+          "member": "mingw-w64-lame/0002-07-field-width-fix.all.patch",
+          "sha256": "d3ba595816761706d1e5dcf432f0b3ad8c9c6b37584032e21bf24c89e4fd0fc8",
+          "recipeSha256": "d3ba595816761706d1e5dcf432f0b3ad8c9c6b37584032e21bf24c89e4fd0fc8",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0005-no-gtk.all.patch",
+          "member": "mingw-w64-lame/0005-no-gtk.all.patch",
+          "sha256": "cd3c8807de5b435b8e97200e369e7e8f93f7fc0eba7d44b393ede925e42d3b00",
+          "recipeSha256": "cd3c8807de5b435b8e97200e369e7e8f93f7fc0eba7d44b393ede925e42d3b00",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0006-dont-use-outdated-symbol-list.patch",
+          "member": "mingw-w64-lame/0006-dont-use-outdated-symbol-list.patch",
+          "sha256": "21c7ee85854be00a3e8e6790911292837676f083a5c1085718bed899096d3679",
+          "recipeSha256": "21c7ee85854be00a3e8e6790911292837676f083a5c1085718bed899096d3679",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0007-revert-posix-code.patch",
+          "member": "mingw-w64-lame/0007-revert-posix-code.patch",
+          "sha256": "1e7f61456b15ceea613de8fd982b3f892340b851393d4ca4aff44395ae237ae9",
+          "recipeSha256": "1e7f61456b15ceea613de8fd982b3f892340b851393d4ca4aff44395ae237ae9",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0008-skip-termcap.patch",
+          "member": "mingw-w64-lame/0008-skip-termcap.patch",
+          "sha256": "8fddeebd0ccdec62ede2932ce3bbe767af6ed6f06018f7f13113401d4ce06179",
+          "recipeSha256": "8fddeebd0ccdec62ede2932ce3bbe767af6ed6f06018f7f13113401d4ce06179",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0009-lame-add-pkgconfig.patch",
+          "member": "mingw-w64-lame/0009-lame-add-pkgconfig.patch",
+          "sha256": "65edcb5090417f822227b4a43f2f0c0224ceca7486fb3fd01aa9a6cf153ad714",
+          "recipeSha256": "65edcb5090417f822227b4a43f2f0c0224ceca7486fb3fd01aa9a6cf153ad714",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-lame/.SRCINFO": {
+          "sha256": "318cf1ca91e2f6fe558f3160e3bd45d4d8406fdbba1e2ab7e980a07e0a28601d",
+          "bytes": 1447
+        },
+        "mingw-w64-lame/PKGBUILD": {
+          "sha256": "8ebce80af0c5f0b09006b88fdcd320a8c17d14a52e8a493004abdd1458d21453",
+          "bytes": 2780
+        }
+      },
+      "regularFiles": 9,
+      "uncompressedBytes": 1535476,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-lame-3.100-3.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-lame-3.100-3.src.tar.zst",
+      "sha256": "dfd51143ea25aa0b67f5d355127b8a89a27379b1b128f0b2f9eed7c3327656ab",
+      "bytes": 1526904,
+      "packagesCovered": [
+        "mingw-w64-x86_64-lame"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-mpg123",
+      "version": "1.33.7-1",
+      "srcinfo": "mingw-w64-mpg123/.SRCINFO",
+      "recipe": "mingw-w64-mpg123/PKGBUILD",
+      "srcinfoSha256": "ef5dbe4642c5c6ecc3fd59ceb51f27089fdd3887156b20f5a35561d040196804",
+      "recipeSha256": "408c256745a669d0bcf5bdf3a93278dbf776c0b0f6d0106ff0d816184fd41d11",
+      "sourceArchives": [
+        "mingw-w64-mpg123/mpg123-1.33.7.tar.bz2"
+      ],
+      "inputs": [
+        {
+          "source": "https://sourceforge.net/projects/mpg123/files/mpg123/1.33.7/mpg123-1.33.7.tar.bz2",
+          "member": "mingw-w64-mpg123/mpg123-1.33.7.tar.bz2",
+          "sha256": "31d0e35a4ca567ec9b5ebda6c3062bb4435d6d3eacd6ef0d95cadd7854dc03ee",
+          "recipeSha256": "31d0e35a4ca567ec9b5ebda6c3062bb4435d6d3eacd6ef0d95cadd7854dc03ee",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://sourceforge.net/projects/mpg123/files/mpg123/1.33.7/mpg123-1.33.7.tar.bz2.sig",
+          "member": "mingw-w64-mpg123/mpg123-1.33.7.tar.bz2.sig",
+          "sha256": "48037de26dd56d479b5a54d91ba301d9958476bd03c1b135ee183c3b23c2793c",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-mpg123/.SRCINFO": {
+          "sha256": "ef5dbe4642c5c6ecc3fd59ceb51f27089fdd3887156b20f5a35561d040196804",
+          "bytes": 1055
+        },
+        "mingw-w64-mpg123/PKGBUILD": {
+          "sha256": "408c256745a669d0bcf5bdf3a93278dbf776c0b0f6d0106ff0d816184fd41d11",
+          "bytes": 1855
+        }
+      },
+      "regularFiles": 4,
+      "uncompressedBytes": 1129852,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-mpg123-1.33.7-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-mpg123-1.33.7-1.src.tar.zst",
+      "sha256": "f924cfca2e6cb867e4efc2aa3935bac24593da1631bf1a8613bc35b4fae88c18",
+      "bytes": 1126100,
+      "packagesCovered": [
+        "mingw-w64-x86_64-mpg123"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-libsndfile",
+      "version": "1.2.2-1",
+      "srcinfo": "mingw-w64-libsndfile/.SRCINFO",
+      "recipe": "mingw-w64-libsndfile/PKGBUILD",
+      "srcinfoSha256": "e106f67d224e607493215e8ffc30b7c642a4b35477815fc9111a95115762c01c",
+      "recipeSha256": "45aa62fc1a7f4628e6fee818b38f24c439ef79c4f444c8847ce79874338c58aa",
+      "sourceArchives": [
+        "mingw-w64-libsndfile/libsndfile-1.2.2.tar.xz"
+      ],
+      "inputs": [
+        {
+          "source": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+          "member": "mingw-w64-libsndfile/libsndfile-1.2.2.tar.xz",
+          "sha256": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e",
+          "recipeSha256": "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz.asc",
+          "member": "mingw-w64-libsndfile/libsndfile-1.2.2.tar.xz.asc",
+          "sha256": "84ee7165e52f266e18b76a37d7cc8a4522fa6c5a0571776e936b9ddafeff98fa",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-libsndfile/.SRCINFO": {
+          "sha256": "e106f67d224e607493215e8ffc30b7c642a4b35477815fc9111a95115762c01c",
+          "bytes": 1111
+        },
+        "mingw-w64-libsndfile/PKGBUILD": {
+          "sha256": "45aa62fc1a7f4628e6fee818b38f24c439ef79c4f444c8847ce79874338c58aa",
+          "bytes": 2569
+        }
+      },
+      "regularFiles": 4,
+      "uncompressedBytes": 735102,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-libsndfile-1.2.2-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-libsndfile-1.2.2-1.src.tar.zst",
+      "sha256": "10ba67720ef639b3eeb7e8b45c0144a4e63a3ed0a2e8db3c48d75b6b84725839",
+      "bytes": 733327,
+      "packagesCovered": [
+        "mingw-w64-x86_64-libsndfile"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-graphite2",
+      "version": "1.3.15-1",
+      "srcinfo": "mingw-w64-graphite2/.SRCINFO",
+      "recipe": "mingw-w64-graphite2/PKGBUILD",
+      "srcinfoSha256": "8e1eb9259a4e90bf868a280a86295ca643c15f682faad0abec7393ed95b70d2a",
+      "recipeSha256": "2fd68eeb0a96760c64f203506004dd0485fc588bdc0fb83684665821493df6d5",
+      "sourceArchives": [
+        "mingw-w64-graphite2/graphite2-1.3.15.tgz"
+      ],
+      "inputs": [
+        {
+          "source": "https://github.com/silnrsi/graphite/releases/download/1.3.15/graphite2-1.3.15.tgz",
+          "member": "mingw-w64-graphite2/graphite2-1.3.15.tgz",
+          "sha256": "c6bc8b4252724665297f7cad0c55897285c673f9b8e6db3522ace833593fe0b1",
+          "recipeSha256": "c6bc8b4252724665297f7cad0c55897285c673f9b8e6db3522ace833593fe0b1",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "001-graphite2-1.3.12-win64.patch",
+          "member": "mingw-w64-graphite2/001-graphite2-1.3.12-win64.patch",
+          "sha256": "a77a3e21099454b0732da2ec37067c871c267e9443a9c6c56ca44245e6a64c4f",
+          "recipeSha256": "a77a3e21099454b0732da2ec37067c871c267e9443a9c6c56ca44245e6a64c4f",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "002-graphite2-1.2.1-pkgconfig.patch",
+          "member": "mingw-w64-graphite2/002-graphite2-1.2.1-pkgconfig.patch",
+          "sha256": "5ca68f1d7418c5d159c3eebb9f1ad31e71ebfe3b9492d3fe78db360bcf626ffe",
+          "recipeSha256": "5ca68f1d7418c5d159c3eebb9f1ad31e71ebfe3b9492d3fe78db360bcf626ffe",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "003-graphite2-1.3.12-staticbuild.patch",
+          "member": "mingw-w64-graphite2/003-graphite2-1.3.12-staticbuild.patch",
+          "sha256": "7cfc9f8bcb786b89713cfd043bc471ef61441360fa6b45b5fc2e93cd69e79e93",
+          "recipeSha256": "7cfc9f8bcb786b89713cfd043bc471ef61441360fa6b45b5fc2e93cd69e79e93",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "004-graphite2-1.3.12-dllimport-fix.patch",
+          "member": "mingw-w64-graphite2/004-graphite2-1.3.12-dllimport-fix.patch",
+          "sha256": "cc33eab2ac0e335963d678ce7af15ccfef4cbc94e6722ffeb99b200f14a5003d",
+          "recipeSha256": "cc33eab2ac0e335963d678ce7af15ccfef4cbc94e6722ffeb99b200f14a5003d",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "005-remove-unknown-dep.patch",
+          "member": "mingw-w64-graphite2/005-remove-unknown-dep.patch",
+          "sha256": "026e1bf900610d4f01d9f191aa75dfc9e0398737653589f1b42f41659d21a828",
+          "recipeSha256": "026e1bf900610d4f01d9f191aa75dfc9e0398737653589f1b42f41659d21a828",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-graphite2/.SRCINFO": {
+          "sha256": "8e1eb9259a4e90bf868a280a86295ca643c15f682faad0abec7393ed95b70d2a",
+          "bytes": 1345
+        },
+        "mingw-w64-graphite2/PKGBUILD": {
+          "sha256": "2fd68eeb0a96760c64f203506004dd0485fc588bdc0fb83684665821493df6d5",
+          "bytes": 3934
+        }
+      },
+      "regularFiles": 8,
+      "uncompressedBytes": 13689861,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-graphite2-1.3.15-1.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-graphite2-1.3.15-1.src.tar.zst",
+      "sha256": "eb76ce274c68ea6bad0883144c21e44a803ec94fed9dc0f6584feb0a8415a1d6",
+      "bytes": 13317053,
+      "packagesCovered": [
+        "mingw-w64-x86_64-graphite2"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-gcc",
+      "version": "16.2.0-6",
+      "srcinfo": "mingw-w64-gcc/.SRCINFO",
+      "recipe": "mingw-w64-gcc/PKGBUILD",
+      "srcinfoSha256": "4d9b566461498752f800afa8d70e870e7ba5a520660b5f383aa5fb42abf1b4c0",
+      "recipeSha256": "1a123ea062e01beb611c4375999492b0f41ef2d92d03e38cb29e7c23e855ad45",
+      "sourceArchives": [
+        "mingw-w64-gcc/gcc-16.2.0.tar.xz"
+      ],
+      "inputs": [
+        {
+          "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+          "member": "mingw-w64-gcc/gcc-16.2.0.tar.xz",
+          "sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+          "recipeSha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz.sig",
+          "member": "mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+          "sha256": "43d73202dcede15d31001c6ba0d28723014ef57e4dc815631772daadbe23bcd2",
+          "recipeSha256": "SKIP",
+          "recipeChecksumVerified": false
+        },
+        {
+          "source": "gdbinit",
+          "member": "mingw-w64-gcc/gdbinit",
+          "sha256": "bce81824fc89e5e62cca350de4c17a27e27a18a1a1ad5ca3492aec1fc5af3234",
+          "recipeSha256": "bce81824fc89e5e62cca350de4c17a27e27a18a1a1ad5ca3492aec1fc5af3234",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+          "member": "mingw-w64-gcc/0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+          "sha256": "fdf4e90a56fc195a8f9a969af39335f158a29f29d42d33c00d908fc47cf5ad24",
+          "recipeSha256": "fdf4e90a56fc195a8f9a969af39335f158a29f29d42d33c00d908fc47cf5ad24",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+          "member": "mingw-w64-gcc/0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+          "sha256": "3fc35067823f87e48dd3bfd265e7593000dc110fa9ad5f16c81b896765fc897a",
+          "recipeSha256": "3fc35067823f87e48dd3bfd265e7593000dc110fa9ad5f16c81b896765fc897a",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+          "member": "mingw-w64-gcc/0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+          "sha256": "90d5cb570083f9dea4ac0f0f87e3e8d2230f5052e6f9b946061a20a224a9d195",
+          "recipeSha256": "90d5cb570083f9dea4ac0f0f87e3e8d2230f5052e6f9b946061a20a224a9d195",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0008-Prettify-linking-no-undefined.patch",
+          "member": "mingw-w64-gcc/0008-Prettify-linking-no-undefined.patch",
+          "sha256": "8d2d53ae26b777d90189240494de1b895c5efa1ebdcdfbf5774f29fc742499d9",
+          "recipeSha256": "8d2d53ae26b777d90189240494de1b895c5efa1ebdcdfbf5774f29fc742499d9",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0011-Enable-shared-gnat-implib.patch",
+          "member": "mingw-w64-gcc/0011-Enable-shared-gnat-implib.patch",
+          "sha256": "5ef4148acc4a2b7ed648d4fe75fab5545e84b4b93a12d6ba4e4ea6061dd635fa",
+          "recipeSha256": "5ef4148acc4a2b7ed648d4fe75fab5545e84b4b93a12d6ba4e4ea6061dd635fa",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0012-Handle-spaces-in-path-for-default-manifest.patch",
+          "member": "mingw-w64-gcc/0012-Handle-spaces-in-path-for-default-manifest.patch",
+          "sha256": "e98805ead7d78ee2a92f237894c4b2b7ddc1688e1b517d8c04f28d440202e40f",
+          "recipeSha256": "e98805ead7d78ee2a92f237894c4b2b7ddc1688e1b517d8c04f28d440202e40f",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+          "member": "mingw-w64-gcc/0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+          "sha256": "fd9bdecb2bbc4796bbc9f00b708dac42ef9e3464a06d6d27e5475cee117de5be",
+          "recipeSha256": "fd9bdecb2bbc4796bbc9f00b708dac42ef9e3464a06d6d27e5475cee117de5be",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+          "member": "mingw-w64-gcc/0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+          "sha256": "ad1f7b5e7afaaec008b7cbd14feea13a10989fa91bda7003af72d457619bb199",
+          "recipeSha256": "ad1f7b5e7afaaec008b7cbd14feea13a10989fa91bda7003af72d457619bb199",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+          "member": "mingw-w64-gcc/0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+          "sha256": "76455c46eec4df95a80bbf7e5bcd2d165f300976c79c1baf0bf7ed20f000cdd4",
+          "recipeSha256": "76455c46eec4df95a80bbf7e5bcd2d165f300976c79c1baf0bf7ed20f000cdd4",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0022-mingw-Remove-outdated-mingw-stuff.patch",
+          "member": "mingw-w64-gcc/0022-mingw-Remove-outdated-mingw-stuff.patch",
+          "sha256": "ec05f8f26698dae4e0e0b58189cbf509185ad6d40b4950b33e28b638bf70c7ae",
+          "recipeSha256": "ec05f8f26698dae4e0e0b58189cbf509185ad6d40b4950b33e28b638bf70c7ae",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+          "member": "mingw-w64-gcc/0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+          "sha256": "395dd4df29c295f917aa4a136a0aa72af34eee6320ecc2d92ee717397578398d",
+          "recipeSha256": "395dd4df29c295f917aa4a136a0aa72af34eee6320ecc2d92ee717397578398d",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+          "member": "mingw-w64-gcc/0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+          "sha256": "976d14f803a211b19d9bf0169c08d4fde05af5cc18073f2fc8efc9a3cb17890a",
+          "recipeSha256": "976d14f803a211b19d9bf0169c08d4fde05af5cc18073f2fc8efc9a3cb17890a",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+          "member": "mingw-w64-gcc/0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+          "sha256": "f591efc820a2c72aefb83179f7cbd3f4654231b68700486bd04ee32e2db61de5",
+          "recipeSha256": "f591efc820a2c72aefb83179f7cbd3f4654231b68700486bd04ee32e2db61de5",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0140-gcc-diagnostic-color.patch",
+          "member": "mingw-w64-gcc/0140-gcc-diagnostic-color.patch",
+          "sha256": "c94004dab1685a6fa9124de86aae742df4136a2e9ff5d5e1ad87ecdc35fbcef4",
+          "recipeSha256": "c94004dab1685a6fa9124de86aae742df4136a2e9ff5d5e1ad87ecdc35fbcef4",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "0200-add-m-no-align-vector-insn-option-for-i386.patch",
+          "member": "mingw-w64-gcc/0200-add-m-no-align-vector-insn-option-for-i386.patch",
+          "sha256": "1484911163634f30324827619c873a6267b377abba0df8bbedfd128163c53ea4",
+          "recipeSha256": "1484911163634f30324827619c873a6267b377abba0df8bbedfd128163c53ea4",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "2001-fix-building-rust-on-mingw-w64.patch",
+          "member": "mingw-w64-gcc/2001-fix-building-rust-on-mingw-w64.patch",
+          "sha256": "a411f59953553a3d01dd64c79b1acbb91eca092c4cb01bfd26b1c51c3eb798e8",
+          "recipeSha256": "a411f59953553a3d01dd64c79b1acbb91eca092c4cb01bfd26b1c51c3eb798e8",
+          "recipeChecksumVerified": true
+        },
+        {
+          "source": "3001-fix-codeview-crashes.patch",
+          "member": "mingw-w64-gcc/3001-fix-codeview-crashes.patch",
+          "sha256": "f21f9ab731e9cab8fd4ca8c289497f859ef7004e6fa0507877dc2559ac2071c3",
+          "recipeSha256": "f21f9ab731e9cab8fd4ca8c289497f859ef7004e6fa0507877dc2559ac2071c3",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-gcc/.SRCINFO": {
+          "sha256": "4d9b566461498752f800afa8d70e870e7ba5a520660b5f383aa5fb42abf1b4c0",
+          "bytes": 10268
+        },
+        "mingw-w64-gcc/PKGBUILD": {
+          "sha256": "1a123ea062e01beb611c4375999492b0f41ef2d92d03e38cb29e7c23e855ad45",
+          "bytes": 26394
+        }
+      },
+      "regularFiles": 22,
+      "uncompressedBytes": 107287770,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-gcc-16.2.0-6.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-6.src.tar.zst",
+      "sha256": "a901d8afb78438abcff9ed020cd9aa9431db76de1992171c2454c3c07ad289e8",
+      "bytes": 107229138,
+      "packagesCovered": [
+        "mingw-w64-x86_64-libgcc",
+        "mingw-w64-x86_64-libgomp",
+        "mingw-w64-x86_64-libstdc++"
+      ],
+      "status": "VERIFIED"
+    },
+    {
+      "pkgbase": "mingw-w64-liblcf",
+      "version": "0.8.1-3",
+      "srcinfo": "mingw-w64-liblcf/.SRCINFO",
+      "recipe": "mingw-w64-liblcf/PKGBUILD",
+      "srcinfoSha256": "f6d1e17b7ddb27247eb3a5ff71629bd3edbf6951faeda9c7cf18674a0dd1dd7f",
+      "recipeSha256": "9137fa74b334c27f50efed09a82936070bd05abd03420da1b7b09ac9eaaf2a6b",
+      "sourceArchives": [
+        "mingw-w64-liblcf/liblcf-0.8.1.tar.gz"
+      ],
+      "inputs": [
+        {
+          "source": "https://github.com/EasyRPG/liblcf/archive/0.8.1/liblcf-0.8.1.tar.gz",
+          "member": "mingw-w64-liblcf/liblcf-0.8.1.tar.gz",
+          "sha256": "5ec89082d54f1a29d23fed54de70acab4375036d57828ff0fc7a88b81833d40f",
+          "recipeSha256": "5ec89082d54f1a29d23fed54de70acab4375036d57828ff0fc7a88b81833d40f",
+          "recipeChecksumVerified": true
+        }
+      ],
+      "otherRecipeFiles": {
+        "mingw-w64-liblcf/.SRCINFO": {
+          "sha256": "f6d1e17b7ddb27247eb3a5ff71629bd3edbf6951faeda9c7cf18674a0dd1dd7f",
+          "bytes": 743
+        },
+        "mingw-w64-liblcf/PKGBUILD": {
+          "sha256": "9137fa74b334c27f50efed09a82936070bd05abd03420da1b7b09ac9eaaf2a6b",
+          "bytes": 2187
+        }
+      },
+      "regularFiles": 3,
+      "uncompressedBytes": 313601,
+      "archiveSafety": "Relative regular files/directories only; no extraction",
+      "recipeExecuted": false,
+      "archive": "mingw-w64-liblcf-0.8.1-3.src.tar.zst",
+      "url": "https://mirror.msys2.org/mingw/sources/mingw-w64-liblcf-0.8.1-3.src.tar.zst",
+      "sha256": "924724f834c29f05ee0dfceb201b409f0053a576b78fc382a0b5f5b8c2b82ebb",
+      "bytes": 311002,
+      "packagesCovered": [
+        "mingw-w64-x86_64-liblcf"
+      ],
+      "status": "VERIFIED"
+    }
+  ],
+  "verification": "Exact archive/base/version and embedded source/patch SHA256 checked; no PGP signatures or rebuild verified."
+}

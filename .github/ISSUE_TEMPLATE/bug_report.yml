@@ -1,0 +1,30 @@
+name: Bug report
+description: Report one reproducible problem in this TEST release
+body:
+  - type: markdown
+    attributes:
+      value: "Issues and attachments are PUBLIC. Redact private paths, usernames, contact/location details from minimal screenshots/log excerpts. Keep raw logs private. Do not upload the full game or arbitrary saves; saves can contain personal names and progress."
+  - type: input
+    id: version
+    attributes:
+      label: Release tag and Player or Proton version
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: EN/JP and platform
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Exact steps and relevant MOD settings
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected behavior and actual behavior
+    validations:
+      required: true
