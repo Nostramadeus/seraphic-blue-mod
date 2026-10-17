@@ -14,7 +14,9 @@ Copy your own patched game folder to Deck using your chosen file-transfer method
 
 In Desktop Mode, choose Steam > Add a Non-Steam Game > Browse and select Player.exe (show All Files if needed). In its properties, set Start In to the containing game directory. Set launch options to this exact line:
 
---project-path .
+```sh
+--project-path . --save-path .
+```
 
 Under Compatibility, enable a Steam-supplied Proton version. Record the selected version in any test report; no particular version is certified here. No root/pacman/read-only-filesystem changes are needed by this guide.
 
@@ -30,7 +32,36 @@ These are suggestions, not a tested native gamepad layout.
 - Left trigger: right mouse button (Back).
 - Optional right stick or two back buttons: mouse wheel up/down.
 
-In battle, wheel up/down cycles MAIN commands left/right. In category and ability/item lists it moves vertically. Clicking a valid ability/item row selects that actual row before confirming. Empty, disabled and outside list clicks do nothing. Keyboard arrows/Enter/Escape remain available. Target-sprite clicking, other picture-menu hit tests and click-to-walk are not included.
+## Controls in test.2
+
+- Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.
+- Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.
+- Wheel up/down cycles main commands left/right and category/ability lists vertically. During enemy selection it uses native Left/Right to cycle eligible living targets. Physical Up/Down retains the all-target toggle. Detailed data pages still use Decide/Back.
+- Action-time labels show short actor/enemy names without hover. Only duplicates get numbers, ranked by occupied slots even while a marker is hidden. Native target opacity is retained.
+- Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.
+- Other picture menus keep their existing selected-command behavior. Target-sprite clicking and click-to-walk are not included. MOD settings and optional cheats remain available.
+
+## Update from matching test.1 and keep saves
+
+Make an ordinary Memory Tree save and close the game. Extract the matching EN or JP test.2 patch separately. Keep your untouched pristine base, supported same-edition test.1 game and actual save folder. The --saves folder must match the old launcher's --save-path; if it used the default, use the old game folder. Do not guess a custom save location.
+
+Windows, from the extracted patch directory:
+```sh
+py -3 update_game.py --base "PRISTINE-BASE" --current "OLD-TEST1-GAME" --saves "ACTUAL-OLD-SAVE-FOLDER" --out "NEW-GAME-FOLDER" --backup "NEW-SAVE-BACKUP"
+```
+
+Linux, from the extracted patch directory (first chmod +x tools/linux-x86_64/xdelta3decode):
+```sh
+python3 update_game.py --base "PRISTINE-BASE" --current "OLD-TEST1-GAME" --saves "ACTUAL-OLD-SAVE-FOLDER" --out "NEW-GAME-FOLDER" --backup "NEW-SAVE-BACKUP"
+```
+
+The updater prints the selected save files/count, creates a verified backup, builds a separate new game and checks copied save bytes. New output and backup paths must not exist. It supports the exact matching test.1 database only; no arbitrary-version, cross-edition or mid-event debug-save compatibility is claimed. A failed/interrupted .partial folder is unusable; keep it separate and retry with fresh paths after resolving the cause. Keep the old game and verified backup.
+
+Launch the NEW game with its NEW save folder, not the old custom path:
+```sh
+Player.exe --project-path "NEW-GAME-FOLDER" --save-path "NEW-GAME-FOLDER"
+./Player --project-path "NEW-GAME-FOLDER" --save-path "NEW-GAME-FOLDER"
+```
 
 ## 5. Verify before relying on it
 
@@ -38,7 +69,7 @@ Start with backed-up saves. Check text advance, MOD tabs/settings, row 3 selecti
 
 ## 6. Troubleshooting and rollback
 
-Keep every DLL beside Player.exe. Confirm Start In and --project-path . point to the patched game. Keep EasyRPG.ini from the patch. A stock EasyRPG/Flatpak/EmuDeck build does not automatically include this fork's mouse/pause/animation changes. The Ubuntu 22.04 native package is separate and is NOT a portable Deck package. Roll back to your untouched backup; do not overwrite the original while troubleshooting.
+Keep every DLL beside Player.exe. Confirm Start In and --project-path . --save-path . point to the patched game. Keep EasyRPG.ini from the patch. A stock EasyRPG/Flatpak/EmuDeck build does not automatically include this fork's mouse/pause/animation changes. The Ubuntu 22.04 native package is separate and is NOT a portable Deck package. Roll back to your untouched backup; do not overwrite the original while troubleshooting.
 
 ## 7. Report a problem safely
 

@@ -1,45 +1,64 @@
-# Seraphic Blue MOD — v0.1.0-test.1
+# Seraphic Blue MOD — v0.1.0-test.2
 
-Unofficial TEST patches plus a custom EasyRPG Player. Bring your own supported game. No full game is distributed.
+Unofficial TEST patches and custom EasyRPG Player. Bring your own supported EN or JP game.
 
-## Features and quick controls
+## Controls in test.2
 
-| Control | What it does now |
-| --- | --- |
-| Mouse wheel in battle | Cycles main commands left/right; moves through magic categories and ability/item lists vertically. |
-| Click an ability/item row | Selects the actual clicked row before confirming, instead of confirming the previously selected row. |
-| Left click / right click | Advances text / goes back. Picture menus without direct hit testing still confirm their current selection. |
-| Keyboard arrows / Enter / Escape | Navigate / confirm / go back; keyboard controls remain available. |
-| Hold F / G | Built-in EasyRPG fast-forward: 3x / 10x by default, configurable in Player settings. This speeds up the whole game. |
+- Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.
+- Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.
+- Wheel up/down cycles main commands left/right and category/ability lists vertically. During enemy selection it uses native Left/Right to cycle eligible living targets. Physical Up/Down retains the all-target toggle. Detailed data pages still use Decide/Back.
+- Action-time labels show short actor/enemy names without hover. Only duplicates get numbers, ranked by occupied slots even while a marker is hidden. Native target opacity is retained.
+- Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.
+- Other picture menus keep their existing selected-command behavior. Target-sprite clicking and click-to-walk are not included. MOD settings and optional cheats remain available.
 
-The in-game MOD menu provides separate speed, battle and optional cheat settings. EN includes translation/art corrections; JP keeps Japanese text and adds the MOD features.
+## Downloads and first launch
 
-Not included yet: category direct-clicking, hover-to-highlight, wheel selection of enemy targets/data, or named action-time markers. Do not assume every picture-based menu supports direct clicking. See [tested limits](COMPATIBILITY.md).
+- [EN patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip)
+- [JP patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip)
+- [Windows Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-windows-x86_64-v0.1.0-test.2.zip)
+- [Ubuntu 22.04 Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-ubuntu22.04-x86_64-v0.1.0-test.2.zip)
+- [Deck Proton TEST Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.2.zip)
+- [Player and tooling source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-source-v0.1.0-test.2.zip)
+- [Dependency sources](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip)
 
-## Downloads
+Read [INSTALL](INSTALL.html), [COMPATIBILITY](COMPATIBILITY.html) and the [Deck TEST guide](STEAM-DECK-PROTON-TEST.html). Fresh installs use apply_patch.py into a new folder; existing test.1 players use the update instructions below. Download the matching Player separately.
 
-Release and SHA256SUMS: https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.1
+## Update from matching test.1 and keep saves
 
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-en-patch-v0.1.0-test.1.zip
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-ja-patch-v0.1.0-test.1.zip
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-player-windows-x86_64-v0.1.0-test.1.zip
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-player-ubuntu22.04-x86_64-v0.1.0-test.1.zip
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.1.zip
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-player-source-v0.1.0-test.1.zip
-- https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.1/seraphic-blue-dependency-sources-v0.1.0-test.1.zip
+Make an ordinary Memory Tree save and close the game. Extract the matching EN or JP test.2 patch separately. Keep your untouched pristine base, supported same-edition test.1 game and actual save folder. The --saves folder must match the old launcher's --save-path; if it used the default, use the old game folder. Do not guess a custom save location.
 
-## Start here
+Windows, from the extracted patch directory:
+```sh
+py -3 update_game.py --base "PRISTINE-BASE" --current "OLD-TEST1-GAME" --saves "ACTUAL-OLD-SAVE-FOLDER" --out "NEW-GAME-FOLDER" --backup "NEW-SAVE-BACKUP"
+```
 
-Read [INSTALL](INSTALL.md) (or [HTML guide](INSTALL.html)), then [COMPATIBILITY](COMPATIBILITY.md). Deck users: [Steam Deck Proton TEST guide](STEAM-DECK-PROTON-TEST.html). Choose the correct EN/JP patch and a separate Player package. Patch into a new copy; preserve originals/saves.
+Linux, from the extracted patch directory (first chmod +x tools/linux-x86_64/xdelta3decode):
+```sh
+python3 update_game.py --base "PRISTINE-BASE" --current "OLD-TEST1-GAME" --saves "ACTUAL-OLD-SAVE-FOLDER" --out "NEW-GAME-FOLDER" --backup "NEW-SAVE-BACKUP"
+```
 
-## Tested and untested
+The updater prints the selected save files/count, creates a verified backup, builds a separate new game and checks copied save bytes. New output and backup paths must not exist. It supports the exact matching test.1 database only; no arbitrary-version, cross-edition or mid-event debug-save compatibility is claimed. A failed/interrupted .partial folder is unusable; keep it separate and retry with fresh paths after resolving the cause. Keep the old game and verified backup.
 
-Windows logical-replay/message tests and Ubuntu headless smoke passed. Physical mouse/full native item-Back, full playthrough, hardware/Proton/audio on Deck remain unverified. Native Ubuntu is not portable Deck support. Stock EasyRPG/Flatpak/EmuDeck does not automatically include this fork.
+Launch the NEW game with its NEW save folder, not the old custom path:
+```sh
+Player.exe --project-path "NEW-GAME-FOLDER" --save-path "NEW-GAME-FOLDER"
+./Player --project-path "NEW-GAME-FOLDER" --save-path "NEW-GAME-FOLDER"
+```
 
-## Source, licenses and credits
+## Source and rights
 
-[SOURCE-ACCESS](SOURCE-ACCESS.md) and [SOURCES manifest](SOURCES.json) link matching release source archives/recipes/hashes. [LICENSES](LICENSES.md) scopes MIT to our new scripts/docs only; Player and all third-party/game material keep their own licenses/rights. Read [CREDITS](CREDITS.md), [original EN credits](CREDITS-EN.html) and [original JP credits](CREDITS-JA.html). No new permission or endorsement from game/translation owners is implied.
+See [SOURCE-ACCESS](SOURCE-ACCESS.md), [SOURCES](SOURCES.json), [LICENSES](LICENSES.md) and [CREDITS](CREDITS.md). MIT covers our authored scripts/docs only. Player, libraries, game, translation and derived art retain their own rights. No endorsement or new republication permission is implied.
 
-## Bugs and updates
+# Compatibility and tested limits — test.2
 
-Use the bug template with release/platform/reproduction/expected/actual. Issues and attachments are PUBLIC: sanitize private paths, usernames, contact/location details; keep raw logs private. Do not upload game folders or arbitrary saves. Maintainer process: [UPDATE-CHECKLIST](UPDATE-CHECKLIST.md). No automated publication/CI.
+Windows x86-64: Player SHA256 ae939308a7dbb08c1d70e4015e56df6ba0369cb796f6a22777abeddecca17d71, with the same 42 verified MSYS2 DLLs. New native replay checks: 53/53 EN input, 8/8 selected JP input, 9/9 EN timeline and 4/4 JP timeline. Both languages' native panel and label screenshots were visually reviewed. Timeline lifecycle checks cover hiding, erasure, revival, transformation, an initially empty slot becoming occupied, and ending art reusing a picture ID.
+
+Retained test.1 evidence: 145 message-frame comparisons and prior MOD/field-save checks. Pause source is unchanged; no new pause sweep. The unchanged installer retains its 20-case adversarial result. The exact updater passed 18 independent real-xdelta cases, including changed sources and hard interruption. No real user saves were migrated in these tests.
+
+Native Linux targets Ubuntu 22.04 x86-64, with only liblcf bundled. Player SHA256 a83eb60af4044b23f4210ff961de5804d1c74c4ccb6d04109734e258cb7bb800. Root built the accepted source and ran four headless replay/screenshot fixtures; relative liblcf loading was checked.
+
+Steam Deck uses the identical Windows Player/DLLs through Proton in a hardware-unverified TEST package. No Deck hardware, Proton version or audio was tested. Ubuntu is not a universal Linux/Deck binary. Stock EasyRPG/Flatpak/EmuDeck lacks these custom changes.
+
+Logical replays are not physical mouse proof. The owner's earlier Windy click was one positive physical case only. Full native item-Back, full playthrough and universal save compatibility remain unverified. Debug saves during a waiting battle-input prompt have an existing 8-bit variable limitation. No autosave, command palette or parked guide/font overhaul is included.
+
+Issues and attachments are public. Share only sanitized minimal steps/screenshots; redact private paths, usernames, contact/location details. Keep raw logs private. Do not upload full games or arbitrary saves.

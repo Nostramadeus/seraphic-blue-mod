@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Steam Deck Proton TEST</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}</style><nav><a href="#section-1">1. Patch on Windows first</a> <a href="#section-2">2. Transfer your own game</a> <a href="#section-3">3. Add the Windows executable to Steam</a> <a href="#section-4">4. Suggested Steam Input bindings</a> <a href="#section-5">5. Verify before relying on it</a> <a href="#section-6">6. Troubleshooting and rollback</a> <a href="#section-7">7. Report a problem safely</a> <a href="#section-8">Official references</a></nav><h1>Steam Deck Proton TEST guide</h1>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>STEAM-DECK-PROTON-TEST</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}</style><nav><a href="#section-1">1. Patch on Windows first</a> <a href="#section-2">2. Transfer your own game</a> <a href="#section-3">3. Add the Windows executable to Steam</a> <a href="#section-4">4. Suggested Steam Input bindings</a> <a href="#section-5">Controls in test.2</a> <a href="#section-6">Update from matching test.1 and keep saves</a> <a href="#section-7">5. Verify before relying on it</a> <a href="#section-8">6. Troubleshooting and rollback</a> <a href="#section-9">7. Report a problem safely</a> <a href="#section-10">Official references</a></nav><h1>Steam Deck Proton TEST guide</h1>
 <p>Hardware-unverified test release. No Steam Deck, Proton version, native controller layout or Deck audio was tested here. This package reuses the exact tested Windows Player and all 42 DLLs; it does not include Proton or the game. It is not Valve Verified.</p>
 <h2 id="section-1">1. Patch on Windows first</h2>
 <p>Download the EN or JP patch matching your exact original edition. Keep the original and a save backup. Extract the patch separately and run its Python 3.10+ installer with --base pointing to your game and --out pointing to a NEW folder. Existing source/save files stay untouched. Python is needed for patching, not normal play. Do not run the original RPG_RT.exe for this fork&#x27;s features.</p>
@@ -6,7 +6,7 @@
 <p>Copy your own patched game folder to Deck using your chosen file-transfer method. Extract the CONTENTS of this Player package beside RPG_RT.ldb in that folder: Player.exe, every DLL, licenses and guides stay together. Do not replace EasyRPG.ini supplied by the patch. This is not a replacement game download.</p>
 <h2 id="section-3">3. Add the Windows executable to Steam</h2>
 <p>In Desktop Mode, choose Steam &gt; Add a Non-Steam Game &gt; Browse and select Player.exe (show All Files if needed). In its properties, set Start In to the containing game directory. Set launch options to this exact line:</p>
-<p>--project-path .</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>--project-path . --save-path .</code></pre>
 <p>Under Compatibility, enable a Steam-supplied Proton version. Record the selected version in any test report; no particular version is certified here. No root/pacman/read-only-filesystem changes are needed by this guide.</p>
 <h2 id="section-4">4. Suggested Steam Input bindings</h2>
 <p>These are suggestions, not a tested native gamepad layout.</p>
@@ -19,14 +19,32 @@
 <li>Left trigger: right mouse button (Back).</li>
 <li>Optional right stick or two back buttons: mouse wheel up/down.</li>
 </ul>
-<p>In battle, wheel up/down cycles MAIN commands left/right. In category and ability/item lists it moves vertically. Clicking a valid ability/item row selects that actual row before confirming. Empty, disabled and outside list clicks do nothing. Keyboard arrows/Enter/Escape remain available. Target-sprite clicking, other picture-menu hit tests and click-to-walk are not included.</p>
-<h2 id="section-5">5. Verify before relying on it</h2>
+<h2 id="section-5">Controls in test.2</h2>
+<ul>
+<li>Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.</li>
+<li>Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.</li>
+<li>Wheel up/down cycles main commands left/right and category/ability lists vertically. During enemy selection it uses native Left/Right to cycle eligible living targets. Physical Up/Down retains the all-target toggle. Detailed data pages still use Decide/Back.</li>
+<li>Action-time labels show short actor/enemy names without hover. Only duplicates get numbers, ranked by occupied slots even while a marker is hidden. Native target opacity is retained.</li>
+<li>Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.</li>
+<li>Other picture menus keep their existing selected-command behavior. Target-sprite clicking and click-to-walk are not included. MOD settings and optional cheats remain available.</li>
+</ul>
+<h2 id="section-6">Update from matching test.1 and keep saves</h2>
+<p>Make an ordinary Memory Tree save and close the game. Extract the matching EN or JP test.2 patch separately. Keep your untouched pristine base, supported same-edition test.1 game and actual save folder. The --saves folder must match the old launcher&#x27;s --save-path; if it used the default, use the old game folder. Do not guess a custom save location.</p>
+<p>Windows, from the extracted patch directory:</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>py -3 update_game.py --base &quot;PRISTINE-BASE&quot; --current &quot;OLD-TEST1-GAME&quot; --saves &quot;ACTUAL-OLD-SAVE-FOLDER&quot; --out &quot;NEW-GAME-FOLDER&quot; --backup &quot;NEW-SAVE-BACKUP&quot;</code></pre>
+<p>Linux, from the extracted patch directory (first chmod +x tools/linux-x86_64/xdelta3decode):</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>python3 update_game.py --base &quot;PRISTINE-BASE&quot; --current &quot;OLD-TEST1-GAME&quot; --saves &quot;ACTUAL-OLD-SAVE-FOLDER&quot; --out &quot;NEW-GAME-FOLDER&quot; --backup &quot;NEW-SAVE-BACKUP&quot;</code></pre>
+<p>The updater prints the selected save files/count, creates a verified backup, builds a separate new game and checks copied save bytes. New output and backup paths must not exist. It supports the exact matching test.1 database only; no arbitrary-version, cross-edition or mid-event debug-save compatibility is claimed. A failed/interrupted .partial folder is unusable; keep it separate and retry with fresh paths after resolving the cause. Keep the old game and verified backup.</p>
+<p>Launch the NEW game with its NEW save folder, not the old custom path:</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Player.exe --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;
+./Player --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;</code></pre>
+<h2 id="section-7">5. Verify before relying on it</h2>
 <p>Start with backed-up saves. Check text advance, MOD tabs/settings, row 3 selection from row 1, page 2 selection, wheel direction, Back from an item menu, saving/reloading and sound at your chosen volume. Physical battle input and full native item-Back were not proven by the automated logical-replay tests. Do not make debug saves during a waiting battle-input prompt; that existing input-variable format has an 8-bit limitation.</p>
-<h2 id="section-6">6. Troubleshooting and rollback</h2>
-<p>Keep every DLL beside Player.exe. Confirm Start In and --project-path . point to the patched game. Keep EasyRPG.ini from the patch. A stock EasyRPG/Flatpak/EmuDeck build does not automatically include this fork&#x27;s mouse/pause/animation changes. The Ubuntu 22.04 native package is separate and is NOT a portable Deck package. Roll back to your untouched backup; do not overwrite the original while troubleshooting.</p>
-<h2 id="section-7">7. Report a problem safely</h2>
+<h2 id="section-8">6. Troubleshooting and rollback</h2>
+<p>Keep every DLL beside Player.exe. Confirm Start In and --project-path . --save-path . point to the patched game. Keep EasyRPG.ini from the patch. A stock EasyRPG/Flatpak/EmuDeck build does not automatically include this fork&#x27;s mouse/pause/animation changes. The Ubuntu 22.04 native package is separate and is NOT a portable Deck package. Roll back to your untouched backup; do not overwrite the original while troubleshooting.</p>
+<h2 id="section-9">7. Report a problem safely</h2>
 <p>GitHub issues and attachments are PUBLIC. Include release version, EN/JP, platform, selected Proton version, exact steps, expected/actual behavior and relevant MOD settings. Sanitize minimal screenshots/log excerpts: redact private paths, usernames, contact details and location. Keep raw debug logs private. Do not upload full game folders or arbitrary saves; saves can contain personal names and story progress. A maintainer can request a sanitized minimal example if necessary.</p>
-<h2 id="section-8">Official references</h2>
+<h2 id="section-10">Official references</h2>
 <p>Valve explains Proton and Steam Deck support; those general references are not a test result for this fork.</p>
 <p><a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/faq">https://partner.steamgames.com/doc/steamhardware/steamdeck/faq</a></p>
 <p><a href="https://partner.steamgames.com/doc/steamhardware/proton">https://partner.steamgames.com/doc/steamhardware/proton</a></p>
