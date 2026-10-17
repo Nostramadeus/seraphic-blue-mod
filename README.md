@@ -1,6 +1,6 @@
 # Seraphic Blue MOD — v0.1.0-test.2
 
-Unofficial TEST patches and custom EasyRPG Player. Bring your own supported EN or JP game.
+Unofficial TEST patches, custom EasyRPG Player and a separate full English game package for stock Flatpak. The test.2 patches require your own supported EN or JP game; the full Flatpak package includes older test.1 MOD data.
 
 ## Controls in test.2
 
@@ -22,6 +22,10 @@ Unofficial TEST patches and custom EasyRPG Player. Bring your own supported EN o
 - [Dependency sources](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip)
 
 Read [INSTALL](INSTALL.html), [COMPATIBILITY](COMPATIBILITY.html) and the [Deck TEST guide](STEAM-DECK-PROTON-TEST.html). Fresh installs use apply_patch.py into a new folder; existing test.1 players use the update instructions below. Download the matching Player separately.
+
+## Steam Deck: full game for stock EasyRPG Flatpak
+
+[Download the full English game with test.1 MOD data](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-fullgame-EN-test1-flatpak-TEST.zip) and read the [Flatpak setup guide](STEAM-DECK-FLATPAK-TEST.html). Extract it into a new folder on Deck, install EasyRPG Player from Discover and select the included game folder in its setup wizard. No Python, patching or Proton is needed. The event-based MOD menu remains available through keyboard/Steam Input controls. Custom pause skipping, battle mouse/wheel input, animation acceleration and test.2 timeline labels require our custom Player. Hardware and Flatpak runtime remain untested.
 
 ## Update from matching test.1 and keep saves
 

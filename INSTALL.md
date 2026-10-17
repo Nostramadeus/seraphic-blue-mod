@@ -1,6 +1,6 @@
 # Install the Seraphic Blue test MOD
 
-TEST release v0.1.0-test.2. You need your own supported original game. No full game, original executable, RTP sounds or Windows fonts are supplied. Back up the game and saves; close the game before copying.
+These instructions cover the test.2 patches, which need your own supported original game. For a separate full English game with older test.1 MOD data, see STEAM-DECK-FLATPAK-TEST.html. The patch archives contain no full game, original executable, separately added RTP sounds or Windows fonts. Back up the game and saves; close the game before copying.
 
 ## Choose one edition
 
