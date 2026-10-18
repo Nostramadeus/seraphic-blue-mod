@@ -16,6 +16,7 @@ Download → Extract All → Choose your platform below → Play
 | Linux through Steam / Proton | Add **Player.exe** to Steam; enable Proton. [Linux steps](LINUX.md) | Yes; compatibility not verified here |
 | Steam Deck | Desktop Mode: add **Player.exe** to Steam; enable Proton. [Deck steps](STEAM-DECK.md) | Yes; hardware not verified here |
 | Native Linux alternative | Run **sh play-linux.sh**. [Requirements](LINUX.md#native-linux-alternative) | Older test.2 controls; new hover/tabs/walking are unavailable |
+| macOS (experimental) | Official Mac EasyRPG Player + this ZIP's game data. [Mac steps](#macos-experimental-keyboard-route) | Custom Player features unavailable; not Mac-tested |
 
 **Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
 
@@ -26,6 +27,28 @@ Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue
 Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
 
 [See the full original credits](CREDITS.md).
+
+## macOS: experimental keyboard route
+
+Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
+
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip) and extract it. Keep the **SeraphicBlue** folder together.
+2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
+
+```sh
+brew install easyrpg-player
+```
+
+3. In Terminal, type `cd ` (including the space), drag the extracted **SeraphicBlue** folder into Terminal, and press Enter. Run:
+
+```sh
+mkdir -p saves config
+easyrpg-player --project-path . --save-path saves --config-path config --encoding 932 --window
+```
+
+**Controls:** arrows select/move; Enter confirms; Escape goes back; Shift runs/opens secondary actions. Saves go in **SeraphicBlue/saves**.
+
+**Limits:** script-based MOD options are expected to work. Custom hover/click targeting, click-to-walk, character tabs, enhanced text reveal and battle-animation acceleration need our modified Player and are unavailable here. **This Mac route is untested.** [Official Mac support](https://easyrpg.org/player/downloads/) · [Homebrew package](https://formulae.brew.sh/formula/easyrpg-player.html).
 
 ## Quick tutorials
 
