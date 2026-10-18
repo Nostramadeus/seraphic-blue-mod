@@ -15,27 +15,72 @@
 <p>Thank you to <strong>eplipswich</strong> for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.</p>
 <p>Thank you to <strong>Tempura (Sakaki)</strong> for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.</p>
 <p><a href="CREDITS.md">See the full original credits</a>.</p>
-<h2 id="section-3">Four things to try</h2>
-<div class="table-scroll"><table>
-<tr><th>You do this</th><th>You see this</th></tr>
-<tr><td>Hover a menu row or enemy/ally</td><td>Its highlight and information update. Click to confirm. Hover spends nothing.</td></tr>
-<tr><td>Scroll while choosing battle magic/items</td><td>The page changes. <strong>&lt; 1/3 &gt;</strong> and clickable arrows show more pages.</td></tr>
-<tr><td>Open Status, Gear or Ability</td><td>Top tabs switch screens while keeping the same character. Page Up/Down works too.</td></tr>
-<tr><td>Click ground or an NPC&#x27;s feet</td><td>Your character routes there. White marks hover; green marks an accepted destination.</td></tr>
-</table></div>
-<h2 id="section-4">Feature demos</h2>
-<p>### Hover an enemy to select it</p>
-<p>Move over a visible enemy. Its name and target indicators update before you click. A stationary mouse leaves keyboard selection alone.</p>
+<h2 id="section-3">Quick tutorials</h2>
+<p><strong>Deck buttons below need the <a href="STEAM-DECK.md#suggested-steam-input-controls">suggested Steam Input bindings</a>.</strong> They are not a bundled controller preset. New controls require the latest Windows Player, including through Proton.</p>
+<h3>Select menus, spells and targets</h3>
+<ul>
+<li><strong>Mouse:</strong> hover to preview; left-click to choose. Works on supported menu rows, enemies and allies.</li>
+<li><strong>Keyboard / Deck:</strong> arrows / D-pad select; Enter / A confirms; Escape / B backs out.</li>
+<li><strong>Result:</strong> highlight and information update. Hover spends nothing. A stationary mouse leaves keyboard selection alone.</li>
+</ul>
 <figure><img src="docs/images/battle-hover.png" width="640" alt="Enemy hover selection with the selected enemy name and battle menu" style="max-width:100%;height:auto;image-rendering:pixelated"></figure>
-<p>### See and change list pages</p>
-<p>The <strong>&lt; 2/3 &gt;</strong> indicator means page two of three. Scroll or click an arrow to change pages. Hover selects an entry within the page.</p>
+<h3>Find the next spell or item page</h3>
+<ul>
+<li><strong>Mouse:</strong> wheel or click the page arrows; hover an entry to select it.</li>
+<li><strong>Keyboard / Deck:</strong> Left/Right / D-pad left/right changes pages; Up/Down selects a row.</li>
+<li><strong>Result:</strong> <strong>&lt; 2/3 &gt;</strong> means page two of three. Applies to paged battle magic/items and supported menu lists.</li>
+</ul>
 <figure><img src="docs/images/spell-pages.png" width="640" alt="Battle list showing clickable arrows and page two of three" style="max-width:100%;height:auto;image-rendering:pixelated"></figure>
-<p>### Switch character screens without backing out</p>
-<p>Click <strong>Status / Gear / Ability</strong> at the top. Reserve characters keep their identity; their Ability tab is unavailable.</p>
+<h3>Switch Status / Gear / Ability without backing out</h3>
+<ul>
+<li><strong>Mouse:</strong> click a top tab. <strong>Keyboard:</strong> Page Up / Page Down. <strong>Deck:</strong> bind LB / RB to those keys.</li>
+<li><strong>Result:</strong> switch screens while keeping the same character. Left/Right still changes characters.</li>
+<li>Tabs work at the top level; back out of an unfinished selection first. Reserve characters cannot open Ability.</li>
+</ul>
 <figure><img src="docs/images/character-tabs.png" width="640" alt="Status screen with Status Gear and Ability quick tabs" style="max-width:100%;height:auto;image-rendering:pixelated"></figure>
-<p>### See where click-to-walk is going</p>
-<p>The green square marks the accepted destination. It clears when you arrive or cancel. Arrow keys or right-click cancel walking.</p>
+<h3>Click or tap to walk</h3>
+<ul>
+<li><strong>Mouse:</strong> click ground to route there; click an NPC&#x27;s feet to approach and interact once.</li>
+<li><strong>See:</strong> white square = hovered tile; green square = accepted destination. No green square means no route was accepted. It clears on arrival or cancellation.</li>
+<li><strong>Cancel / walk manually:</strong> arrows / Deck D-pad. Escape / B or right-click also cancels routing. No separate keyboard destination picker.</li>
+<li><strong>Deck touchscreen:</strong> tapping ground is expected to work through Proton because <a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/faq#Input">Deck taps normally act as mouse clicks</a>. <strong>Not tested on Deck hardware.</strong> If tapping fails, try the right trackpad as Mouse + left-click. Hover preview needs a trackpad/mouse.</li>
+</ul>
 <figure><img src="docs/images/walking-destination.png" width="640" alt="Green destination square on the field after a click-to-walk command" style="max-width:100%;height:auto;image-rendering:pixelated"></figure>
+<h3>Advance dialogue and story pauses</h3>
+<ul>
+<li><strong>Mouse:</strong> left-click. <strong>Keyboard / Deck:</strong> Enter / A with the suggested binding.</li>
+<li>Press while text appears to reveal it faster; press again at a dialogue pause to continue. Use separate presses, not a held click.</li>
+<li><strong>Not every pause is skippable:</strong> timed scene waits, movement and animations can continue. Use <strong>MOD → SPEED → Cutscene speed</strong> to shorten scripted waits; confirm is not a universal scene-skip button.</li>
+</ul>
+<h2 id="section-4">MOD menu tutorials</h2>
+<p><strong>Open:</strong> Escape / Deck B → select <strong>MOD</strong> → Enter / A. <strong>Navigate:</strong> Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose <strong>INFO</strong> for the in-game explanations.</p>
+<h3>SPEED — spend less time waiting</h3>
+<div class="table-scroll"><table>
+<tr><th>Setting</th><th>Try / result</th></tr>
+<tr><td>Walk speed / Hold Shift to run</td><td>Choose 2x for faster walking. Enable running; hold Shift / X to run. Scripted movement stays unchanged.</td></tr>
+<tr><td>Battle speed</td><td>Choose 2x–10x for shorter waits/animations; Instant skips animation waits.</td></tr>
+<tr><td>Random-battle intro</td><td>Off skips the random-battle flash; story intros stay.</td></tr>
+<tr><td>Menu fade</td><td>Choose 0.1 s or None for quicker menu transitions.</td></tr>
+<tr><td>Cutscene speed</td><td>Choose 2x/5x/Instant to shorten scripted waits. This changes scene pacing.</td></tr>
+</table></div>
+<h3>BATTLE — choose how often you fight</h3>
+<div class="table-scroll"><table>
+<tr><th>Setting</th><th>Try / result</th></tr>
+<tr><td>Random battles</td><td>Choose 1/2–1/10 for fewer fights, or Off for none.</td></tr>
+<tr><td>Rewards follow the rate</td><td>On scales EXP, DEAR and SUP.EXP to compensate for fewer random fights.</td></tr>
+<tr><td>Escape always works</td><td>On guarantees escape from random battles; story battles stay unchanged.</td></tr>
+<tr><td>Retry lost battles</td><td>On offers a retry after defeat. <strong>Items spent in the lost fight stay spent.</strong></td></tr>
+</table></div>
+<h3>CHEATS — optional, confirmed actions</h3>
+<p>Enable the CHEATS page when asked. Select an action and confirm. <strong>Save first before teleporting or saving during an event.</strong></p>
+<div class="table-scroll"><table>
+<tr><th>Action</th><th>Result</th></tr>
+<tr><td>Full heal</td><td>Restores party HP and TP.</td></tr>
+<tr><td>Return to world map</td><td>Returns to your known world-map position; can skip events. Visit the world map first.</td></tr>
+<tr><td>Save anywhere</td><td>Opens saving here; unusual save locations can interrupt events.</td></tr>
+<tr><td>+10,000 DEAR</td><td>Adds 10,000 currency.</td></tr>
+<tr><td>Level up party</td><td>Raises every party member by one level.</td></tr>
+</table></div>
 <h2 id="section-5">Controls</h2>
 <div class="table-scroll"><table>
 <tr><th>Action</th><th>Mouse</th><th>Keyboard / suggested Steam Input</th></tr>
@@ -45,13 +90,22 @@
 <tr><td>Switch character tabs</td><td>Top tabs</td><td>Page Up / Page Down; optional LB / RB</td></tr>
 <tr><td>Secondary action</td><td>Follow the displayed hint</td><td>Shift / X</td></tr>
 </table></div>
-<p>Native number-entry and name-entry keep their existing controls. Steam Input bindings are suggestions, not a verified Deck layout.</p>
-<h2 id="section-6">Already playing? Update without replacing saves</h2>
+<p>Steam Input bindings are suggestions, not a verified Deck layout. Touch does not provide hover before contact.</p>
+<h2 id="section-6">More menu shortcuts</h2>
+<div class="table-scroll"><table>
+<tr><th>Try this</th><th>Mouse</th><th>Keyboard / suggested Deck buttons</th></tr>
+<tr><td>Secondary actions in Gear, shops or battle</td><td>Follow the visible hint; Shift still needs a key/button</td><td>Shift / X; opens the action shown on that screen</td></tr>
+<tr><td>Buy or sell several items</td><td>Click -10 / -1 / +1 / +10, then Buy/Sell</td><td>Arrows adjust quantity; Enter / A confirms</td></tr>
+<tr><td>Supplement or Upgrade amounts</td><td>Hover a digit/amount; wheel adjusts; click Apply/Upgrade</td><td>Arrows select/adjust; Enter / A confirms</td></tr>
+<tr><td>Dictionary and history</td><td>Hover supported rows; wheel changes list pages or scrolls history</td><td>Arrows navigate; Enter / A chooses where applicable</td></tr>
+</table></div>
+<p>Native name-entry and number-entry keep their original keyboard controls.</p>
+<h2 id="section-7">Already playing? Update without replacing saves</h2>
 <p>1. Close the game and back up the <strong>saves</strong> folder (or your existing custom save location).</p>
 <p>2. Download the smaller <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip">Windows Player update ZIP</a> for Windows or Proton. Extract it separately.</p>
 <p>3. Copy <strong>Player.exe and all .dll files from that same ZIP</strong> into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.</p>
 <p>This test.6 Player update does not change game data. Native Linux has no new test.6 binary; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.</p>
-<h2 id="section-7">Details</h2>
+<h2 id="section-8">Details</h2>
 <ul>
 <li><a href="WINDOWS.md">Windows setup</a>, <a href="LINUX.md">Linux setup</a>, <a href="STEAM-DECK.md">Steam Deck setup</a>.</li>
 <li><a href="RELEASE-NOTES.md">Full release notes</a> and <a href="COMPATIBILITY.md">tested limits</a>.</li>

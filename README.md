@@ -27,40 +27,83 @@ Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it f
 
 [See the full original credits](CREDITS.md).
 
-## Four things to try
+## Quick tutorials
 
-| You do this | You see this |
-| --- | --- |
-| Hover a menu row or enemy/ally | Its highlight and information update. Click to confirm. Hover spends nothing. |
-| Scroll while choosing battle magic/items | The page changes. **< 1/3 >** and clickable arrows show more pages. |
-| Open Status, Gear or Ability | Top tabs switch screens while keeping the same character. Page Up/Down works too. |
-| Click ground or an NPC's feet | Your character routes there. White marks hover; green marks an accepted destination. |
+**Deck buttons below need the [suggested Steam Input bindings](STEAM-DECK.md#suggested-steam-input-controls).** They are not a bundled controller preset. New controls require the latest Windows Player, including through Proton.
 
-## Feature demos
+### Select menus, spells and targets
 
-### Hover an enemy to select it
-
-Move over a visible enemy. Its name and target indicators update before you click. A stationary mouse leaves keyboard selection alone.
+- **Mouse:** hover to preview; left-click to choose. Works on supported menu rows, enemies and allies.
+- **Keyboard / Deck:** arrows / D-pad select; Enter / A confirms; Escape / B backs out.
+- **Result:** highlight and information update. Hover spends nothing. A stationary mouse leaves keyboard selection alone.
 
 <img src="docs/images/battle-hover.png" width="640" alt="Enemy hover selection with the selected enemy name and battle menu">
 
-### See and change list pages
+### Find the next spell or item page
 
-The **< 2/3 >** indicator means page two of three. Scroll or click an arrow to change pages. Hover selects an entry within the page.
+- **Mouse:** wheel or click the page arrows; hover an entry to select it.
+- **Keyboard / Deck:** Left/Right / D-pad left/right changes pages; Up/Down selects a row.
+- **Result:** **< 2/3 >** means page two of three. Applies to paged battle magic/items and supported menu lists.
 
 <img src="docs/images/spell-pages.png" width="640" alt="Battle list showing clickable arrows and page two of three">
 
-### Switch character screens without backing out
+### Switch Status / Gear / Ability without backing out
 
-Click **Status / Gear / Ability** at the top. Reserve characters keep their identity; their Ability tab is unavailable.
+- **Mouse:** click a top tab. **Keyboard:** Page Up / Page Down. **Deck:** bind LB / RB to those keys.
+- **Result:** switch screens while keeping the same character. Left/Right still changes characters.
+- Tabs work at the top level; back out of an unfinished selection first. Reserve characters cannot open Ability.
 
 <img src="docs/images/character-tabs.png" width="640" alt="Status screen with Status Gear and Ability quick tabs">
 
-### See where click-to-walk is going
+### Click or tap to walk
 
-The green square marks the accepted destination. It clears when you arrive or cancel. Arrow keys or right-click cancel walking.
+- **Mouse:** click ground to route there; click an NPC's feet to approach and interact once.
+- **See:** white square = hovered tile; green square = accepted destination. No green square means no route was accepted. It clears on arrival or cancellation.
+- **Cancel / walk manually:** arrows / Deck D-pad. Escape / B or right-click also cancels routing. No separate keyboard destination picker.
+- **Deck touchscreen:** tapping ground is expected to work through Proton because [Deck taps normally act as mouse clicks](https://partner.steamgames.com/doc/steamhardware/steamdeck/faq#Input). **Not tested on Deck hardware.** If tapping fails, try the right trackpad as Mouse + left-click. Hover preview needs a trackpad/mouse.
 
 <img src="docs/images/walking-destination.png" width="640" alt="Green destination square on the field after a click-to-walk command">
+
+### Advance dialogue and story pauses
+
+- **Mouse:** left-click. **Keyboard / Deck:** Enter / A with the suggested binding.
+- Press while text appears to reveal it faster; press again at a dialogue pause to continue. Use separate presses, not a held click.
+- **Not every pause is skippable:** timed scene waits, movement and animations can continue. Use **MOD → SPEED → Cutscene speed** to shorten scripted waits; confirm is not a universal scene-skip button.
+
+## MOD menu tutorials
+
+**Open:** Escape / Deck B → select **MOD** → Enter / A. **Navigate:** Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
+
+### SPEED — spend less time waiting
+
+| Setting | Try / result |
+| --- | --- |
+| Walk speed / Hold Shift to run | Choose 2x for faster walking. Enable running; hold Shift / X to run. Scripted movement stays unchanged. |
+| Battle speed | Choose 2x–10x for shorter waits/animations; Instant skips animation waits. |
+| Random-battle intro | Off skips the random-battle flash; story intros stay. |
+| Menu fade | Choose 0.1 s or None for quicker menu transitions. |
+| Cutscene speed | Choose 2x/5x/Instant to shorten scripted waits. This changes scene pacing. |
+
+### BATTLE — choose how often you fight
+
+| Setting | Try / result |
+| --- | --- |
+| Random battles | Choose 1/2–1/10 for fewer fights, or Off for none. |
+| Rewards follow the rate | On scales EXP, DEAR and SUP.EXP to compensate for fewer random fights. |
+| Escape always works | On guarantees escape from random battles; story battles stay unchanged. |
+| Retry lost battles | On offers a retry after defeat. **Items spent in the lost fight stay spent.** |
+
+### CHEATS — optional, confirmed actions
+
+Enable the CHEATS page when asked. Select an action and confirm. **Save first before teleporting or saving during an event.**
+
+| Action | Result |
+| --- | --- |
+| Full heal | Restores party HP and TP. |
+| Return to world map | Returns to your known world-map position; can skip events. Visit the world map first. |
+| Save anywhere | Opens saving here; unusual save locations can interrupt events. |
+| +10,000 DEAR | Adds 10,000 currency. |
+| Level up party | Raises every party member by one level. |
 
 ## Controls
 
@@ -72,7 +115,18 @@ The green square marks the accepted destination. It clears when you arrive or ca
 | Switch character tabs | Top tabs | Page Up / Page Down; optional LB / RB |
 | Secondary action | Follow the displayed hint | Shift / X |
 
-Native number-entry and name-entry keep their existing controls. Steam Input bindings are suggestions, not a verified Deck layout.
+Steam Input bindings are suggestions, not a verified Deck layout. Touch does not provide hover before contact.
+
+## More menu shortcuts
+
+| Try this | Mouse | Keyboard / suggested Deck buttons |
+| --- | --- | --- |
+| Secondary actions in Gear, shops or battle | Follow the visible hint; Shift still needs a key/button | Shift / X; opens the action shown on that screen |
+| Buy or sell several items | Click -10 / -1 / +1 / +10, then Buy/Sell | Arrows adjust quantity; Enter / A confirms |
+| Supplement or Upgrade amounts | Hover a digit/amount; wheel adjusts; click Apply/Upgrade | Arrows select/adjust; Enter / A confirms |
+| Dictionary and history | Hover supported rows; wheel changes list pages or scrolls history | Arrows navigate; Enter / A chooses where applicable |
+
+Native name-entry and number-entry keep their original keyboard controls.
 
 ## Already playing? Update without replacing saves
 
