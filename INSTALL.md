@@ -1,3 +1,7 @@
+# Advanced patch installation and migration
+
+For a new full-game install, use [Windows](WINDOWS.md), [Linux](LINUX.md), or [Steam Deck](STEAM-DECK.md). The complete English game includes its MOD and Players. The instructions below describe the optional patch-based route and existing installations.
+
 # Install or update v0.1.0-test.6
 
 ## Update safely

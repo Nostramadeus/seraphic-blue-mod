@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Seraphic Blue MOD — quick start</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid #c8d6e6}th{background:#dceaf7}tr:nth-child(even){background:#eaf1f8}pre{line-height:1.5;white-space:pre-wrap}strong{color:#102e50}</style><h1>Steam Deck — latest MOD through Proton</h1>
+<h2 id="section-1">Install once</h2>
+<p>1. Switch to <strong>Desktop Mode</strong>. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip">Download the complete English game</a> and extract it into your home folder, such as Documents.</p>
+<p>2. Open Steam → <strong>Games → Add a Non-Steam Game → Browse</strong>. Select <strong>Player.exe</strong> inside the extracted <strong>SeraphicBlue</strong> folder. Change the file filter to show all files if needed.</p>
+<p>3. Open that shortcut&#x27;s <strong>Properties → Compatibility</strong>. Enable <strong>Force the use of a specific Steam Play compatibility tool</strong> and select <strong>Proton Experimental</strong>.</p>
+<p>4. In <strong>Shortcut</strong>, set <strong>Start In</strong> to the extracted <strong>SeraphicBlue</strong> folder and set <strong>Launch Options</strong> to the line below. Return to Gaming Mode and start the shortcut.</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>--project-path . --save-path saves --config-path config --encoding 932 --window</code></pre>
+<p>Keep the quotes Steam uses around folder paths. Saves go in <strong>SeraphicBlue/saves</strong>. Keep the extracted folder in the same place after creating the shortcut.</p>
+<h2 id="section-2">Suggested Steam Input controls</h2>
+<div class="table-scroll"><table>
+<tr><th>Control</th><th>Bind to</th></tr>
+<tr><td>D-pad</td><td>Keyboard arrow keys</td></tr>
+<tr><td>A / B / X</td><td>Enter / Escape / Shift</td></tr>
+<tr><td>Right trackpad / trackpad click</td><td>Mouse / left mouse button</td></tr>
+<tr><td>Left trigger</td><td>Right mouse button</td></tr>
+<tr><td>Optional LB / RB</td><td>Page Up / Page Down for character tabs</td></tr>
+</table></div>
+<p>These are suggested bindings. Physical Deck/Proton operation has not been tested here. The game keeps keyboard controls alongside mouse controls.</p>
+<h2 id="section-3">Updating</h2>
+<p>Back up <strong>saves</strong>. For this runtime-only update, replace only Player.exe and its matching DLLs from the Windows Player update ZIP; keep the same folder, shortcut, game data and EasyRPG.ini.</p>
+<h2 id="section-4">Other routes</h2>
+<p>The included <a href="LINUX.md#native-linux-alternative">native Linux alternative</a> has older test.2 controls. The separate <a href="STEAM-DECK-FLATPAK-TEST.md">stock Flatpak package</a> contains still older test.1 game data; it does not provide the latest custom mouse features. Use the Proton route above for the newest features.</p>
+<p><a href="README.md">Return to the quick start and screenshots</a>.</p></html>

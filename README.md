@@ -1,68 +1,84 @@
 # Seraphic Blue MOD
 
-[Download Windows Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) · [Steam Deck TEST](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.6.zip) · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.6)
+## Download the complete English game
 
-Optional mouse controls and convenience features for Seraphic Blue. **Test release: v0.1.0-test.6.**
+**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.6)
 
-## Start here — already playing this MOD?
-
-```text
-Close game → Back up saves → Update Player → Use your usual launcher
-```
-
-1. Close the game. Back up your actual save folder: the folder containing **Save*.lsd**. A launcher's **--save-path** tells you where it is.
-2. Download the **Windows Player** above. Extract it into a **new runtime folder**; keep Player.exe and all 42 DLLs together.
-3. Point your existing launcher at that new Player.exe. Keep its game, save and config paths unchanged. Launch and check that your saves appear.
-
-**This update contains no game maps, database or saves.** Keep your game folder and EasyRPG.ini. If Player.exe already lives inside your game folder, you can instead replace **only Player.exe and its 42 DLLs** after backing up; leave everything else alone.
-
-## First time installing?
+One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
 
 ```text
-Your original game → Matching EN / JP game patch → Latest Player → Play
+Download → Extract All → Choose your platform below → Play
 ```
 
-1. Start with the supported original English or Japanese Director's Cut game. This download is a MOD and Player, not the complete game.
-2. Use the [first-install guide](INSTALL.md#fresh-game-installation-or-older-test1-game) to apply the matching game patch into a new folder.
-3. Install the latest Windows Player using the steps above. [Steam Deck setup](STEAM-DECK-PROTON-TEST.md) is a separate TEST route.
+| Your platform | Start here | Newest mouse features? |
+| --- | --- | --- |
+| Windows | Double-click **PLAY.cmd**. [Windows steps](WINDOWS.md) | Yes |
+| Linux through Steam / Proton | Add **Player.exe** to Steam; enable Proton. [Linux steps](LINUX.md) | Yes; compatibility not verified here |
+| Steam Deck | Desktop Mode: add **Player.exe** to Steam; enable Proton. [Deck steps](STEAM-DECK.md) | Yes; hardware not verified here |
+| Native Linux alternative | Run **sh play-linux.sh**. [Requirements](LINUX.md#native-linux-alternative) | Older test.2 controls; new hover/tabs/walking are unavailable |
 
-## What's new? Try these four things
+**Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
+
+## Four things to try
 
 | You do this | You see this |
 | --- | --- |
-| Hover a menu row, enemy, or ally | Its highlight and information update immediately. Click to confirm. |
-| Scroll while choosing battle magic/items | The next/previous page appears. **< 1/3 >** shows how many pages exist; its arrows also click. |
-| Open Status, Gear, or Ability | Tabs at the top switch screens while keeping the same character. Page Up/Down works too. |
-| Click the ground or an NPC's feet | Your character routes there. White marks the hovered tile; green marks an accepted destination until arrival. |
+| Hover a menu row or enemy/ally | Its highlight and information update. Click to confirm. Hover spends nothing. |
+| Scroll while choosing battle magic/items | The page changes. **< 1/3 >** and clickable arrows show more pages. |
+| Open Status, Gear or Ability | Top tabs switch screens while keeping the same character. Page Up/Down works too. |
+| Click ground or an NPC's feet | Your character routes there. White marks hover; green marks an accepted destination. |
 
-Deeper item, equipment, Supplement, Organize, Upgrade, shop and dictionary menus also gain mouse controls. Gear and battle screens show useful **Shift** hints. Shops show quantity buttons. Existing MOD settings remain available.
+## Feature demos
 
-## Controls at a glance
+### Hover an enemy to select it
 
-| Action | Mouse | Keyboard |
+Move over a visible enemy. Its name and target indicators update before you click. A stationary mouse leaves keyboard selection alone.
+
+<img src="docs/images/battle-hover.png" width="640" alt="Enemy hover selection with the selected enemy name and battle menu">
+
+### See and change list pages
+
+The **< 2/3 >** indicator means page two of three. Scroll or click an arrow to change pages. Hover selects an entry within the page.
+
+<img src="docs/images/spell-pages.png" width="640" alt="Battle list showing clickable arrows and page two of three">
+
+### Switch character screens without backing out
+
+Click **Status / Gear / Ability** at the top. Reserve characters keep their identity; their Ability tab is unavailable.
+
+<img src="docs/images/character-tabs.png" width="640" alt="Status screen with Status Gear and Ability quick tabs">
+
+### See where click-to-walk is going
+
+The green square marks the accepted destination. It clears when you arrive or cancel. Arrow keys or right-click cancel walking.
+
+<img src="docs/images/walking-destination.png" width="640" alt="Green destination square on the field after a click-to-walk command">
+
+## Controls
+
+| Action | Mouse | Keyboard / suggested Steam Input |
 | --- | --- | --- |
-| Select / confirm | Hover / left click | Arrows / Enter |
-| Back or cancel walking | Right click | Escape; arrows cancel walking |
+| Select / confirm | Hover / left click | Arrows / Enter; D-pad / A |
+| Back / cancel walking | Right click | Escape / B; arrows cancel walking |
 | Change battle list page | Wheel or page arrows | Left / Right |
-| Switch Status / Gear / Ability | Top tabs | Page Up / Page Down |
-| Secondary action | Use the displayed hint | Shift |
+| Switch character tabs | Top tabs | Page Up / Page Down; optional LB / RB |
+| Secondary action | Follow the displayed hint | Shift / X |
 
-In the game's **EasyRPG.ini**, keep these keys under its existing **[SB]** section. Change existing values; do not add duplicate sections.
+Native number-entry and name-entry keep their existing controls. Steam Input bindings are suggestions, not a verified Deck layout.
 
-```ini
-[SB]
-BattleUI=1
-BattleMouse=1
-MouseDecide=1
-ClickWalk=1
-```
+## Already playing? Update without replacing saves
 
-Hover never spends an item, purchase, upgrade or attack. A stationary pointer leaves keyboard selection alone. Native number-entry and name-entry keep their existing controls. Reserve characters cannot use the Ability tab.
+1. Close the game and back up the **saves** folder (or your existing custom save location).
+2. Download the smaller [Windows Player update ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton. Extract it separately.
+3. Copy **Player.exe and all .dll files from that same ZIP** into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.
 
-## Need more detail?
+This test.6 Player update does not change game data. Native Linux has no new test.6 binary; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
 
-- [Install, save backup and rollback](INSTALL.md)
-- [Full release notes](RELEASE-NOTES.md)
-- [Steam Deck TEST setup](STEAM-DECK-PROTON-TEST.md) — hardware not verified; keyboard controls retained.
-- [Test coverage and limits](COMPATIBILITY.md) — no full-playthrough claim; native Linux remains test.2.
-- [Credits](CREDITS.md), [licenses](LICENSES.md) and [corresponding source](SOURCE-ACCESS.md).
+## Details
+
+- [Windows setup](WINDOWS.md), [Linux setup](LINUX.md), [Steam Deck setup](STEAM-DECK.md).
+- [Full release notes](RELEASE-NOTES.md) and [tested limits](COMPATIBILITY.md).
+- [Advanced patch installation / older-version migration](INSTALL.md).
+- [Original credits](CREDITS.md), [licenses](LICENSES.md), and [corresponding source](SOURCE-ACCESS.md).
+
+English game content and its original manual/credits are included. The separate Japanese patch remains available for existing supported Japanese installations. Native Linux remains the previously tested Ubuntu 22.04-compatible test.2 runtime. No full-playthrough or physical Deck verification is claimed.
