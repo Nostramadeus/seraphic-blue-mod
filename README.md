@@ -19,6 +19,14 @@ Download → Extract All → Choose your platform below → Play
 
 **Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
 
+## Thank you to the original creators
+
+Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.
+
+Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
+
+[See the full original credits](CREDITS.md).
+
 ## Four things to try
 
 | You do this | You see this |
