@@ -1,72 +1,35 @@
-# Steam Deck Proton TEST — test.5
+# Steam Deck Proton — TEST
 
-## Enemy hover selection
+Use the Windows binary from the Proton TEST package. Hardware has not been tested. Keep the existing game/save folders and their shortcut arguments.
 
-With BattleUI=1, BattleMouse=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over a visible enemy sprite to select it. The enemy name, target icon and cursor follow the selected enemy. Hover selects only; click to confirm the action once.
+## Update safely
 
-Moving over empty background, transparent sprite pixels, hidden, missing or defeated enemies leaves the choice alone. A stationary pointer leaves keyboard and wheel selection alone, and held direction keys take priority. Hover preserves optional and forced all-target selection; an explicit enemy click can return optional all-target selection to one enemy.
+1. Close the game and back up your actual save folder. Saves are Save*.lsd files. If your launcher includes --save-path, that folder is authoritative; otherwise locate your existing saves in the game folder.
+2. Extract the test.6 Windows Player ZIP into a NEW runtime folder. Keep Player.exe and its 42 DLLs together. Keep the previous runtime for rollback.
+3. Point your existing launcher at the new Player.exe. Retain its --project-path, --save-path and --config-path arguments. Keep your existing game data and EasyRPG.ini. If Player lives inside the game folder, replace only Player.exe and its matching DLLs after closing it; leave every other file alone.
+4. Under the existing [SB] section of EasyRPG.ini, retain BattleUI=1, BattleMouse=1, MouseDecide=1 and ClickWalk=1. Change existing keys instead of duplicating them. Launch and check your usual saves before continuing.
 
-This is a runtime-only update. Close the game, back up your actual save folder, and extract the Windows Player ZIP into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Point your existing launcher to the new Player.exe while retaining its --project-path, --save-path and --config-path values. Preserve EasyRPG.ini, game data and saves. The detailed safe-update instructions below still apply.
+This release updates the runtime only. It contains no game database, maps or saves and does not migrate save data. Do not reapply a game-data updater to an already matching test.2 game. Future releases may have different update instructions.
 
+## Suggested Steam Input bindings
 
-## Updating an existing Windows installation safely
+D-pad: arrow keys. A: Enter/Decide. B: Escape/Back. Right trackpad: mouse, click: left mouse. Left trigger: right mouse. X: Shift for secondary actions. Optional bumpers: Page Up/Page Down for character tabs. These are suggested keyboard/mouse mappings, not a verified hardware layout. Every screen retains its native keyboard route.
 
-1. Close the game. Copy your actual save folder somewhere safe. Saves are Save*.lsd files; keep Save*.sav files too if present. If your shortcut or .cmd launcher includes --save-path, use that folder. Otherwise check the game folder. Do not guess from the Player download folder.
-2. Download the Windows Player ZIP for test.5 and extract it into a NEW runtime folder. It contains Player.exe and its 42 DLLs; it contains no game database, maps or saves. Keep the old runtime for rollback.
-3. Point your existing shortcut/launcher at the new Player.exe. Keep its --project-path, --save-path and --config-path values exactly as they were. If your installation keeps Player.exe inside the game folder, you may instead copy ONLY Player.exe and the 42 matching DLLs there after closing the game; leave every other file alone.
-4. Keep your current EasyRPG.ini. Under its existing [SB] section, BattleUI=1, BattleMouse=1 and MouseDecide=1 enable these controls. Do not replace the whole INI or duplicate keys. Launch and check that your usual saves appear before continuing.
+## What changed
 
-This runtime update does not overwrite or migrate saves. A backup still protects against selecting the wrong folder or later saving over a slot. Do not reapply the test.1-to-test.2 game updater to an already updated game. Future releases that change game data may need different instructions: read that release's install guide instead of copying every ZIP over the game.
+- Move the mouse over selectable menu rows/buttons to update their native highlight and information immediately. A stationary pointer leaves keyboard/controller selection alone. Click chooses the pointed entry; empty or outside clicks do not confirm the previous selection.
+- Battle ally targets now support hover and click. Native healing/revival rules remain authoritative; dead allies are not incorrectly excluded. Hover preserves an existing all-target choice. Enemy hover, click targeting and battle page controls from test.5 remain available.
+- Item, ability, equipment, Supplement, Organize, Upgrade, shop, dictionary and native choice/title/save/load screens gain pointer controls appropriate to their layout. Hover only selects; it does not spend items, money, upgrades or an attack.
+- Status / Gear / Ability quick tabs retain the selected character. Page Up/Down also cycles these tabs at stable top-level screens; native Left/Right still changes characters. Abilities remains unavailable for reserve characters. Equipment changes are written back before switching screens.
+- Native hidden-key hints are preserved; Gear and the battle command screen add compact Shift hints where space permits. Shop quantity has visible -10/-1/+1/+10 and Buy/Sell buttons. Supplement has Apply; Upgrade has an Upgrade button. Hover selects amount digits; the wheel adjusts through native rules.
+- Field click walking shows a white hovered-tile outline and a green accepted-destination outline. The destination clears on arrival, manual cancellation or a failed route. NPC clicking still approaches and interacts once.
 
-## Enemy targets and battle list pages
+## Pointer and controller behavior
 
-Click a visible enemy sprite to select and confirm it for a single-target attack. Empty background, transparent sprite pixels, missing and defeated enemies do not confirm. Clicking an enemy switches an optional all-target selection back to that enemy; forced all-target abilities keep targeting everyone. Keyboard targeting and wheel target cycling remain available.
+Mouse movement updates focus on supported selectable controls. Descriptive text and artwork are not treated as buttons. Native number-entry digits and name-entry keyboards keep their existing controls. Native disabled/locked rules, special party restrictions and short final pages remain in charge. Up/down arrows, Enter/Decide, Escape/Back and existing shortcuts remain available. Wheel input changes pages in paged lists; it follows the native row/amount behavior in target, history and amount contexts.
 
-While choosing a battle ability or item, scroll down for the next page and up for the previous page. All magic categories and battle item lists use this same paging route. Move the pointer to highlight a row; click it to choose it. Multi-page lists show < current/total > above the list, with clickable previous/next arrows. Paging wraps at the ends, matching keyboard Left/Right. Single-page lists stay on their page. Other menus retain their existing controls.
+Quick tabs appear only at stable top-level character screens, never during an unfinished target or equipment transaction. Tab hover is feedback only; click or Page Up/Down switches. A reserve character is retained rather than silently replaced by an active character.
 
+## Tested limits
 
-Hardware and Proton remain untested. This package uses the same test.5 Windows Player and 42 DLLs. The stock Flatpak alternative remains a separate older package without custom field clicking.
-
-Extract this Player package into a NEW folder. In Desktop Mode, add its Player.exe as a Non-Steam Game. Enable a Steam-supplied Proton version under Compatibility. Set Start In to the new runtime folder. Keep your existing patched game and save folders; set launch options to their actual absolute paths:
-
-```sh
---project-path "EXISTING-TEST2-GAME" --save-path "ACTUAL-EXISTING-SAVE-FOLDER"
-```
-
-Edit EasyRPG.ini in that GAME folder as described below. If replacing an existing Steam shortcut, keep its actual save-path value. Do not assume the new runtime folder contains your saves.
-
-Right trackpad: mouse; trackpad click: left mouse button. D-pad: keyboard arrows; A: Enter; B: Escape; left trigger: right mouse button. These are suggested Steam Input bindings, not a tested controller layout.
-
-## Enable field clicking in an existing test.2 game
-
-1. Make an ordinary save, close the game and back up your actual save folder. If your launcher has --save-path, that exact folder holds your saves; keep using it.
-2. Extract the test.5 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.
-3. Open EasyRPG.ini inside your patched GAME folder. Under its existing [SB] section, add ClickWalk=1 and keep MouseDecide=1. Change existing values instead of adding duplicate keys or a second [SB] section. Keep every other setting. RPG_RT.ini is a different file.
-
-```ini
-[SB]
-MouseDecide=1
-ClickWalk=1
-```
-
-4. Launch the NEW runtime with your SAME game and actual save path. Use full paths in your own launcher:
-
-```sh
-"NEW-RUNTIME/Player.exe" --project-path "EXISTING-TEST2-GAME" --save-path "ACTUAL-EXISTING-SAVE-FOLDER"
-```
-
-This changes the runtime and opt-in configuration only. Do not run the test.1-to-test.2 updater again for a test.2 game. Do not replace the game data or move saves for this runtime update. To turn field clicking off, set ClickWalk=0. Roll back by selecting the old runtime and restoring your configuration backup.
-
-## Field clicking
-
-With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event's ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.
-
-Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.
-
-## Main menu mouse selection
-
-With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.
-
-Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.
-
-Keep the old shortcut/runtime and save backup for rollback. Report your Proton version and sanitized reproduction steps. Issues are public: remove private paths, usernames and contact/location information from screenshots and excerpts.
+Focused native replay/build evidence is listed in [COMPATIBILITY](COMPATIBILITY.html). No physical Steam Deck/Proton, full-playthrough or universal-save compatibility claim is made.

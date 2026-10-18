@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-test.6
+
+Ally targets, scripted and native menu pointer support, character quick tabs, contextual hints and field tile/destination feedback. Runtime-only update.
+
 ## v0.1.0-test.5
 
 Mouse motion selects a visible enemy and refreshes the native name, target icon and cursor without attacking. Keyboard priority and all-target choices are preserved. Runtime-only update.
