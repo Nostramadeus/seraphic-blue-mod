@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-test.3
+
+Opt-in ground click walking, cardinal NPC approach and interaction once, and keyboard/right-click cancellation. Windows/Proton runtime-only update; existing test.2 patches retained.
+
 ## v0.1.0-test.2
 
 Direct category clicks, motion-only native highlights, scoped target wheel, short timeline names with duplicate-only suffixes, and a verified-backup updater from matching test.1. Existing translation/help/HP-TP fixes retained.

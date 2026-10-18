@@ -1,27 +1,59 @@
-# Seraphic Blue MOD — v0.1.0-test.2
+# Seraphic Blue MOD — v0.1.0-test.3
 
-Unofficial TEST patches, custom EasyRPG Player and a separate full English game package for stock Flatpak. The test.2 patches require your own supported EN or JP game; the full Flatpak package includes older test.1 MOD data.
+Optional field click walking, one-time NPC interaction and direct main-menu mouse selection for the custom Windows Player and Steam Deck Proton TEST route. Existing test.2 EN/JP game patches are unchanged.
 
-## Controls in test.2
+## Field clicking
+
+With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event's ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.
+
+Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.
+
+## Main menu mouse selection
+
+With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.
+
+Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.
+
+## Enable field clicking in an existing test.2 game
+
+1. Make an ordinary save, close the game and back up your actual save folder. If your launcher has --save-path, that exact folder holds your saves; keep using it.
+2. Extract the test.3 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.
+3. Open EasyRPG.ini inside your patched GAME folder. Under its existing [SB] section, add ClickWalk=1 and keep MouseDecide=1. Change existing values instead of adding duplicate keys or a second [SB] section. Keep every other setting. RPG_RT.ini is a different file.
+
+```ini
+[SB]
+MouseDecide=1
+ClickWalk=1
+```
+
+4. Launch the NEW runtime with your SAME game and actual save path. Use full paths in your own launcher:
+
+```sh
+"NEW-RUNTIME/Player.exe" --project-path "EXISTING-TEST2-GAME" --save-path "ACTUAL-EXISTING-SAVE-FOLDER"
+```
+
+This changes the runtime and opt-in configuration only. Do not run the test.1-to-test.2 updater again for a test.2 game. Do not replace the game data or move saves for this runtime update. To turn field clicking off, set ClickWalk=0. Roll back by selecting the old runtime and restoring your configuration backup.
+
+## Downloads
+
+- [Windows Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.3/seraphic-blue-player-windows-x86_64-v0.1.0-test.3.zip)
+- [Deck Proton TEST Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.3/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.3.zip)
+- [Complete corresponding Player source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.3/seraphic-blue-player-source-v0.1.0-test.3.zip)
+- [Unchanged EN patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip) / [unchanged JP patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip)
+- [Unchanged dependency sources](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip)
+- [Native Ubuntu22.04 test.2 Player, without field clicking](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-ubuntu22.04-x86_64-v0.1.0-test.2.zip)
+
+Read [INSTALL](INSTALL.html), [COMPATIBILITY](COMPATIBILITY.html), [Deck Proton guide](STEAM-DECK-PROTON-TEST.html), and [SOURCE-ACCESS](SOURCE-ACCESS.md). New installs apply the existing test.2 patch first, then enable this runtime.
+
+## Retained test.2 battle controls
 
 - Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.
 - Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.
 - Wheel up/down cycles main commands left/right and category/ability lists vertically. During enemy selection it uses native Left/Right to cycle eligible living targets. Physical Up/Down retains the all-target toggle. Detailed data pages still use Decide/Back.
 - Action-time labels show short actor/enemy names without hover. Only duplicates get numbers, ranked by occupied slots even while a marker is hidden. Native target opacity is retained.
 - Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.
-- Other picture menus keep their existing selected-command behavior. Target-sprite clicking and click-to-walk are not included. MOD settings and optional cheats remain available.
+- Main-menu mouse selection is described above; other picture submenus keep their existing selected-command behavior. Battle target-sprite clicking is not included. MOD settings and optional cheats remain available.
 
-## Downloads and first launch
-
-- [EN patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip)
-- [JP patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip)
-- [Windows Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-windows-x86_64-v0.1.0-test.2.zip)
-- [Ubuntu 22.04 Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-ubuntu22.04-x86_64-v0.1.0-test.2.zip)
-- [Deck Proton TEST Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.2.zip)
-- [Player and tooling source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-source-v0.1.0-test.2.zip)
-- [Dependency sources](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip)
-
-Read [INSTALL](INSTALL.html), [COMPATIBILITY](COMPATIBILITY.html) and the [Deck TEST guide](STEAM-DECK-PROTON-TEST.html). Fresh installs use apply_patch.py into a new folder; existing test.1 players use the update instructions below. Download the matching Player separately.
 
 ## Steam Deck: full game for stock EasyRPG Flatpak
 
@@ -52,17 +84,3 @@ Player.exe --project-path "NEW-GAME-FOLDER" --save-path "NEW-GAME-FOLDER"
 ## Source and rights
 
 See [SOURCE-ACCESS](SOURCE-ACCESS.md), [SOURCES](SOURCES.json), [LICENSES](LICENSES.md) and [CREDITS](CREDITS.md). MIT covers our authored scripts/docs only. Player, libraries, game, translation and derived art retain their own rights. No endorsement or new republication permission is implied.
-
-# Compatibility and tested limits — test.2
-
-Windows x86-64: Player SHA256 ae939308a7dbb08c1d70e4015e56df6ba0369cb796f6a22777abeddecca17d71, with the same 42 verified MSYS2 DLLs. New native replay checks: 53/53 EN input, 8/8 selected JP input, 9/9 EN timeline and 4/4 JP timeline. Both languages' native panel and label screenshots were visually reviewed. Timeline lifecycle checks cover hiding, erasure, revival, transformation, an initially empty slot becoming occupied, and ending art reusing a picture ID.
-
-Retained test.1 evidence: 145 message-frame comparisons and prior MOD/field-save checks. Pause source is unchanged; no new pause sweep. The unchanged installer retains its 20-case adversarial result. The exact updater passed 18 independent real-xdelta cases, including changed sources and hard interruption. No real user saves were migrated in these tests.
-
-Native Linux targets Ubuntu 22.04 x86-64, with only liblcf bundled. Player SHA256 a83eb60af4044b23f4210ff961de5804d1c74c4ccb6d04109734e258cb7bb800. Root built the accepted source and ran four headless replay/screenshot fixtures; relative liblcf loading was checked.
-
-Steam Deck uses the identical Windows Player/DLLs through Proton in a hardware-unverified TEST package. No Deck hardware, Proton version or audio was tested. Ubuntu is not a universal Linux/Deck binary. Stock EasyRPG/Flatpak/EmuDeck lacks these custom changes.
-
-Logical replays are not physical mouse proof. The owner's earlier Windy click was one positive physical case only. Full native item-Back, full playthrough and universal save compatibility remain unverified. Debug saves during a waiting battle-input prompt have an existing 8-bit variable limitation. No autosave, command palette or parked guide/font overhaul is included.
-
-Issues and attachments are public. Share only sanitized minimal steps/screenshots; redact private paths, usernames, contact/location details. Keep raw logs private. Do not upload full games or arbitrary saves.

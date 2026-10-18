@@ -1,6 +1,40 @@
-# Install the Seraphic Blue test MOD
+# Install test.3 mouse controls
 
-These instructions cover the test.2 patches, which need your own supported original game. For a separate full English game with older test.1 MOD data, see STEAM-DECK-FLATPAK-TEST.html. The patch archives contain no full game, original executable, separately added RTP sounds or Windows fonts. Back up the game and saves; close the game before copying.
+## Enable field clicking in an existing test.2 game
+
+1. Make an ordinary save, close the game and back up your actual save folder. If your launcher has --save-path, that exact folder holds your saves; keep using it.
+2. Extract the test.3 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.
+3. Open EasyRPG.ini inside your patched GAME folder. Under its existing [SB] section, add ClickWalk=1 and keep MouseDecide=1. Change existing values instead of adding duplicate keys or a second [SB] section. Keep every other setting. RPG_RT.ini is a different file.
+
+```ini
+[SB]
+MouseDecide=1
+ClickWalk=1
+```
+
+4. Launch the NEW runtime with your SAME game and actual save path. Use full paths in your own launcher:
+
+```sh
+"NEW-RUNTIME/Player.exe" --project-path "EXISTING-TEST2-GAME" --save-path "ACTUAL-EXISTING-SAVE-FOLDER"
+```
+
+This changes the runtime and opt-in configuration only. Do not run the test.1-to-test.2 updater again for a test.2 game. Do not replace the game data or move saves for this runtime update. To turn field clicking off, set ClickWalk=0. Roll back by selecting the old runtime and restoring your configuration backup.
+
+## Field clicking
+
+With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event's ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.
+
+Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.
+
+## Main menu mouse selection
+
+With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.
+
+Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.
+
+## Fresh game installation or older test.1 game
+
+Use the unchanged [EN test.2 patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip) or [JP test.2 patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip). Once your test.2 game is ready, follow the runtime-only steps above. Native Linux remains test.2 without field clicking; its unchanged setup is documented in the [test.2 install guide](https://github.com/Nostramadeus/seraphic-blue-mod/blob/v0.1.0-test.2/INSTALL.md).
 
 ## Choose one edition
 
@@ -22,39 +56,6 @@ python3 apply_patch.py --base "PATH-TO-ORIGINAL" --out "NEW-GAME-FOLDER"
 ```
 
 The output must not exist or overlap the game/patch. Wrong base or corrupt inputs stop before creating output. Original files and saves remain read-only; existing saves copy unchanged. Later decoding failure can leave a partial output: do not play it. Resolve the error and retry with a fresh output path.
-
-## Launch the custom Player
-
-Windows: extract the Windows Player package, keep its 42 DLLs beside Player.exe, and launch Player.exe --project-path "NEW-GAME-FOLDER" --save-path "NEW-GAME-FOLDER". Alternatively place those Player files beside RPG_RT.ldb and use the current-directory command below. Keep the patch's EasyRPG.ini.
-
-```sh
-Player.exe --project-path . --save-path .
-```
-
-Linux: the native package targets Ubuntu 22.04 x86-64 and bundles only liblcf; it is not universal. On an Ubuntu 22.04 system, install these runtime packages (APT also installs their dependencies):
-
-```sh
-sudo apt update
-sudo apt install libsdl2-2.0-0 libfmt8 libicu70 libexpat1 libinih1 libpixman-1-0 libpng16-16 libfreetype6 libharfbuzz0b libmpg123-0 libvorbisfile3 libopusfile0 libfluidsynth3 libsndfile1 libspeexdsp1 libxmp4 libreadline8
-```
-
-From the extracted native Player directory, launch with:
-
-```sh
-chmod +x Player
-./Player --project-path "PATH-TO-PATCHED-GAME" --save-path "PATH-TO-PATCHED-GAME"
-```
-
-These package names match the recorded Ubuntu 22.04 build environment; this installation command was not run on a new machine. If a library is missing, check runtime-dependency-names.txt and ldd ./Player. Do NOT apply these APT instructions to SteamOS. Steam Deck users follow the separate hardware-unverified Proton TEST guide/package, not an assumed native-compatible binary.
-
-## Controls in test.2
-
-- Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.
-- Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.
-- Wheel up/down cycles main commands left/right and category/ability lists vertically. During enemy selection it uses native Left/Right to cycle eligible living targets. Physical Up/Down retains the all-target toggle. Detailed data pages still use Decide/Back.
-- Action-time labels show short actor/enemy names without hover. Only duplicates get numbers, ranked by occupied slots even while a marker is hidden. Native target opacity is retained.
-- Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.
-- Other picture menus keep their existing selected-command behavior. Target-sprite clicking and click-to-walk are not included. MOD settings and optional cheats remain available.
 
 ## Update from matching test.1 and keep saves
 

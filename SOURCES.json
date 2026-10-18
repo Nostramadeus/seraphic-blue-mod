@@ -1,8 +1,8 @@
 {
-  "releaseTag": "v0.1.0-test.2",
-  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/",
+  "releaseTag": "v0.1.0-test.3",
+  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.3/",
   "sourceBundle": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip",
-  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-source-v0.1.0-test.2.zip",
+  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.3/seraphic-blue-player-source-v0.1.0-test.3.zip",
   "packages": [
     {
       "pkgbase": "mingw-w64-readline",

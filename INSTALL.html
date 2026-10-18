@@ -1,8 +1,25 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>INSTALL</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}</style><nav><a href="#section-1">Choose one edition</a> <a href="#section-2">Apply into a new copy</a> <a href="#section-3">Launch the custom Player</a> <a href="#section-4">Controls in test.2</a> <a href="#section-5">Update from matching test.1 and keep saves</a> <a href="#section-6">Backup, sounds and rollback</a></nav><h1>Install the Seraphic Blue test MOD</h1>
-<p>These instructions cover the test.2 patches, which need your own supported original game. For a separate full English game with older test.1 MOD data, see STEAM-DECK-FLATPAK-TEST.html. The patch archives contain no full game, original executable, separately added RTP sounds or Windows fonts. Back up the game and saves; close the game before copying.</p>
-<h2 id="section-1">Choose one edition</h2>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>INSTALL</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}</style><nav><a href="#section-1">Enable field clicking in an existing test.2 game</a> <a href="#section-2">Field clicking</a> <a href="#section-3">Main menu mouse selection</a> <a href="#section-4">Fresh game installation or older test.1 game</a> <a href="#section-5">Choose one edition</a> <a href="#section-6">Apply into a new copy</a> <a href="#section-7">Update from matching test.1 and keep saves</a> <a href="#section-8">Backup, sounds and rollback</a></nav><h1>Install test.3 mouse controls</h1>
+<h2 id="section-1">Enable field clicking in an existing test.2 game</h2>
+<p>1. Make an ordinary save, close the game and back up your actual save folder. If your launcher has --save-path, that exact folder holds your saves; keep using it.</p>
+<p>2. Extract the test.3 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.</p>
+<p>3. Open EasyRPG.ini inside your patched GAME folder. Under its existing [SB] section, add ClickWalk=1 and keep MouseDecide=1. Change existing values instead of adding duplicate keys or a second [SB] section. Keep every other setting. RPG_RT.ini is a different file.</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>[SB]
+MouseDecide=1
+ClickWalk=1</code></pre>
+<p>4. Launch the NEW runtime with your SAME game and actual save path. Use full paths in your own launcher:</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>&quot;NEW-RUNTIME/Player.exe&quot; --project-path &quot;EXISTING-TEST2-GAME&quot; --save-path &quot;ACTUAL-EXISTING-SAVE-FOLDER&quot;</code></pre>
+<p>This changes the runtime and opt-in configuration only. Do not run the test.1-to-test.2 updater again for a test.2 game. Do not replace the game data or move saves for this runtime update. To turn field clicking off, set ClickWalk=0. Roll back by selecting the old runtime and restoring your configuration backup.</p>
+<h2 id="section-2">Field clicking</h2>
+<p>With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event&#x27;s ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.</p>
+<p>Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.</p>
+<h2 id="section-3">Main menu mouse selection</h2>
+<p>With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.</p>
+<p>Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.</p>
+<h2 id="section-4">Fresh game installation or older test.1 game</h2>
+<p>Use the unchanged <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip">EN test.2 patch</a> or <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip">JP test.2 patch</a>. Once your test.2 game is ready, follow the runtime-only steps above. Native Linux remains test.2 without field clicking; its unchanged setup is documented in the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/blob/v0.1.0-test.2/INSTALL.md">test.2 install guide</a>.</p>
+<h2 id="section-5">Choose one edition</h2>
 <p>EN requires the exact English Director&#x27;s Cut extraction identified by RPG_RT.ldb SHA256 abc355a601abb2bf1d2eb744d76a114eb1adc6e7841b5974561d18e4a4621288. JP requires the exact Japanese Director&#x27;s Cut extraction identified by RPG_RT.ldb SHA256 8da84e7cd40d3a0153f6392b4a0e7bf40eb302e65ad49d5b07d3771ad2a63d53. These are exact-content fingerprints, not an independent download-provenance guarantee. The installer checks the complete supported base, not only this database.</p>
-<h2 id="section-2">Apply into a new copy</h2>
+<h2 id="section-6">Apply into a new copy</h2>
 <p>Extract the matching patch separately from the untouched original. Use Python 3.10 or newer. Run commands from the extracted patch directory, not the standalone repository source copy.</p>
 <p>Windows:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>py -3 apply_patch.py --base &quot;PATH-TO-ORIGINAL&quot; --out &quot;NEW-GAME-FOLDER&quot;</code></pre>
@@ -10,26 +27,7 @@
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>chmod +x tools/linux-x86_64/xdelta3decode
 python3 apply_patch.py --base &quot;PATH-TO-ORIGINAL&quot; --out &quot;NEW-GAME-FOLDER&quot;</code></pre>
 <p>The output must not exist or overlap the game/patch. Wrong base or corrupt inputs stop before creating output. Original files and saves remain read-only; existing saves copy unchanged. Later decoding failure can leave a partial output: do not play it. Resolve the error and retry with a fresh output path.</p>
-<h2 id="section-3">Launch the custom Player</h2>
-<p>Windows: extract the Windows Player package, keep its 42 DLLs beside Player.exe, and launch Player.exe --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;. Alternatively place those Player files beside RPG_RT.ldb and use the current-directory command below. Keep the patch&#x27;s EasyRPG.ini.</p>
-<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Player.exe --project-path . --save-path .</code></pre>
-<p>Linux: the native package targets Ubuntu 22.04 x86-64 and bundles only liblcf; it is not universal. On an Ubuntu 22.04 system, install these runtime packages (APT also installs their dependencies):</p>
-<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>sudo apt update
-sudo apt install libsdl2-2.0-0 libfmt8 libicu70 libexpat1 libinih1 libpixman-1-0 libpng16-16 libfreetype6 libharfbuzz0b libmpg123-0 libvorbisfile3 libopusfile0 libfluidsynth3 libsndfile1 libspeexdsp1 libxmp4 libreadline8</code></pre>
-<p>From the extracted native Player directory, launch with:</p>
-<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>chmod +x Player
-./Player --project-path &quot;PATH-TO-PATCHED-GAME&quot; --save-path &quot;PATH-TO-PATCHED-GAME&quot;</code></pre>
-<p>These package names match the recorded Ubuntu 22.04 build environment; this installation command was not run on a new machine. If a library is missing, check runtime-dependency-names.txt and ldd ./Player. Do NOT apply these APT instructions to SteamOS. Steam Deck users follow the separate hardware-unverified Proton TEST guide/package, not an assumed native-compatible binary.</p>
-<h2 id="section-4">Controls in test.2</h2>
-<ul>
-<li>Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.</li>
-<li>Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.</li>
-<li>Wheel up/down cycles main commands left/right and category/ability lists vertically. During enemy selection it uses native Left/Right to cycle eligible living targets. Physical Up/Down retains the all-target toggle. Detailed data pages still use Decide/Back.</li>
-<li>Action-time labels show short actor/enemy names without hover. Only duplicates get numbers, ranked by occupied slots even while a marker is hidden. Native target opacity is retained.</li>
-<li>Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.</li>
-<li>Other picture menus keep their existing selected-command behavior. Target-sprite clicking and click-to-walk are not included. MOD settings and optional cheats remain available.</li>
-</ul>
-<h2 id="section-5">Update from matching test.1 and keep saves</h2>
+<h2 id="section-7">Update from matching test.1 and keep saves</h2>
 <p>Make an ordinary Memory Tree save and close the game. Extract the matching EN or JP test.2 patch separately. Keep your untouched pristine base, supported same-edition test.1 game and actual save folder. The --saves folder must match the old launcher&#x27;s --save-path; if it used the default, use the old game folder. Do not guess a custom save location.</p>
 <p>Windows, from the extracted patch directory:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>py -3 update_game.py --base &quot;PRISTINE-BASE&quot; --current &quot;OLD-TEST1-GAME&quot; --saves &quot;ACTUAL-OLD-SAVE-FOLDER&quot; --out &quot;NEW-GAME-FOLDER&quot; --backup &quot;NEW-SAVE-BACKUP&quot;</code></pre>
@@ -39,5 +37,5 @@ sudo apt install libsdl2-2.0-0 libfmt8 libicu70 libexpat1 libinih1 libpixman-1-0
 <p>Launch the NEW game with its NEW save folder, not the old custom path:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Player.exe --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;
 ./Player --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;</code></pre>
-<h2 id="section-6">Backup, sounds and rollback</h2>
+<h2 id="section-8">Backup, sounds and rollback</h2>
 <p>Keep untouched originals and save backups. No universal cross-version save compatibility or full playthrough is claimed. Restore your untouched backup to roll back. The 19 separately sourced RTP sounds are omitted: use the official RPG Maker 2000 RTP installation when needed: <a href="https://rpgmakerofficial.com/support/rtp/">https://rpgmakerofficial.com/support/rtp/</a> . Preserve the original manual and complete credits. This unofficial patch does not establish game/translation republication permission.</p></html>

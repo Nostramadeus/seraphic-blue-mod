@@ -1,13 +1,19 @@
-# Compatibility and tested limits — test.2
+# Compatibility — test.3
 
-Windows x86-64: Player SHA256 ae939308a7dbb08c1d70e4015e56df6ba0369cb796f6a22777abeddecca17d71, with the same 42 verified MSYS2 DLLs. New native replay checks: 53/53 EN input, 8/8 selected JP input, 9/9 EN timeline and 4/4 JP timeline. Both languages' native panel and label screenshots were visually reviewed. Timeline lifecycle checks cover hiding, erasure, revival, transformation, an initially empty slot becoming occupied, and ending art reusing a picture ID.
+Windows x86-64 custom Player; opt-in field clicking and direct main-menu selection. Steam Deck uses the identical Windows binary through Proton and remains hardware-unverified. The native Ubuntu22.04 download remains test.2 without field clicking or the new main-menu selection. Fullgame Flatpak retains stock-runtime limits.
 
-Retained test.1 evidence: 145 message-frame comparisons and prior MOD/field-save checks. Pause source is unchanged; no new pause sweep. The unchanged installer retains its 20-case adversarial result. The exact updater passed 18 independent real-xdelta cases, including changed sources and hard interruption. No real user saves were migrated in these tests.
+## Field clicking
 
-Native Linux targets Ubuntu 22.04 x86-64, with only liblcf bundled. Player SHA256 a83eb60af4044b23f4210ff961de5804d1c74c4ccb6d04109734e258cb7bb800. Root built the accepted source and ran four headless replay/screenshot fixtures; relative liblcf loading was checked.
+With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event's ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.
 
-Steam Deck uses the identical Windows Player/DLLs through Proton in a hardware-unverified TEST package. No Deck hardware, Proton version or audio was tested. Ubuntu is not a universal Linux/Deck binary. Stock EasyRPG/Flatpak/EmuDeck lacks these custom changes.
+Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.
 
-Logical replays are not physical mouse proof. The owner's earlier Windy click was one positive physical case only. Full native item-Back, full playthrough and universal save compatibility remain unverified. Debug saves during a waiting battle-input prompt have an existing 8-bit variable limitation. No autosave, command palette or parked guide/font overhaul is included.
+## Main menu mouse selection
 
-Issues and attachments are public. Share only sanitized minimal steps/screenshots; redact private paths, usernames, contact/location details. Keep raw logs private. Do not upload full games or arbitrary saves.
+With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.
+
+Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.
+
+Windows build passed. Focused engine tests: 15 cases and 345 assertions, including obstacle routing, unreachable targets, moving NPC approach once, cancellation, context gates and mouse mapping. Actual native field replay reached the clicked tile and preserved source save/map bytes; full native menu Ability hover visually accepted. Four battle category and ability hover/click regressions passed. Separate native main-menu checks passed 31 cases. Automated replay and engine fixtures do not claim physical mouse or Steam Deck/Linux runtime testing. NPC targeting uses the event feet tile.
+
+Player SHA256 f94387c12b7247c1a8ed04a1316a15e0eb89b2bda58ef13223e0715074298814. Existing battle/MOD checks belong to test.2 and are not a new complete gameplay pass. Full playthrough, universal save compatibility and physical Deck input remain unverified.
