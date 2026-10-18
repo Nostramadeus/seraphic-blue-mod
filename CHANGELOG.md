@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-test.4
+
+Direct enemy sprite targeting; battle ability/item wheel paging and clickable page counter. Runtime-only update, saves and game data retained.
+
 ## v0.1.0-test.3
 
 Opt-in ground click walking, cardinal NPC approach and interaction once, and keyboard/right-click cancellation. Windows/Proton runtime-only update; existing test.2 patches retained.

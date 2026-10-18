@@ -1,19 +1,22 @@
-# Compatibility — test.3
+# Compatibility — test.4
 
-Windows x86-64 custom Player; opt-in field clicking and direct main-menu selection. Steam Deck uses the identical Windows binary through Proton and remains hardware-unverified. The native Ubuntu22.04 download remains test.2 without field clicking or the new main-menu selection. Fullgame Flatpak retains stock-runtime limits.
+## Updating an existing Windows installation safely
 
-## Field clicking
+1. Close the game. Copy your actual save folder somewhere safe. Saves are Save*.lsd files; keep Save*.sav files too if present. If your shortcut or .cmd launcher includes --save-path, use that folder. Otherwise check the game folder. Do not guess from the Player download folder.
+2. Download the Windows Player ZIP for test.4 and extract it into a NEW runtime folder. It contains Player.exe and its 42 DLLs; it contains no game database, maps or saves. Keep the old runtime for rollback.
+3. Point your existing shortcut/launcher at the new Player.exe. Keep its --project-path, --save-path and --config-path values exactly as they were. If your installation keeps Player.exe inside the game folder, you may instead copy ONLY Player.exe and the 42 matching DLLs there after closing the game; leave every other file alone.
+4. Keep your current EasyRPG.ini. Under its existing [SB] section, BattleUI=1, BattleMouse=1 and MouseDecide=1 enable these controls. Do not replace the whole INI or duplicate keys. Launch and check that your usual saves appear before continuing.
 
-With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event's ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.
+This runtime update does not overwrite or migrate saves. A backup still protects against selecting the wrong folder or later saving over a slot. Do not reapply the test.1-to-test.2 game updater to an already updated game. Future releases that change game data may need different instructions: read that release's install guide instead of copying every ZIP over the game.
 
-Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.
+## Enemy targets and battle list pages
 
-## Main menu mouse selection
+Click a visible enemy sprite to select and confirm it for a single-target attack. Empty background, transparent sprite pixels, missing and defeated enemies do not confirm. Clicking an enemy switches an optional all-target selection back to that enemy; forced all-target abilities keep targeting everyone. Keyboard targeting and wheel target cycling remain available.
 
-With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.
+While choosing a battle ability or item, scroll down for the next page and up for the previous page. All magic categories and battle item lists use this same paging route. Move the pointer to highlight a row; click it to choose it. Multi-page lists show < current/total > above the list, with clickable previous/next arrows. Paging wraps at the ends, matching keyboard Left/Right. Single-page lists stay on their page. Other menus retain their existing controls.
 
-Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.
+Windows production build passed. Native replays passed 17 enemy-target/regression checks before paging integration; the final build passed 12 ability/item paging checks and 3 EN/JP targeting/paging rechecks. The prior test.3 enemy-click failure was reproduced on the same fixture. Page-counter screenshots were inspected. No full-playthrough or physical Steam Deck verification is claimed.
 
-Windows build passed. Focused engine tests: 15 cases and 345 assertions, including obstacle routing, unreachable targets, moving NPC approach once, cancellation, context gates and mouse mapping. Actual native field replay reached the clicked tile and preserved source save/map bytes; full native menu Ability hover visually accepted. Four battle category and ability hover/click regressions passed. Separate native main-menu checks passed 31 cases. Automated replay and engine fixtures do not claim physical mouse or Steam Deck/Linux runtime testing. NPC targeting uses the event feet tile.
+Player SHA256 fcefa37cefa9269b032ec395e49528d163db5233086293e89f3c63c6bbc36f5a.
 
-Player SHA256 f94387c12b7247c1a8ed04a1316a15e0eb89b2bda58ef13223e0715074298814. Existing battle/MOD checks belong to test.2 and are not a new complete gameplay pass. Full playthrough, universal save compatibility and physical Deck input remain unverified.
+Windows x86-64 tested with native input replays. Steam Deck/Proton hardware, full playthrough and universal save compatibility remain unverified. Native Linux stays at test.2; Flatpak addon stays on older test.1 game data with stock runtime.
