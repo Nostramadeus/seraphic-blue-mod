@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-test.5
+
+Mouse motion selects a visible enemy and refreshes the native name, target icon and cursor without attacking. Keyboard priority and all-target choices are preserved. Runtime-only update.
+
 ## v0.1.0-test.4
 
 Direct enemy sprite targeting; battle ability/item wheel paging and clickable page counter. Runtime-only update, saves and game data retained.

@@ -1,9 +1,18 @@
-# Seraphic Blue MOD — v0.1.0-test.4
+# Seraphic Blue MOD — v0.1.0-test.5
+
+## Enemy hover selection
+
+With BattleUI=1, BattleMouse=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over a visible enemy sprite to select it. The enemy name, target icon and cursor follow the selected enemy. Hover selects only; click to confirm the action once.
+
+Moving over empty background, transparent sprite pixels, hidden, missing or defeated enemies leaves the choice alone. A stationary pointer leaves keyboard and wheel selection alone, and held direction keys take priority. Hover preserves optional and forced all-target selection; an explicit enemy click can return optional all-target selection to one enemy.
+
+This is a runtime-only update. Close the game, back up your actual save folder, and extract the Windows Player ZIP into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Point your existing launcher to the new Player.exe while retaining its --project-path, --save-path and --config-path values. Preserve EasyRPG.ini, game data and saves. The detailed safe-update instructions below still apply.
+
 
 ## Updating an existing Windows installation safely
 
 1. Close the game. Copy your actual save folder somewhere safe. Saves are Save*.lsd files; keep Save*.sav files too if present. If your shortcut or .cmd launcher includes --save-path, use that folder. Otherwise check the game folder. Do not guess from the Player download folder.
-2. Download the Windows Player ZIP for test.4 and extract it into a NEW runtime folder. It contains Player.exe and its 42 DLLs; it contains no game database, maps or saves. Keep the old runtime for rollback.
+2. Download the Windows Player ZIP for test.5 and extract it into a NEW runtime folder. It contains Player.exe and its 42 DLLs; it contains no game database, maps or saves. Keep the old runtime for rollback.
 3. Point your existing shortcut/launcher at the new Player.exe. Keep its --project-path, --save-path and --config-path values exactly as they were. If your installation keeps Player.exe inside the game folder, you may instead copy ONLY Player.exe and the 42 matching DLLs there after closing the game; leave every other file alone.
 4. Keep your current EasyRPG.ini. Under its existing [SB] section, BattleUI=1, BattleMouse=1 and MouseDecide=1 enable these controls. Do not replace the whole INI or duplicate keys. Launch and check that your usual saves appear before continuing.
 
@@ -33,7 +42,7 @@ Battle categories and ability/item rows retain the test.2 hover and direct-click
 ## Enable field clicking in an existing test.2 game
 
 1. Make an ordinary save, close the game and back up your actual save folder. If your launcher has --save-path, that exact folder holds your saves; keep using it.
-2. Extract the test.4 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.
+2. Extract the test.5 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.
 3. Open EasyRPG.ini inside your patched GAME folder. Under its existing [SB] section, add ClickWalk=1 and keep MouseDecide=1. Change existing values instead of adding duplicate keys or a second [SB] section. Keep every other setting. RPG_RT.ini is a different file.
 
 ```ini
@@ -52,9 +61,9 @@ This changes the runtime and opt-in configuration only. Do not run the test.1-to
 
 ## Downloads
 
-- [Windows Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-windows-x86_64-v0.1.0-test.4.zip)
-- [Deck Proton TEST Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.4.zip)
-- [Complete corresponding Player source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-source-v0.1.0-test.4.zip)
+- [Windows Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-windows-x86_64-v0.1.0-test.5.zip)
+- [Deck Proton TEST Player](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.5.zip)
+- [Complete corresponding Player source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-source-v0.1.0-test.5.zip)
 - [Unchanged EN patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip) / [unchanged JP patch](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip)
 - [Unchanged dependency sources](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip)
 - [Native Ubuntu22.04 test.2 Player, without field clicking](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-ubuntu22.04-x86_64-v0.1.0-test.2.zip)

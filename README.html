@@ -1,23 +1,27 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>README</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}</style><nav><a href="#section-1">Updating an existing Windows installation safely</a> <a href="#section-2">Enemy targets and battle list pages</a> <a href="#section-3">Field clicking</a> <a href="#section-4">Main menu mouse selection</a> <a href="#section-5">Enable field clicking in an existing test.2 game</a> <a href="#section-6">Downloads</a> <a href="#section-7">Retained test.2 battle controls</a> <a href="#section-8">Steam Deck: full game for stock EasyRPG Flatpak</a> <a href="#section-9">Update from matching test.1 and keep saves</a> <a href="#section-10">Source and rights</a></nav><h1>Seraphic Blue MOD — v0.1.0-test.4</h1>
-<h2 id="section-1">Updating an existing Windows installation safely</h2>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>README</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}</style><nav><a href="#section-1">Enemy hover selection</a> <a href="#section-2">Updating an existing Windows installation safely</a> <a href="#section-3">Enemy targets and battle list pages</a> <a href="#section-4">Field clicking</a> <a href="#section-5">Main menu mouse selection</a> <a href="#section-6">Enable field clicking in an existing test.2 game</a> <a href="#section-7">Downloads</a> <a href="#section-8">Retained test.2 battle controls</a> <a href="#section-9">Steam Deck: full game for stock EasyRPG Flatpak</a> <a href="#section-10">Update from matching test.1 and keep saves</a> <a href="#section-11">Source and rights</a></nav><h1>Seraphic Blue MOD — v0.1.0-test.5</h1>
+<h2 id="section-1">Enemy hover selection</h2>
+<p>With BattleUI=1, BattleMouse=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over a visible enemy sprite to select it. The enemy name, target icon and cursor follow the selected enemy. Hover selects only; click to confirm the action once.</p>
+<p>Moving over empty background, transparent sprite pixels, hidden, missing or defeated enemies leaves the choice alone. A stationary pointer leaves keyboard and wheel selection alone, and held direction keys take priority. Hover preserves optional and forced all-target selection; an explicit enemy click can return optional all-target selection to one enemy.</p>
+<p>This is a runtime-only update. Close the game, back up your actual save folder, and extract the Windows Player ZIP into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Point your existing launcher to the new Player.exe while retaining its --project-path, --save-path and --config-path values. Preserve EasyRPG.ini, game data and saves. The detailed safe-update instructions below still apply.</p>
+<h2 id="section-2">Updating an existing Windows installation safely</h2>
 <p>1. Close the game. Copy your actual save folder somewhere safe. Saves are Save*.lsd files; keep Save*.sav files too if present. If your shortcut or .cmd launcher includes --save-path, use that folder. Otherwise check the game folder. Do not guess from the Player download folder.</p>
-<p>2. Download the Windows Player ZIP for test.4 and extract it into a NEW runtime folder. It contains Player.exe and its 42 DLLs; it contains no game database, maps or saves. Keep the old runtime for rollback.</p>
+<p>2. Download the Windows Player ZIP for test.5 and extract it into a NEW runtime folder. It contains Player.exe and its 42 DLLs; it contains no game database, maps or saves. Keep the old runtime for rollback.</p>
 <p>3. Point your existing shortcut/launcher at the new Player.exe. Keep its --project-path, --save-path and --config-path values exactly as they were. If your installation keeps Player.exe inside the game folder, you may instead copy ONLY Player.exe and the 42 matching DLLs there after closing the game; leave every other file alone.</p>
 <p>4. Keep your current EasyRPG.ini. Under its existing [SB] section, BattleUI=1, BattleMouse=1 and MouseDecide=1 enable these controls. Do not replace the whole INI or duplicate keys. Launch and check that your usual saves appear before continuing.</p>
 <p>This runtime update does not overwrite or migrate saves. A backup still protects against selecting the wrong folder or later saving over a slot. Do not reapply the test.1-to-test.2 game updater to an already updated game. Future releases that change game data may need different instructions: read that release&#x27;s install guide instead of copying every ZIP over the game.</p>
-<h2 id="section-2">Enemy targets and battle list pages</h2>
+<h2 id="section-3">Enemy targets and battle list pages</h2>
 <p>Click a visible enemy sprite to select and confirm it for a single-target attack. Empty background, transparent sprite pixels, missing and defeated enemies do not confirm. Clicking an enemy switches an optional all-target selection back to that enemy; forced all-target abilities keep targeting everyone. Keyboard targeting and wheel target cycling remain available.</p>
 <p>While choosing a battle ability or item, scroll down for the next page and up for the previous page. All magic categories and battle item lists use this same paging route. Move the pointer to highlight a row; click it to choose it. Multi-page lists show &lt; current/total &gt; above the list, with clickable previous/next arrows. Paging wraps at the ends, matching keyboard Left/Right. Single-page lists stay on their page. Other menus retain their existing controls.</p>
 <p>Optional field click walking, one-time NPC interaction and direct main-menu mouse selection for the custom Windows Player and Steam Deck Proton TEST route. Existing test.2 EN/JP game patches are unchanged.</p>
-<h2 id="section-3">Field clicking</h2>
+<h2 id="section-4">Field clicking</h2>
 <p>With ClickWalk=1 and MouseDecide=1, click the ground to follow a four-direction route around current blockers. Click an NPC/event&#x27;s ground tile to approach a cardinal adjacent tile and interact once. A new click replaces the route. Keyboard arrows or right-click cancel it.</p>
 <p>Field clicking is restricted to ordinary free movement. Dialogue, battles, menus, forced movement and scripted transitions suspend it. Event sprites can extend above their actual ground tile; click their feet. It does not choose dialogue options or repeat interaction automatically.</p>
-<h2 id="section-4">Main menu mouse selection</h2>
+<h2 id="section-5">Main menu mouse selection</h2>
 <p>With BattleUI=1 and MouseDecide=1 in the existing [SB] section of EasyRPG.ini, move the pointer over ITEM, ABILITY, STATUS, ARM, SUPPLEMENT, DICTIONARY, ORGANIZE, EXTEND or MOD to highlight that button immediately. Click to select and open the button under the pointer. In the ABILITY/STATUS/ARM party picker, hover or click an occupied party portrait. A stationary pointer leaves keyboard selection alone. Disabled ORGANIZE and outside/empty clicks do not confirm.</p>
 <p>Battle categories and ability/item rows retain the test.2 hover and direct-click behavior with BattleUI=1 and BattleMouse=1. Other picture submenus keep their existing selected-command behavior.</p>
-<h2 id="section-5">Enable field clicking in an existing test.2 game</h2>
+<h2 id="section-6">Enable field clicking in an existing test.2 game</h2>
 <p>1. Make an ordinary save, close the game and back up your actual save folder. If your launcher has --save-path, that exact folder holds your saves; keep using it.</p>
-<p>2. Extract the test.4 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.</p>
+<p>2. Extract the test.5 Windows Player into a NEW runtime folder. Keep Player.exe and all 42 DLLs together. Keep the old runtime for rollback.</p>
 <p>3. Open EasyRPG.ini inside your patched GAME folder. Under its existing [SB] section, add ClickWalk=1 and keep MouseDecide=1. Change existing values instead of adding duplicate keys or a second [SB] section. Keep every other setting. RPG_RT.ini is a different file.</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>[SB]
 MouseDecide=1
@@ -25,17 +29,17 @@ ClickWalk=1</code></pre>
 <p>4. Launch the NEW runtime with your SAME game and actual save path. Use full paths in your own launcher:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>&quot;NEW-RUNTIME/Player.exe&quot; --project-path &quot;EXISTING-TEST2-GAME&quot; --save-path &quot;ACTUAL-EXISTING-SAVE-FOLDER&quot;</code></pre>
 <p>This changes the runtime and opt-in configuration only. Do not run the test.1-to-test.2 updater again for a test.2 game. Do not replace the game data or move saves for this runtime update. To turn field clicking off, set ClickWalk=0. Roll back by selecting the old runtime and restoring your configuration backup.</p>
-<h2 id="section-6">Downloads</h2>
+<h2 id="section-7">Downloads</h2>
 <ul>
-<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-windows-x86_64-v0.1.0-test.4.zip">Windows Player</a></li>
-<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.4.zip">Deck Proton TEST Player</a></li>
-<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-source-v0.1.0-test.4.zip">Complete corresponding Player source</a></li>
+<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-windows-x86_64-v0.1.0-test.5.zip">Windows Player</a></li>
+<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-steamdeck-proton-TEST-v0.1.0-test.5.zip">Deck Proton TEST Player</a></li>
+<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-source-v0.1.0-test.5.zip">Complete corresponding Player source</a></li>
 <li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-en-patch-v0.1.0-test.2.zip">Unchanged EN patch</a> / <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-ja-patch-v0.1.0-test.2.zip">unchanged JP patch</a></li>
 <li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip">Unchanged dependency sources</a></li>
 <li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-player-ubuntu22.04-x86_64-v0.1.0-test.2.zip">Native Ubuntu22.04 test.2 Player, without field clicking</a></li>
 </ul>
 <p>Read <a href="INSTALL.html">INSTALL</a>, <a href="COMPATIBILITY.html">COMPATIBILITY</a>, <a href="STEAM-DECK-PROTON-TEST.html">Deck Proton guide</a>, and <a href="SOURCE-ACCESS.md">SOURCE-ACCESS</a>. New installs apply the existing test.2 patch first, then enable this runtime.</p>
-<h2 id="section-7">Retained test.2 battle controls</h2>
+<h2 id="section-8">Retained test.2 battle controls</h2>
 <ul>
 <li>Click a battle category to select and enter it. Move the pointer to highlight native categories and ability/item rows. A stationary pointer leaves keyboard selection alone.</li>
 <li>Disabled rows may highlight, but clicking does not confirm them. Empty and outside row clicks do nothing.</li>
@@ -44,9 +48,9 @@ ClickWalk=1</code></pre>
 <li>Left click advances text; right click is Back. Keyboard arrows/Enter/Escape remain available. Hold F/G for the built-in configurable 3x/10x fast-forward defaults.</li>
 <li>Main-menu mouse selection is described above; other picture submenus keep their existing selected-command behavior. Enemy sprite clicking is now supported as described above. MOD settings and optional cheats remain available.</li>
 </ul>
-<h2 id="section-8">Steam Deck: full game for stock EasyRPG Flatpak</h2>
+<h2 id="section-9">Steam Deck: full game for stock EasyRPG Flatpak</h2>
 <p><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-fullgame-EN-test1-flatpak-TEST.zip">Download the full English game with test.1 MOD data</a> and read the <a href="STEAM-DECK-FLATPAK-TEST.html">Flatpak setup guide</a>. Extract it into a new folder on Deck, install EasyRPG Player from Discover and select the included game folder in its setup wizard. No Python, patching or Proton is needed. The event-based MOD menu remains available through keyboard/Steam Input controls. Custom pause skipping, battle mouse/wheel input, animation acceleration and test.2 timeline labels require our custom Player. Hardware and Flatpak runtime remain untested.</p>
-<h2 id="section-9">Update from matching test.1 and keep saves</h2>
+<h2 id="section-10">Update from matching test.1 and keep saves</h2>
 <p>Make an ordinary Memory Tree save and close the game. Extract the matching EN or JP test.2 patch separately. Keep your untouched pristine base, supported same-edition test.1 game and actual save folder. The --saves folder must match the old launcher&#x27;s --save-path; if it used the default, use the old game folder. Do not guess a custom save location.</p>
 <p>Windows, from the extracted patch directory:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>py -3 update_game.py --base &quot;PRISTINE-BASE&quot; --current &quot;OLD-TEST1-GAME&quot; --saves &quot;ACTUAL-OLD-SAVE-FOLDER&quot; --out &quot;NEW-GAME-FOLDER&quot; --backup &quot;NEW-SAVE-BACKUP&quot;</code></pre>
@@ -56,5 +60,5 @@ ClickWalk=1</code></pre>
 <p>Launch the NEW game with its NEW save folder, not the old custom path:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Player.exe --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;
 ./Player --project-path &quot;NEW-GAME-FOLDER&quot; --save-path &quot;NEW-GAME-FOLDER&quot;</code></pre>
-<h2 id="section-10">Source and rights</h2>
+<h2 id="section-11">Source and rights</h2>
 <p>See <a href="SOURCE-ACCESS.md">SOURCE-ACCESS</a>, <a href="SOURCES.json">SOURCES</a>, <a href="LICENSES.md">LICENSES</a> and <a href="CREDITS.md">CREDITS</a>. MIT covers our authored scripts/docs only. Player, libraries, game, translation and derived art retain their own rights. No endorsement or new republication permission is implied.</p></html>

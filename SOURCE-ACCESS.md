@@ -8,8 +8,8 @@ Sources are supplied with the binary release, not only on request. Keep the matc
 
 Libraries remain dynamically linked. You may replace compatible library files subject to their licenses; this project imposes no restrictive EULA on that replacement. Player remains GPLv3; liblcf is MIT; each dependency retains its own license and notices. Build scripts received syntax checks, not a new dependency rebuild or byte-identical reproduction proof. This is a source/notice packaging record, not a legal warranty.
 
-Player source: https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.4/seraphic-blue-player-source-v0.1.0-test.4.zip
+Player source: https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.5/seraphic-blue-player-source-v0.1.0-test.5.zip
 
 Dependency source: https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip
 
-This test.4 Windows/Proton Player uses the new complete Player source bundle above. Its unchanged dependency source bundle remains the exact test.2 download. Native Linux test.2 is built from the separate test.2 source, not this new Windows build.
+This test.5 Windows/Proton Player uses the new complete Player source bundle above. Its unchanged dependency source bundle remains the exact test.2 download. Native Linux test.2 is built from the separate test.2 source, not this new Windows build.
