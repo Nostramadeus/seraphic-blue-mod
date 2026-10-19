@@ -20,7 +20,13 @@ Download → Extract All → Choose your platform below → Play
 
 **Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
 
-## Already playing? Update without replacing saves
+## Already playing? Keep your saves
+
+1. Close the game.
+2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-fullgame-EN-v0.1.0-test.9.zip) and extract it.
+3. Copy the **saves** folder from your old game folder into the new one. Done.
+
+<details><summary>Smaller download: update ZIPs instead (step by step)</summary>
 
 1. Close the game. Keep a backup of your actual save folder.
 2. On test.6 or older, first apply the [test.7 image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip) (extract beside **RPG_RT.ldb**, replace the Picture files).
@@ -28,7 +34,7 @@ Download → Extract All → Choose your platform below → Play
 4. [Download the test.9 picture update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 55 **Picture** files.
 5. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
 
-Fresh download instead? Extract the new full game, then copy your old **saves** folder into it.
+</details>
 
 **New in test.9:**
 - **55 picture cards retranslated from the Japanese:** 52 history timeline cards (names and terms now match the rest of the game; 10 cards had the wrong meaning), the two opening chant cards and the opening poem card.
