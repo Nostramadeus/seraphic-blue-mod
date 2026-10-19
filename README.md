@@ -2,7 +2,7 @@
 
 ## Download the complete English game
 
-**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-fullgame-EN-v0.1.0-test.7.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.7)
+**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-fullgame-EN-v0.1.0-test.8.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.8)
 
 One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
 
@@ -23,14 +23,17 @@ Download → Extract All → Choose your platform below → Play
 ## Already playing? Update without replacing saves
 
 1. Close the game. Keep a backup of your actual save folder.
-2. [Download the small image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip). Extract it into your game folder, beside **RPG_RT.ldb**. Allow replacement of the **Picture** files.
-3. Keep your **saves**, **config**, maps and Player files. This update contains images and reading material only.
+2. On test.6 or older, first apply the [test.7 image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip) (extract beside **RPG_RT.ldb**, replace the Picture files).
+3. [Download the test.8 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-update-v0.1.0-test.8.zip). Extract it into your game folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe**, **RPG_RT.ldb**, **Map0003.lmu** and one **Picture** file. If your Player.exe lives in another folder (older patch installs), copy the new Player.exe there instead.
+4. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
 
-**New in test.7:** 178 corrected or realigned image files, including opening narration and six battle labels/help images. Player controls are unchanged.
+**New in test.8:**
+- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / Esc / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes.
+- **Clicking to walk now works in the opening rooms** (it needed the unlocked game menu before).
+- **Opening poem card:** the second card of the opening poem is retranslated to match the Japanese.
+- Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.
 
 **Already read the opening?** [Japanese / original English / corrected English](EARLY-GAME-CORRECTIONS.html). Opening and Episode 2 only; later sections stay hidden until selected.
-
-**Scope:** 166 flagged files corrected; 6 remain deferred for uncertain text or artwork recovery. Nine source matches and the earlier 39 large-font corrections remain unresolved. This is not a claim of a flawless full-game translation.
 
 ## Thank you to the original creators
 
@@ -44,7 +47,7 @@ Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it f
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-fullgame-EN-v0.1.0-test.7.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-fullgame-EN-v0.1.0-test.8.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh
@@ -107,7 +110,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 ## MOD menu tutorials
 
-**Open:** Escape / Deck B → select **MOD** → Enter / A. **Navigate:** Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
+**Open:** Escape / Deck B → select **MOD** → Enter / A. Before the story unlocks the game menu, Escape / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
 
 ### SPEED — spend less time waiting
 
@@ -165,13 +168,14 @@ Native name-entry and number-entry keep their original keyboard controls.
 
 ## Older install (test.1 to test.5)? Optional engine upgrade
 
-Skip this if you installed the test.6 or test.7 full game: test.7 did not change the Player.
+Skip this if you installed the test.6 or test.7 full game: the test.8 update above already replaces Player.exe.
 
 1. Close the game and back up the **saves** folder (or your existing custom save location).
-2. Download the [test.6 Windows Player ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton. Extract it separately.
+2. Download the [test.6 Windows Player ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton (the newest Player ZIP with all DLLs). Extract it separately.
 3. Copy **Player.exe and all .dll files from that same ZIP** into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.
+4. Then apply the test.7 image update and the test.8 update from the section above; the test.8 Player.exe replaces the test.6 one and uses the same DLLs.
 
-This test.6 Player update does not change game data. For the test.7 picture fixes, also use the image update above. Native Linux has no new test.6 binary; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
+Native Linux has no newer binary than test.2; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
 
 ## Details
 

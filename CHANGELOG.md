@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.0-test.8
+
+MOD settings reachable from the start: while the story locks the game menu, Cancel / Esc / Deck B opens the MOD screen directly. Click-to-walk works in the opening rooms. Opening poem card retranslated. Windows Player and game data update; saves unchanged.
+
+## v0.1.0-test.7
+
+178 corrected or realigned image files, including opening narration and six battle labels/help images. Image-only update.
+
 ## v0.1.0-test.6
 
 Ally targets, scripted and native menu pointer support, character quick tabs, contextual hints and field tile/destination feedback. Runtime-only update.
