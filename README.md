@@ -2,7 +2,7 @@
 
 ## Download the complete English game
 
-**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-fullgame-EN-v0.1.0-test.9.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.9)
+**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.10)
 
 One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
 
@@ -23,7 +23,7 @@ Download → Extract All → Choose your platform below → Play
 ## Already playing? Keep your saves
 
 1. Close the game.
-2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-fullgame-EN-v0.1.0-test.9.zip) and extract it.
+2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip) and extract it.
 3. Copy the **saves** folder from your old game folder into the new one. Done.
 
 <details><summary>Smaller download: update ZIPs instead (step by step)</summary>
@@ -31,10 +31,14 @@ Download → Extract All → Choose your platform below → Play
 1. Close the game. Keep a backup of your actual save folder.
 2. On test.6 or older, first apply the [test.7 image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip) (extract beside **RPG_RT.ldb**, replace the Picture files).
 3. On test.7 or older, [download the test.8 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-update-v0.1.0-test.8.zip). Extract it into your game folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe**, **RPG_RT.ldb**, **Map0003.lmu** and one **Picture** file. If your Player.exe lives in another folder (older patch installs), copy the new Player.exe there instead.
-4. [Download the test.9 picture update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 55 **Picture** files.
-5. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
+4. On test.8 or older, [download the test.9 picture update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 55 **Picture** files.
+5. [Download the test.10 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-update-v0.1.0-test.10.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Map0507.lmu**.
+6. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
 
 </details>
+
+**New in test.10:**
+- One opening dialogue line corrected to match the Japanese.
 
 **New in test.9:**
 - **55 picture cards retranslated from the Japanese:** 52 history timeline cards (names and terms now match the rest of the game; 10 cards had the wrong meaning), the two opening chant cards and the opening poem card.
@@ -60,7 +64,7 @@ Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it f
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-fullgame-EN-v0.1.0-test.9.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh
