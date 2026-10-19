@@ -1,29 +1,25 @@
-# Release notes — v0.1.0-test.6
+# Release notes — v0.1.0-test.7
 
-## What changed
+## Image translation corrections
 
-- Move the mouse over selectable menu rows/buttons to update their native highlight and information immediately. A stationary pointer leaves keyboard/controller selection alone. Click chooses the pointed entry; empty or outside clicks do not confirm the previous selection.
-- Battle ally targets now support hover and click. Native healing/revival rules remain authoritative; dead allies are not incorrectly excluded. Hover preserves an existing all-target choice. Enemy hover, click targeting and battle page controls from test.5 remain available.
-- Item, ability, equipment, Supplement, Organize, Upgrade, shop, dictionary and native choice/title/save/load screens gain pointer controls appropriate to their layout. Hover only selects; it does not spend items, money, upgrades or an attack.
-- Status / Gear / Ability quick tabs retain the selected character. Page Up/Down also cycles these tabs at stable top-level screens; native Left/Right still changes characters. Abilities remains unavailable for reserve characters. Equipment changes are written back before switching screens.
-- Native hidden-key hints are preserved; Gear and the battle command screen add compact Shift hints where space permits. Shop quantity has visible -10/-1/+1/+10 and Buy/Sell buttons. Supplement has Apply; Upgrade has an Upgrade button. Hover selects amount digits; the wheel adjusts through native rules.
-- Field click walking shows a white hovered-tile outline and a green accepted-destination outline. The destination clears on arrival, manual cancellation or a failed route. NPC clicking still approaches and interacts once.
-
-## Pointer and controller behavior
-
-Mouse movement updates focus on supported selectable controls. Descriptive text and artwork are not treated as buttons. Native number-entry digits and name-entry keyboards keep their existing controls. Native disabled/locked rules, special party restrictions and short final pages remain in charge. Up/down arrows, Enter/Decide, Escape/Back and existing shortcuts remain available. Wheel input changes pages in paged lists; it follows the native row/amount behavior in target, history and amount contexts.
-
-Quick tabs appear only at stable top-level character screens, never during an unfinished target or equipment transaction. Tab hover is feedback only; click or Page Up/Down switches. A reserve character is retained rather than silently replaced by an active character.
+- 178 corrected or realigned image files: 166 flagged files and 12 adjacent cards needed for passage alignment.
+- Opening narration and later story cards checked against Japanese, existing story/voice notes and terminology rulings. Text split across cards is aligned as a passage.
+- Six battle label/help fixes, including two swapped action labels, explicit Slow/AGL information and the generic usable-item label.
+- [Early-game text comparisons](EARLY-GAME-CORRECTIONS.html): Japanese, released English and corrected English. Progress gates cover the opening and Episode 2 only.
+- The Player, maps, database and game rules are unchanged from test.6. Existing keyboard/controller/mouse behavior remains available.
 
 ## Update safely
 
-1. Close the game and back up your actual save folder. Saves are Save*.lsd files. If your launcher includes --save-path, that folder is authoritative; otherwise locate your existing saves in the game folder.
-2. Extract the test.6 Windows Player ZIP into a NEW runtime folder. Keep Player.exe and its 42 DLLs together. Keep the previous runtime for rollback.
-3. Point your existing launcher at the new Player.exe. Retain its --project-path, --save-path and --config-path arguments. Keep your existing game data and EasyRPG.ini. If Player lives inside the game folder, replace only Player.exe and its matching DLLs after closing it; leave every other file alone.
-4. Under the existing [SB] section of EasyRPG.ini, retain BattleUI=1, BattleMouse=1, MouseDecide=1 and ClickWalk=1. Change existing keys instead of duplicating them. Launch and check your usual saves before continuing.
+1. Close the game and back up the actual save folder used by your launcher.
+2. Download **seraphic-blue-image-update-v0.1.0-test.7.zip** and extract it into the game folder containing **RPG_RT.ldb**. Replace the included **Picture** files.
+3. Keep your saves, config and Player files. Launch as usual. The update archive contains no save, database, map, executable or DLL.
 
-This release updates the runtime only. It contains no game database, maps or saves and does not migrate save data. Do not reapply a game-data updater to an already matching test.2 game. Future releases may have different update instructions.
+New players can use **seraphic-blue-fullgame-EN-v0.1.0-test.7.zip**. Windows, Linux/Deck through Proton and experimental stock Mac routes remain documented in the README. The image update is game data shared by all platforms; hardware compatibility claims have not expanded.
 
-## Tested limits
+## Known limits
 
-Focused native replay/build evidence is listed in [COMPATIBILITY](COMPATIBILITY.html). No physical Steam Deck/Proton, full-playthrough or universal-save compatibility claim is made.
+Six flagged cards remain deferred: four uncertain readings and two art-backed cards needing clean artwork recovery. Nine source matches remain unresolved; some stored assets still contain Japanese and are not established to appear in normal play. The earlier 39 large-font corrections remain parked. No full playthrough was performed.
+
+New narrative text uses a matching italic style rather than a proven identical original font. Original backdrops are reused for the opening; portrait/decorative assets are withheld when clean recovery is uncertain. Native dimensions are kept where text fits; a few isolated text cards grow within the game canvas. No font files are distributed.
+
+The unchanged Player source remains available in the [test.6 release](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.6). Original game and English translation credits remain unchanged.

@@ -2,7 +2,7 @@
 
 ## Download the complete English game
 
-**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.6)
+**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-fullgame-EN-v0.1.0-test.7.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.7)
 
 One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
 
@@ -20,6 +20,18 @@ Download → Extract All → Choose your platform below → Play
 
 **Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
 
+## Already playing? Update without replacing saves
+
+1. Close the game. Keep a backup of your actual save folder.
+2. [Download the small image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip). Extract it into your game folder, beside **RPG_RT.ldb**. Allow replacement of the **Picture** files.
+3. Keep your **saves**, **config**, maps and Player files. This update contains images and reading material only.
+
+**New in test.7:** 178 corrected or realigned image files, including opening narration and six battle labels/help images. Player controls are unchanged.
+
+**Already read the opening?** [Japanese / original English / corrected English](EARLY-GAME-CORRECTIONS.html). Opening and Episode 2 only; later sections stay hidden until selected.
+
+**Scope:** 166 flagged files corrected; 6 remain deferred for uncertain text or artwork recovery. Nine source matches and the earlier 39 large-font corrections remain unresolved. This is not a claim of a flawless full-game translation.
+
 ## Thank you to the original creators
 
 Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.
@@ -32,7 +44,7 @@ Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it f
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-fullgame-EN-v0.1.0-test.7.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh
@@ -154,7 +166,7 @@ Native name-entry and number-entry keep their original keyboard controls.
 ## Already playing? Update without replacing saves
 
 1. Close the game and back up the **saves** folder (or your existing custom save location).
-2. Download the smaller [Windows Player update ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton. Extract it separately.
+2. Download the smaller [Windows Player update ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-player-windows-x86_64-v0.1.0-test.7.zip) for Windows or Proton. Extract it separately.
 3. Copy **Player.exe and all .dll files from that same ZIP** into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.
 
 This test.6 Player update does not change game data. Native Linux has no new test.6 binary; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
