@@ -163,13 +163,15 @@ Steam Input bindings are suggestions, not a verified Deck layout. Touch does not
 
 Native name-entry and number-entry keep their original keyboard controls.
 
-## Already playing? Update without replacing saves
+## Older install (test.1 to test.5)? Optional engine upgrade
+
+Skip this if you installed the test.6 or test.7 full game: test.7 did not change the Player.
 
 1. Close the game and back up the **saves** folder (or your existing custom save location).
-2. Download the smaller [Windows Player update ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-player-windows-x86_64-v0.1.0-test.7.zip) for Windows or Proton. Extract it separately.
+2. Download the [test.6 Windows Player ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton. Extract it separately.
 3. Copy **Player.exe and all .dll files from that same ZIP** into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.
 
-This test.6 Player update does not change game data. Native Linux has no new test.6 binary; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
+This test.6 Player update does not change game data. For the test.7 picture fixes, also use the image update above. Native Linux has no new test.6 binary; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
 
 ## Details
 
