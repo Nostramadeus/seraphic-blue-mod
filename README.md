@@ -2,31 +2,27 @@
 
 ## In progress
 
-The current release already includes the Japanese-based dialogue retranslation and its review, plus many corrected picture cards. The work below is additional checking and proposed features.
+The release already includes the Japanese-based dialogue retranslation and its review. Further translation, picture, content-dependency, optional combat and QoL checks support one combined release.
+
+<details><summary>Current work</summary>
 
 - **Additional translation checks:** Auditing crowded dialogue boxes and unchanged English for anything the completed review missed, with extra boxes wherever the full meaning needs more space.
 - **Picture text and comparisons:** Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.
-- **Easier use:** Planning simpler updates, clearer control illustrations and a recent-message log; investigating audio reconnection and quotation-mark display.
-- **DC Altered extra content:** Investigating a separate optional edition, prioritizing extra content and checking what it depends on before bringing it across.
+- **Easier use:** Planning simpler updates and clearer control illustrations; testing a recent-message-history candidate that is not published. Quotation-mark display is also being checked.
+- **DC Altered extra content:** Checking content and dependencies before bringing approved additions into one combined release.
 - **Optional combat and QoL:** Comparing Original/Arrange combat, difficulty, speed and animation skipping with this MOD. Defaults, save compatibility and safe settings are still under review.
+
+</details>
 
 ## Download the complete English game
 
 **[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.10)
 
-One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
+The ZIP includes the English game, Windows and older native Linux Players, and launchers.
 
-```text
-Download → Extract All → Choose your platform below → Play
-```
+**Setup:** [Windows](WINDOWS.md) · [Linux / Proton](LINUX.md) · [Steam Deck](STEAM-DECK.md). On Windows, double-click **PLAY.cmd**. Follow the linked Steam/Proton steps on Linux or Deck.
 
-| Your platform | Start here | Newest mouse features? |
-| --- | --- | --- |
-| Windows | Double-click **PLAY.cmd**. [Windows steps](WINDOWS.md) | Yes |
-| Linux through Steam / Proton | Add **Player.exe** to Steam; enable Proton. [Linux steps](LINUX.md) | Yes; compatibility not verified here |
-| Steam Deck | Desktop Mode: add **Player.exe** to Steam; enable Proton. [Deck steps](STEAM-DECK.md) | Yes; hardware not verified here |
-| Native Linux alternative | Run **sh play-linux.sh**. [Requirements](LINUX.md#native-linux-alternative) | Older test.2 controls; new hover/tabs/walking are unavailable |
-| macOS (experimental) | Official Mac EasyRPG Player + this ZIP's game data. [Mac steps](#macos-experimental-keyboard-route) | Custom Player features unavailable; not Mac-tested |
+**Controls:** Enter confirms; Esc goes back.
 
 **Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
 
@@ -47,6 +43,26 @@ Download → Extract All → Choose your platform below → Play
 
 </details>
 
+<details><summary>Platform setup and limitations</summary>
+
+One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
+
+```text
+Download → Extract All → Choose your platform below → Play
+```
+
+| Your platform | Start here | Newest mouse features? |
+| --- | --- | --- |
+| Windows | Double-click **PLAY.cmd**. [Windows steps](WINDOWS.md) | Yes |
+| Linux through Steam / Proton | Add **Player.exe** to Steam; enable Proton. [Linux steps](LINUX.md) | Yes; compatibility not verified here |
+| Steam Deck | Desktop Mode: add **Player.exe** to Steam; enable Proton. [Deck steps](STEAM-DECK.md) | Yes; hardware not verified here |
+| Native Linux alternative | Run **sh play-linux.sh**. [Requirements](LINUX.md#native-linux-alternative) | Older test.2 controls; new hover/tabs/walking are unavailable |
+| macOS (experimental) | Official Mac EasyRPG Player + this ZIP's game data. [Mac steps](#macos-experimental-keyboard-route) | Custom Player features unavailable; not Mac-tested |
+
+</details>
+
+<details><summary>Release changes and translation comparison</summary>
+
 **New in test.10:**
 - One opening dialogue line corrected to match the Japanese.
 
@@ -62,6 +78,10 @@ Download → Extract All → Choose your platform below → Play
 
 **Already read the opening?** [Japanese / original English / corrected English](EARLY-GAME-CORRECTIONS.html). Opening and Episode 2 only; later sections stay hidden until selected.
 
+</details>
+
+<details><summary>Original creators and credits</summary>
+
 ## Thank you to the original creators
 
 Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.
@@ -69,6 +89,10 @@ Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue
 Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
 
 [See the full original credits](CREDITS.md).
+
+</details>
+
+<details><summary>macOS: experimental keyboard route</summary>
 
 ## macOS: experimental keyboard route
 
@@ -91,6 +115,10 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 **Controls:** arrows select/move; Enter confirms; Escape goes back; Shift runs/opens secondary actions. Saves go in **SeraphicBlue/saves**.
 
 **Limits:** script-based MOD options are expected to work. Custom hover/click targeting, click-to-walk, character tabs, enhanced text reveal and battle-animation acceleration need our modified Player and are unavailable here. **This Mac route is untested.** [Official Mac support](https://easyrpg.org/player/downloads/) · [Homebrew package](https://formulae.brew.sh/formula/easyrpg-player.html).
+
+</details>
+
+<details><summary>Quick tutorials</summary>
 
 ## Quick tutorials
 
@@ -135,6 +163,10 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 - Press while text appears to reveal it faster; press again at a dialogue pause to continue. Use separate presses, not a held click.
 - **Not every pause is skippable:** timed scene waits, movement and animations can continue. Use **MOD → SPEED → Cutscene speed** to shorten scripted waits; confirm is not a universal scene-skip button.
 
+</details>
+
+<details><summary>MOD menu tutorials</summary>
+
 ## MOD menu tutorials
 
 **Open:** Escape / Deck B → select **MOD** → Enter / A. Before the story unlocks the game menu, Escape / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
@@ -170,6 +202,10 @@ Enable the CHEATS page when asked. Select an action and confirm. **Save first be
 | +10,000 DEAR | Adds 10,000 currency. |
 | Level up party | Raises every party member by one level. |
 
+</details>
+
+<details><summary>Controls and menu shortcuts</summary>
+
 ## Controls
 
 | Action | Mouse | Keyboard / suggested Steam Input |
@@ -193,6 +229,10 @@ Steam Input bindings are suggestions, not a verified Deck layout. Touch does not
 
 Native name-entry and number-entry keep their original keyboard controls.
 
+</details>
+
+<details><summary>Older install: optional engine upgrade</summary>
+
 ## Older install (test.1 to test.5)? Optional engine upgrade
 
 Skip this if you installed the test.6 or test.7 full game: the test.8 update above already replaces Player.exe.
@@ -204,6 +244,10 @@ Skip this if you installed the test.6 or test.7 full game: the test.8 update abo
 
 Native Linux has no newer binary than test.2; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
 
+</details>
+
+<details><summary>More details and tested limits</summary>
+
 ## Details
 
 - [Windows setup](WINDOWS.md), [Linux setup](LINUX.md), [Steam Deck setup](STEAM-DECK.md).
@@ -212,3 +256,5 @@ Native Linux has no newer binary than test.2; use Proton for the latest engine f
 - [Original credits](CREDITS.md), [licenses](LICENSES.md), and [corresponding source](SOURCE-ACCESS.md).
 
 English game content and its original manual/credits are included. The separate Japanese patch remains available for existing supported Japanese installations. Native Linux remains the previously tested Ubuntu 22.04-compatible test.2 runtime. No full-playthrough or physical Deck verification is claimed.
+
+</details>

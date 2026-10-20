@@ -1,29 +1,22 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Seraphic Blue MOD — quick start</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid #c8d6e6}th{background:#dceaf7}tr:nth-child(even){background:#eaf1f8}pre{line-height:1.5;white-space:pre-wrap}strong{color:#102e50}</style><h1>Seraphic Blue MOD</h1>
-<section id="in-progress">
-<h2>In progress</h2>
-<p>The current release already includes the Japanese-based dialogue retranslation and its review, plus many corrected picture cards. The work below is additional checking and proposed features.</p>
+<h2 id="in-progress">In progress</h2>
+<p>The release already includes the Japanese-based dialogue retranslation and its review. Further translation, picture, content-dependency, optional combat and QoL checks support one combined release.</p>
+<details><summary>Current work</summary>
 <ul>
 <li><strong>Additional translation checks:</strong> Auditing crowded dialogue boxes and unchanged English for anything the completed review missed, with extra boxes wherever the full meaning needs more space.</li>
 <li><strong>Picture text and comparisons:</strong> Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.</li>
-<li><strong>Easier use:</strong> Planning simpler updates, clearer control illustrations and a recent-message log; investigating audio reconnection and quotation-mark display.</li>
-<li><strong>DC Altered extra content:</strong> Investigating a separate optional edition, prioritizing extra content and checking what it depends on before bringing it across.</li>
+<li><strong>Easier use:</strong> Planning simpler updates and clearer control illustrations; testing a recent-message-history candidate that is not published. Quotation-mark display is also being checked.</li>
+<li><strong>DC Altered extra content:</strong> Checking content and dependencies before bringing approved additions into one combined release.</li>
 <li><strong>Optional combat and QoL:</strong> Comparing Original/Arrange combat, difficulty, speed and animation skipping with this MOD. Defaults, save compatibility and safe settings are still under review.</li>
 </ul>
-</section>
-<h2 id="section-1">Download the complete English game</h2>
+</details>
+<h2 id="section-2">Download the complete English game</h2>
 <p><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip">Download the full game + MOD + Players</a></strong> · <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.10">All downloads</a></p>
-<p>One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.</p>
-<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Download → Extract All → Choose your platform below → Play</code></pre>
-<div class="table-scroll"><table>
-<tr><th>Your platform</th><th>Start here</th><th>Newest mouse features?</th></tr>
-<tr><td>Windows</td><td>Double-click <strong>PLAY.cmd</strong>. <a href="WINDOWS.md">Windows steps</a></td><td>Yes</td></tr>
-<tr><td>Linux through Steam / Proton</td><td>Add <strong>Player.exe</strong> to Steam; enable Proton. <a href="LINUX.md">Linux steps</a></td><td>Yes; compatibility not verified here</td></tr>
-<tr><td>Steam Deck</td><td>Desktop Mode: add <strong>Player.exe</strong> to Steam; enable Proton. <a href="STEAM-DECK.md">Deck steps</a></td><td>Yes; hardware not verified here</td></tr>
-<tr><td>Native Linux alternative</td><td>Run <strong>sh play-linux.sh</strong>. <a href="LINUX.md#native-linux-alternative">Requirements</a></td><td>Older test.2 controls; new hover/tabs/walking are unavailable</td></tr>
-<tr><td>macOS (experimental)</td><td>Official Mac EasyRPG Player + this ZIP&#x27;s game data. <a href="#macos-experimental-keyboard-route">Mac steps</a></td><td>Custom Player features unavailable; not Mac-tested</td></tr>
-</table></div>
+<p>The ZIP includes the English game, Windows and older native Linux Players, and launchers.</p>
+<p><strong>Setup:</strong> <a href="WINDOWS.md">Windows</a> · <a href="LINUX.md">Linux / Proton</a> · <a href="STEAM-DECK.md">Steam Deck</a>. On Windows, double-click <strong>PLAY.cmd</strong>. Follow the linked Steam/Proton steps on Linux or Deck.</p>
+<p><strong>Controls:</strong> Enter confirms; Esc goes back.</p>
 <p><strong>Save location:</strong> the <strong>saves</strong> folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.</p>
-<h2 id="section-2">Already playing? Keep your saves</h2>
+<h2 id="section-3">Already playing? Keep your saves</h2>
 <p>1. Close the game.</p>
 <p>2. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip">Download the new full game</a> and extract it.</p>
 <p>3. Copy the <strong>saves</strong> folder from your old game folder into the new one. Done.</p>
@@ -35,6 +28,19 @@
 <p>5. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-update-v0.1.0-test.10.zip">Download the test.10 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of <strong>Map0507.lmu</strong>.</p>
 <p>6. Keep your <strong>saves</strong>, <strong>config</strong> and EasyRPG.ini. Saves from earlier tests load normally.</p>
 </details>
+<details><summary>Platform setup and limitations</summary>
+<p>One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.</p>
+<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Download → Extract All → Choose your platform below → Play</code></pre>
+<div class="table-scroll"><table>
+<tr><th>Your platform</th><th>Start here</th><th>Newest mouse features?</th></tr>
+<tr><td>Windows</td><td>Double-click <strong>PLAY.cmd</strong>. <a href="WINDOWS.md">Windows steps</a></td><td>Yes</td></tr>
+<tr><td>Linux through Steam / Proton</td><td>Add <strong>Player.exe</strong> to Steam; enable Proton. <a href="LINUX.md">Linux steps</a></td><td>Yes; compatibility not verified here</td></tr>
+<tr><td>Steam Deck</td><td>Desktop Mode: add <strong>Player.exe</strong> to Steam; enable Proton. <a href="STEAM-DECK.md">Deck steps</a></td><td>Yes; hardware not verified here</td></tr>
+<tr><td>Native Linux alternative</td><td>Run <strong>sh play-linux.sh</strong>. <a href="LINUX.md#native-linux-alternative">Requirements</a></td><td>Older test.2 controls; new hover/tabs/walking are unavailable</td></tr>
+<tr><td>macOS (experimental)</td><td>Official Mac EasyRPG Player + this ZIP&#x27;s game data. <a href="#macos-experimental-keyboard-route">Mac steps</a></td><td>Custom Player features unavailable; not Mac-tested</td></tr>
+</table></div>
+</details>
+<details><summary>Release changes and translation comparison</summary>
 <p><strong>New in test.10:</strong></p>
 <ul>
 <li>One opening dialogue line corrected to match the Japanese.</li>
@@ -52,10 +58,14 @@
 <li>Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.</li>
 </ul>
 <p><strong>Already read the opening?</strong> <a href="EARLY-GAME-CORRECTIONS.html">Japanese / original English / corrected English</a>. Opening and Episode 2 only; later sections stay hidden until selected.</p>
-<h2 id="section-3">Thank you to the original creators</h2>
+</details>
+<details><summary>Original creators and credits</summary>
+<h2 id="section-4">Thank you to the original creators</h2>
 <p>Thank you to <strong>eplipswich</strong> for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.</p>
 <p>Thank you to <strong>Tempura (Sakaki)</strong> for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.</p>
 <p><a href="CREDITS.md">See the full original credits</a>.</p>
+</details>
+<details><summary>macOS: experimental keyboard route</summary>
 <h2 id="macos-experimental-keyboard-route">macOS: experimental keyboard route</h2>
 <p>Use the latest game-data MOD with the <strong>official Mac EasyRPG Player</strong>. A custom Mac Player is not included.</p>
 <p>1. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip">Download the full game</a> and extract it. Keep the <strong>SeraphicBlue</strong> folder together.</p>
@@ -66,7 +76,9 @@
 easyrpg-player --project-path . --save-path saves --config-path config --encoding 932 --window</code></pre>
 <p><strong>Controls:</strong> arrows select/move; Enter confirms; Escape goes back; Shift runs/opens secondary actions. Saves go in <strong>SeraphicBlue/saves</strong>.</p>
 <p><strong>Limits:</strong> script-based MOD options are expected to work. Custom hover/click targeting, click-to-walk, character tabs, enhanced text reveal and battle-animation acceleration need our modified Player and are unavailable here. <strong>This Mac route is untested.</strong> <a href="https://easyrpg.org/player/downloads/">Official Mac support</a> · <a href="https://formulae.brew.sh/formula/easyrpg-player.html">Homebrew package</a>.</p>
-<h2 id="section-5">Quick tutorials</h2>
+</details>
+<details><summary>Quick tutorials</summary>
+<h2 id="section-6">Quick tutorials</h2>
 <p><strong>Deck buttons below need the <a href="STEAM-DECK.md#suggested-steam-input-controls">suggested Steam Input bindings</a>.</strong> They are not a bundled controller preset. New controls require the latest Windows Player, including through Proton.</p>
 <h3>Select menus, spells and targets</h3>
 <ul>
@@ -103,7 +115,9 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 <li>Press while text appears to reveal it faster; press again at a dialogue pause to continue. Use separate presses, not a held click.</li>
 <li><strong>Not every pause is skippable:</strong> timed scene waits, movement and animations can continue. Use <strong>MOD → SPEED → Cutscene speed</strong> to shorten scripted waits; confirm is not a universal scene-skip button.</li>
 </ul>
-<h2 id="section-6">MOD menu tutorials</h2>
+</details>
+<details><summary>MOD menu tutorials</summary>
+<h2 id="section-7">MOD menu tutorials</h2>
 <p><strong>Open:</strong> Escape / Deck B → select <strong>MOD</strong> → Enter / A. Before the story unlocks the game menu, Escape / Deck B opens the MOD screen directly (no CHEATS page yet). <strong>Navigate:</strong> Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose <strong>INFO</strong> for the in-game explanations.</p>
 <h3>SPEED — spend less time waiting</h3>
 <div class="table-scroll"><table>
@@ -132,7 +146,9 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 <tr><td>+10,000 DEAR</td><td>Adds 10,000 currency.</td></tr>
 <tr><td>Level up party</td><td>Raises every party member by one level.</td></tr>
 </table></div>
-<h2 id="section-7">Controls</h2>
+</details>
+<details><summary>Controls and menu shortcuts</summary>
+<h2 id="section-8">Controls</h2>
 <div class="table-scroll"><table>
 <tr><th>Action</th><th>Mouse</th><th>Keyboard / suggested Steam Input</th></tr>
 <tr><td>Select / confirm</td><td>Hover / left click</td><td>Arrows / Enter; D-pad / A</td></tr>
@@ -142,7 +158,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 <tr><td>Secondary action</td><td>Follow the displayed hint</td><td>Shift / X</td></tr>
 </table></div>
 <p>Steam Input bindings are suggestions, not a verified Deck layout. Touch does not provide hover before contact.</p>
-<h2 id="section-8">More menu shortcuts</h2>
+<h2 id="section-9">More menu shortcuts</h2>
 <div class="table-scroll"><table>
 <tr><th>Try this</th><th>Mouse</th><th>Keyboard / suggested Deck buttons</th></tr>
 <tr><td>Secondary actions in Gear, shops or battle</td><td>Follow the visible hint; Shift still needs a key/button</td><td>Shift / X; opens the action shown on that screen</td></tr>
@@ -151,18 +167,23 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 <tr><td>Dictionary and history</td><td>Hover supported rows; wheel changes list pages or scrolls history</td><td>Arrows navigate; Enter / A chooses where applicable</td></tr>
 </table></div>
 <p>Native name-entry and number-entry keep their original keyboard controls.</p>
-<h2 id="section-9">Older install (test.1 to test.5)? Optional engine upgrade</h2>
+</details>
+<details><summary>Older install: optional engine upgrade</summary>
+<h2 id="section-10">Older install (test.1 to test.5)? Optional engine upgrade</h2>
 <p>Skip this if you installed the test.6 or test.7 full game: the test.8 update above already replaces Player.exe.</p>
 <p>1. Close the game and back up the <strong>saves</strong> folder (or your existing custom save location).</p>
 <p>2. Download the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip">test.6 Windows Player ZIP</a> for Windows or Proton (the newest Player ZIP with all DLLs). Extract it separately.</p>
 <p>3. Copy <strong>Player.exe and all .dll files from that same ZIP</strong> into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.</p>
 <p>4. Then apply the test.7 image update and the test.8 update from the section above; the test.8 Player.exe replaces the test.6 one and uses the same DLLs.</p>
 <p>Native Linux has no newer binary than test.2; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.</p>
-<h2 id="section-10">Details</h2>
+</details>
+<details><summary>More details and tested limits</summary>
+<h2 id="section-11">Details</h2>
 <ul>
 <li><a href="WINDOWS.md">Windows setup</a>, <a href="LINUX.md">Linux setup</a>, <a href="STEAM-DECK.md">Steam Deck setup</a>.</li>
 <li><a href="RELEASE-NOTES.md">Full release notes</a> and <a href="COMPATIBILITY.md">tested limits</a>.</li>
 <li><a href="INSTALL.md">Advanced patch installation / older-version migration</a>.</li>
 <li><a href="CREDITS.md">Original credits</a>, <a href="LICENSES.md">licenses</a>, and <a href="SOURCE-ACCESS.md">corresponding source</a>.</li>
 </ul>
-<p>English game content and its original manual/credits are included. The separate Japanese patch remains available for existing supported Japanese installations. Native Linux remains the previously tested Ubuntu 22.04-compatible test.2 runtime. No full-playthrough or physical Deck verification is claimed.</p></html>
+<p>English game content and its original manual/credits are included. The separate Japanese patch remains available for existing supported Japanese installations. Native Linux remains the previously tested Ubuntu 22.04-compatible test.2 runtime. No full-playthrough or physical Deck verification is claimed.</p>
+</details></html>
