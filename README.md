@@ -1,5 +1,15 @@
 # Seraphic Blue MOD
 
+## In progress
+
+These items are being worked on or evaluated. Availability will be stated in the release notes.
+
+- **Translation review:** Checking crowded dialogue boxes and unchanged English against the Japanese, with extra boxes wherever the full meaning needs more space.
+- **Picture text and comparisons:** Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.
+- **Easier use:** Planning simpler updates, clearer control illustrations and a recent-message log; investigating audio reconnection and quotation-mark display.
+- **DC Altered extra content:** Investigating a separate optional edition, prioritizing extra content and checking what it depends on before bringing it across.
+- **Optional combat and QoL:** Comparing Original/Arrange combat, difficulty, speed and animation skipping with this MOD. Defaults, save compatibility and safe settings are still under review.
+
 ## Download the complete English game
 
 **[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-fullgame-EN-v0.1.0-test.10.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.10)
