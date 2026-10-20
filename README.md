@@ -2,9 +2,9 @@
 
 ## In progress
 
-These items are being worked on or evaluated. Availability will be stated in the release notes.
+The current release already includes the Japanese-based dialogue retranslation and its review, plus many corrected picture cards. The work below is additional checking and proposed features.
 
-- **Translation review:** Checking crowded dialogue boxes and unchanged English against the Japanese, with extra boxes wherever the full meaning needs more space.
+- **Additional translation checks:** Auditing crowded dialogue boxes and unchanged English for anything the completed review missed, with extra boxes wherever the full meaning needs more space.
 - **Picture text and comparisons:** Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.
 - **Easier use:** Planning simpler updates, clearer control illustrations and a recent-message log; investigating audio reconnection and quotation-mark display.
 - **DC Altered extra content:** Investigating a separate optional edition, prioritizing extra content and checking what it depends on before bringing it across.
