@@ -43,7 +43,7 @@ The ZIP includes the English game, Windows and older native Linux Players, and l
 
 </details>
 
-<details><summary>Platform setup and limitations</summary>
+<details open><summary>Platform setup and limitations</summary>
 
 One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
 
@@ -80,7 +80,7 @@ Download → Extract All → Choose your platform below → Play
 
 </details>
 
-<details><summary>Original creators and credits</summary>
+<details open><summary>Original creators and credits</summary>
 
 ## Thank you to the original creators
 
@@ -118,7 +118,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 </details>
 
-<details><summary>Quick tutorials</summary>
+<details open><summary>Quick tutorials</summary>
 
 ## Quick tutorials
 
@@ -165,7 +165,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 </details>
 
-<details><summary>MOD menu tutorials</summary>
+<details open><summary>MOD menu tutorials</summary>
 
 ## MOD menu tutorials
 
@@ -204,7 +204,7 @@ Enable the CHEATS page when asked. Select an action and confirm. **Save first be
 
 </details>
 
-<details><summary>Controls and menu shortcuts</summary>
+<details open><summary>Controls and menu shortcuts</summary>
 
 ## Controls
 
