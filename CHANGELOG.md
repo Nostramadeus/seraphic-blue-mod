@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-test.13
+
+21 dialogue boxes corrected after the comparison-page review (plus 4 cosmetic pause moves). Map-only update; saves unchanged. New: the public comparison page https://nostramadeus.github.io/seraphic-blue-mod/
+
 ## v0.1.0-test.12
 
 63 more dialogue boxes corrected against the Japanese; the audit of all 3,013 full four-line boxes is complete. Map-only update; saves unchanged. Old saves from any version load.
