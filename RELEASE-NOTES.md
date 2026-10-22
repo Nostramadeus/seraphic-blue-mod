@@ -1,4 +1,25 @@
-# Release notes — v0.1.0-test.8
+# Release notes — v0.1.0-test.11
+
+## Message history and translation corrections
+
+- **Message history (Windows Player):** scroll back through the last 100 message boxes you read, with the choice you picked. Open it with **mouse wheel up** or **Page Up** while a message is showing or while you walk on the field; scroll with the wheel or Up / Down, page with Page Up / Page Down, close with **Escape / B / right click**. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.
+- **67 dialogue boxes corrected to match the Japanese** (dropped qualifiers or hedges restored, Japanese idioms kept as their own image, 14 names and terms made consistent with the in-game dictionary). 7 of them now use two boxes instead of one shortened box. All 585 boxes whose English was identical to the 2016 patch were checked against the Japanese and found correct.
+- Changed files: Player.exe and 43 map files. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.
+
+## Update safely
+
+1. Close the game and back up the actual save folder used by your launcher.
+2. Easiest: download **seraphic-blue-fullgame-EN-v0.1.0-test.11.zip**, extract it, and copy your old **saves** folder into it.
+3. Or, on test.8 or newer: extract **seraphic-blue-update-v0.1.0-test.11.zip** into the game folder containing **RPG_RT.ldb** and replace **Player.exe** and the 43 map files. If your Player.exe is in a different folder (older patch installs), copy the new Player.exe there.
+4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.
+
+## Known limits
+
+- Message history needs the included Windows Player (Windows, Linux/Deck through Proton). The native Linux Player and the stock Mac Player keep the older behaviour.
+- The history holds completed message pages only; it never shows text you have not reached yet. It is not stored in save files.
+- Verified with the Player's own automated tests and scripted off-screen runs, not a full playthrough or hardware test.
+
+# Earlier: release notes — v0.1.0-test.8
 
 ## Early MOD access and opening fixes
 

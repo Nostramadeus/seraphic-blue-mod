@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.0-test.11
+
+Message history viewer in the Windows Player (wheel up / Page Up). 67 dialogue boxes corrected against the Japanese; the 585 boxes identical to the 2016 English were audited and kept. Player and map data update; saves unchanged.
+
+## v0.1.0-test.10
+
+One opening dialogue line corrected to match the Japanese. Map-only update.
+
+## v0.1.0-test.9
+
+55 picture cards retranslated from the Japanese (history timeline, opening chant and poem cards). Picture-only update.
+
 ## v0.1.0-test.8
 
 MOD settings reachable from the start: while the story locks the game menu, Cancel / Esc / Deck B opens the MOD screen directly. Click-to-walk works in the opening rooms. Opening poem card retranslated. Windows Player and game data update; saves unchanged.
