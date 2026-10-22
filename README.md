@@ -1,5 +1,7 @@
 # Seraphic Blue MOD
 
+**How does this translation compare to the 2016 patch?** [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, spoiler-gated by story part, plus a separate section on lines the 2016 patch softened.
+
 ## In progress
 
 The release already includes the Japanese-based dialogue retranslation and its review. Further translation, picture, content-dependency, optional combat and QoL checks support one combined release.
