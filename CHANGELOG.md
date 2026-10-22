@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0-test.12
+
+63 more dialogue boxes corrected against the Japanese; the audit of all 3,013 full four-line boxes is complete. Map-only update; saves unchanged. Old saves from any version load.
+
 ## v0.1.0-test.11
 
 Message history viewer in the Windows Player (wheel up / Page Up). 67 dialogue boxes corrected against the Japanese; the 585 boxes identical to the 2016 English were audited and kept. Player and map data update; saves unchanged.

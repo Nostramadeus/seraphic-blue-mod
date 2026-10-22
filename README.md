@@ -6,7 +6,7 @@ The release already includes the Japanese-based dialogue retranslation and its r
 
 <details><summary>Current work</summary>
 
-- **Additional translation checks:** The unchanged-English audit is complete (test.11). Crowded dialogue boxes are still being audited for anything the completed review missed, with extra boxes wherever the full meaning needs more space.
+- **Additional translation checks:** The unchanged-English audit (test.11) and the crowded-box audit (test.12) are complete. Remaining: a few term rows in the translation bible and the Altered fan-patch strings, which are not in the game.
 - **Picture text and comparisons:** Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.
 - **Easier use:** Planning simpler updates and clearer control illustrations. Quotation-mark display is also being checked.
 - **DC Altered extra content:** Checking content and dependencies before bringing approved additions into one combined release.
@@ -16,7 +16,7 @@ The release already includes the Japanese-based dialogue retranslation and its r
 
 ## Download the complete English game
 
-**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-fullgame-EN-v0.1.0-test.11.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.11)
+**[Download the full game + MOD + Players](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-fullgame-EN-v0.1.0-test.12.zip)** · [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.12)
 
 The ZIP includes the English game, Windows and older native Linux Players, and launchers.
 
@@ -29,8 +29,10 @@ The ZIP includes the English game, Windows and older native Linux Players, and l
 ## Already playing? Keep your saves
 
 1. Close the game.
-2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-fullgame-EN-v0.1.0-test.11.zip) and extract it.
+2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-fullgame-EN-v0.1.0-test.12.zip) and extract it.
 3. Copy the **saves** folder from your old game folder into the new one. Done.
+
+Dropped the game years ago? Saves from the Japanese original or the 2016 English patch load here too: copy your **SaveXX.lsd** files into the **saves** folder.
 
 <details><summary>Smaller download: update ZIPs instead (step by step)</summary>
 
@@ -39,8 +41,9 @@ The ZIP includes the English game, Windows and older native Linux Players, and l
 3. On test.7 or older, [download the test.8 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-update-v0.1.0-test.8.zip). Extract it into your game folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe**, **RPG_RT.ldb**, **Map0003.lmu** and one **Picture** file. If your Player.exe lives in another folder (older patch installs), copy the new Player.exe there instead.
 4. On test.8 or older, [download the test.9 picture update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 55 **Picture** files.
 5. On test.9 or older, [download the test.10 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-update-v0.1.0-test.10.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Map0507.lmu**.
-6. [Download the test.11 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe** and the 43 **Map** files.
-7. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
+6. On test.10 or older, [download the test.11 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe** and the 43 **Map** files.
+7. [Download the test.12 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 45 **Map** files.
+8. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
 
 </details>
 
@@ -63,6 +66,11 @@ Download → Extract All → Choose your platform below → Play
 </details>
 
 <details><summary>Release changes and translation comparison</summary>
+
+**New in test.12:**
+- **63 more dialogue boxes corrected to match the Japanese.** This completes the audit of all 3,013 "full" four-line boxes (the ones most likely to have been shortened to fit): 89 of them had lost a qualifier, a hedge, a clause or a Japanese idiom's image, and all are restored. 2 of the new corrections use two boxes instead of one shortened box.
+- Changed files: 45 map files. No Player, picture or save changes.
+- **Old saves work.** A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the **saves** folder.
 
 **New in test.11:**
 - **Message history (Windows Player):** scroll back through the last 100 message boxes you read, with the choice you picked. Open it with **mouse wheel up** or **Page Up** while a message is showing or while you walk on the field; scroll with the wheel or Up / Down, page with Page Up / Page Down, close with **Escape / B / right click**. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.
@@ -104,7 +112,7 @@ Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it f
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-fullgame-EN-v0.1.0-test.11.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-fullgame-EN-v0.1.0-test.12.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh

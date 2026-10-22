@@ -1,4 +1,24 @@
-# Release notes — v0.1.0-test.11
+# Release notes — v0.1.0-test.12
+
+## Translation corrections, part two
+
+- **63 more dialogue boxes corrected to match the Japanese.** This completes the audit of all 3,013 "full" four-line boxes (the ones most likely to have been shortened to fit): 89 of them had lost a qualifier, a hedge, a clause or a Japanese idiom's image, and all are restored. 2 of the new corrections use two boxes instead of one shortened box.
+- Changed files: 45 map files. No Player, picture or save changes.
+- **Old saves work.** A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the **saves** folder.
+
+## Update safely
+
+1. Close the game and back up the actual save folder used by your launcher.
+2. Easiest: download **seraphic-blue-fullgame-EN-v0.1.0-test.12.zip**, extract it, and copy your old **saves** folder into it.
+3. Or, on test.11: extract **seraphic-blue-update-v0.1.0-test.12.zip** into the game folder containing **RPG_RT.ldb** and replace the 45 map files. On test.10 or older, apply the test.11 update first (it carries the Player).
+4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.
+
+## Known limits
+
+- Map data only; the message-history Player from test.11 is unchanged.
+- Verified by whole-page replay checks against the translation sources and a file-level verifier, not a full playthrough.
+
+# Earlier: release notes — v0.1.0-test.11
 
 ## Message history and translation corrections
 
