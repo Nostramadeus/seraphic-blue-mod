@@ -2,14 +2,14 @@
 
 ## Translation corrections from the comparison review
 
-- **21 dialogue boxes corrected** after an outside check: while the [comparison page](https://nostramadeus.github.io/seraphic-blue-mod/) was being built, its reviewers compared our lines with the Japanese and flagged the few where ours was weaker (a dropped qualifier, a Japanese idiom flattened into plain English, one word read in the wrong sense). Those are fixed. 4 boxes also had a pause moved to the line end (cosmetic).
-- Changed files: 21 map files. No Player, picture or save changes.
+- **22 dialogue boxes corrected** after an outside check: while the [comparison page](https://nostramadeus.github.io/seraphic-blue-mod/) was being built, its reviewers compared our lines with the Japanese and flagged the few where ours was weaker (a dropped qualifier, a Japanese idiom flattened into plain English, one word read in the wrong sense). Those are fixed. 4 boxes also had a pause moved to the line end (cosmetic).
+- Changed files: 22 map files. No Player, picture or save changes.
 
 ## Update safely
 
 1. Close the game and back up the actual save folder used by your launcher.
 2. Easiest: download **seraphic-blue-fullgame-EN-v0.1.0-test.13.zip**, extract it, and copy your old **saves** folder into it.
-3. Or, on test.11 or test.12: extract **seraphic-blue-update-v0.1.0-test.13.zip** into the game folder containing **RPG_RT.ldb** and replace the 21 map files. On test.10 or older, apply the test.11 update first (it carries the Player).
+3. Or, on test.11 or test.12: extract **seraphic-blue-update-v0.1.0-test.13.zip** into the game folder containing **RPG_RT.ldb** and replace the 22 map files. On test.10 or older, apply the test.11 update first (it carries the Player).
 4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.
 
 ## Known limits
