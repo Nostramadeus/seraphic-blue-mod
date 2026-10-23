@@ -6,7 +6,7 @@
 
 <img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick">
 
-**Pick your build first:**
+**Which mode to pick.** Pick your build first:
 
 - **New player:** the **EN + MOD + Altered** build, set up as the first-play recommendation below. All the extra content with the original battle rules.
 - **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are.
@@ -39,7 +39,7 @@
 
 <img src="docs/img/banners/trip-original.png" width="900" alt="A dungeon trip: Original rules">
 
-<details><summary>Open: the seven steps of one dungeon trip under the original rules, as a diagram and as text</summary>
+<details><summary>Open: A dungeon trip, Original rules: the seven steps as a diagram and as text</summary>
 
 Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default from v0.2.1 on). These rules apply in Original mode, and in the extra-content mode with the five ARRANGE switches Off.
 
@@ -67,7 +67,7 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 <img src="docs/img/banners/trip-arrange.png" width="900" alt="A dungeon trip: Arrange rules">
 
-<details><summary>Open: the same trip under the Arrange rules (BATTLE and MANY on, ARRANGE switches On)</summary>
+<details><summary>Open: A dungeon trip, Arrange rules: the same trip with BATTLE and MANY on, ARRANGE switches On</summary>
 
 <img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
@@ -93,6 +93,8 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 </details>
 
 <img src="docs/img/banners/downloads.png" width="900" alt="Downloads">
+
+**Downloads:** one ZIP per build. Pick the row that matches your choice above.
 
 | Build | What it is | Download |
 | --- | --- | --- |
@@ -126,6 +128,8 @@ Download → Extract All → double-click PLAY.cmd → Play
 
 <a name="keep-your-saves"></a>
 <img src="docs/img/banners/saves.png" width="900" alt="Keep your saves">
+
+**Keep your saves:** three steps.
 
 1. Close the game.
 2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) (EN + MOD, DC) and extract it.
@@ -166,7 +170,7 @@ Native Linux has no newer binary than test.2; use Proton for the latest engine f
 <a name="altered-build-en--mod--altered"></a>
 <img src="docs/img/banners/altered.png" width="900" alt="The Altered build (EN + MOD + Altered)">
 
-<details><summary>Open: what the Altered fan patch is, what this build adds, the ARRANGE switches, Original-mode fixes, MOD menu differences</summary>
+<details><summary>Open: The Altered build: what the fan patch is, what this build adds, the ARRANGE switches, Original-mode fixes, MOD menu differences</summary>
 
 **What it is.** *Seraphic Blue (DC Altered Version) Ver2.13* is an unofficial fan patch for the Director's Cut by **腐林檎** ("Rotten Apple") and **時空転移プリン** ("Space-Time Warp Pudding", ◆YuikkIDGis). Tempura (Sakaki), the original author, was not involved; the Altered authors ask players not to contact Sakaki or the Blue Field boards about it. Credits from the Altered manual: music by 氷石彩亜 (FREEDOM HOUSE 2nd), 星野春日 (Muzie), 煉獄小僧 (煉獄庭園) and Ciel (Le Ciel Bleu); sound effects by WEB WAVE LIB; backgrounds by aska (Silverry moon light); battle-animation graphics from Character Maker Pro (Enterbrain); help from the 2ch Blue Field threads and 風邪薬 ◆RohTo3cNBI. The Altered manual (Japanese) is included in the ZIP (**ManualAlt**, **改造版マニュアル.htm**).
 
@@ -221,7 +225,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 
 <img src="docs/img/banners/tutorials.png" width="900" alt="Quick tutorials">
 
-<details><summary>Open: five short tutorials with screenshots (select, pages, tabs, click to walk, dialogue)</summary>
+<details><summary>Open: Quick tutorials: five short ones with screenshots (select, pages, tabs, click to walk, dialogue)</summary>
 
 **Deck buttons below need the [suggested Steam Input bindings](STEAM-DECK.md#suggested-steam-input-controls).** They are not a bundled controller preset. New controls require the latest Windows Player, including through Proton.
 
@@ -283,7 +287,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 
 <img src="docs/img/banners/modmenu.png" width="900" alt="MOD menu">
 
-<details><summary>Open: how to open the MOD menu, and the SPEED, BATTLE and CHEATS pages</summary>
+<details><summary>Open: MOD menu: how to open it, and the SPEED, BATTLE and CHEATS pages</summary>
 
 **Open:** <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B → select **MOD** → <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A. Before the story unlocks the game menu, <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> / X changes page; <img src="docs/img/keys/up.svg" height="22" alt="Up">/<img src="docs/img/keys/down.svg" height="22" alt="Down"> selects a row; <img src="docs/img/keys/left.svg" height="22" alt="Left">/<img src="docs/img/keys/right.svg" height="22" alt="Right"> changes its value. <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations. The Altered build adds an **ARRANGE** page (see the Altered build above).
 
@@ -323,7 +327,7 @@ Enable the CHEATS page when asked. Select an action and confirm. **Save first be
 <a name="controls"></a>
 <img src="docs/img/banners/controls.png" width="900" alt="Controls">
 
-<details><summary>Open: every mouse, keyboard and Steam Input action, and the menu shortcuts</summary>
+<details><summary>Open: Controls: every mouse, keyboard and Steam Input action, and the menu shortcuts</summary>
 
 | Action | Mouse | Keyboard / suggested Steam Input |
 | --- | --- | --- |
@@ -352,7 +356,7 @@ Native name-entry and number-entry keep their original keyboard controls.
 
 <img src="docs/img/banners/releases.png" width="900" alt="Release notes">
 
-**How does this translation compare to the 2016 patch?** [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. **Spoiler warning:** it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind. Opening and Episode 2 only, with later sections hidden until selected: [early-game corrections](EARLY-GAME-CORRECTIONS.html).
+**Release notes and translation comparison.** How does this translation compare to the 2016 patch? [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. **Spoiler warning:** it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind. Opening and Episode 2 only, with later sections hidden until selected: [early-game corrections](EARLY-GAME-CORRECTIONS.html).
 
 <details><summary>Open: what changed in each version (v0.2.1 back to test.8)</summary>
 
@@ -400,7 +404,7 @@ Native name-entry and number-entry keep their original keyboard controls.
 
 <img src="docs/img/banners/credits.png" width="900" alt="Credits">
 
-Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
+**Credits.** Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
 
 Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.
 
