@@ -15,7 +15,7 @@
   - Enemy stats and resistances. Off: the original enemy data (enemies that are new in Altered keep theirs).
 - Used only in Arrange mode. With BATTLE on, the Escape and Enemy rows follow BATTLE's own rules.
 - Not switchable (always Altered in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns.
-- New first-play recommendation: MANY on, BATTLE off, all five switches Off (Altered's extra content with the original battle rules). Original stays the purist choice; Full Arrange (BATTLE + MANY) is for a second run. Setup steps: README, Game modes.
+- New first-play recommendation: MANY on, BATTLE off, all five switches Off (Altered's extra content with the original battle rules). Original stays the purist choice; Full Arrange (BATTLE + MANY) is for a second run. Setup steps: README, "Which mode to pick".
 - **+ marks gear that exists only in Altered's extra content** (on its name picture).
 - Saves from v0.2.0 (Altered build) load. The switches appear (all On) after the next map change or battle; other settings are kept.
 - The MOD INFO page explains each switch.
@@ -39,7 +39,7 @@
 ## Altered build
 
 - All Altered text in English; its Japanese picture text redrawn in English; the MOD menu adapted (rows Altered already has are left to its Config; see the README).
-- Original mode = DC + bug fixes; first play: Original, NORMAL. Full Arrange (BATTLE + MANY) for a second play; MANY alone not recommended.
+- Original mode = DC + bug fixes; first play: Original, NORMAL. Full Arrange (BATTLE + MANY) for a second play; MANY alone not recommended. (Superseded by the v0.2.1 recommendation above.)
 - Standard RPG Maker files (sound effects, battle animations and a few others) are included under the names the game uses, so no runtime install is needed.
 - EasyRPG Player only (8,040 variables, picture ids up to 78); RPG_RT.exe is not included.
 - Checked by scripted runs: new game to the first map, the MOD screen, losing and retrying battles many times and then winning (Original and Arrange; items, money and MOD settings unchanged, Arrange item-limit items given back), the return-to-world-map cheat. Not a full playthrough.
@@ -53,7 +53,7 @@
 
 ## Known issues
 
-- EN + MOD (DC) build: after losing a story or boss battle, **Retry** may not respond; choose Accept defeat or load a save. Random-battle Retry works. (Shipped since test.10.)
+- EN + MOD (DC) build: after losing a story or boss battle, **Retry** may not respond; choose Accept defeat or load a save. Random-battle Retry works. (Shipped since test.10.) Update: this could not be reproduced from normal play (see v0.2.1 above); report it with a save if you see it.
 
 ## Next
 

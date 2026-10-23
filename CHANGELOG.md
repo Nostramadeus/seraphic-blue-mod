@@ -6,7 +6,7 @@ Altered build only: MOD menu page ARRANGE with five switches that turn single Ar
 
 ## v0.2.0
 
-Three builds: EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new, new game only), JP + MOD (DC). Altered: all text in English, picture text redrawn, MOD menu adapted, Original mode = DC + bug fixes, standard RPG Maker files included. Known issue: Retry after a lost story battle on the DC build may not respond.
+Three builds: EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new, new game only), JP + MOD (DC). Altered: all text in English, picture text redrawn, MOD menu adapted, Original mode = DC + bug fixes, standard RPG Maker files included. Known issue: Retry after a lost story battle on the DC build may not respond. (Later not reproduced from normal play; see v0.2.1.)
 
 ## v0.1.0-test.13
 

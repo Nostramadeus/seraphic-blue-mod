@@ -16,12 +16,27 @@
 
 <img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
 
-- **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
+- **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules.
+
+**Heads up: a new game does NOT start in this setup.** Picking Arrange Mode turns on BATTLE, all five ARRANGE switches and three more Altered rules. You flip them once by hand; every choice is saved with your game. Six steps:
+
+1. New Game > **Arrange Mode**.
+2. On the START SETTING screen choose **Config**. Now **hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift for about six seconds** without touching anything else. A panel titled **DEEP SETTING** opens with its first row **Arrange Mode OFF・[ MANY・BATTLE ]** (there is no page 6 in the normal page cycle; this hidden panel is it).
+3. Left/Right moves the box between OFF, MANY and BATTLE; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A toggles the boxed item. Un-shade **BATTLE** so only **MANY** stays shaded, then <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B closes the panel and keeps the choice.
+4. Still in Config, page 3 (BATTLE 1/2): set **Skip Battles with Weak Enemies** to OFF and **Character EXP Gain** to ON1 (ON2 adds Altered's fewer-members EXP bonus). Start the game.
+5. In the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
+6. Optional, for the original refill rules: turn the game's own **Auto Fill** off in the Supplement screen of the game menu (Arrange Mode starts it on).
+
+<img src="docs/images/arrange-config-panel.png" width="400" alt="Config, DEEP SETTING panel: Arrange Mode row with MANY shaded and BATTLE off">
+
+<img src="docs/images/arrange-switches-off.png" width="400" alt="MOD menu, page ARRANGE: all five switches set to Off (Original)">
 - **Original: the purist choice.** The game as the author designed it (DC + the fixes listed under the Altered build), NORMAL difficulty.
 - **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
 - New Game+ with bonus picks is available after clearing, in every mode.
 
-<details><summary>Original vs Full Arrange at a glance (table)</summary>
+**Still not sure which to pick?** Compare the two gameplay loops below: first a table at a glance, then the same dungeon trip twice, once under Original rules and once under Arrange rules. Click **Open** on each line to expand it.
+
+<details><summary><b>Open: Original vs Full Arrange at a glance (table)</b></summary>
 
 | | Original | Full Arrange (BATTLE + MANY) |
 | --- | --- | --- |
@@ -39,9 +54,9 @@
 
 <img src="docs/img/banners/trip-original.png" width="900" alt="A dungeon trip: Original rules">
 
-<details><summary>Open: A dungeon trip, Original rules: the seven steps as a diagram and as text</summary>
+<details><summary><b>Open: A dungeon trip, Original rules: the seven steps as a diagram and as text</b></summary>
 
-Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default from v0.2.1 on). These rules apply in Original mode, and in the extra-content mode with the five ARRANGE switches Off.
+Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). These rules apply in Original mode, and in the extra-content mode with the five ARRANGE switches Off.
 
 <img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
@@ -57,7 +72,7 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
    - "Use heals now, or save them for the boss? Turn back to the save tree and refill the pools, or push on?"
    - This is the decision the original game is built around.
 6. **Boss.** HP starts wherever you left it. You can throw as many heals as you own. The boss shrugs off your ailment spells; your counterattack sphere triggers now and then, on its roll.
-   - "No tricks work on him. It is a stat check plus my heal count. Spam heals, outlast, keep everyone alive."
+   - "Ailments won't stick on him. It comes down to his elemental weakness, my stats and my heal count. Spam heals, outlast, keep everyone alive."
 7. **After the boss.** Pools nearly empty, bag half gone.
    - "Back to a save tree before the next area. I need the refill."
 
@@ -67,7 +82,7 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 <img src="docs/img/banners/trip-arrange.png" width="900" alt="A dungeon trip: Arrange rules">
 
-<details><summary>Open: A dungeon trip, Arrange rules: the same trip with BATTLE and MANY on, ARRANGE switches On</summary>
+<details><summary><b>Open: A dungeon trip, Arrange rules: the same trip with BATTLE and MANY on, ARRANGE switches On</b></summary>
 
 <img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
@@ -98,7 +113,7 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 | Build | What it is | Download |
 | --- | --- | --- |
-| **EN + MOD + Altered** (v0.2.1) | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 Altered build. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.2.1.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.1/seraphic-blue-fullgame-EN-Altered-v0.2.1.zip)** |
+| **EN + MOD + Altered** (v0.2.1) ★ **Recommended for a first play** | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 Altered build. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.2.1.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.1/seraphic-blue-fullgame-EN-Altered-v0.2.1.zip)** |
 | **EN + MOD (DC)** (v0.2.0) | The English Director's Cut with the MOD. Same game data as test.13: your saves keep working. | **[seraphic-blue-fullgame-EN-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip)** |
 | **JP + MOD (DC)** (v0.2.0) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-JP-v0.2.0.zip)** |
 
@@ -202,7 +217,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 - Overflow safety for extreme numbers (damage calculation order, caps of 300 on HIT / CRT / AVD / AGL / MOV).
 - Reflex Guard halves damage once, as in DC (Altered halved it twice in Original mode).
 - Sickness, five boss rewards and the key-item money bonus are back to their DC rules in Original mode (Arrange keeps Altered's).
-- New games start with "skip battles with weak enemies", supplement auto-fill and the fewer-members EXP bonus OFF, and Config "default" resets match. All three stay in Config.
+- A new game started as **Original Mode** begins with Config > "Skip Battles with Weak Enemies" OFF, "Auto Fill" OFF and "Character EXP Gain" without the fewer-members bonus, and Config "Default" resets the first and the third to match. A new game started as **Arrange Mode** (which the extra-content setup uses) begins with all three ON, as Altered does; the extra-content recipe above lists them.
 - Clever on a Forgetful unit still gives x1.3 as in DC (the Altered manual says x1.0; the game data says x1.3).
 
 ### MOD menu on the Altered build
@@ -215,11 +230,11 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 | Save anywhere (cheat) | Not in the MOD menu: use Config > Normal Save Method: MENU (page 1) |
 | MOD button | Menu slot 9. With Save Method MENU, slot 9 asks Save / MOD / Break |
 | ARRANGE page (v0.2.1) | Altered build only: the five ARRANGE switches above. Pages: SPEED, BATTLE, ARRANGE, CHEATS, INFO |
-| Random-battle intro, Cutscene speed, Random battles 1/N, Rewards follow the rate, Escape always works, Retry lost battles, Full heal, Return to world map, +10,000 DEAR, Level up party, early MOD access | As on the DC build. Retry also gives back the items Arrange's per-fight limit held back. |
+| Random-battle intro, Cutscene speed, Random battles 1/N, Rewards follow the rate, Escape always works, Retry lost battles, Full heal, Return to world map, +10,000 DEAR, Level up party, early MOD access | As on the DC build. Retry also gives back the items Arrange's per-fight limit held back. In Arrange mode, Full heal does not revive KO members (Altered's own heal rule); in Original mode it does. |
 
-- **Steps Left** (Altered Config page 6) counts the MOD encounter rate: at 1/2 it shows twice the steps; with random battles Off it shows the last two digits of a very large number.
+- **Steps Left** (Altered Config, Arrange Mode panel) counts the MOD encounter rate: at 1/2 it shows twice the steps. The display only has a hundreds digit of 1 or 2, so a count of 300 or more shows as 2xx, and with random battles Off it shows a 2 followed by the last two digits of a very large number.
 - **DC-only Player features:** the custom battle screen, the timeline names and click-to-walk stay off on the Altered build (Altered rebuilt its battle screens); mouse menus, message history and fast-forward work.
-- **Database:** one party member's name now follows the translation bible's spelling (the 2016 data spelled it differently).
+- **Database:** one party member's name now follows the translation bible's spelling (the 2016 data spelled it differently). This is the Altered build only; the EN + MOD (DC) build keeps the 2016 spelling until v0.2.2.
 
 </details>
 
