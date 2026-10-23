@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.0
+
+Three builds: EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new, new game only), JP + MOD (DC). Altered: all text in English, picture text redrawn, MOD menu adapted, Original mode = DC + bug fixes, standard RPG Maker files included. Known issue: Retry after a lost story battle on the DC build may not respond.
+
 ## v0.1.0-test.13
 
 22 dialogue boxes corrected after the comparison-page review (plus 4 cosmetic pause moves). Map-only update; saves unchanged. New: the public comparison page https://nostramadeus.github.io/seraphic-blue-mod/

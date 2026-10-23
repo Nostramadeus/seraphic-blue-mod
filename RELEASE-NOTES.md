@@ -1,4 +1,36 @@
-# Release notes — v0.1.0-test.13
+# Release notes — v0.2.0
+
+## Builds
+
+- **seraphic-blue-fullgame-EN-v0.2.0.zip** — EN + MOD (DC). Same game files as test.13 (re-tagged; only the documents and checksums inside the ZIP are new). Old saves keep working.
+- **seraphic-blue-fullgame-EN-Altered-v0.2.0.zip** — EN + MOD + Altered (DC Altered Ver2.13 fan patch, translated). **New game only.**
+- **seraphic-blue-fullgame-JP-v0.2.0.zip** — JP + MOD (DC), full Japanese game with the Japanese MOD menu.
+
+## Altered build
+
+- All Altered text in English; its Japanese picture text redrawn in English; the MOD menu adapted (rows Altered already has are left to its Config; see the README).
+- Original mode = DC + bug fixes; first play: Original, NORMAL. Full Arrange (BATTLE + MANY) for a second play; MANY alone not recommended.
+- Standard RPG Maker files (sound effects, battle animations and a few others) are included under the names the game uses, so no runtime install is needed.
+- EasyRPG Player only (8,040 variables, picture ids up to 78); RPG_RT.exe is not included.
+- Checked by scripted runs: new game to the first map, the MOD screen, losing and retrying battles many times and then winning (Original and Arrange; items, money and MOD settings unchanged, Arrange item-limit items given back), the return-to-world-map cheat. Not a full playthrough.
+
+## Known items to check (play test)
+
+- The text-input door on Map0746.
+- The scene on Map0524 with the added second box.
+- Pictures 187, 327, 531, 532, 533, 542, 558, 559.
+- Pictures drawn with tighter letter spacing: 342, 343, 510, 516, 518, 523, 527, 532, 533, 536, 538, 540, 542, 567, 568, 569, 570, 571, 572, 573, 576, 600, 601, 620, 622, 681, 682, 683, 687, 750, 758, 774, 780, 844, 865.
+
+## Known issues
+
+- EN + MOD (DC) build: after losing a story or boss battle, **Retry** may not respond; choose Accept defeat or load a save. Random-battle Retry works. (Shipped since test.10.)
+
+## Next
+
+- Planned for v0.2.1: MOD switches to turn off the Arrange battle rules (full HP after battle, item limit, always-escape, always-counter, enemy stat changes) one by one, so you can play the extra content with the original battle rules.
+- Next DC text release: the derived review data for three Map0746 boxes is shifted by one box (the shipped game text is correct).
+
+# Earlier: release notes — v0.1.0-test.13
 
 ## Translation corrections from the comparison review
 
