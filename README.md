@@ -6,17 +6,17 @@
 
 <img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick">
 
-**Which mode to pick.** Pick your build first:
+**Which mode to pick.** Two separate choices: first the **build** (which ZIP you download), then the **mode** (Altered build only). The three bullets below are builds. They are not the three mode cards further down.
 
-- **New player:** the **EN + MOD + Altered** build, set up as the first-play recommendation below. All the extra content with the original battle rules.
-- **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are.
-- **Playing in Japanese:** the **JP + MOD (DC)** build.
+- **New player:** the **EN + MOD + Altered** build. Then pick the mode **Extra content** (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). All the extra content with the original battle rules.
+- **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are. No mode choice: a DC build always plays like **Original**.
+- **Playing in Japanese:** the **JP + MOD (DC)** build. No mode choice: it always plays like **Original**.
 
-**Then pick your mode (Altered build only).** The DC builds have no mode choice.
+**Then pick your mode (Altered build only).** Three modes, shown below: **Original**, **Extra content** (first play, recommended) and **Full Arrange**. The DC builds have no mode choice.
 
 <img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
 
-- **First play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
+- **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
 - **Original: the purist choice.** The game as the author designed it (DC + the fixes listed under the Altered build), NORMAL difficulty.
 - **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
 - New Game+ with bonus picks is available after clearing, in every mode.
