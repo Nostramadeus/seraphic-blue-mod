@@ -1,6 +1,6 @@
 # Windows — download and play
 
-1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip).
+1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip).
 2. Right-click the ZIP → **Extract All**. Open the extracted **SeraphicBlue** folder.
 3. Double-click **PLAY.cmd**. Keep the extracted files together.
 
@@ -8,7 +8,7 @@ Player.exe is the game-running program. Its DLL helper files are already include
 
 ## Updating an existing installation
 
-Close the game and back up your actual saves. Extract the smaller Windows Player update separately. Copy only its Player.exe and all DLLs into your existing Player.exe folder; leave game data, saves and EasyRPG.ini alone. Existing custom launch arguments stay unchanged.
+Close the game. Download the new full game ZIP, extract it, and copy the **saves** folder from your old game folder into the new one. Saves from any earlier test release, the 2016 English patch or the Japanese original load as they are. Details: [Keep your saves](README.md#keep-your-saves).
 
 ## Controls
 

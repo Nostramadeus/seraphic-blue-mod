@@ -2,7 +2,7 @@
 
 ## Install once
 
-1. Switch to **Desktop Mode**. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-fullgame-EN-v0.1.0-test.6.zip) and extract it into your home folder, such as Documents.
+1. Switch to **Desktop Mode**. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) and extract it into your home folder, such as Documents.
 2. Open Steam → **Games → Add a Non-Steam Game → Browse**. Select **Player.exe** inside the extracted **SeraphicBlue** folder. Change the file filter to show all files if needed.
 3. Open that shortcut's **Properties → Compatibility**. Enable **Force the use of a specific Steam Play compatibility tool** and select **Proton Experimental**.
 4. In **Shortcut**, set **Start In** to the extracted **SeraphicBlue** folder and set **Launch Options** to the line below. Return to Gaming Mode and start the shortcut.
@@ -27,7 +27,7 @@ These are suggested bindings. Physical Deck/Proton operation has not been tested
 
 ## Updating
 
-Back up **saves**. For this runtime-only update, replace only Player.exe and its matching DLLs from the Windows Player update ZIP; keep the same folder, shortcut, game data and EasyRPG.ini.
+Back up **saves**. Download the new full game ZIP, extract it, copy the **saves** folder from the old game folder into the new one, and point the Steam shortcut at the new Player.exe. Details: [Keep your saves](README.md#keep-your-saves).
 
 ## Other routes
 

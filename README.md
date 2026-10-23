@@ -124,6 +124,7 @@ Download → Extract All → double-click PLAY.cmd → Play
 
 </details>
 
+<a name="keep-your-saves"></a>
 <img src="docs/img/banners/saves.png" width="900" alt="Keep your saves">
 
 1. Close the game.
