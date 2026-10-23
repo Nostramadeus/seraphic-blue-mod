@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.1
+
+Altered build only: MOD menu page ARRANGE with five switches that turn single Arrange battle rules back to the original rules (full HP after battle, item limit per battle, escape always succeeds, counterattack always fires, enemy stats and resistances); new first-play recommendation (MANY on, BATTLE off, switches Off); + marker on gear that exists only in Altered's extra content; v0.2.0 Altered saves carry over; new games start with the MOD row Escape always works Off (existing saves keep their setting). EN + MOD (DC) and JP + MOD (DC) unchanged (v0.2.0).
+
 ## v0.2.0
 
 Three builds: EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new, new game only), JP + MOD (DC). Altered: all text in English, picture text redrawn, MOD menu adapted, Original mode = DC + bug fixes, standard RPG Maker files included. Known issue: Retry after a lost story battle on the DC build may not respond.

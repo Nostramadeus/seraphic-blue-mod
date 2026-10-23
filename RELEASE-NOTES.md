@@ -1,4 +1,34 @@
-# Release notes — v0.2.0
+# Release notes — v0.2.1
+
+## Build
+
+- **seraphic-blue-fullgame-EN-Altered-v0.2.1.zip** — EN + MOD + Altered. New game, or a save from the v0.2.0 Altered build.
+- The EN + MOD (DC) and JP + MOD (DC) builds are unchanged: download them from [v0.2.0](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0) (**seraphic-blue-fullgame-EN-v0.2.0.zip**, **seraphic-blue-fullgame-JP-v0.2.0.zip**).
+
+## New: ARRANGE switches (Altered build)
+
+- New MOD menu page **ARRANGE** (pages: SPEED, BATTLE, ARRANGE, CHEATS, INFO) with five rows. Each is On (Altered) or Off (Original); the default is On.
+  - Full HP after battle. Off: HP refills from the SUP.HP pool, as in the original game.
+  - Item limit per battle. Off: no per-battle item limit.
+  - Escape always succeeds. Off: the original escape roll.
+  - Counterattack always fires. Off: the original counter chance.
+  - Enemy stats and resistances. Off: the original enemy data (enemies that are new in Altered keep theirs).
+- Used only in Arrange mode. With BATTLE on, the Escape and Enemy rows follow BATTLE's own rules.
+- Not switchable (always Altered in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns.
+- New first-play recommendation: MANY on, BATTLE off, all five switches Off (Altered's extra content with the original battle rules). Original stays the purist choice; Full Arrange (BATTLE + MANY) is for a second run. Setup steps: README, Game modes.
+- **+ marks gear that exists only in Altered's extra content** (on its name picture).
+- Saves from v0.2.0 (Altered build) load. The switches appear (all On) after the next map change or battle; other settings are kept.
+- The MOD INFO page explains each switch.
+- README: a step-by-step dungeon trip under both rule sets, with the player's reasoning at each step.
+- MOD: new games start with Escape always works Off; existing saves keep their setting. (The EN + MOD and JP + MOD builds get this with the next DC release.)
+- Checked by scripted runs: battles with the rows Off and On under MANY only and in Original mode (item counts, held-back items, how HP is refilled), the retry cycle, escapes with the Escape row Off (a failed escape seen), a v0.2.0 save, enemy data with the Enemy row Off and On, the ARRANGE page on screen. The Counterattack row was checked in the game data; its Off chance was not measured in play. Not a full playthrough.
+
+## Known items and issues
+
+- v0.2.0 listed a DC retry issue after story battles; it could not be reproduced from normal play. Please report it with a save if you see it.
+- Other known items: unchanged from v0.2.0 (below).
+
+# Earlier: release notes — v0.2.0
 
 ## Builds
 

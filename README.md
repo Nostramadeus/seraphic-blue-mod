@@ -11,20 +11,20 @@ The release already includes the Japanese-based dialogue retranslation and its r
 - **Additional translation checks:** The unchanged-English audit (test.11) and the crowded-box audit (test.12) are complete. Remaining: a few term rows in the translation bible.
 - **Picture text and comparisons:** Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.
 - **Easier use:** Planning simpler updates and clearer control illustrations. Quotation-mark display is also being checked.
-- **DC Altered:** released in v0.2.0 as its own build ([Altered build](#altered-build-en--mod--altered)). Next: Arrange-rule switches (v0.2.1).
+- **DC Altered:** its own build since v0.2.0 ([Altered build](#altered-build-en--mod--altered)). v0.2.1 adds the ARRANGE switches, so the extra content can be played with the original battle rules.
 - **Optional combat and QoL:** Comparing Original/Arrange combat, difficulty, speed and animation skipping with this MOD. Defaults, save compatibility and safe settings are still under review.
 
 </details>
 
-## Downloads (v0.2.0)
+## Downloads
 
 | Build | What it is | Download |
 | --- | --- | --- |
-| **EN + MOD (DC)** | The English Director's Cut with the MOD. Same game data as test.13: your saves keep working. | **[seraphic-blue-fullgame-EN-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip)** |
-| **EN + MOD + Altered** | The English *DC Altered* Ver2.13 fan patch with the MOD. New game only. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-Altered-v0.2.0.zip)** |
-| **JP + MOD (DC)** | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-JP-v0.2.0.zip)** |
+| **EN + MOD (DC)** (v0.2.0) | The English Director's Cut with the MOD. Same game data as test.13: your saves keep working. | **[seraphic-blue-fullgame-EN-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip)** |
+| **EN + MOD + Altered** (v0.2.1) | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 Altered build. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.2.1.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.1/seraphic-blue-fullgame-EN-Altered-v0.2.1.zip)** |
+| **JP + MOD (DC)** (v0.2.0) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-JP-v0.2.0.zip)** |
 
-[All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0). Each ZIP includes its game, the Windows and older native Linux Players, and launchers.
+[All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases). v0.2.1 updates only the Altered build; the EN + MOD (DC) and JP + MOD (DC) downloads stay on [v0.2.0](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0). Each ZIP includes its game, the Windows and older native Linux Players, and launchers.
 
 **Setup:** [Windows](WINDOWS.md) · [Linux / Proton](LINUX.md) · [Steam Deck](STEAM-DECK.md). On Windows, double-click **PLAY.cmd**. Follow the linked Steam/Proton steps on Linux or Deck.
 
@@ -81,7 +81,7 @@ Download → Extract All → Choose your platform below → Play
 
 **What this build adds:** the whole game in English (Altered's new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).
 
-**New game only.** Start a new game in this build. Keep old saves on the EN + MOD (DC) build: the test.13 download stays up, and the v0.2.0 DC download uses the same game data. The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
+**New game only** (saves from the v0.2.0 Altered build carry over). Start a new game in this build. Keep DC saves on the EN + MOD (DC) build: the test.13 download stays up, and the v0.2.0 DC download uses the same game data. The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
 
 ### Game modes (Altered build)
 
@@ -99,12 +99,74 @@ One dungeon trip, two designs:
 | Turn order at the start | Fixed rules | Random opening turn order |
 | Gear and shops | As designed | 50 new items, rebuilt shops |
 
-- **First play: Original, NORMAL.** It keeps the game the author designed: the attrition loop.
-- **Second play, or if you want a smoother, modern-feeling run: Full Arrange** (BATTLE + MANY).
-- **MANY alone: not recommended.** It is a half-way state (Arrange rules without the rest of the Arrange battle system).
-- Planned for v0.2.1: MOD switches to turn off the Arrange battle rules (full HP after battle, item limit, always-escape, always-counter, enemy stat changes) one by one, so you can play the extra content with the original battle rules.
-- Inside Arrange, Altered's own Config can switch off the random turn order, the luck elements and the timing hits; full HP after battle, the item limit, always-escape and always-counter cannot be switched off in v0.2.0.
+## How a dungeon trip feels: original rules vs Arrange rules
+
+Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default from v0.2.1 on).
+
+### Original rules (Original mode, or extra content with the five ARRANGE switches Off)
+
+1. **You enter the dungeon.** HP is full, the SUP.HP / SUP.TP pools are full (your refill reserve), the bag holds 12 heals.
+   - "The pools are my budget for this whole trip. Every point I spend comes out of them."
+2. **Fight 1, three weak enemies.** You take 300 damage. After the win, HP stays where it is. If you switched on the game's own Auto Fill option, HP refills and the SUP.HP pool pays for it 1:1 (Auto Fill is off at new game in Original mode; on in extra-content mode).
+   - "Fine, cheap fight. Refill now from the pool, or carry the damage and save the pool? Pool first, it is early."
+3. **Fight 2, a tougher pair.** One enemy inflicts Slow. You weigh curing it or hitting harder.
+   - "If I cure, that is an action lost. If I ignore it, I take two more hits. Cure, the boss is still ahead."
+4. **Fight 3, an ambush.** You try to escape. The roll fails. You take a round of damage, then it works.
+   - "Escape is a dice roll. Burned a turn and 400 HP. The pool will not cover the boss if this keeps up."
+5. **Between fights.** The pool is at 30 percent. You check the bag.
+   - "Use heals now, or save them for the boss? Turn back to the save tree and refill the pools, or push on?"
+   - This is the decision the original game is built around.
+6. **Boss.** HP starts wherever you left it. You can throw as many heals as you own. The boss shrugs off your ailment spells; your counterattack sphere triggers now and then, on its roll.
+   - "No tricks work on him. It is a stat check plus my heal count. Spam heals, outlast, keep everyone alive."
+7. **After the boss.** Pools nearly empty, bag half gone.
+   - "Back to a save tree before the next area. I need the refill."
+
+### Arrange rules (BATTLE and MANY on, ARRANGE switches On)
+
+1. **You enter the dungeon.** Full HP, full pools, 12 heals.
+   - "The pools barely matter; each fight is on its own."
+2. **Fight 1, three weak enemies.** You take 300 damage. After the win your HP is full again; the pool is untouched.
+   - "Free. The only cost of a fight is the time it takes."
+3. **Fight 2, a tougher pair.** Slow lands on you. Your counterattack sphere now triggers whenever it is allowed to, not on a roll; crits land on more moves.
+   - "Cure or hit? Hitting is better here, my counters are doing half the work."
+4. **Fight 3, an ambush.** You pick Escape. It works whenever escape is allowed at all.
+   - "Not worth fighting. Gone."
+5. **Between fights.** HP is full. Nothing to decide.
+   - "Straight to the boss."
+6. **Boss.** You start at full HP. You may use at most 5 of each item in this fight. Ailments now work on the boss; the chain and break gauges reward attacking in rhythm.
+   - "Five heals total, so each one must be timed. Can I Slow him? Yes. Break gauge is at 60 percent, two more hits and his guard drops. Pattern, not endurance."
+7. **After the boss.** Full HP again.
+   - "On to the next area."
+
+### One line each
+
+- Original: the hard part is the journey. You ration a pool across many fights, and the boss is an endurance test you can brute-force with items.
+- Arrange: the hard part is each boss. Every fight is a clean puzzle with a 5-item cap, and nothing carries over.
+- With the five ARRANGE switches Off in the extra-content mode, you get the Original column above while keeping the extra maps, gear and shops. The remaining Arrange formula changes (crit rules, the Charge command, guard math, stat coefficients) stay on; they change numbers, not this flow.
+
+### Which mode to pick
+
+- **First play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (Escape / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
+- **Original: the purist choice.** The game as the author designed it (DC + the fixes below), NORMAL difficulty.
+- **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
 - New Game+ with bonus picks is available after clearing, in every mode.
+
+### ARRANGE switches (MOD menu, Altered build only)
+
+Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run plays as in v0.2.0 until you change a row. The rows are used only in Arrange mode; Original mode always plays the original rules.
+
+| Switch | On (Altered, default) | Off (Original) |
+| --- | --- | --- |
+| Full HP after battle | HP is fully restored after every battle | HP refills from the SUP.HP pool, as in the original game |
+| Item limit per battle | At most 5 of each item in a battle (20 when the item limit is lifted); the rest returns after the battle | No per-battle limit |
+| Escape always succeeds | Escaping works whenever escape is allowed | The original escape roll (the MOD's own "Escape always works" row still applies) |
+| Counterattack always fires | A counterattack always triggers when it can | The original counter chance |
+| Enemy stats and resistances | Altered's enemy data | The original enemy data (enemies that are new in Altered keep theirs) |
+
+- **With BATTLE on, the Escape and Enemy rows follow BATTLE's own rules.**
+- **Not switchable** (always Altered in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns. Altered's own Config can switch off the random turn order, the luck elements and the timing hits.
+- **+ marks gear that exists only in Altered's extra content.**
+- **Saves from v0.2.0** (Altered build) load in v0.2.1: extract v0.2.1 to a new folder and copy the **saves** folder from the old SeraphicBlue-Altered folder into it. The five switches appear (all On) after the next map change or battle; your other settings stay as they were.
 
 ### Original mode = DC + these fixes
 
@@ -125,6 +187,7 @@ One dungeon trip, two designs:
 | Menu fade | Not in the MOD menu: use Config > Screen Speed of Menus (page 2) |
 | Save anywhere (cheat) | Not in the MOD menu: use Config > Normal Save Method: MENU (page 1) |
 | MOD button | Menu slot 9. With Save Method MENU, slot 9 asks Save / MOD / Break |
+| ARRANGE page (v0.2.1) | Altered build only: the five ARRANGE switches above. Pages: SPEED, BATTLE, ARRANGE, CHEATS, INFO |
 | Random-battle intro, Cutscene speed, Random battles 1/N, Rewards follow the rate, Escape always works, Retry lost battles, Full heal, Return to world map, +10,000 DEAR, Level up party, early MOD access | As on the DC build. Retry also gives back the items Arrange's per-fight limit held back. |
 
 - **Steps Left** (Altered Config page 6) counts the MOD encounter rate: at 1/2 it shows twice the steps; with random battles Off it shows the last two digits of a very large number.
@@ -134,6 +197,12 @@ One dungeon trip, two designs:
 </details>
 
 <details><summary>Release changes and translation comparison</summary>
+
+**New in v0.2.1 (Altered build only):**
+- **ARRANGE page** in the MOD menu: five switches that turn single Arrange battle rules back to the original rules (see [Altered build](#altered-build-en--mod--altered)).
+- **First-play recommendation:** MANY on, BATTLE off, all five switches Off.
+- **+ marker** on the name pictures of gear that exists only in Altered's extra content.
+- Saves from the v0.2.0 Altered build carry over. The EN + MOD (DC) and JP + MOD (DC) builds are unchanged (v0.2.0).
 
 **New in v0.2.0:**
 - **Three builds:** EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new), JP + MOD (DC, full game).
@@ -352,3 +421,7 @@ Native Linux has no newer binary than test.2; use Proton for the latest engine f
 English game content and its original manual/credits are included. The JP + MOD full game (v0.2.0) and the separate Japanese patch are available for Japanese players. Native Linux remains the previously tested Ubuntu 22.04-compatible test.2 runtime. No full-playthrough or physical Deck verification is claimed.
 
 </details>
+
+## For modders and forks
+
+[Modding notes](https://github.com/Nostramadeus/seraphic-blue-mod/blob/main/docs/MODDING-NOTES.md): what broke when this MOD met the Altered fan patch, how each problem was found, the fix, and the build order that worked.
