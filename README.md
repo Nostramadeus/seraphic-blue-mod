@@ -28,7 +28,7 @@ The release already includes the Japanese-based dialogue retranslation and its r
 
 **Setup:** [Windows](WINDOWS.md) · [Linux / Proton](LINUX.md) · [Steam Deck](STEAM-DECK.md). On Windows, double-click **PLAY.cmd**. Follow the linked Steam/Proton steps on Linux or Deck.
 
-**Controls:** Enter confirms; Esc goes back. **Fast-forward:** hold **F** for 3x speed, hold **G** for 10x (EasyRPG Player feature; both speeds adjustable in Settings > Input, controller: right trigger).
+**Controls:** <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> Esc goes back. **Fast-forward:** hold <img src="docs/img/keys/f.svg" height="22" alt="F"> **F** for 3x speed, hold <img src="docs/img/keys/g.svg" height="22" alt="G"> **G** for 10x (EasyRPG Player feature; both speeds adjustable in Settings > Input, controller: right trigger).
 
 **Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
 
@@ -105,6 +105,8 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 ### Original rules (Original mode, or extra content with the five ARRANGE switches Off)
 
+<img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking">
+
 1. **You enter the dungeon.** HP is full, the SUP.HP / SUP.TP pools are full (your refill reserve), the bag holds 12 heals.
    - "The pools are my budget for this whole trip. Every point I spend comes out of them."
 2. **Fight 1, three weak enemies.** You take 300 damage. After the win, HP stays where it is. If you switched on the game's own Auto Fill option, HP refills and the SUP.HP pool pays for it 1:1 (Auto Fill is off at new game in Original mode; on in extra-content mode).
@@ -122,6 +124,8 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
    - "Back to a save tree before the next area. I need the refill."
 
 ### Arrange rules (BATTLE and MANY on, ARRANGE switches On)
+
+<img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
 1. **You enter the dungeon.** Full HP, full pools, 12 heals.
    - "The pools barely matter; each fight is on its own."
@@ -146,7 +150,9 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 ### Which mode to pick
 
-- **First play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (Escape / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
+<img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
+
+- **First play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
 - **Original: the purist choice.** The game as the author designed it (DC + the fixes below), NORMAL difficulty.
 - **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
 - New Game+ with bonus picks is available after clearing, in every mode.
@@ -219,7 +225,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 - **Old saves work.** A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the **saves** folder.
 
 **New in test.11:**
-- **Message history (Windows Player):** scroll back through the last 100 message boxes you read, with the choice you picked. Open it with **mouse wheel up** or **Page Up** while a message is showing or while you walk on the field; scroll with the wheel or Up / Down, page with Page Up / Page Down, close with **Escape / B / right click**. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.
+- **Message history (Windows Player):** scroll back through the last 100 message boxes you read, with the choice you picked. Open it with <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> **mouse wheel up** or **Page Up** while a message is showing or while you walk on the field; scroll with the <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel or <img src="docs/img/keys/up.svg" height="22" alt="Up"> Up / <img src="docs/img/keys/down.svg" height="22" alt="Down"> Down, page with Page Up / Page Down, close with **<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B / <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right click**. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.
 - **67 dialogue boxes corrected to match the Japanese** (dropped qualifiers or hedges restored, Japanese idioms kept as their own image, 14 names and terms made consistent with the in-game dictionary). 7 of them now use two boxes instead of one shortened box. All 585 boxes whose English was identical to the 2016 patch were checked against the Japanese and found correct.
 - Changed files: Player.exe and 43 map files. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.
 
@@ -231,7 +237,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 - No Player, map or save changes.
 
 **New in test.8:**
-- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / Esc / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes.
+- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> Esc / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes.
 - **Clicking to walk now works in the opening rooms** (it needed the unlocked game menu before).
 - **Opening poem card:** the second card of the opening poem is retranslated to match the Japanese.
 - Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.
@@ -267,14 +273,14 @@ Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom 
 brew install easyrpg-player
 ```
 
-3. In Terminal, type `cd ` (including the space), drag the extracted **SeraphicBlue** folder into Terminal, and press Enter. Run:
+3. In Terminal, type `cd ` (including the space), drag the extracted **SeraphicBlue** folder into Terminal, and press <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter. Run:
 
 ```sh
 mkdir -p saves config
 easyrpg-player --project-path . --save-path saves --config-path config --encoding 932 --window
 ```
 
-**Controls:** arrows select/move; Enter confirms; Escape goes back; Shift runs/opens secondary actions. Saves go in **SeraphicBlue/saves**.
+**Controls:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows select/move; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape goes back; <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift runs/opens secondary actions. Saves go in **SeraphicBlue/saves**.
 
 **Limits:** script-based MOD options are expected to work. Custom hover/click targeting, click-to-walk, character tabs, enhanced text reveal and battle-animation acceleration need our modified Player and are unavailable here. **This Mac route is untested.** [Official Mac support](https://easyrpg.org/player/downloads/) · [Homebrew package](https://formulae.brew.sh/formula/easyrpg-player.html).
 
@@ -288,15 +294,15 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 ### Select menus, spells and targets
 
-- **Mouse:** hover to preview; left-click to choose. Works on supported menu rows, enemies and allies.
-- **Keyboard / Deck:** arrows / D-pad select; Enter / A confirms; Escape / B backs out.
+- **Mouse:** hover to preview; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left-click to choose. Works on supported menu rows, enemies and allies.
+- **Keyboard / Deck:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows / D-pad select; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B backs out.
 - **Result:** highlight and information update. Hover spends nothing. A stationary mouse leaves keyboard selection alone.
 
 <img src="docs/images/battle-hover.png" width="640" alt="Enemy hover selection with the selected enemy name and battle menu">
 
 ### Find the next spell or item page
 
-- **Mouse:** wheel or click the page arrows; hover an entry to select it.
+- **Mouse:** <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel or <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click the page arrows; hover an entry to select it.
 - **Keyboard / Deck:** Left/Right / D-pad left/right changes pages; Up/Down selects a row.
 - **Result:** **< 2/3 >** means page two of three. Applies to paged battle magic/items and supported menu lists.
 
@@ -304,7 +310,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 ### Switch Status / Gear / Ability without backing out
 
-- **Mouse:** click a top tab. **Keyboard:** Page Up / Page Down. **Deck:** bind LB / RB to those keys.
+- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click a top tab. **Keyboard:** Page Up / Page Down. **Deck:** bind LB / RB to those keys.
 - **Result:** switch screens while keeping the same character. Left/Right still changes characters.
 - Tabs work at the top level; back out of an unfinished selection first. Reserve characters cannot open Ability.
 
@@ -312,16 +318,16 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 ### Click or tap to walk
 
-- **Mouse:** click ground to route there; click an NPC's feet to approach and interact once.
+- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click ground to route there; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click an NPC's feet to approach and interact once.
 - **See:** white square = hovered tile; green square = accepted destination. No green square means no route was accepted. It clears on arrival or cancellation.
-- **Cancel / walk manually:** arrows / Deck D-pad. Escape / B or right-click also cancels routing. No separate keyboard destination picker.
+- **Cancel / walk manually:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows / Deck D-pad. <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B or <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right-click also cancels routing. No separate keyboard destination picker.
 - **Deck touchscreen:** tapping ground is expected to work through Proton because [Deck taps normally act as mouse clicks](https://partner.steamgames.com/doc/steamhardware/steamdeck/faq#Input). **Not tested on Deck hardware.** If tapping fails, try the right trackpad as Mouse + left-click. Hover preview needs a trackpad/mouse.
 
 <img src="docs/images/walking-destination.png" width="640" alt="Green destination square on the field after a click-to-walk command">
 
 ### Advance dialogue and story pauses
 
-- **Mouse:** left-click. **Keyboard / Deck:** Enter / A with the suggested binding.
+- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left-click. **Keyboard / Deck:** <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A with the suggested binding.
 - Press while text appears to reveal it faster; press again at a dialogue pause to continue. Use separate presses, not a held click.
 - **Not every pause is skippable:** timed scene waits, movement and animations can continue. Use **MOD → SPEED → Cutscene speed** to shorten scripted waits; confirm is not a universal scene-skip button.
 
@@ -331,13 +337,13 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 
 ## MOD menu tutorials
 
-**Open:** Escape / Deck B → select **MOD** → Enter / A. Before the story unlocks the game menu, Escape / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** Shift / X changes page; Up/Down selects a row; Left/Right changes its value. Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
+**Open:** <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / Deck B → select **MOD** → <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A. Before the story unlocks the game menu, <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X changes page; <img src="docs/img/keys/up.svg" height="22" alt="Up"> Up/<img src="docs/img/keys/down.svg" height="22" alt="Down"> Down selects a row; <img src="docs/img/keys/left.svg" height="22" alt="Left"> Left/<img src="docs/img/keys/right.svg" height="22" alt="Right"> Right changes its value. <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
 
 ### SPEED — spend less time waiting
 
 | Setting | Try / result |
 | --- | --- |
-| Walk speed / Hold Shift to run | Choose 2x for faster walking. Enable running; hold Shift / X to run. Scripted movement stays unchanged. |
+| Walk speed / Hold Shift to run | Choose 2x for faster walking. Enable running; hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X to run. Scripted movement stays unchanged. |
 | Battle speed | Choose 2x–10x for shorter waits/animations; Instant skips animation waits. |
 | Random-battle intro | Off skips the random-battle flash; story intros stay. |
 | Menu fade | Choose 0.1 s or None for quicker menu transitions. |
@@ -372,12 +378,12 @@ Enable the CHEATS page when asked. Select an action and confirm. **Save first be
 
 | Action | Mouse | Keyboard / suggested Steam Input |
 | --- | --- | --- |
-| Select / confirm | Hover / left click | Arrows / Enter; D-pad / A |
-| Back / cancel walking | Right click | Escape / B; arrows cancel walking |
-| Change battle list page | Wheel or page arrows | Left / Right |
+| Select / confirm | Hover / <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left click | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows / <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter; D-pad / A |
+| Back / cancel walking | <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> Right click | <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B; <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows cancel walking |
+| Change battle list page | <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> Wheel or page arrows | <img src="docs/img/keys/left.svg" height="22" alt="Left"> Left / <img src="docs/img/keys/right.svg" height="22" alt="Right"> Right |
 | Switch character tabs | Top tabs | Page Up / Page Down; optional LB / RB |
-| Secondary action | Follow the displayed hint | Shift / X |
-| Message history (last 100 boxes) | Wheel up while a message shows or while walking; wheel scrolls; right click closes | Page Up opens; Up / Down scroll; Page Up / Down page; Escape / B closes |
+| Secondary action | Follow the displayed hint | <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X |
+| Message history (last 100 boxes) | <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> Wheel up while a message shows or while walking; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel scrolls; <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right click closes | Page Up opens; <img src="docs/img/keys/up.svg" height="22" alt="Up"> Up / <img src="docs/img/keys/down.svg" height="22" alt="Down"> Down scroll; Page Up / Down page; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B closes |
 
 Steam Input bindings are suggestions, not a verified Deck layout. Touch does not provide hover before contact.
 
@@ -385,10 +391,10 @@ Steam Input bindings are suggestions, not a verified Deck layout. Touch does not
 
 | Try this | Mouse | Keyboard / suggested Deck buttons |
 | --- | --- | --- |
-| Secondary actions in Gear, shops or battle | Follow the visible hint; Shift still needs a key/button | Shift / X; opens the action shown on that screen |
-| Buy or sell several items | Click -10 / -1 / +1 / +10, then Buy/Sell | Arrows adjust quantity; Enter / A confirms |
-| Supplement or Upgrade amounts | Hover a digit/amount; wheel adjusts; click Apply/Upgrade | Arrows select/adjust; Enter / A confirms |
-| Dictionary and history | Hover supported rows; wheel changes list pages or scrolls history | Arrows navigate; Enter / A chooses where applicable |
+| Secondary actions in Gear, shops or battle | Follow the visible hint; <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift still needs a key/button | <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X; opens the action shown on that screen |
+| Buy or sell several items | <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> Click -10 / -1 / +1 / +10, then Buy/Sell | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows adjust quantity; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms |
+| Supplement or Upgrade amounts | Hover a digit/amount; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel adjusts; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click Apply/Upgrade | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows select/adjust; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms |
+| Dictionary and history | Hover supported rows; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel changes list pages or scrolls history | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows navigate; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A chooses where applicable |
 
 Native name-entry and number-entry keep their original keyboard controls.
 

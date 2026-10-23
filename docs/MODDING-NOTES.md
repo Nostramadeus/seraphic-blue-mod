@@ -42,7 +42,7 @@ Seraphic Blue is not "a 2000 JRPG". It is about 1,400 event programs in RPG Make
 
 ### 6. Pre-existing DC bug: Retry after a lost fixed battle ignores input (DC English build)
 - **Symptom:** the retry question appears but no Decision press is accepted; random-battle retry works.
-- **Outcome (2026-10-24):** NOT REPRODUCED. 8 hidden runs on the shipped DC files (fixed battle entered through its map event, random battle, parties of 4 and of 1) all accepted Decision and restarted the battle; the decoded saves show only CE110/CE71 on the stack at the question. The two failing runs used a hand-edited test save and a debug teleport the game never performs. Treated as a test-setup artifact. work/bugfix-dc-retry-20261024/ROOTCAUSE.md; challenger_dc_retry.py is now a release gate for the DC builds.
+- **Outcome (2026-10-23):** NOT REPRODUCED. 8 hidden runs on the shipped DC files (fixed battle entered through its map event, random battle, parties of 4 and of 1) all accepted Decision and restarted the battle; the decoded saves show only CE110/CE71 on the stack at the question. The two failing runs used a hand-edited test save and a debug teleport the game never performs. Treated as a test-setup artifact. work/bugfix-dc-retry-20261024/ROOTCAUSE.md; challenger_dc_retry.py is now a release gate for the DC builds.
 - **Lesson:** a failure seen only from a hand-edited save is not a bug until it reproduces from a game-made state; record every save edit in the evidence folder.
 
 ### 7. Translation records that did not exist as a type
