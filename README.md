@@ -1,91 +1,27 @@
-# Seraphic Blue MOD
+<img src="docs/img/banners/hero.png" width="900" alt="Seraphic Blue MOD: English retranslation, MOD menu, DC Altered build">
 
-**How does this translation compare to the 2016 patch?** [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. **Spoiler warning:** it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind.
+*Seraphic Blue* (Tempura, 2004, RPG Maker 2000), in English again: every dialogue box retranslated from the Japanese, a MOD menu (fewer random battles, speed, cheats, message history, mouse play), and an optional English build of the *DC Altered* fan patch. One ZIP per build; no original game, patching or extra downloads needed.
 
-## In progress
+**Status:** released. Current versions: v0.2.0 (DC builds) and v0.2.1 (Altered build). Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
 
-The release already includes the Japanese-based dialogue retranslation and its review. Further translation, picture, content-dependency, optional combat and QoL checks support one combined release.
+<img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick">
 
-<details><summary>Current work</summary>
+**Pick your build first:**
 
-- **Additional translation checks:** The unchanged-English audit (test.11) and the crowded-box audit (test.12) are complete. Remaining: a few term rows in the translation bible.
-- **Picture text and comparisons:** Reviewing remaining text images, large-font cards, source matching, and comparison pages that span several cards.
-- **Easier use:** Planning simpler updates and clearer control illustrations. Quotation-mark display is also being checked.
-- **DC Altered:** its own build since v0.2.0 ([Altered build](#altered-build-en--mod--altered)). v0.2.1 adds the ARRANGE switches, so the extra content can be played with the original battle rules.
-- **Optional combat and QoL:** Comparing Original/Arrange combat, difficulty, speed and animation skipping with this MOD. Defaults, save compatibility and safe settings are still under review.
+- **New player:** the **EN + MOD + Altered** build, set up as the first-play recommendation below. All the extra content with the original battle rules.
+- **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are.
+- **Playing in Japanese:** the **JP + MOD (DC)** build.
 
-</details>
+**Then pick your mode (Altered build only).** The DC builds have no mode choice.
 
-## Downloads
+<img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
 
-| Build | What it is | Download |
-| --- | --- | --- |
-| **EN + MOD (DC)** (v0.2.0) | The English Director's Cut with the MOD. Same game data as test.13: your saves keep working. | **[seraphic-blue-fullgame-EN-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip)** |
-| **EN + MOD + Altered** (v0.2.1) | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 Altered build. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.2.1.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.1/seraphic-blue-fullgame-EN-Altered-v0.2.1.zip)** |
-| **JP + MOD (DC)** (v0.2.0) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-JP-v0.2.0.zip)** |
+- **First play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
+- **Original: the purist choice.** The game as the author designed it (DC + the fixes listed under the Altered build), NORMAL difficulty.
+- **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
+- New Game+ with bonus picks is available after clearing, in every mode.
 
-[All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases). v0.2.1 updates only the Altered build; the EN + MOD (DC) and JP + MOD (DC) downloads stay on [v0.2.0](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0). Each ZIP includes its game, the Windows and older native Linux Players, and launchers.
-
-**Setup:** [Windows](WINDOWS.md) · [Linux / Proton](LINUX.md) · [Steam Deck](STEAM-DECK.md). On Windows, double-click **PLAY.cmd**. Follow the linked Steam/Proton steps on Linux or Deck.
-
-**Controls:** <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> Esc goes back. **Fast-forward:** hold <img src="docs/img/keys/f.svg" height="22" alt="F"> **F** for 3x speed, hold <img src="docs/img/keys/g.svg" height="22" alt="G"> **G** for 10x (EasyRPG Player feature; both speeds adjustable in Settings > Input, controller: right trigger).
-
-**Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
-
-## Already playing? Keep your saves
-
-1. Close the game.
-2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) (EN + MOD, DC) and extract it.
-3. Copy the **saves** folder from your old game folder into the new one. Done.
-
-Dropped the game years ago? Saves from the Japanese original or the 2016 English patch load here too: copy your **SaveXX.lsd** files into the **saves** folder.
-
-<details><summary>Smaller download: update ZIPs instead (step by step)</summary>
-
-1. Close the game. Keep a backup of your actual save folder.
-2. On test.6 or older, first apply the [test.7 image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip) (extract beside **RPG_RT.ldb**, replace the Picture files).
-3. On test.7 or older, [download the test.8 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-update-v0.1.0-test.8.zip). Extract it into your game folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe**, **RPG_RT.ldb**, **Map0003.lmu** and one **Picture** file. If your Player.exe lives in another folder (older patch installs), copy the new Player.exe there instead.
-4. On test.8 or older, [download the test.9 picture update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 55 **Picture** files.
-5. On test.9 or older, [download the test.10 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-update-v0.1.0-test.10.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Map0507.lmu**.
-6. On test.10 or older, [download the test.11 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe** and the 43 **Map** files.
-7. On test.11, [download the test.12 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 45 **Map** files.
-8. [Download the test.13 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.13/seraphic-blue-update-v0.1.0-test.13.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 22 **Map** files.
-9. On test.13: nothing to update. The v0.2.0 EN + MOD (DC) build has the same game files.
-10. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
-
-</details>
-
-<details open><summary>Platform setup and limitations</summary>
-
-One ZIP includes the English game, latest Windows Player, an older native Linux Player, and launchers. No separate original-game download, patching, Python or DLL selection is needed.
-
-```text
-Download → Extract All → Choose your platform below → Play
-```
-
-| Your platform | Start here | Newest mouse features? |
-| --- | --- | --- |
-| Windows | Double-click **PLAY.cmd**. [Windows steps](WINDOWS.md) | Yes |
-| Linux through Steam / Proton | Add **Player.exe** to Steam; enable Proton. [Linux steps](LINUX.md) | Yes; compatibility not verified here |
-| Steam Deck | Desktop Mode: add **Player.exe** to Steam; enable Proton. [Deck steps](STEAM-DECK.md) | Yes; hardware not verified here |
-| Native Linux alternative | Run **sh play-linux.sh**. [Requirements](LINUX.md#native-linux-alternative) | Older test.2 controls; new hover/tabs/walking are unavailable |
-| macOS (experimental) | Official Mac EasyRPG Player + this ZIP's game data. [Mac steps](#macos-experimental-keyboard-route) | Custom Player features unavailable; not Mac-tested |
-
-</details>
-
-<details open><summary>Altered build</summary>
-
-## Altered build (EN + MOD + Altered)
-
-**What it is.** *Seraphic Blue (DC Altered Version) Ver2.13* is an unofficial fan patch for the Director's Cut by **腐林檎** ("Rotten Apple") and **時空転移プリン** ("Space-Time Warp Pudding", ◆YuikkIDGis). Tempura (Sakaki), the original author, was not involved; the Altered authors ask players not to contact Sakaki or the Blue Field boards about it. Credits from the Altered manual: music by 氷石彩亜 (FREEDOM HOUSE 2nd), 星野春日 (Muzie), 煉獄小僧 (煉獄庭園) and Ciel (Le Ciel Bleu); sound effects by WEB WAVE LIB; backgrounds by aska (Silverry moon light); battle-animation graphics from Character Maker Pro (Enterbrain); help from the 2ch Blue Field threads and 風邪薬 ◆RohTo3cNBI. The Altered manual (Japanese) is included in the ZIP (**ManualAlt**, **改造版マニュアル.htm**).
-
-**What this build adds:** the whole game in English (Altered's new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).
-
-**New game only** (saves from the v0.2.0 Altered build carry over). Start a new game in this build. Keep DC saves on the EN + MOD (DC) build: the test.13 download stays up, and the v0.2.0 DC download uses the same game data. The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
-
-### Game modes (Altered build)
-
-One dungeon trip, two designs:
+<details><summary>Original vs Full Arrange at a glance (table)</summary>
 
 | | Original | Full Arrange (BATTLE + MANY) |
 | --- | --- | --- |
@@ -99,11 +35,13 @@ One dungeon trip, two designs:
 | Turn order at the start | Fixed rules | Random opening turn order |
 | Gear and shops | As designed | 50 new items, rebuilt shops |
 
-## How a dungeon trip feels: original rules vs Arrange rules
+</details>
 
-Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default from v0.2.1 on).
+<img src="docs/img/banners/trip-original.png" width="900" alt="A dungeon trip: Original rules">
 
-### Original rules (Original mode, or extra content with the five ARRANGE switches Off)
+<details><summary>Open: the seven steps of one dungeon trip under the original rules, as a diagram and as text</summary>
+
+Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default from v0.2.1 on). These rules apply in Original mode, and in the extra-content mode with the five ARRANGE switches Off.
 
 <img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
@@ -123,7 +61,13 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 7. **After the boss.** Pools nearly empty, bag half gone.
    - "Back to a save tree before the next area. I need the refill."
 
-### Arrange rules (BATTLE and MANY on, ARRANGE switches On)
+**One line:** the hard part is the journey. You ration a pool across many fights, and the boss is an endurance test you can brute-force with items.
+
+</details>
+
+<img src="docs/img/banners/trip-arrange.png" width="900" alt="A dungeon trip: Arrange rules">
+
+<details><summary>Open: the same trip under the Arrange rules (BATTLE and MANY on, ARRANGE switches On)</summary>
 
 <img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
@@ -142,20 +86,92 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 7. **After the boss.** Full HP again.
    - "On to the next area."
 
-### One line each
+**One line:** the hard part is each boss. Every fight is a clean puzzle with a 5-item cap, and nothing carries over.
 
-- Original: the hard part is the journey. You ration a pool across many fights, and the boss is an endurance test you can brute-force with items.
-- Arrange: the hard part is each boss. Every fight is a clean puzzle with a 5-item cap, and nothing carries over.
-- With the five ARRANGE switches Off in the extra-content mode, you get the Original column above while keeping the extra maps, gear and shops. The remaining Arrange formula changes (crit rules, the Charge command, guard math, stat coefficients) stay on; they change numbers, not this flow.
+**With the five ARRANGE switches Off** in the extra-content mode, you get the Original trip above while keeping the extra maps, gear and shops. The remaining Arrange formula changes (crit rules, the Charge command, guard math, stat coefficients) stay on; they change numbers, not this flow.
 
-### Which mode to pick
+</details>
 
-<img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
+<img src="docs/img/banners/downloads.png" width="900" alt="Downloads">
 
-- **First play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules. To set it up: New Game > **Arrange Mode**; on the START SETTING screen open **Config**, page 6, and set **Arrange Mode** to MANY only (BATTLE off); in the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
-- **Original: the purist choice.** The game as the author designed it (DC + the fixes below), NORMAL difficulty.
-- **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
-- New Game+ with bonus picks is available after clearing, in every mode.
+| Build | What it is | Download |
+| --- | --- | --- |
+| **EN + MOD + Altered** (v0.2.1) | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 Altered build. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.2.1.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.1/seraphic-blue-fullgame-EN-Altered-v0.2.1.zip)** |
+| **EN + MOD (DC)** (v0.2.0) | The English Director's Cut with the MOD. Same game data as test.13: your saves keep working. | **[seraphic-blue-fullgame-EN-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip)** |
+| **JP + MOD (DC)** (v0.2.0) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.2.0.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-JP-v0.2.0.zip)** |
+
+[All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases). Each ZIP includes its game, the Windows and older native Linux Players, and launchers. v0.2.1 updates only the Altered build; the two DC downloads stay on [v0.2.0](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0).
+
+```text
+Download → Extract All → double-click PLAY.cmd → Play
+```
+
+**Setup:** [Windows](WINDOWS.md) · [Linux / Proton](LINUX.md) · [Steam Deck](STEAM-DECK.md). On Windows, double-click **PLAY.cmd**. Follow the linked Steam/Proton steps on Linux or Deck.
+
+**Controls:** <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> goes back. **Fast-forward:** hold <img src="docs/img/keys/f.svg" height="22" alt="F"> for 3x speed, hold <img src="docs/img/keys/g.svg" height="22" alt="G"> for 10x (EasyRPG Player feature; both speeds adjustable in Settings > Input, controller: right trigger).
+
+**Save location:** the **saves** folder inside the extracted game folder, when launched with the included launcher or documented Steam options. Keep this folder when updating.
+
+<details><summary>Platform table: where to start on Windows, Linux, Steam Deck, macOS</summary>
+
+| Your platform | Start here | Newest mouse features? |
+| --- | --- | --- |
+| Windows | Double-click **PLAY.cmd**. [Windows steps](WINDOWS.md) | Yes |
+| Linux through Steam / Proton | Add **Player.exe** to Steam; enable Proton. [Linux steps](LINUX.md) | Yes; compatibility not verified here |
+| Steam Deck | Desktop Mode: add **Player.exe** to Steam; enable Proton. [Deck steps](STEAM-DECK.md) | Yes; hardware not verified here |
+| Native Linux alternative | Run **sh play-linux.sh**. [Requirements](LINUX.md#native-linux-alternative) | Older test.2 controls; new hover/tabs/walking are unavailable |
+| macOS (experimental) | Official Mac EasyRPG Player + this ZIP's game data. [Mac steps](#macos-experimental-keyboard-route) | Custom Player features unavailable; not Mac-tested |
+
+</details>
+
+<img src="docs/img/banners/saves.png" width="900" alt="Keep your saves">
+
+1. Close the game.
+2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) (EN + MOD, DC) and extract it.
+3. Copy the **saves** folder from your old game folder into the new one. Done.
+
+Dropped the game years ago? Saves from the Japanese original or the 2016 English patch load here too: copy your **SaveXX.lsd** files into the **saves** folder.
+
+Altered build: saves from the v0.2.0 Altered build load in v0.2.1 the same way (copy the **saves** folder from the old SeraphicBlue-Altered folder). DC saves do not load in the Altered build; keep them on the EN + MOD (DC) build.
+
+<details><summary>Smaller download: update ZIPs instead (step by step, test releases only)</summary>
+
+1. Close the game. Keep a backup of your actual save folder.
+2. On test.6 or older, first apply the [test.7 image update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip) (extract beside **RPG_RT.ldb**, replace the Picture files).
+3. On test.7 or older, [download the test.8 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-update-v0.1.0-test.8.zip). Extract it into your game folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe**, **RPG_RT.ldb**, **Map0003.lmu** and one **Picture** file. If your Player.exe lives in another folder (older patch installs), copy the new Player.exe there instead.
+4. On test.8 or older, [download the test.9 picture update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 55 **Picture** files.
+5. On test.9 or older, [download the test.10 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-update-v0.1.0-test.10.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Map0507.lmu**.
+6. On test.10 or older, [download the test.11 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe** and the 43 **Map** files.
+7. On test.11, [download the test.12 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 45 **Map** files.
+8. [Download the test.13 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.13/seraphic-blue-update-v0.1.0-test.13.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 22 **Map** files.
+9. On test.13: nothing to update. The v0.2.0 EN + MOD (DC) build has the same game files.
+10. Keep your **saves**, **config** and EasyRPG.ini. Saves from earlier tests load normally.
+
+</details>
+
+<details><summary>Older install (test.1 to test.5): optional engine upgrade</summary>
+
+Skip this if you installed the test.6 or test.7 full game: the test.8 update above already replaces Player.exe.
+
+1. Close the game and back up the **saves** folder (or your existing custom save location).
+2. Download the [test.6 Windows Player ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton (the newest Player ZIP with all DLLs). Extract it separately.
+3. Copy **Player.exe and all .dll files from that same ZIP** into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.
+4. Then apply the test.7 image update and the test.8 update from the section above; the test.8 Player.exe replaces the test.6 one and uses the same DLLs.
+
+Native Linux has no newer binary than test.2; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
+
+</details>
+
+<a name="altered-build-en--mod--altered"></a>
+<img src="docs/img/banners/altered.png" width="900" alt="The Altered build (EN + MOD + Altered)">
+
+<details><summary>Open: what the Altered fan patch is, what this build adds, the ARRANGE switches, Original-mode fixes, MOD menu differences</summary>
+
+**What it is.** *Seraphic Blue (DC Altered Version) Ver2.13* is an unofficial fan patch for the Director's Cut by **腐林檎** ("Rotten Apple") and **時空転移プリン** ("Space-Time Warp Pudding", ◆YuikkIDGis). Tempura (Sakaki), the original author, was not involved; the Altered authors ask players not to contact Sakaki or the Blue Field boards about it. Credits from the Altered manual: music by 氷石彩亜 (FREEDOM HOUSE 2nd), 星野春日 (Muzie), 煉獄小僧 (煉獄庭園) and Ciel (Le Ciel Bleu); sound effects by WEB WAVE LIB; backgrounds by aska (Silverry moon light); battle-animation graphics from Character Maker Pro (Enterbrain); help from the 2ch Blue Field threads and 風邪薬 ◆RohTo3cNBI. The Altered manual (Japanese) is included in the ZIP (**ManualAlt**, **改造版マニュアル.htm**).
+
+**What this build adds:** the whole game in English (Altered's new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).
+
+**New game only** (saves from the v0.2.0 Altered build carry over). Start a new game in this build. Keep DC saves on the EN + MOD (DC) build: the test.13 download stays up, and the v0.2.0 DC download uses the same game data. The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
 
 ### ARRANGE switches (MOD menu, Altered build only)
 
@@ -202,148 +218,79 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 
 </details>
 
-<details><summary>Release changes and translation comparison</summary>
+<img src="docs/img/banners/tutorials.png" width="900" alt="Quick tutorials">
 
-**New in v0.2.1 (Altered build only):**
-- **ARRANGE page** in the MOD menu: five switches that turn single Arrange battle rules back to the original rules (see [Altered build](#altered-build-en--mod--altered)).
-- **First-play recommendation:** MANY on, BATTLE off, all five switches Off.
-- **+ marker** on the name pictures of gear that exists only in Altered's extra content.
-- Saves from the v0.2.0 Altered build carry over. The EN + MOD (DC) and JP + MOD (DC) builds are unchanged (v0.2.0).
-
-**New in v0.2.0:**
-- **Three builds:** EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new), JP + MOD (DC, full game).
-- **Altered build:** see [Altered build](#altered-build-en--mod--altered). New game only.
-- No changes to the DC game files since test.13.
-
-**New in test.13:**
-- **22 dialogue boxes corrected** after an outside check: while the [comparison page](https://nostramadeus.github.io/seraphic-blue-mod/) was being built, its reviewers compared our lines with the Japanese and flagged the few where ours was weaker (a dropped qualifier, a Japanese idiom flattened into plain English, one word read in the wrong sense). Those are fixed. 4 boxes also had a pause moved to the line end (cosmetic).
-- Changed files: 22 map files. No Player, picture or save changes.
-
-**New in test.12:**
-- **63 more dialogue boxes corrected to match the Japanese.** This completes the audit of all 3,013 "full" four-line boxes (the ones most likely to have been shortened to fit): 89 of them had lost a qualifier, a hedge, a clause or a Japanese idiom's image, and all are restored. 2 of the new corrections use two boxes instead of one shortened box.
-- Changed files: 45 map files. No Player, picture or save changes.
-- **Old saves work.** A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the **saves** folder.
-
-**New in test.11:**
-- **Message history (Windows Player):** scroll back through the last 100 message boxes you read, with the choice you picked. Open it with <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> **mouse wheel up** or **Page Up** while a message is showing or while you walk on the field; scroll with the <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel or <img src="docs/img/keys/up.svg" height="22" alt="Up"> Up / <img src="docs/img/keys/down.svg" height="22" alt="Down"> Down, page with Page Up / Page Down, close with **<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B / <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right click**. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.
-- **67 dialogue boxes corrected to match the Japanese** (dropped qualifiers or hedges restored, Japanese idioms kept as their own image, 14 names and terms made consistent with the in-game dictionary). 7 of them now use two boxes instead of one shortened box. All 585 boxes whose English was identical to the 2016 patch were checked against the Japanese and found correct.
-- Changed files: Player.exe and 43 map files. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.
-
-**New in test.10:**
-- One opening dialogue line corrected to match the Japanese.
-
-**New in test.9:**
-- **55 picture cards retranslated from the Japanese:** 52 history timeline cards (names and terms now match the rest of the game; 10 cards had the wrong meaning), the two opening chant cards and the opening poem card.
-- No Player, map or save changes.
-
-**New in test.8:**
-- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> Esc / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes.
-- **Clicking to walk now works in the opening rooms** (it needed the unlocked game menu before).
-- **Opening poem card:** the second card of the opening poem is retranslated to match the Japanese.
-- Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.
-
-**Already read the opening?** [Japanese / original English / corrected English](EARLY-GAME-CORRECTIONS.html). Opening and Episode 2 only; later sections stay hidden until selected.
-
-</details>
-
-<details open><summary>Original creators and credits</summary>
-
-## Thank you to the original creators
-
-Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.
-
-Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
-
-Thank you to **腐林檎** and **時空転移プリン** for *Seraphic Blue (DC Altered Version)*, which the Altered build carries.
-
-[See the full original credits](CREDITS.md).
-
-</details>
-
-<details><summary>macOS: experimental keyboard route</summary>
-
-## macOS: experimental keyboard route
-
-Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
-
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) and extract it. Keep the **SeraphicBlue** folder together.
-2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
-
-```sh
-brew install easyrpg-player
-```
-
-3. In Terminal, type `cd ` (including the space), drag the extracted **SeraphicBlue** folder into Terminal, and press <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter. Run:
-
-```sh
-mkdir -p saves config
-easyrpg-player --project-path . --save-path saves --config-path config --encoding 932 --window
-```
-
-**Controls:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows select/move; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape goes back; <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift runs/opens secondary actions. Saves go in **SeraphicBlue/saves**.
-
-**Limits:** script-based MOD options are expected to work. Custom hover/click targeting, click-to-walk, character tabs, enhanced text reveal and battle-animation acceleration need our modified Player and are unavailable here. **This Mac route is untested.** [Official Mac support](https://easyrpg.org/player/downloads/) · [Homebrew package](https://formulae.brew.sh/formula/easyrpg-player.html).
-
-</details>
-
-<details open><summary>Quick tutorials</summary>
-
-## Quick tutorials
+<details><summary>Open: five short tutorials with screenshots (select, pages, tabs, click to walk, dialogue)</summary>
 
 **Deck buttons below need the [suggested Steam Input bindings](STEAM-DECK.md#suggested-steam-input-controls).** They are not a bundled controller preset. New controls require the latest Windows Player, including through Proton.
 
-### Select menus, spells and targets
+<table>
+<tr>
+<td width="55%" valign="top">
+<b>Select menus, spells and targets</b>
+<ul>
+<li><b>Mouse:</b> hover to preview; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left-click to choose. Works on supported menu rows, enemies and allies.</li>
+<li><b>Keyboard / Deck:</b> <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows / D-pad select; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B backs out.</li>
+<li><b>Result:</b> highlight and information update. Hover spends nothing. A stationary mouse leaves keyboard selection alone.</li>
+</ul>
+</td>
+<td valign="top"><img src="docs/images/battle-hover.png" width="400" alt="Enemy hover selection with the selected enemy name and battle menu"></td>
+</tr>
+<tr>
+<td width="55%" valign="top">
+<b>Find the next spell or item page</b>
+<ul>
+<li><b>Mouse:</b> <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel or <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click the page arrows; hover an entry to select it.</li>
+<li><b>Keyboard / Deck:</b> Left/Right / D-pad left/right changes pages; Up/Down selects a row.</li>
+<li><b>Result:</b> <b>&lt; 2/3 &gt;</b> means page two of three. Applies to paged battle magic/items and supported menu lists.</li>
+</ul>
+</td>
+<td valign="top"><img src="docs/images/spell-pages.png" width="400" alt="Battle list showing clickable arrows and page two of three"></td>
+</tr>
+<tr>
+<td width="55%" valign="top">
+<b>Switch Status / Gear / Ability without backing out</b>
+<ul>
+<li><b>Mouse:</b> <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click a top tab. <b>Keyboard:</b> Page Up / Page Down. <b>Deck:</b> bind LB / RB to those keys.</li>
+<li><b>Result:</b> switch screens while keeping the same character. Left/Right still changes characters.</li>
+<li>Tabs work at the top level; back out of an unfinished selection first. Reserve characters cannot open Ability.</li>
+</ul>
+</td>
+<td valign="top"><img src="docs/images/character-tabs.png" width="400" alt="Status screen with Status Gear and Ability quick tabs"></td>
+</tr>
+<tr>
+<td width="55%" valign="top">
+<b>Click or tap to walk</b>
+<ul>
+<li><b>Mouse:</b> <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click ground to route there; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click an NPC's feet to approach and interact once.</li>
+<li><b>See:</b> white square = hovered tile; green square = accepted destination. No green square means no route was accepted. It clears on arrival or cancellation.</li>
+<li><b>Cancel / walk manually:</b> <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows / Deck D-pad. <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B or <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right-click also cancels routing. No separate keyboard destination picker.</li>
+<li><b>Deck touchscreen:</b> tapping ground is expected to work through Proton because <a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/faq#Input">Deck taps normally act as mouse clicks</a>. <b>Not tested on Deck hardware.</b> If tapping fails, try the right trackpad as Mouse + left-click. Hover preview needs a trackpad/mouse.</li>
+</ul>
+</td>
+<td valign="top"><img src="docs/images/walking-destination.png" width="400" alt="Green destination square on the field after a click-to-walk command"></td>
+</tr>
+</table>
 
-- **Mouse:** hover to preview; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left-click to choose. Works on supported menu rows, enemies and allies.
-- **Keyboard / Deck:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows / D-pad select; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B backs out.
-- **Result:** highlight and information update. Hover spends nothing. A stationary mouse leaves keyboard selection alone.
+**Advance dialogue and story pauses**
 
-<img src="docs/images/battle-hover.png" width="640" alt="Enemy hover selection with the selected enemy name and battle menu">
-
-### Find the next spell or item page
-
-- **Mouse:** <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel or <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click the page arrows; hover an entry to select it.
-- **Keyboard / Deck:** Left/Right / D-pad left/right changes pages; Up/Down selects a row.
-- **Result:** **< 2/3 >** means page two of three. Applies to paged battle magic/items and supported menu lists.
-
-<img src="docs/images/spell-pages.png" width="640" alt="Battle list showing clickable arrows and page two of three">
-
-### Switch Status / Gear / Ability without backing out
-
-- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click a top tab. **Keyboard:** Page Up / Page Down. **Deck:** bind LB / RB to those keys.
-- **Result:** switch screens while keeping the same character. Left/Right still changes characters.
-- Tabs work at the top level; back out of an unfinished selection first. Reserve characters cannot open Ability.
-
-<img src="docs/images/character-tabs.png" width="640" alt="Status screen with Status Gear and Ability quick tabs">
-
-### Click or tap to walk
-
-- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click ground to route there; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click an NPC's feet to approach and interact once.
-- **See:** white square = hovered tile; green square = accepted destination. No green square means no route was accepted. It clears on arrival or cancellation.
-- **Cancel / walk manually:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows / Deck D-pad. <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B or <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right-click also cancels routing. No separate keyboard destination picker.
-- **Deck touchscreen:** tapping ground is expected to work through Proton because [Deck taps normally act as mouse clicks](https://partner.steamgames.com/doc/steamhardware/steamdeck/faq#Input). **Not tested on Deck hardware.** If tapping fails, try the right trackpad as Mouse + left-click. Hover preview needs a trackpad/mouse.
-
-<img src="docs/images/walking-destination.png" width="640" alt="Green destination square on the field after a click-to-walk command">
-
-### Advance dialogue and story pauses
-
-- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left-click. **Keyboard / Deck:** <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A with the suggested binding.
+- **Mouse:** <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left-click. **Keyboard / Deck:** <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A with the suggested binding.
 - Press while text appears to reveal it faster; press again at a dialogue pause to continue. Use separate presses, not a held click.
 - **Not every pause is skippable:** timed scene waits, movement and animations can continue. Use **MOD → SPEED → Cutscene speed** to shorten scripted waits; confirm is not a universal scene-skip button.
 
 </details>
 
-<details open><summary>MOD menu tutorials</summary>
+<img src="docs/img/banners/modmenu.png" width="900" alt="MOD menu">
 
-## MOD menu tutorials
+<details><summary>Open: how to open the MOD menu, and the SPEED, BATTLE and CHEATS pages</summary>
 
-**Open:** <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / Deck B → select **MOD** → <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A. Before the story unlocks the game menu, <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X changes page; <img src="docs/img/keys/up.svg" height="22" alt="Up"> Up/<img src="docs/img/keys/down.svg" height="22" alt="Down"> Down selects a row; <img src="docs/img/keys/left.svg" height="22" alt="Left"> Left/<img src="docs/img/keys/right.svg" height="22" alt="Right"> Right changes its value. <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations.
+**Open:** <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B → select **MOD** → <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A. Before the story unlocks the game menu, <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B opens the MOD screen directly (no CHEATS page yet). **Navigate:** <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> / X changes page; <img src="docs/img/keys/up.svg" height="22" alt="Up">/<img src="docs/img/keys/down.svg" height="22" alt="Down"> selects a row; <img src="docs/img/keys/left.svg" height="22" alt="Left">/<img src="docs/img/keys/right.svg" height="22" alt="Right"> changes its value. <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A confirms actions. Settings apply immediately and stay with your save. Choose **INFO** for the in-game explanations. The Altered build adds an **ARRANGE** page (see the Altered build above).
 
 ### SPEED — spend less time waiting
 
 | Setting | Try / result |
 | --- | --- |
-| Walk speed / Hold Shift to run | Choose 2x for faster walking. Enable running; hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X to run. Scripted movement stays unchanged. |
+| Walk speed / Hold Shift to run | Choose 2x for faster walking. Enable running; hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> / X to run. Scripted movement stays unchanged. |
 | Battle speed | Choose 2x–10x for shorter waits/animations; Instant skips animation waits. |
 | Random-battle intro | Off skips the random-battle flash; story intros stay. |
 | Menu fade | Choose 0.1 s or None for quicker menu transitions. |
@@ -372,52 +319,122 @@ Enable the CHEATS page when asked. Select an action and confirm. **Save first be
 
 </details>
 
-<details open><summary>Controls and menu shortcuts</summary>
+<a name="controls"></a>
+<img src="docs/img/banners/controls.png" width="900" alt="Controls">
 
-## Controls
+<details><summary>Open: every mouse, keyboard and Steam Input action, and the menu shortcuts</summary>
 
 | Action | Mouse | Keyboard / suggested Steam Input |
 | --- | --- | --- |
-| Select / confirm | Hover / <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> left click | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows / <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter; D-pad / A |
-| Back / cancel walking | <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> Right click | <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B; <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows cancel walking |
-| Change battle list page | <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> Wheel or page arrows | <img src="docs/img/keys/left.svg" height="22" alt="Left"> Left / <img src="docs/img/keys/right.svg" height="22" alt="Right"> Right |
+| Select / confirm | Hover / <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows / <img src="docs/img/keys/enter.svg" height="22" alt="Enter">; D-pad / A |
+| Back / cancel walking | <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> | <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B; <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows cancel walking |
+| Change battle list page | <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> or page arrows | <img src="docs/img/keys/left.svg" height="22" alt="Left"> / <img src="docs/img/keys/right.svg" height="22" alt="Right"> |
 | Switch character tabs | Top tabs | Page Up / Page Down; optional LB / RB |
-| Secondary action | Follow the displayed hint | <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X |
-| Message history (last 100 boxes) | <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> Wheel up while a message shows or while walking; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel scrolls; <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> right click closes | Page Up opens; <img src="docs/img/keys/up.svg" height="22" alt="Up"> Up / <img src="docs/img/keys/down.svg" height="22" alt="Down"> Down scroll; Page Up / Down page; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> Escape / B closes |
+| Secondary action | Follow the displayed hint | <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> / X |
+| Message history (last 100 boxes) | <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> up while a message shows or while walking; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel scrolls; <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click"> closes | Page Up opens; <img src="docs/img/keys/up.svg" height="22" alt="Up"> / <img src="docs/img/keys/down.svg" height="22" alt="Down"> scroll; Page Up / Down page; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B closes |
+| Fast-forward | | Hold <img src="docs/img/keys/f.svg" height="22" alt="F"> for 3x, <img src="docs/img/keys/g.svg" height="22" alt="G"> for 10x; controller: right trigger |
 
 Steam Input bindings are suggestions, not a verified Deck layout. Touch does not provide hover before contact.
 
-## More menu shortcuts
+### More menu shortcuts
 
 | Try this | Mouse | Keyboard / suggested Deck buttons |
 | --- | --- | --- |
-| Secondary actions in Gear, shops or battle | Follow the visible hint; <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift still needs a key/button | <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift / X; opens the action shown on that screen |
-| Buy or sell several items | <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> Click -10 / -1 / +1 / +10, then Buy/Sell | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows adjust quantity; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms |
-| Supplement or Upgrade amounts | Hover a digit/amount; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel adjusts; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click Apply/Upgrade | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows select/adjust; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A confirms |
-| Dictionary and history | Hover supported rows; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel changes list pages or scrolls history | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows navigate; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> Enter / A chooses where applicable |
+| Secondary actions in Gear, shops or battle | Follow the visible hint; <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> still needs a key/button | <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> / X; opens the action shown on that screen |
+| Buy or sell several items | <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> Click -10 / -1 / +1 / +10, then Buy/Sell | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows adjust quantity; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A confirms |
+| Supplement or Upgrade amounts | Hover a digit/amount; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel adjusts; <img src="docs/img/keys/mouse-left-click.svg" height="22" alt="Left click"> click Apply/Upgrade | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows select/adjust; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A confirms |
+| Dictionary and history | Hover supported rows; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel changes list pages or scrolls history | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows navigate; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A chooses where applicable |
 
 Native name-entry and number-entry keep their original keyboard controls.
 
 </details>
 
-<details><summary>Older install: optional engine upgrade</summary>
+<img src="docs/img/banners/releases.png" width="900" alt="Release notes">
 
-## Older install (test.1 to test.5)? Optional engine upgrade
+**How does this translation compare to the 2016 patch?** [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. **Spoiler warning:** it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind. Opening and Episode 2 only, with later sections hidden until selected: [early-game corrections](EARLY-GAME-CORRECTIONS.html).
 
-Skip this if you installed the test.6 or test.7 full game: the test.8 update above already replaces Player.exe.
+<details><summary>Open: what changed in each version (v0.2.1 back to test.8)</summary>
 
-1. Close the game and back up the **saves** folder (or your existing custom save location).
-2. Download the [test.6 Windows Player ZIP](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip) for Windows or Proton (the newest Player ZIP with all DLLs). Extract it separately.
-3. Copy **Player.exe and all .dll files from that same ZIP** into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.
-4. Then apply the test.7 image update and the test.8 update from the section above; the test.8 Player.exe replaces the test.6 one and uses the same DLLs.
+**New in v0.2.1 (Altered build only):**
+- **ARRANGE page** in the MOD menu: five switches that turn single Arrange battle rules back to the original rules (see [Altered build](#altered-build-en--mod--altered)).
+- **First-play recommendation:** MANY on, BATTLE off, all five switches Off.
+- **+ marker** on the name pictures of gear that exists only in Altered's extra content.
+- Saves from the v0.2.0 Altered build carry over. The EN + MOD (DC) and JP + MOD (DC) builds are unchanged (v0.2.0).
 
-Native Linux has no newer binary than test.2; use Proton for the latest engine features. Existing patch-based installations can continue using their current game/save paths.
+**New in v0.2.0:**
+- **Three builds:** EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new), JP + MOD (DC, full game).
+- **Altered build:** see [Altered build](#altered-build-en--mod--altered). New game only.
+- No changes to the DC game files since test.13.
+
+**New in test.13:**
+- **22 dialogue boxes corrected** after an outside check: while the [comparison page](https://nostramadeus.github.io/seraphic-blue-mod/) was being built, its reviewers compared our lines with the Japanese and flagged the few where ours was weaker (a dropped qualifier, a Japanese idiom flattened into plain English, one word read in the wrong sense). Those are fixed. 4 boxes also had a pause moved to the line end (cosmetic).
+- Changed files: 22 map files. No Player, picture or save changes.
+
+**New in test.12:**
+- **63 more dialogue boxes corrected to match the Japanese.** This completes the audit of all 3,013 "full" four-line boxes (the ones most likely to have been shortened to fit): 89 of them had lost a qualifier, a hedge, a clause or a Japanese idiom's image, and all are restored. 2 of the new corrections use two boxes instead of one shortened box.
+- Changed files: 45 map files. No Player, picture or save changes.
+- **Old saves work.** A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the **saves** folder.
+
+**New in test.11:**
+- **Message history (Windows Player):** scroll back through the last 100 message boxes you read, with the choice you picked. Open it with <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> **up** or **Page Up** while a message is showing or while you walk on the field; scroll with the <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel or <img src="docs/img/keys/up.svg" height="22" alt="Up"> / <img src="docs/img/keys/down.svg" height="22" alt="Down">, page with Page Up / Page Down, close with **<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B / <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click">**. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.
+- **67 dialogue boxes corrected to match the Japanese** (dropped qualifiers or hedges restored, Japanese idioms kept as their own image, 14 names and terms made consistent with the in-game dictionary). 7 of them now use two boxes instead of one shortened box. All 585 boxes whose English was identical to the 2016 patch were checked against the Japanese and found correct.
+- Changed files: Player.exe and 43 map files. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.
+
+**New in test.10:**
+- One opening dialogue line corrected to match the Japanese.
+
+**New in test.9:**
+- **55 picture cards retranslated from the Japanese:** 52 history timeline cards (names and terms now match the rest of the game; 10 cards had the wrong meaning), the two opening chant cards and the opening poem card.
+- No Player, map or save changes.
+
+**New in test.8:**
+- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes.
+- **Clicking to walk now works in the opening rooms** (it needed the unlocked game menu before).
+- **Opening poem card:** the second card of the opening poem is retranslated to match the Japanese.
+- Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.
+
+[Full release notes](RELEASE-NOTES.md) · [Changelog](CHANGELOG.md)
 
 </details>
 
-<details><summary>More details and tested limits</summary>
+<img src="docs/img/banners/credits.png" width="900" alt="Credits">
 
-## Details
+Thank you to **Tempura (Sakaki)** for creating this work of art and sharing it freely with the world. This MOD exists because of that creativity and generosity.
+
+Thank you to **eplipswich** for the tremendous work of translating Seraphic Blue into English and making its story accessible to more players.
+
+Thank you to **腐林檎** and **時空転移プリン** for *Seraphic Blue (DC Altered Version)*, which the Altered build carries.
+
+[See the full original credits](CREDITS.md).
+
+---
+
+<a name="macos-experimental-keyboard-route"></a>
+<details><summary>macOS: experimental keyboard route</summary>
+
+Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
+
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) and extract it. Keep the **SeraphicBlue** folder together.
+2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
+
+```sh
+brew install easyrpg-player
+```
+
+3. In Terminal, type `cd ` (including the space), drag the extracted **SeraphicBlue** folder into Terminal, and press <img src="docs/img/keys/enter.svg" height="22" alt="Enter">. Run:
+
+```sh
+mkdir -p saves config
+easyrpg-player --project-path . --save-path saves --config-path config --encoding 932 --window
+```
+
+**Controls:** <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> arrows select/move; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> goes back; <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> runs/opens secondary actions. Saves go in **SeraphicBlue/saves**.
+
+**Limits:** script-based MOD options are expected to work. Custom hover/click targeting, click-to-walk, character tabs, enhanced text reveal and battle-animation acceleration need our modified Player and are unavailable here. **This Mac route is untested.** [Official Mac support](https://easyrpg.org/player/downloads/) · [Homebrew package](https://formulae.brew.sh/formula/easyrpg-player.html).
+
+</details>
+
+<details><summary>More details, tested limits, licences</summary>
 
 - [Windows setup](WINDOWS.md), [Linux setup](LINUX.md), [Steam Deck setup](STEAM-DECK.md).
 - [Full release notes](RELEASE-NOTES.md) and [tested limits](COMPATIBILITY.md).
@@ -428,6 +445,8 @@ English game content and its original manual/credits are included. The JP + MOD 
 
 </details>
 
-## For modders and forks
+<details><summary>For modders and forks</summary>
 
-[Modding notes](https://github.com/Nostramadeus/seraphic-blue-mod/blob/main/docs/MODDING-NOTES.md): what broke when this MOD met the Altered fan patch, how each problem was found, the fix, and the build order that worked.
+[Modding notes](https://github.com/Nostramadeus/seraphic-blue-mod/blob/main/docs/MODDING-NOTES.md): what broke when this MOD met the Altered fan patch, how each problem was found, the fix, and the build order that worked. Docs images are script-generated ([docs/img/tools](docs/img/tools), licences in [docs/img/LICENSES.md](docs/img/LICENSES.md)).
+
+</details>
