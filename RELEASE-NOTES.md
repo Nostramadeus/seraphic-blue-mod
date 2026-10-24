@@ -1,3 +1,41 @@
+# Release notes — v0.3.0
+
+## Build
+
+- **seraphic-blue-fullgame-EN-Altered-v0.3.0.zip** — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.2.3 Altered builds.
+- **seraphic-blue-fullgame-EN-v0.3.0.zip** — EN + MOD (DC). Saves from the earlier EN + MOD (DC) builds load as before (no save-format change).
+- **seraphic-blue-fullgame-JP-v0.3.0.zip** — JP + MOD (DC). Saves from the earlier JP + MOD (DC) builds load as before (no save-format change).
+- DC saves still do not move to the Altered build.
+
+## DC builds
+
+- Both DC builds are rebuilt through the same release pipeline as the Altered build: full game folders verified file by file, the text file **IMPORTANT README (MUST READ).txt** at the ZIP root, and PLAY.cmd starts the Player by its full path (the v0.2.2 fix).
+- EN + MOD (DC) also gets the 23 retranslated opening quote cards (the same cards as Altered v0.2.3) and the newer text of three maps (Map0025, Map0026, Map0140): corrections from 2026-10-22 that the shipped game had but the source folder had lost.
+- JP + MOD (DC) keeps its 141 standard RPG Maker asset files.
+
+## Pictures
+
+- Redrawn text pictures in the English builds: Altered 78 files, DC EN 73 files. The same picture ships under both builds' names where both have it.
+- 25 episode title cards: the titles now carry the complete Japanese title. The English episode-number row and the German row are kept pixel for pixel.
+- 15 Er explanation cards that were still Japanese in the Altered build.
+- 18 report and diary cards.
+- Dictionary term labels (Altered 9, DC EN 17).
+- 3 item description boxes and 1 item name.
+- 1 place-name card (Revelstoke Mountains).
+- The F12 menu label, now "Quit Game".
+- 1 party-member name label in DC EN.
+- Report cards and dictionary labels use the game's own 12 px pixel font (the Japanese cards' font) instead of the 2016 smoothed font.
+
+## Known gaps
+
+- Some text pictures still carry the 2016 wording or Japanese and come in the next release: the party-name tiles of the Altered Ability menu (katakana), the report-card continuation cards, several dictionary cards and place-name cards, the chapter title cards 2 and 4, a few menu tile strips.
+- The game's own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.
+- One DC EN save-slot name still has the old spelling.
+
+## Unchanged
+
+- From v0.2.3: click-to-walk is on in the Altered build, and the New Game choice reads **Extra Content (Recommended)**.
+
 # Release notes — v0.2.3
 
 ## Build
