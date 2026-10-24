@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.2
+
+Altered build only. Fourth New Game choice **Extra Content**: MANY on, BATTLE off, the five ARRANGE switches Off, Skip Battles with Weak Enemies OFF, Character EXP Gain ON1, HP Auto Fill on, TP Auto Fill off. It replaces the six-step manual setup for a first play; About Game Modes gets a page for it (3/6). The "Game Mode Selection" title now shows on its own before the four choices. Game data: Map0004 only; saves from the v0.2.0 and v0.2.1 Altered builds load. ZIP: PLAY.cmd starts the Player by its full path (fixes exit 9009 when Windows' NoDefaultCurrentDirectoryInExePath is set); root text updated. Docs: the early MOD screen via Cancel is a DC-opening feature; rewards are capped at 999,999 per fight by the engine; Full heal in Arrange mode does not revive (Altered's rule). Full heal was NOT changed.
+
 ## v0.2.1
 
 Altered build only: MOD menu page ARRANGE with five switches that turn single Arrange battle rules back to the original rules (full HP after battle, item limit per battle, escape always succeeds, counterattack always fires, enemy stats and resistances); new first-play recommendation (MANY on, BATTLE off, switches Off); + marker on gear that exists only in Altered's extra content; v0.2.0 Altered saves carry over; new games start with the MOD row Escape always works Off (existing saves keep their setting). EN + MOD (DC) and JP + MOD (DC) unchanged (v0.2.0).

@@ -8,7 +8,7 @@
 
 **Which mode to pick.** Two separate choices: first the **build** (which ZIP you download), then the **mode** (Altered build only). The three bullets below are builds. They are not the three mode cards further down.
 
-- **New player:** the **EN + MOD + Altered** build. Then pick the mode **Extra content** (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). All the extra content with the original battle rules.
+- **New player:** the **EN + MOD + Altered** build. Then New Game > **Extra Content** (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). All the extra content with the original battle rules.
 - **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are. No mode choice: a DC build always plays like **Original**.
 - **Playing in Japanese:** the **JP + MOD (DC)** build. No mode choice: it always plays like **Original**.
 
@@ -18,18 +18,28 @@
 
 - **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules.
 
-**Heads up: a new game does NOT start in this setup.** Picking Arrange Mode turns on BATTLE, all five ARRANGE switches and three more Altered rules. You flip them once by hand; every choice is saved with your game. Six steps:
+**New Game > Extra Content.** That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu's ARRANGE page. TP Auto Fill is in the Supplement screen; HP Auto Fill is always on while MANY is on, which is how the HP pool refills you after a fight.
 
-1. New Game > **Arrange Mode**.
-2. On the START SETTING screen choose **Config**. Now **hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift for about six seconds** without touching anything else. A panel titled **DEEP SETTING** opens with its first row **Arrange Mode OFF・[ MANY・BATTLE ]** (there is no page 6 in the normal page cycle; this hidden panel is it).
-3. Left/Right moves the box between OFF, MANY and BATTLE; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A toggles the boxed item. Un-shade **BATTLE** so only **MANY** stays shaded, then <img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / B closes the panel and keeps the choice.
-4. Still in Config, page 3 (BATTLE 1/2): set **Skip Battles with Weak Enemies** to OFF and **Character EXP Gain** to ON1 (ON2 adds Altered's fewer-members EXP bonus). Start the game.
-5. In the game, open the MOD menu (<img src="docs/img/keys/escape.svg" height="22" alt="Escape"> / Deck B), page **ARRANGE**, and set all five rows to **Off (Original)**.
-6. Optional, for the original refill rules: turn the game's own **Auto Fill** off in the Supplement screen of the game menu (Arrange Mode starts it on).
+<img src="docs/images/new-game-choice.png" width="480" alt="New Game choice box: About Game Modes, Original Mode, Extra Content, Arrange Mode">
+
+<details><summary><b>Open: what each New Game choice sets</b></summary>
+
+| Setting | Original Mode | Extra Content | Arrange Mode |
+| --- | --- | --- | --- |
+| MANY (extra content) | Off | On | On |
+| BATTLE (Altered battle rules) | Off | Off | On |
+| Five ARRANGE switches (MOD menu) | On (no effect while MANY and BATTLE are off) | Off (Original) | On (Altered) |
+| Skip Battles with Weak Enemies (Config page 3) | OFF | OFF | ON |
+| Character EXP Gain (Config page 3) | ON1 | ON1 | ON2 |
+| HP Auto Fill | Off | On | On |
+| TP Auto Fill | Off | Off | On |
+| Save from the game menu | Off | On | On |
 
 <img src="docs/images/arrange-config-panel.png" width="400" alt="Config, DEEP SETTING panel: Arrange Mode row with MANY shaded and BATTLE off">
 
 <img src="docs/images/arrange-switches-off.png" width="400" alt="MOD menu, page ARRANGE: all five switches set to Off (Original)">
+
+</details>
 - **Original: the purist choice.** The game as the author designed it (DC + the fixes listed under the Altered build), NORMAL difficulty.
 - **Full Arrange (BATTLE + MANY, switches On): for a second run**, if you want a smoother, modern-feeling run.
 - New Game+ with bonus picks is available after clearing, in every mode.
@@ -195,7 +205,7 @@ Native Linux has no newer binary than test.2; use Proton for the latest engine f
 
 ### ARRANGE switches (MOD menu, Altered build only)
 
-Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run plays as in v0.2.0 until you change a row. The rows are used only in Arrange mode; Original mode always plays the original rules.
+Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange Mode; the Extra Content choice starts them Off. The rows are used only in Arrange mode; Original mode always plays the original rules.
 
 | Switch | On (Altered, default) | Off (Original) |
 | --- | --- | --- |
@@ -321,7 +331,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On, so a run 
 | Setting | Try / result |
 | --- | --- |
 | Random battles | Choose 1/2–1/10 for fewer fights, or Off for none. |
-| Rewards follow the rate | On scales EXP, DEAR and SUP.EXP to compensate for fewer random fights. |
+| Rewards follow the rate | On scales EXP, DEAR and SUP.EXP to compensate for fewer random fights. The engine caps each reward at 999,999 per fight, so at 1/10 in the late game a scaled reward can be trimmed. |
 | Escape always works | On guarantees escape from random battles; story battles stay unchanged. |
 | Retry lost battles | On offers a retry after defeat. **Items spent in the lost fight stay spent.** |
 
@@ -408,7 +418,7 @@ Native name-entry and number-entry keep their original keyboard controls.
 - No Player, map or save changes.
 
 **New in test.8:**
-- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes.
+- **MOD settings from the very start:** while the story still locks the game menu (the opening chapters), Cancel / <img src="docs/img/keys/escape.svg" height="22" alt="Esc"> / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes. This early window exists on the DC builds; the Altered build unlocks the menu right after the opening, so Cancel there opens the normal menu.
 - **Clicking to walk now works in the opening rooms** (it needed the unlocked game menu before).
 - **Opening poem card:** the second card of the opening poem is retranslated to match the Japanese.
 - Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.

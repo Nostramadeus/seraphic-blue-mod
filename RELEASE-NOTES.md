@@ -1,3 +1,29 @@
+# Release notes — v0.2.2
+
+## Build
+
+- **seraphic-blue-fullgame-EN-Altered-v0.2.2.zip** — EN + MOD + Altered. New game, or a save from the v0.2.0 / v0.2.1 Altered build.
+- The EN + MOD (DC) and JP + MOD (DC) builds are unchanged: download them from [v0.2.0](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0).
+
+## New: the Extra Content choice (Altered build)
+
+- New Game now offers four options: About Game Modes, Original Mode, **Extra Content**, Arrange Mode.
+- **Extra Content** is the first-play setup in one choice: MANY on, BATTLE off, the five ARRANGE switches Off (Original), Skip Battles with Weak Enemies OFF, Character EXP Gain ON1, HP Auto Fill on, TP Auto Fill off. It equals the six manual steps the v0.2.1 README described, verified by a full switch-and-variable comparison of the two saves (0 differences).
+- Original Mode and Arrange Mode are unchanged (0 differences against v0.2.1).
+- About Game Modes has a new page 3/6 for Extra Content. The "Game Mode Selection" title now shows on its own before the four choices (one extra key press).
+- Game data changed: Map0004 only. Saves from the v0.2.0 and v0.2.1 Altered builds load.
+
+## ZIP
+
+- PLAY.cmd starts the Player by its full path. Before, with the Windows setting NoDefaultCurrentDirectoryInExePath on, the game did not start (exit 9009).
+- The root text file (IMPORTANT README) names the Extra Content choice.
+
+## Docs
+
+- The early MOD screen (Cancel while the story locks the menu) is a feature of the DC builds' opening; the Altered build unlocks the menu right after its opening.
+- Rewards are capped at 999,999 per fight by the engine; at 1/10 in the late game a scaled reward can be trimmed.
+- In Arrange mode, Full heal does not revive KO members (Altered's own heal rule, kept on purpose).
+
 # Release notes — v0.2.1
 
 ## Build
