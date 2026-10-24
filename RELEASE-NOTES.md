@@ -1,3 +1,43 @@
+# Release notes — v0.3.1
+
+## Build
+
+- **seraphic-blue-fullgame-EN-Altered-v0.3.1.zip** — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.3.0 Altered builds.
+- **seraphic-blue-fullgame-EN-v0.3.1.zip** — EN + MOD (DC). Saves from the earlier EN + MOD (DC) builds load as before (no save-format change).
+- **seraphic-blue-fullgame-JP-v0.3.1.zip** — JP + MOD (DC). Saves from the earlier JP + MOD (DC) builds load as before (no save-format change).
+- DC saves still do not move to the Altered build.
+
+## New Windows Player 0.8.1.1-sb4 (all three ZIPs)
+
+- Battle mouse on the Altered build: command grid, enemy targets with hover, ability and item rows with hover, page change by mouse wheel, category tabs, ally targets.
+- MOD menu, SPEED page: new rows **Text speed** (1x / 2x / 4x / Instant) and **Text pauses** (1x / 2x / 4x; shortens the pauses inside messages, never removes them).
+- Choice guard: for a third of a second a choice window ignores Enter that is held down or pressed repeatedly, so the Skip prompts are not skipped by accident. Cancel is unaffected.
+- Save-slot placeholder name now reads "Blue-Hair Lady" (DC EN).
+
+## English builds
+
+- Dictionary (Character Profiles and Glossary) re-sorted into English alphabetical tabs A-C ... Y-Z (182 entries). Empty tabs cannot be entered. Unlocks and saves are unchanged.
+- 24 menu tile strips in English (272 words), including the party names of the Altered Ability menu. 14 menu words given more tiles or a ruled short form (10 by extra map tiles, 4 by a short form such as "Owned"); the 8 element labels of the Status menu now use two-letter codes (Fi Wa Wi Ea Li Da He Br).
+- 27 pictures redrawn: place-name banners, world-map guides, ending-screen panels, shop and inn signs.
+- Actor-name strings use the spelling Yancy.
+- 108 story cards and labels redrawn (pulled cards corrected, Er and Sieg continuation text, dictionary labels, chapter titles, staff credits, Panorama menus).
+
+## Linux
+
+- The new Player features need **Player.exe**: on Windows, or on Linux and Steam Deck through Proton. The native Linux Player (**play-linux.sh**) is unchanged from earlier releases (the older test.2 build) and has none of them.
+
+## Known gaps
+
+- The native Linux Player is unchanged (see Linux above); the new Player features are Windows and Proton only unless a native Linux build follows.
+- 37 text pictures still carry the 2016 wording or Japanese and come in the next release: 12 explanation screens, the Panorama menus (temporary save, organize, status, EXT bonus and shop line-up), the title-screen labels, a few art-background titles and message cards. In the menus, nine labels stay Japanese for now (the three magic-level labels of the Ability menu, Poison, Paralysis and four shop quantity labels: their English needs more room than the screen layout gives).
+- Three dictionary detail pages that no list row reaches (Gaia, Alma, Seraphic Blue Amplifier) stay as the Altered authors left them.
+- Clicking an ally target in battle was tested with a one-member party only.
+- The game's own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.
+
+## Saves
+
+- Altered saves from v0.2.0 to v0.3.0 load. DC saves load as before (no save-format change). DC saves do not move to the Altered build.
+
 # Release notes — v0.3.0
 
 ## Build

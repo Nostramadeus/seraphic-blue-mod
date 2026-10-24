@@ -2,7 +2,7 @@
 
 ## Latest features through Steam / Proton
 
-1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip) and extract it into your home folder.
+1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.1/seraphic-blue-fullgame-EN-v0.3.1.zip) and extract it into your home folder.
 2. In Steam choose **Games → Add a Non-Steam Game → Browse**. Select **Player.exe** inside **SeraphicBlue**.
 3. Open the shortcut's **Properties → Compatibility**. Enable **Force the use of a specific Steam Play compatibility tool** and choose **Proton Experimental**.
 4. In **Shortcut**, set **Start In** to the extracted **SeraphicBlue** folder. Set **Launch Options** to the following. Press Play.
