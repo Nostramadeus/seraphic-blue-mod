@@ -1,3 +1,40 @@
+# Release notes — v0.3.2
+
+## Build
+
+- **seraphic-blue-fullgame-EN-Altered-v0.3.2.zip** — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.3.1 Altered builds.
+- **seraphic-blue-fullgame-EN-v0.3.2.zip** — EN + MOD (DC). Saves from the earlier EN + MOD (DC) builds load as before (no save-format change).
+- **seraphic-blue-fullgame-JP-v0.3.2.zip** — JP + MOD (DC). Saves from the earlier JP + MOD (DC) builds load as before (no save-format change).
+- DC saves still do not move to the Altered build.
+
+## Menu labels (English builds)
+
+- 12 menu labels that were still Japanese in v0.3.1 are now in English (Altered; 6 of them in DC EN too): the three magic types of the Ability menu, Qty to Make, Discount, Qty to Sell, Paralysis, Ailment Trigger Rate / Defense Rate and the three magic-level labels of the Status menu, and Poison as **PSN**. Labels that did not fit in the game font use a narrower font, not a shortened word. DC EN Status screen: the movement stat reads **MOV** (the 2016 label said "DEX"), and "Field Mutation Element" replaces the 2016 label "Element Physical Cast". Both English ZIPs carry **MENU-LABEL-NOTES.txt** with the list.
+
+## Story pictures and credits (English builds)
+
+- All remaining story pictures redrawn in English (Altered 32 files, DC EN 43): 12 explanation screens, episode title cards, battle chant pictures, the Panorama menus (temporary save, organize, EXT bonus, shop line-up), the title-screen labels (DC EN), one battle background, unused leftover pictures, two dictionary titles and end-credits cards.
+- End credits: the music credits card follows the Japanese list (both English builds); a DC EN credits card now carries the Japanese music credit together with the 2016 team; the 2016 translator credits card now also shows in the DC EN credits sequence that lacked it.
+- One glossary term is written out in its full form in 2 boxes (both English builds).
+
+## New text file (Altered ZIP)
+
+- The Altered ZIP adds **HIDDEN-DICTIONARY-ENTRIES (SPOILERS).txt**: 3 unreachable dictionary entries written for an unfinished sequel, in a spoiler-marked text file. The game itself is unchanged; the entries stay unreachable in game.
+
+## Other
+
+- JP + MOD (DC): no content changes; it carries the new version number so the three builds stay in step.
+- Player: unchanged from v0.3.1 (Windows Player 0.8.1.1-sb4; native Linux Player = the older test.2 build).
+- Clicking an ally target in battle is now tested with a two-member party (passed).
+
+## Known gaps
+
+- The native Linux Player (**play-linux.sh**) is unchanged and has none of the v0.3.1 Player features (use Player.exe on Windows, or Proton on Linux and Steam Deck). The Altered build's credits do not show the 2016 translator card. The game's own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.
+
+## Saves
+
+- Altered saves from v0.2.0 to v0.3.1 load. DC saves load as before (no save-format change). DC saves do not move to the Altered build.
+
 # Release notes — v0.3.1
 
 ## Build
