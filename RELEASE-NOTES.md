@@ -1,3 +1,28 @@
+# Release notes — v0.2.3
+
+## Build
+
+- **seraphic-blue-fullgame-EN-Altered-v0.2.3.zip** — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.2.2 Altered builds.
+- The EN + MOD (DC) and JP + MOD (DC) builds are unchanged: download them from [v0.2.0](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0).
+
+## Click-to-walk (Altered build)
+
+- Click-to-walk is now on in the Altered build (EasyRPG.ini: ClickWalk=1). Left-click ground to route there, click an NPC's feet to approach it, right-click or a direction key to stop; the green destination square shows the target (README, Quick tutorials). Battle-screen mouse rows and the timeline names stay off on Altered.
+- It had been held back by a test-rig error: the rig replayed a click as Enter plus click on one frame, which Altered's dash routine reads as an Enter press. A real click never does that. Nothing in the game data was changed for it.
+
+## Opening quote cards (Altered build)
+
+- The 23 character quote cards of the opening (Picture/Ep00_M*) were still the 2016 patch's pictures with its loose wording. They are redrawn with the current script lines (each card = the same sentence as its message box in this translation), in the same condensed italic face as the opening poem cards. One card (Vene) has no message-box source in the script and carries a new translation of its Japanese.
+- The DC builds (EN + MOD, JP + MOD) get the same cards with their next release.
+
+## Label
+
+- The New Game option now reads **Extra Content (Recommended)**, so a first-time player sees the recommendation on the screen itself. Map0004 only.
+
+## Game data
+
+- Changed against v0.2.2: Map0004, the 23 Ep00_M* pictures, EasyRPG.ini. Saves from the v0.2.0 to v0.2.2 Altered builds load. Everything else as v0.2.2 (below).
+
 # Release notes — v0.2.2
 
 ## Build

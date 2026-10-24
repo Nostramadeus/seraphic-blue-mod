@@ -18,9 +18,9 @@
 
 - **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules.
 
-**New Game > Extra Content.** That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu's ARRANGE page. TP Auto Fill is in the Supplement screen; HP Auto Fill is always on while MANY is on, which is how the HP pool refills you after a fight.
+**New Game > Extra Content (Recommended).** That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu's ARRANGE page. TP Auto Fill is in the Supplement screen; HP Auto Fill is always on while MANY is on, which is how the HP pool refills you after a fight.
 
-<img src="docs/images/new-game-choice.png" width="480" alt="New Game choice box: About Game Modes, Original Mode, Extra Content, Arrange Mode">
+<img src="docs/images/new-game-choice.png" width="480" alt="New Game choice box: About Game Modes, Original Mode, Extra Content (Recommended), Arrange Mode">
 
 <details><summary><b>Open: what each New Game choice sets</b></summary>
 
@@ -243,7 +243,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 | Random-battle intro, Cutscene speed, Random battles 1/N, Rewards follow the rate, Escape always works, Retry lost battles, Full heal, Return to world map, +10,000 DEAR, Level up party, early MOD access | As on the DC build. Retry also gives back the items Arrange's per-fight limit held back. In Arrange mode, Full heal does not revive KO members (Altered's own heal rule); in Original mode it does. |
 
 - **Steps Left** (Altered Config, Arrange Mode panel) counts the MOD encounter rate: at 1/2 it shows twice the steps. The display only has a hundreds digit of 1 or 2, so a count of 300 or more shows as 2xx, and with random battles Off it shows a 2 followed by the last two digits of a very large number.
-- **DC-only Player features:** the custom battle screen, the timeline names and click-to-walk stay off on the Altered build (Altered rebuilt its battle screens); mouse menus, message history and fast-forward work.
+- **DC-only Player features:** the custom battle screen and the timeline names stay off on the Altered build (Altered rebuilt its battle screens); click-to-walk, mouse menus, message history and fast-forward work.
 - **Database:** one party member's name now follows the translation bible's spelling (the 2016 data spelled it differently). This is the Altered build only; the EN + MOD (DC) build keeps the 2016 spelling until v0.2.2.
 
 </details>

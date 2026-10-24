@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.3
+
+Altered build only. Click-to-walk is on (EasyRPG.ini: ClickWalk=1); it had been held back by a test-rig error, not by the game. The 23 opening character quote cards (Picture/Ep00_M*) are retranslated to the current script lines, same face as the opening poem cards; the DC builds get them with their next release. The New Game option now reads **Extra Content (Recommended)**. Game data: Map0004, 23 pictures, EasyRPG.ini; saves from the v0.2.0 to v0.2.2 Altered builds load.
+
 ## v0.2.2
 
 Altered build only. Fourth New Game choice **Extra Content**: MANY on, BATTLE off, the five ARRANGE switches Off, Skip Battles with Weak Enemies OFF, Character EXP Gain ON1, HP Auto Fill on, TP Auto Fill off. It replaces the six-step manual setup for a first play; About Game Modes gets a page for it (3/6). The "Game Mode Selection" title now shows on its own before the four choices. Game data: Map0004 only; saves from the v0.2.0 and v0.2.1 Altered builds load. ZIP: PLAY.cmd starts the Player by its full path (fixes exit 9009 when Windows' NoDefaultCurrentDirectoryInExePath is set); root text updated. Docs: the early MOD screen via Cancel is a DC-opening feature; rewards are capped at 999,999 per fight by the engine; Full heal in Arrange mode does not revive (Altered's rule). Full heal was NOT changed.
