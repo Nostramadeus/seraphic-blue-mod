@@ -15,13 +15,15 @@
 | **Enter / Confirm** | **Our MOD menu**, in every build. In Altered, if Config > Normal Save Method is **MENU**, choose **MOD** from the **Save / MOD / Break** prompt. |
 | **Shift** | **Native Config, page 1** — **Altered build only**. This shortcut works from any normal main-menu slot. For the native **DEEP SETTING** panel (MANY / BATTLE), hold Shift about six seconds **inside Config**. |
 
-The DC builds have no Altered Config screen. **Inside our MOD menu**, Shift changes the MOD page. **Inside native Config**, Shift + Confirm or Cancel opens **Change settings all at once**: use the current mode’s defaults, match the unmodified game’s settings, or Cancel. Shift + Down jumps to the last row; Shift + Up jumps to the first.
+The DC builds have no Altered Config screen. **Inside our MOD menu**, Shift changes the MOD page. **Inside native Config**, Shift + Confirm or Cancel opens **Change settings all at once**: use the current mode’s defaults, match the unmodified game’s settings, or Cancel. Shift + Down jumps to the last row; Shift + Up jumps to the first. These bulk resets affect **native Config**, not the complete Extra Content preset or the MOD menu’s choices.
 
 **Battle labels:** [Illustrated, spoiler-free guide to AR / AE / AC / AWT, WT, HP / TP and common stats](#battle-labels).
 
 <img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick">
 
 **Which mode to pick.** Two separate choices: first the **build** (which ZIP you download), then the **mode** (Altered build only). The three bullets below are builds. They are not the three mode cards further down.
+
+**Shop “+” marker:** **+** before an equipment name marks equipment added by **Altered’s extra content**. [How the shop’s comparison works](#shop-compare).
 
 - **New player:** the **EN + MOD + Altered** build. Then New Game > **Extra Content** (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). Altered’s extra content with BATTLE off and all five ARRANGE options set to Original.
 - **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are. No mode choice: a DC build always plays like **Original**.
@@ -221,7 +223,7 @@ Native Linux now uses the same Player source as Windows; see [Linux setup and te
 
 ### ARRANGE switches (MOD menu, Altered build only)
 
-Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange Mode; the Extra Content choice starts them Off. The rows take effect while MANY or BATTLE is on; with both off they have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.
+Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange Mode; the Extra Content choice starts them Off. The HP and counter rows use **MANY or BATTLE**. The item-limit and extra escape-rule rows use **MANY**. The enemy row controls selected MANY/shared changes. With both native modes off, these overrides have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.
 
 | Switch | On (Altered, default) | Off (Original) |
 | --- | --- | --- |
@@ -238,7 +240,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 **Loaded saves keep their own settings.** Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.
 
 - **+ marks gear that exists only in Altered's extra content.**
-- **Saves from v0.2.0 to v0.3.3** (Altered build) load in v0.3.4: extract v0.3.4 to a new folder and copy the **saves** folder from the old SeraphicBlue-Altered folder into it. The five switches appear (all On) after the next map change or battle; your other settings stay as they were.
+- **Altered saves from v0.2.0 to v0.3.4 load in v0.3.5.** Extract the new game to a new folder and copy the old **saves** folder into it. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.
 
 ### Original mode = DC + these fixes
 
@@ -401,6 +403,18 @@ Steam Input bindings are suggestions, not a verified Deck layout. Touch does not
 | Dictionary and history | Hover supported rows; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel changes list pages or scrolls history | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows navigate; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A chooses where applicable |
 
 Native name-entry and number-entry keep their original keyboard controls.
+
+<a name="shop-compare"></a>
+### Shop comparison before buying
+
+The native shop preview uses **colored stat labels**, not numerical before/after values.
+
+1. Highlight a weapon or frame, then press **Enter / Confirm once** to open the quantity/preview screen.
+2. Check the stat labels at the **bottom left**: **red = improvement**, **blue = worse**. The colors do not show the size of the change.
+3. Press **Shift** to change the character being compared. A walking character sprite means that character can equip the item.
+4. Press **Cancel** to leave without buying. Confirming the purchase is a separate action.
+
+Spheres do not have a direct one-for-one comparison in the native shop because several can be equipped. The included Playing Manual’s **Shop** page describes these controls.
 
 <a name="battle-labels"></a>
 ### Battle labels — spoiler-free guide

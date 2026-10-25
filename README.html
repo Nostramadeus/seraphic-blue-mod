@@ -9,10 +9,11 @@
 <tr><td><strong>Enter / Confirm</strong></td><td><strong>Our MOD menu</strong>, in every build. In Altered, if Config &gt; Normal Save Method is <strong>MENU</strong>, choose <strong>MOD</strong> from the <strong>Save / MOD / Break</strong> prompt.</td></tr>
 <tr><td><strong>Shift</strong></td><td><strong>Native Config, page 1</strong> — <strong>Altered build only</strong>. This shortcut works from any normal main-menu slot. For the native <strong>DEEP SETTING</strong> panel (MANY / BATTLE), hold Shift about six seconds <strong>inside Config</strong>.</td></tr>
 </table></div>
-<p>The DC builds have no Altered Config screen. <strong>Inside our MOD menu</strong>, Shift changes the MOD page. <strong>Inside native Config</strong>, Shift + Confirm or Cancel opens <strong>Change settings all at once</strong>: use the current mode’s defaults, match the unmodified game’s settings, or Cancel. Shift + Down jumps to the last row; Shift + Up jumps to the first.</p>
+<p>The DC builds have no Altered Config screen. <strong>Inside our MOD menu</strong>, Shift changes the MOD page. <strong>Inside native Config</strong>, Shift + Confirm or Cancel opens <strong>Change settings all at once</strong>: use the current mode’s defaults, match the unmodified game’s settings, or Cancel. Shift + Down jumps to the last row; Shift + Up jumps to the first. These bulk resets affect <strong>native Config</strong>, not the complete Extra Content preset or the MOD menu’s choices.</p>
 <p><strong>Battle labels:</strong> <a href="#battle-labels">Illustrated, spoiler-free guide to AR / AE / AC / AWT, WT, HP / TP and common stats</a>.</p>
 <figure><img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick" style="max-width:100%;height:auto"></figure>
 <p><strong>Which mode to pick.</strong> Two separate choices: first the <strong>build</strong> (which ZIP you download), then the <strong>mode</strong> (Altered build only). The three bullets below are builds. They are not the three mode cards further down.</p>
+<p><strong>Shop “+” marker:</strong> <strong>+</strong> before an equipment name marks equipment added by <strong>Altered’s extra content</strong>. <a href="#shop-compare">How the shop’s comparison works</a>.</p>
 <ul>
 <li><strong>New player:</strong> the <strong>EN + MOD + Altered</strong> build. Then New Game &gt; <strong>Extra Content</strong> (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). Altered’s extra content with BATTLE off and all five ARRANGE options set to Original.</li>
 <li><strong>Already have saves</strong> (a test release, the 2016 English patch or the Japanese original): the <strong>EN + MOD (DC)</strong> build. Your saves load as they are. No mode choice: a DC build always plays like <strong>Original</strong>.</li>
@@ -160,7 +161,7 @@
 <p><strong>What this build adds:</strong> the whole game in English (Altered&#x27;s new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).</p>
 <p><strong>New game only</strong> (saves from the v0.2.0 to v0.3.3 Altered builds carry over). Start a new game in this build. Keep DC saves on the EN + MOD (DC) build (v0.3.4; test.13, v0.2.0, v0.3.0 and v0.3.1 saves load there). The ZIP extracts to its own <strong>SeraphicBlue-Altered</strong> folder; read <strong>IMPORTANT README (MUST READ).txt</strong> first.</p>
 <h3>ARRANGE switches (MOD menu, Altered build only)</h3>
-<p>Each row is <strong>On (Altered)</strong> or <strong>Off (Original)</strong>. The default is On in Arrange Mode; the Extra Content choice starts them Off. The rows take effect while MANY or BATTLE is on; with both off they have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.</p>
+<p>Each row is <strong>On (Altered)</strong> or <strong>Off (Original)</strong>. The default is On in Arrange Mode; the Extra Content choice starts them Off. The HP and counter rows use <strong>MANY or BATTLE</strong>. The item-limit and extra escape-rule rows use <strong>MANY</strong>. The enemy row controls selected MANY/shared changes. With both native modes off, these overrides have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.</p>
 <div class="table-scroll"><table>
 <tr><th>Switch</th><th>On (Altered, default)</th><th>Off (Original)</th></tr>
 <tr><td>Full HP after battle</td><td>Free full-HP recovery after battle</td><td>Free recovery is disabled. Separate HP Auto Fill can still spend SUP.HP to refill HP</td></tr>
@@ -177,7 +178,7 @@
 <p><strong>Loaded saves keep their own settings.</strong> Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.</p>
 <ul>
 <li><strong>+ marks gear that exists only in Altered&#x27;s extra content.</strong></li>
-<li><strong>Saves from v0.2.0 to v0.3.3</strong> (Altered build) load in v0.3.4: extract v0.3.4 to a new folder and copy the <strong>saves</strong> folder from the old SeraphicBlue-Altered folder into it. The five switches appear (all On) after the next map change or battle; your other settings stay as they were.</li>
+<li><strong>Altered saves from v0.2.0 to v0.3.4 load in v0.3.5.</strong> Extract the new game to a new folder and copy the old <strong>saves</strong> folder into it. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.</li>
 </ul>
 <h3>Original mode = DC + these fixes</h3>
 <ul>
@@ -322,6 +323,14 @@
 <tr><td>Dictionary and history</td><td>Hover supported rows; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel" style="vertical-align:middle"> wheel changes list pages or scrolls history</td><td><img src="docs/img/keys/up.svg" height="22" alt="Up" style="vertical-align:middle"> <img src="docs/img/keys/down.svg" height="22" alt="Down" style="vertical-align:middle"> <img src="docs/img/keys/left.svg" height="22" alt="Left" style="vertical-align:middle"> <img src="docs/img/keys/right.svg" height="22" alt="Right" style="vertical-align:middle"> Arrows navigate; <img src="docs/img/keys/enter.svg" height="22" alt="Enter" style="vertical-align:middle"> / A chooses where applicable</td></tr>
 </table></div>
 <p>Native name-entry and number-entry keep their original keyboard controls.</p>
+<a name="shop-compare"></a>
+<h3>Shop comparison before buying</h3>
+<p>The native shop preview uses <strong>colored stat labels</strong>, not numerical before/after values.</p>
+<p>1. Highlight a weapon or frame, then press <strong>Enter / Confirm once</strong> to open the quantity/preview screen.</p>
+<p>2. Check the stat labels at the <strong>bottom left</strong>: <strong>red = improvement</strong>, <strong>blue = worse</strong>. The colors do not show the size of the change.</p>
+<p>3. Press <strong>Shift</strong> to change the character being compared. A walking character sprite means that character can equip the item.</p>
+<p>4. Press <strong>Cancel</strong> to leave without buying. Confirming the purchase is a separate action.</p>
+<p>Spheres do not have a direct one-for-one comparison in the native shop because several can be equipped. The included Playing Manual’s <strong>Shop</strong> page describes these controls.</p>
 <a name="battle-labels"></a>
 <h3>Battle labels — spoiler-free guide</h3>
 <p>Start with this example ability card: <strong>AR: Single · AE: — · AC: — · AWT: +120</strong>. The labels describe its target, element, field requirement and delay. The ability list’s separate number is its <strong>TP cost</strong>.</p>
