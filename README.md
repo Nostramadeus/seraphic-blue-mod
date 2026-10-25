@@ -6,11 +6,22 @@
 
 **Status:** released. Current version: v0.3.4 for all three builds. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
 
+**Open MOD or Altered’s Config.** Press **Escape** to open the game menu, select **MOD**, then choose the key below.
+
+| While MOD is selected | What opens |
+| --- | --- |
+| **Enter / Confirm** | **Our MOD menu**, in every build. In Altered, if Config > Normal Save Method is **MENU**, choose **MOD** from the **Save / MOD / Break** prompt. |
+| **Shift** | **Native Config, page 1** — **Altered build only**. This shortcut works from any normal main-menu slot. For the native **DEEP SETTING** panel (MANY / BATTLE), hold Shift about six seconds **inside Config**. |
+
+The DC builds have no Altered Config screen. **Inside our MOD menu**, Shift changes the MOD page. **Inside native Config**, Shift + Confirm or Cancel opens **Change settings all at once**: use the current mode’s defaults, match the unmodified game’s settings, or Cancel. Shift + Down jumps to the last row; Shift + Up jumps to the first.
+
+**Battle labels:** [Illustrated, spoiler-free guide to AR / AE / AC / AWT, WT, HP / TP and common stats](#battle-labels).
+
 <img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick">
 
 **Which mode to pick.** Two separate choices: first the **build** (which ZIP you download), then the **mode** (Altered build only). The three bullets below are builds. They are not the three mode cards further down.
 
-- **New player:** the **EN + MOD + Altered** build. Then New Game > **Extra Content** (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). All the extra content with the original battle rules.
+- **New player:** the **EN + MOD + Altered** build. Then New Game > **Extra Content** (the middle card below: MANY on, BATTLE off, all five ARRANGE switches Off). Altered’s extra content with BATTLE off and all five ARRANGE options set to Original.
 - **Already have saves** (a test release, the 2016 English patch or the Japanese original): the **EN + MOD (DC)** build. Your saves load as they are. No mode choice: a DC build always plays like **Original**.
 - **Playing in Japanese:** the **JP + MOD (DC)** build. No mode choice: it always plays like **Original**.
 
@@ -18,9 +29,9 @@
 
 <img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
 
-- **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered's extra content (side maps, chatter, gear, shops) with the original battle rules.
+- **Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.** That is Altered’s extra content (side maps, chatter, gear, shops) with Original-style battle settings: BATTLE off and the five ARRANGE options Off.
 
-**New Game > Extra Content (Recommended).** That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu's ARRANGE page. TP Auto Fill is in the Supplement screen; HP Auto Fill is always on while MANY is on, which is how the HP pool refills you after a fight.
+**New Game > Extra Content (Recommended).** That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu's ARRANGE page. TP Auto Fill is in the Supplement screen. **Full HP after battle** and **HP Auto Fill** are separate: Extra Content starts with free full-HP recovery **Off**, but reserve-funded HP Auto Fill **On**. See the healing note below.
 
 <img src="docs/images/new-game-choice.png" width="480" alt="New Game choice box: About Game Modes, Original Mode, Extra Content (Recommended), Arrange Mode">
 
@@ -54,7 +65,7 @@
 | --- | --- | --- |
 | Design | Attrition: the challenge lives between fights | Per-encounter: the challenge lives inside each boss fight |
 | HP after a fight | Carries over to the next fight | Full HP after every fight |
-| Refills | The SUP.HP / SUP.TP pools refill you and can run dry | Not needed between fights |
+| Refills | The SUP.HP / SUP.TP pools refill you and can run dry | Full HP recovery is free; TP still uses the SUP.TP reserve |
 | Items | Your buffer, no per-battle limit | 5 of each item per fight |
 | Escape | Can fail | Always works |
 | Counterattacks | A dice roll | Always fire |
@@ -68,7 +79,7 @@
 
 <details><summary><b>Open: A dungeon trip, Original rules: the seven steps as a diagram and as text</b></summary>
 
-Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). These rules apply in Original mode, and in the extra-content mode with the five ARRANGE switches Off.
+Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD's "Escape always works" row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). This is the Original-style attrition loop. Extra Content uses the five ARRANGE options Off, but starts HP Auto Fill On and retains Altered’s other changes; see the healing note under ARRANGE.
 
 <img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
@@ -208,11 +219,11 @@ Native Linux now uses the same Player source as Windows; see [Linux setup and te
 
 ### ARRANGE switches (MOD menu, Altered build only)
 
-Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange Mode; the Extra Content choice starts them Off. The rows are used only in Arrange mode; Original mode always plays the original rules.
+Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange Mode; the Extra Content choice starts them Off. The rows take effect while MANY or BATTLE is on; with both off they have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.
 
 | Switch | On (Altered, default) | Off (Original) |
 | --- | --- | --- |
-| Full HP after battle | HP is fully restored after every battle | HP refills from the SUP.HP pool, as in the original game |
+| Full HP after battle | Free full-HP recovery after battle | Free recovery is disabled. Separate HP Auto Fill can still spend SUP.HP to refill HP |
 | Item limit per battle | At most 5 of each item in a battle (20 when the item limit is lifted); the rest returns after the battle | No per-battle limit |
 | Escape always succeeds | Escaping works whenever escape is allowed | The original escape roll (the MOD's own "Escape always works" row still applies) |
 | Counterattack always fires | A counterattack always triggers when it can | The original counter chance |
@@ -220,6 +231,10 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 
 - **With BATTLE on, the Escape and Enemy rows follow BATTLE's own rules.**
 - **Not switchable** (always Altered in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns. Altered's own Config can switch off the random turn order, the luck elements and the timing hits.
+**Why HP can refill with “Full HP after battle” Off.** That switch controls **free** recovery. The game’s separate **HP Auto Fill** spends one point of **SUP.HP** for each HP restored, stopping when the reserve runs out. Extra Content starts with this Auto Fill on. MANY’s native Supplement screen shows **only SUP.TP** and offers only the TP Auto Fill toggle, so the HP reserve can be used without being shown there. **TP is separate:** abilities spend TP; TP Auto Fill draws from SUP.TP when enabled. A Supplement level-up raises the reserve’s capacity; it does not refill its current amount. Rest/refill sources replenish the reserves.
+
+**Loaded saves keep their own settings.** Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.
+
 - **+ marks gear that exists only in Altered's extra content.**
 - **Saves from v0.2.0 to v0.3.3** (Altered build) load in v0.3.4: extract v0.3.4 to a new folder and copy the **saves** folder from the old SeraphicBlue-Altered folder into it. The five switches appear (all On) after the next map change or battle; your other settings stay as they were.
 
@@ -230,7 +245,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 - Overflow safety for extreme numbers (damage calculation order, caps of 300 on HIT / CRT / AVD / AGL / MOV).
 - Reflex Guard halves damage once, as in DC (Altered halved it twice in Original mode).
 - Sickness, five boss rewards and the key-item money bonus are back to their DC rules in Original mode (Arrange keeps Altered's).
-- A new game started as **Original Mode** begins with Config > "Skip Battles with Weak Enemies" OFF, "Auto Fill" OFF and "Character EXP Gain" without the fewer-members bonus, and Config "Default" resets the first and the third to match. A new game started as **Arrange Mode** (which the extra-content setup uses) begins with all three ON, as Altered does; the extra-content recipe above lists them.
+- A new game started as **Original Mode** begins with Config > "Skip Battles with Weak Enemies" OFF, "Auto Fill" OFF and "Character EXP Gain" without the fewer-members bonus, and Config "Default" resets the first and the third to match. A new game started as **Arrange Mode** begins with all three ON, as Altered does. The separate **Extra Content** choice keeps weak-enemy skip and the fewer-members EXP bonus OFF; its HP Auto Fill starts ON.
 - Clever on a Forgetful unit still gives x1.3 as in DC (the Altered manual says x1.0; the game data says x1.3).
 
 ### MOD menu on the Altered build
@@ -384,6 +399,49 @@ Steam Input bindings are suggestions, not a verified Deck layout. Touch does not
 | Dictionary and history | Hover supported rows; <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel"> wheel changes list pages or scrolls history | <img src="docs/img/keys/up.svg" height="22" alt="Up"> <img src="docs/img/keys/down.svg" height="22" alt="Down"> <img src="docs/img/keys/left.svg" height="22" alt="Left"> <img src="docs/img/keys/right.svg" height="22" alt="Right"> Arrows navigate; <img src="docs/img/keys/enter.svg" height="22" alt="Enter"> / A chooses where applicable |
 
 Native name-entry and number-entry keep their original keyboard controls.
+
+<a name="battle-labels"></a>
+### Battle labels — spoiler-free guide
+
+Start with this example ability card: **AR: Single · AE: — · AC: — · AWT: +120**. The labels describe its target, element, field requirement and delay. The ability list’s separate number is its **TP cost**.
+
+<img src="docs/img/battle-guide/ability-card.svg" width="720" alt="Example ability card: Single target, no listed AE element, no AC field requirement, AWT plus 120 adds to character ATKWT">
+
+| Ability-card label | Meaning |
+| --- | --- |
+| **AR — Ability Range** | **Single** = one target; **All** = the whole target side. A single/all ability lets you switch with Up/Down while choosing its target. |
+| **AE — Ability Element** | The ability’s element; using it shifts **FE** toward that element. **—** means no ability element is listed. |
+| **AC — Ability Component** | The **field element needed to activate** it. That FE is used up toward neutral. **—** means no FE requirement; the ability may still cost TP. |
+| **AWT — Ability WT** | Wait added **after** acting. **+120** means **ATKWT + 120**. A plain number such as **650** means a fixed **650 WT**. |
+
+**When can I act again?** **WT** means **Waiting Time**. Icons move left on the battle timeline; a unit acts at the left end, then moves right by its action’s WT. More wait means a later next turn. **WT is not seconds.**
+
+<img src="docs/img/battle-guide/waiting-time.svg" width="720" alt="WT cycle: reach the left end, act, add the action wait, then move left again at a speed set by AGL; WT is not seconds">
+
+| Timing label | Read it as |
+| --- | --- |
+| **WT — Waiting Time** | Remaining wait until the unit can act. |
+| **ATKWT — Attack Waiting Time** | The character’s normal physical attack delay. Example: ATKWT **300** and AWT **+120** give **420 WT** after the ability. |
+| **AGL — Agility** | How fast the unit’s WT decreases. |
+| **MOV — Moving** | Affects starting WT, preemptive/surprise chances, escape and reactions. It is separate from AGL. |
+
+| Resource / field label | Meaning |
+| --- | --- |
+| **HP** | Health, shown as current / maximum. At zero the unit is incapacitated. |
+| **TP — Technical Points** | Spent to use abilities. Check the listed cost before choosing one. |
+| **FE — Field Element** | Elements currently present on the battlefield. AE changes them; some abilities need an AC element already present. |
+| **SPC — Sphere Capacity** | How many spheres the character can equip. |
+
+| Common stat labels | Meaning |
+| --- | --- |
+| **ATK / DEF** | Physical attack / physical defense. |
+| **MEN / MDF** | Mental ability power / mental defense. |
+| **HIT / AVD** | Physical hit / avoidance ratings. They affect hit chance; a rating is not itself a guaranteed hit percentage. |
+| **CRT** | Critical-hit rating for normal physical attacks. |
+
+**Element codes on Status:** **Fi / Wa** = Fire / Water; **Wi / Ea** = Wind / Earth; **Li / Da** = Light / Dark; **He / Br** = Heaven / Break. Element offense and resistance describe how strongly an element affects damage, not a chance to inflict it.
+
+These definitions follow Tempura’s included Playing Manual: **Abilities**, **Battle: Overview / Mechanics / Actions**, and **Status**. Altered can change individual abilities and battle rules; read the actual card’s numbers.
 
 </details>
 
