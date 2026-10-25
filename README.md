@@ -1,5 +1,7 @@
 <img src="docs/img/banners/hero.png" width="900" alt="Seraphic Blue MOD: English retranslation, MOD menu, DC Altered build">
 
+**Contact:** [afrotankrob@gmail.com](mailto:afrotankrob@gmail.com)
+
 *Seraphic Blue* (Tempura, 2004, RPG Maker 2000), in English again: every dialogue box retranslated from the Japanese, a MOD menu (fewer random battles, speed, cheats, message history, mouse play), and an optional English build of the *DC Altered* fan patch. One ZIP per build; no original game, patching or extra downloads needed.
 
 **Status:** released. Current version: v0.3.3 for all three builds. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
