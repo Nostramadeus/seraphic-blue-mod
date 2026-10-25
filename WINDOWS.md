@@ -1,6 +1,6 @@
 # Windows — download and play
 
-1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.2.0/seraphic-blue-fullgame-EN-v0.2.0.zip).
+1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-fullgame-EN-v0.3.3.zip).
 2. Right-click the ZIP → **Extract All**. Open the extracted **SeraphicBlue** folder.
 3. Double-click **PLAY.cmd**. Keep the extracted files together.
 

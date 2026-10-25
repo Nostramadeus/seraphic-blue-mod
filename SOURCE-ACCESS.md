@@ -1,15 +1,30 @@
 # Corresponding source and library replacement
 
-This test release provides the exact tracked Player/liblcf source export, the included Player working-tree changes, relative build recipes, source hashes and tested Windows cached flags/package versions. The clean liblcf checkout is the Linux source. Windows liblcf 0.8.1-3 has its separate exact MSYS2 source package, including its recipe.
+## Current and historical Players
 
-The dependency-source bundle contains 12 exact MSYS2 package-base source archives: readline, termcap, fluidsynth, glib2, libiconv, gettext, lame, mpg123, libsndfile, graphite2, GCC and Windows liblcf. GCC covers libgcc/libgomp/libstdc++. SOURCES.json records immutable versions, upstream mirror routes, archive hashes/sizes, recipes, embedded source/patch checksums and release-asset access. All actual sources/patches were SHA256-checked. Nine detached .sig/.asc inputs are recipe-marked SKIP; no PGP signature-verification claim is made. Recipes were read, never executed.
+[seraphic-blue-player-source-v0.3.3.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip) keeps both exact committed Player trees:
 
-Sources are supplied with the binary release, not only on request. Keep the matching source assets and hashes alongside each release. Other Windows packages retain exact versions, upstream routes and full available notices; a generic upstream page is not claimed to prove byte-identical reproduction. Ubuntu's other runtime libraries are system-provided; the native package does not bundle them.
+| Binary | Source folder in the export | Player revision |
+| --- | --- | --- |
+| v0.3.3 Windows and native Linux, 0.8.1.1-sb5 | Player/ | 0cb855fe592235fdb083ac5c6ac7b946fccc0c87 |
+| v0.3.1/v0.3.2 Windows, 0.8.1.1-sb4 | historical/sb4/Player/ | a13da2571b9e435462023ecf58085c77fc1cebcf |
 
-Libraries remain dynamically linked. You may replace compatible library files subject to their licenses; this project imposes no restrictive EULA on that replacement. Player remains GPLv3; liblcf is MIT; each dependency retains its own license and notices. Build scripts received syntax checks, not a new dependency rebuild or byte-identical reproduction proof. This is a source/notice packaging record, not a legal warranty.
+The historical sb4 Windows Player SHA256 is `fc307c880021e02d9e72266776d8d73a309d86556b5e3b38eb3dfcf7ae735235`. SOURCES.json maps current binary hashes to source revisions. The export separately preserves historical build flags and recipes; sb5 is not substituted for the earlier binaries' source.
 
-Player source: https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-player-source-v0.1.0-test.8.zip (test.6 bundle plus the three files changed for test.8; see TEST8-SOURCE-NOTE.md inside). The test.6 bundle stays at https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-source-v0.1.0-test.6.zip
+The native Linux liblcf tree is **92c4450a1bc1acb58bd02bbb99b57e5036919cdf**. Windows liblcf is the separately packaged MSYS2 0.8.1-3 library; its exact source remains in the Windows dependency-source bundle below. Build recipes, the Windows PortAudio patch and timeline asset generators/tables are included; no Git history is exported. No byte-identical rebuild is claimed.
 
-Dependency source: https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip
+Linux dependencies are listed by exact binary/source version in **native-linux/BUNDLED-LIBS.tsv** and **DEPENDENCY-SOURCES.tsv**, with notices in **native-linux/licenses**. The Linux build uses SDL2 **2.30.9** and FluidLite commit **4a01cf1c67419e71da971d209f2855bbf4f3bab8**; downloaded archives are SHA256-recorded. The corresponding source export includes all 68 matching Linux dependency-source archives, SHA256 hashes, retrieval routes and notices. Its Player and native liblcf files reconstruct their exact committed Git trees; archive timestamps are neutral. System-provided glibc, libstdc++, zlib and display/audio driver libraries are not copied into the native package.
 
-The test.8 Windows/Proton Player uses the test.8 Player source bundle above (same build configuration and DLLs as test.6). Its unchanged dependency source bundle remains the exact test.2 download. Native Linux test.2 is built from the separate test.2 source, not this new Windows build.
+## Windows dependency sources
+
+The [existing exact MSYS2 dependency-source bundle](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip) remains applicable to the unchanged Windows dependency versions. It contains 12 package-base source archives, including Windows liblcf and GCC runtime sources. **SOURCES.json** retains their exact versions, recipe/source hashes, archive sizes and URLs. Nine detached signature inputs were recipe-marked SKIP; no PGP signature-verification claim is made. Recipes were read, not executed here.
+
+From v0.3.3, **libportaudio.dll** has a six-byte **Pa_Initialize** patch, supplied in the current source archive. [AryaNetwork's issue and diagnosis](https://github.com/Nostramadeus/seraphic-blue-mod/issues/1). All other matching Windows DLLs are unchanged.
+
+## Library replacement and notices
+
+Player is GPLv3; liblcf is MIT. Dependencies retain their own licenses and notices. Compatible dynamically linked libraries may be replaced subject to those licenses; the project adds no restrictive EULA. FluidLite is statically linked in the Linux Player; its source/build information accompanies the export. Sources accompany the release rather than relying only on an on-request promise. Keep matching binary/source assets and hashes together.
+
+## Earlier source exports
+
+The [test.8 source export](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-player-source-v0.1.0-test.8.zip) applies to the earlier test.8 Player, and includes its three-file change note. The [test.6 source export](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-source-v0.1.0-test.6.zip) remains archived. The old test.2 native Player used its own separate source; it is replaced in v0.3.3.

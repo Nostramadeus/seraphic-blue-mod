@@ -1,8 +1,8 @@
 {
-  "releaseTag": "v0.1.0-test.6",
-  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/",
+  "releaseTag": "v0.3.3",
+  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/",
   "sourceBundle": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip",
-  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-source-v0.1.0-test.6.zip",
+  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip",
   "packages": [
     {
       "pkgbase": "mingw-w64-readline",
@@ -952,5 +952,145 @@
       "status": "VERIFIED"
     }
   ],
-  "verification": "Exact archive/base/version and embedded source/patch SHA256 checked; no PGP signatures or rebuild verified."
+  "verification": "Exact archive/base/version and embedded source/patch SHA256 checked; no PGP signatures or rebuild verified.",
+  "playerRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+  "linuxLiblcfRevision": "92c4450a1bc1acb58bd02bbb99b57e5036919cdf",
+  "nativeLinux": {
+    "playerVersion": "0.8.1.1-sb5",
+    "manifest": "native-linux/BUNDLED-LIBS.tsv",
+    "sourceManifest": "native-linux/DEPENDENCY-SOURCES.tsv",
+    "sourceArchive": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip",
+    "sdlVersion": "2.30.9",
+    "fluidLiteRevision": "4a01cf1c67419e71da971d209f2855bbf4f3bab8",
+    "dependencySourceArchives": 68,
+    "verification": "Build source and binary hashes recorded; runtime check scope is documented in COMPATIBILITY.md.",
+    "playerSha256": "f881a14a3591f27e4b36a027d095a0089554395038202f4a27f4a3e424d747fd",
+    "playerSourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+    "requiredSymbolVersions": [
+      "GLIBC_2.29",
+      "GLIBCXX_3.4.26",
+      "CXXABI_1.3.9"
+    ],
+    "manifestSha256": "9c7310eaff5fa21bbea897a5abc84b9b147c0710de153c769c963701ab82fe4e"
+  },
+  "windowsDependencyVersions": {
+    "mingw-w64-x86_64-brotli": "1.2.0-1",
+    "mingw-w64-x86_64-bzip2": "1.0.8-4",
+    "mingw-w64-x86_64-expat": "2.9.0-1",
+    "mingw-w64-x86_64-flac": "1.5.0-2",
+    "mingw-w64-x86_64-fluidsynth": "2.6.1-1",
+    "mingw-w64-x86_64-fmt": "12.2.0-1",
+    "mingw-w64-x86_64-freetype": "2.15.0-1",
+    "mingw-w64-x86_64-libgcc": "16.2.0-6",
+    "mingw-w64-x86_64-glib2": "2.90.1-1",
+    "mingw-w64-x86_64-libgomp": "16.2.0-6",
+    "mingw-w64-x86_64-graphite2": "1.3.15-1",
+    "mingw-w64-x86_64-harfbuzz": "14.6.0-1",
+    "mingw-w64-x86_64-libiconv": "1.19-1",
+    "mingw-w64-x86_64-icu": "78.3-4",
+    "mingw-w64-x86_64-libinih": "62-1",
+    "mingw-w64-x86_64-gettext-runtime": "1.0-1",
+    "mingw-w64-x86_64-liblcf": "0.8.1-3",
+    "mingw-w64-x86_64-lame": "3.100-3",
+    "mingw-w64-x86_64-mpg123": "1.33.7-1",
+    "mingw-w64-x86_64-libogg": "1.3.6-1",
+    "mingw-w64-x86_64-opus": "1.6.1-2",
+    "mingw-w64-x86_64-opusfile": "0.12-4",
+    "mingw-w64-x86_64-pcre2": "10.49-1",
+    "mingw-w64-x86_64-pixman": "0.46.4-3",
+    "mingw-w64-x86_64-libpng": "1.6.59-1",
+    "mingw-w64-x86_64-portaudio": "1~19.7.0-7",
+    "mingw-w64-x86_64-readline": "8.3.003-1",
+    "mingw-w64-x86_64-libsndfile": "1.2.2-1",
+    "mingw-w64-x86_64-speexdsp": "1.2.1-2",
+    "mingw-w64-x86_64-libstdc++": "16.2.0-6",
+    "mingw-w64-x86_64-termcap": "1.3.1-8",
+    "mingw-w64-x86_64-libvorbis": "1.3.7-3",
+    "mingw-w64-x86_64-libwinpthread": "14.0.0.r426.g4564ee4b5-2",
+    "mingw-w64-x86_64-libxmp": "4.7.4-1",
+    "mingw-w64-x86_64-SDL2": "2.32.10-1",
+    "mingw-w64-x86_64-sdl3": "3.4.18-1",
+    "mingw-w64-x86_64-zlib": "1.3.2-2"
+  },
+  "windowsRuntimeSha256": {
+    "libbrotlicommon.dll": "ca7bc06ead80259971badf2cd0bfc688db9154dad65f139f49a38b4be9976f97",
+    "libbrotlidec.dll": "a142dc6cfa77cb907028aa9426f486f3d8de37855e8db2ae2894147908121881",
+    "libbz2-1.dll": "a4fbb97c26662d2b8a80bf4597ed3effb69b12048b0cb1eef2c3f211e2e66673",
+    "libexpat-1.dll": "6ceb3dd8d285f9a1ab8b9682565591580864c1ca2dcc9470c75872caab8fd8b8",
+    "libFLAC.dll": "5caf60fb4b4e025bb4708af71b8c70fd2494a1d68aa1e8133c6beb23dab8687f",
+    "libfluidsynth-3.dll": "76de2a1034036363fe64dd0574912130c2c2239de0fb6e73b370d5c3f1bbedcf",
+    "libfmt-12.dll": "a2d2db21512dbf1cadde618f3cc245c2ebc1975cab799239101b901d84abcca7",
+    "libfreetype-6.dll": "9f62ad75bdc24573940f2e0b0db1848464ce02928926808885e3744fc5272add",
+    "libgcc_s_seh-1.dll": "661f70dc19fde8c25bb56387b807b7a9ab7e532cf58fa8aeee078256c19d8980",
+    "libglib-2.0-0.dll": "84b15dc907fd1d3bb1cd799fc034d2edcbc3946c8c4acd6a8dd3ace381f9e568",
+    "libgomp-1.dll": "d68f23cb133886921ff2200bc279e1fea096c7ea2ae81eb8e48da97cbd1afd8d",
+    "libgraphite2.dll": "063a9ad34a5ec87d038b4646660957395224ecf2cf707917256b7d251a7c5f57",
+    "libharfbuzz-0.dll": "cfbe14d84474dae2b379a746a5325dcc10b7ebfa077bf5a8e9ec0d761f673b22",
+    "libiconv-2.dll": "7a282a854e01be726c6cccfe46f548c716aa45b3014818468253aaa4efbcd067",
+    "libicudt78.dll": "60255653982986c9fb72ad1b10b8dc502e498d890e0218cb0a47bc5907aa4e43",
+    "libicuin78.dll": "c9bb34526709a81bfae231d4190f13adad0b4c63e345262f448aaa720291feec",
+    "libicuuc78.dll": "27edc25710faa3489cd9cbd6cbc64c305b69ce5dbb9e0a29273d85e9badddde9",
+    "libinih-0.dll": "588ec6a61535270ca529fd4db56b5cea540784296590bae1e59dbf861c44eb3a",
+    "libintl-8.dll": "0537c3dd2378218508ebe3cc416d72a99ee2d24ae1c5525e23458f32544ef861",
+    "liblcf.dll": "857310cb16e722ed115278d414861774fed45a15c888f6cb756f4ae16fd9c684",
+    "libmp3lame-0.dll": "f40c566b56a97e32036f3d5263fd7dc2dafa6fc7ded326045dd637dd55d68c24",
+    "libmpg123-0.dll": "5d9ccd4c86b75a984044ebe1d4c95afd1e771b74e89c1467bf76a520c37a5299",
+    "libogg-0.dll": "3038ce8d161324a6349bf7c83b78493857ff6a3501e3adb3d541c6a07bd94a57",
+    "libopus-0.dll": "e602e0f79080e988df0ab1c9ce2ec9c11325c3d808fbae3230ad1cfd4942acc4",
+    "libopusfile-0.dll": "fc8ff75c5e0180e73b0528dc78c51ed0fb493741375cdc227f50c2a33cabf727",
+    "libpcre2-8-0.dll": "68a7cee2acc36d6a61d73f78825d17dfd32f8580f4bb1bc399134719518213d5",
+    "libpixman-1-0.dll": "55ce45825eb8e825c635416171be4736147a6b0b690469f545d8c4ae8e85b4a3",
+    "libpng16-16.dll": "fdac85bb70ec3af940810036eb9838765dceb61aaf81a60b244209f99c617f3d",
+    "libportaudio.dll": "d6795a9b94cf1bcb02b27e0fa149944bd3f0df6941954ab5d35e6d360f961618",
+    "libreadline8.dll": "f1429150c200fe44313e0b33fc8e853baf05a020cd652bf9e553fe96fe8da095",
+    "libsndfile-1.dll": "9c9928feb89472a2b0ceb9d100141321492bbfbd24ba43c3998090854a1db794",
+    "libspeexdsp-1.dll": "6a832c7492e0f3e8e637d817568b58225d9e7b87ad68c6fe5b68ddebb3adf7b7",
+    "libstdc++-6.dll": "b720a96289bcd6d9ec6f5f1f5612f1b1a523ce15d3ada20fe119791274cb512f",
+    "libtermcap-0.dll": "579168f47dee92273f61f2304b7696af96f17d5aca2535d67175f3ba3ceadb43",
+    "libvorbis-0.dll": "3282629e1b5d6ececcfde133b20fe73de5c81b6eadfbb4697e6718886c7c97a6",
+    "libvorbisenc-2.dll": "090f0734883464af440eb9084b22384951b95b1bf325236b322dbef7f93530aa",
+    "libvorbisfile-3.dll": "78559fbab64af27b66bd0904bdee7afb16190e66ca3d67323958aa59d2687c8d",
+    "libwinpthread-1.dll": "c26528202c73151e4bff49d0fae08c7e6dd6b78c0d45278253d46e33f2f1417e",
+    "libxmp.dll": "679c54430a5c26b0e3b64d013dc9a4e949fa30266957f1659e401f432d56b51d",
+    "Player.exe": "f3ddae1195a0f58acb7d474e3f332a82041bcd880d0dd000ed4652ef28c744df",
+    "SDL2.dll": "47a3b27654832d9f7e5719c88078210a3dbfd6407b559c5a3c4eb8ab7d0ebdb6",
+    "SDL3.dll": "dc90ef64c7c2efb5e4464058e18276879f9532588066a70074a0edf40aff316f",
+    "zlib1.dll": "93e9243a44c29200eeacaf9658efe2558581770e4b11ca4b500e18e424a6e3b5"
+  },
+  "portAudioPatch": {
+    "package": "mingw-w64-x86_64-portaudio",
+    "version": "1~19.7.0-7",
+    "sourceInPlayerArchive": "windows-build/patch_portaudio.py",
+    "behavior": "Pa_Initialize returns -1"
+  },
+  "playerBinaries": {
+    "currentWindows": {
+      "version": "0.8.1.1-sb5",
+      "sourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+      "sourcePath": "Player/",
+      "sha256": "f3ddae1195a0f58acb7d474e3f332a82041bcd880d0dd000ed4652ef28c744df",
+      "releaseTags": [
+        "v0.3.3"
+      ]
+    },
+    "currentLinux": {
+      "version": "0.8.1.1-sb5",
+      "sourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+      "sourcePath": "Player/",
+      "sha256": "f881a14a3591f27e4b36a027d095a0089554395038202f4a27f4a3e424d747fd",
+      "releaseTags": [
+        "v0.3.3"
+      ]
+    },
+    "historicalWindowsSb4": {
+      "version": "0.8.1.1-sb4",
+      "sourceRevision": "a13da2571b9e435462023ecf58085c77fc1cebcf",
+      "sourcePath": "historical/sb4/Player/",
+      "sha256": "fc307c880021e02d9e72266776d8d73a309d86556b5e3b38eb3dfcf7ae735235",
+      "releaseTags": [
+        "v0.3.1",
+        "v0.3.2"
+      ]
+    }
+  }
 }

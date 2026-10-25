@@ -1,3 +1,43 @@
+# Release notes — v0.3.3
+
+## Builds and saves
+
+- **seraphic-blue-fullgame-EN-Altered-v0.3.3.zip** — EN + MOD + Altered. New game or an Altered save from v0.2.0 onward.
+- **seraphic-blue-fullgame-EN-v0.3.3.zip** — EN + MOD (DC). Earlier DC saves load as before.
+- **seraphic-blue-fullgame-JP-v0.3.3.zip** — JP + MOD (DC). Earlier DC saves load as before.
+
+DC saves do not move into Altered. Back up **saves** and **config** before updating.
+
+## Proton title-screen crash
+
+The bundled PortAudio library includes [AryaNetwork's fix for issue #1](https://github.com/Nostramadeus/seraphic-blue-mod/issues/1). FluidSynth was starting PortAudio to enumerate devices; that device listing crashed under Wine. The patch makes **Pa_Initialize** report that PortAudio is unavailable. Player audio uses SDL, so it does not need PortAudio. The final Windows Player passed title-screen MIDI startup with audio enabled through an inaudible SDL dummy device. We did not run Proton or physical Steam Deck hardware.
+
+## Native Linux and source
+
+The native Linux Player now uses the same **0.8.1.1-sb5** source as Windows, including mouse controls, click-to-walk, history, Text speed and Text pauses. Run **sh play-linux.sh**. Helper libraries and notices are in **native-linux**. Headless tests passed 36 replay cases on Debian 11, Arch and Ubuntu 24.04 containers. All 18 generated save states matched Windows. A separate normal-speed replay matched Windows on all three systems (nine images). Timeline and save-name checks also matched all 111 images and 36 generated save states. MIDI produced nonzero audio through a virtual disk driver. Launcher paths with spaces and save/config storage passed. Physical Steam Deck, Proton and desktop display/audio drivers remain untested.
+
+MIDI uses an available soundfont through FluidLite or the included FM synthesizer. No soundfont download is required to play; FM instruments sound different. [Requirements and setup](LINUX.md).
+
+The [Player source asset](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip) exports current Player **0cb855f**, a separate historical sb4 **a13da25** tree, and native liblcf **92c4450**, with build recipes, timeline asset generators and exact dependency-source information. Git history is not included.
+
+## Credits and English content
+
+Both DC builds restore mouse controls, the native battle panel and timeline name tables/assets. Altered gains full timeline names, including DRIVE/red markers and conditional Er names. English save slots retain the full “Blue-Haired Woman” name beside all four faces.
+
+Altered now shows the two 2016 English-team cards already present in DC: Special Thanks, translator **eplipswich**, and proofreader **kumada**. Thanks also to kumada for the original proofreading.
+
+Both English builds have eight dictionary captions corrected to the ruled names and roles, with the complete wording retained. Cilia is listed under A-C and Person under P-R; unlock switches and target pages are unchanged. The Status menu now spells out Poison instead of PSN, including at 100% trigger and defense rates. Altered choice-guard checks passed for held Enter, repeated presses and Cancel, with unguarded controls checked too.
+
+The DC English build restores 132 dialogue corrections missed by earlier packages, with 11 extra message boxes to retain the full wording. Altered also fixes three lines that used outdated translation inputs. Both English builds translate six remaining Daisy, Gerard and Owen portrait captions.
+
+## Known limits
+
+The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered's manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.
+
+Application checks confirm that approved wording reached the game files. The additional review of English against Japanese remains incomplete. [Review scope and counts](COMPATIBILITY.md#translation-review-scope).
+
+No full-playthrough, physical Steam Deck or Proton verification is claimed. Windows and Linux replays check specific paths and saved states. [Compatibility](COMPATIBILITY.md).
+
 # Release notes — v0.3.2
 
 ## Build
