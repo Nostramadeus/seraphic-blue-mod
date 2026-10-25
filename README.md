@@ -4,7 +4,9 @@
 
 *Seraphic Blue* (Tempura, 2004, RPG Maker 2000), in English again: every dialogue box retranslated from the Japanese, a MOD menu (fewer random battles, speed, cheats, message history, mouse play), and an optional English build of the *DC Altered* fan patch. One ZIP per build; no original game, patching or extra downloads needed.
 
-**Status:** released. Current version: v0.3.4 for all three builds. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
+**Status:** released. Current versions: **Altered v0.3.5**; **DC EN / JP v0.3.4**. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
+
+**Altered v0.3.5 hotfix:** restores two missing maps, including the upstairs map in Turku Inn. [Download the corrected Altered game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.5/seraphic-blue-fullgame-EN-Altered-v0.3.5.zip), or get the small repair ZIP from the [hotfix release](https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.3.5). For an existing v0.3.4 installation, copy **Map0022.lmu** and **Map0088.lmu** into the game folder beside **Player.exe**. Keep your saves. The DC builds and Player are unchanged.
 
 **Open MOD or Altered’s Config.** Press **Escape** to open the game menu, select **MOD**, then choose the key below.
 
@@ -137,11 +139,11 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 | Build | What it is | Download |
 | --- | --- | --- |
-| **EN + MOD + Altered** (v0.3.4) ★ **Recommended for a first play** | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 to v0.3.3 Altered builds. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.3.4.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-Altered-v0.3.4.zip)** |
+| **EN + MOD + Altered** (v0.3.5) ★ **Recommended for a first play** | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 to v0.3.3 Altered builds. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.3.5.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.5/seraphic-blue-fullgame-EN-Altered-v0.3.5.zip)** |
 | **EN + MOD (DC)** (v0.3.4) | The English Director's Cut with English corrections and the MOD. Earlier DC saves keep working. | **[seraphic-blue-fullgame-EN-v0.3.4.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-v0.3.4.zip)** |
 | **JP + MOD (DC)** (v0.3.4) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.3.4.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-JP-v0.3.4.zip)** |
 
-[All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases). Each ZIP includes its game, the Windows and native Linux Players (0.8.1.1-sb6), and launchers. v0.3.4 updates all three builds.
+[All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases). Each ZIP includes its game, the Windows and native Linux Players (0.8.1.1-sb6), and launchers. v0.3.5 is a map-only Altered hotfix; the DC downloads remain v0.3.4.
 
 ```text
 Download → Extract All → double-click PLAY.cmd → Play
@@ -459,7 +461,11 @@ Menu labels are pictures with a fixed width. Where the full English did not fit 
 
 **Release notes and translation comparison.** How does this translation compare to the 2016 patch? [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. **Spoiler warning:** it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind. Opening and Episode 2 only, with later sections hidden until selected: [early-game corrections](EARLY-GAME-CORRECTIONS.html).
 
-<details><summary>Open: what changed in each version (v0.3.4 back to test.8)</summary>
+<details><summary>Open: what changed in each version (v0.3.5 back to test.8)</summary>
+
+**New in v0.3.5 (Altered only):**
+
+- Restores missing Map0022 (Turku Inn upstairs) and Map0088. Existing saves work; Player, Linux runtime and the DC builds are unchanged. This urgent map-only hotfix received file-integrity checks, without a new gameplay test.
 
 **New in v0.3.4 (all three builds):**
 
