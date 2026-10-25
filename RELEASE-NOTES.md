@@ -1,4 +1,19 @@
-# Release notes — v0.3.3
+# v0.3.4 — consistent menu hover
+
+Menus now respond consistently to pointer movement in the English Altered build and both DC builds. Native lists, title/save screens and number/sign editors give keyboard and gamepad input priority. Custom battle, field, shop, dictionary, MOD and configuration menus keep their own native selection, help and permission rules.
+
+Move the pointer to highlight a menu choice or inspect its help. Hover does not confirm, buy, equip, apply a setting or move the player. Click or press Enter to choose. Keyboard/gamepad navigation takes control until the pointer moves again. Unavailable choices keep their native restrictions.
+
+All three full-game ZIPs include Windows and native Linux Player **0.8.1.1-sb6**, built from the same source **eb421f5**. Focused Windows checks covered native selection, keyboard handoff, click confirmation, MOD tabs and the native nine-row bonus menu. One controlled headless Linux hover/click/keyboard replay passed on Debian 11. This is not physical Steam Deck, Proton or full-playthrough verification.
+
+Game text, pictures, event data and save formats are unchanged from v0.3.3. Extract into a new folder and copy your **saves** and **config** folders. Keep DC saves with DC and Altered saves with Altered. Preserve the new release's **EasyRPG.ini**.
+
+The matching [Player source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip) includes build recipes and dependency source information. Earlier releases and their exact matching source assets remain available. [Setup and limits](COMPATIBILITY.md).
+
+Recorded additional Japanese-meaning review remains partial: 1,915 Altered-specific entries have origin/application evidence without matching review records; 22,137 DC entries lack matching records for the additional review pass. The 11,328 shared-English transfers remain separate. This hover release makes no new translation changes or whole-script review claim.
+
+## Earlier release — v0.3.3
+
 
 ## Builds and saves
 

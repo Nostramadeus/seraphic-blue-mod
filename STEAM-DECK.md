@@ -1,10 +1,12 @@
 # Steam Deck — two launch options
 
-The ZIP includes native Linux and Windows Players from the same **0.8.1.1-sb5** source. Both contain the custom controls. Physical Steam Deck hardware and Proton were not tested here. Headless tests passed 36 replay cases on Debian 11, Arch and Ubuntu 24.04 containers. All 18 generated save states matched Windows. A separate normal-speed replay matched Windows on all three systems (nine images). Timeline and save-name checks also matched all 111 images and 36 generated save states. MIDI produced nonzero audio through a virtual disk driver. Launcher paths with spaces and save/config storage passed. Physical Steam Deck, Proton and desktop display/audio drivers remain untested.
+The ZIP includes native Linux and Windows Players from the same **0.8.1.1-sb6** source, with consistent menu hover and the existing custom controls. Focused Windows checks and one controlled headless Debian 11 hover/click/keyboard replay passed. Physical Steam Deck hardware and Proton were not tested here.
+
+Earlier v0.3.3 sb5 container tests covered Debian 11, Arch and Ubuntu 24.04: 36 cases and 18 matching save states, nine exact normal-speed images, plus 111 controlled timeline/save-name images and 36 states. Earlier MIDI and launcher checks are retained for their unchanged components; they are not another test pass for sb6. No physical display/audio-device verification is claimed.
 
 ## Native Linux
 
-1. Switch to **Desktop Mode**. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-fullgame-EN-v0.3.3.zip) and extract it.
+1. Switch to **Desktop Mode**. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-v0.3.4.zip) and extract it.
 2. Open a terminal in **SeraphicBlue** (or **SeraphicBlue-Altered** for the Altered ZIP). Run **sh play-linux.sh**.
 3. To launch through Steam, make **play-linux.sh** and **native-linux/Player** executable: **chmod +x play-linux.sh native-linux/Player**.
 4. In Steam choose **Games → Add a Non-Steam Game → Browse**, show all files, and select **play-linux.sh**. Set **Start In** to the game folder. Leave forced Proton compatibility off for this native shortcut.

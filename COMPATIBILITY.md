@@ -1,17 +1,17 @@
-# Compatibility — v0.3.3
+# Compatibility — v0.3.4
 
 | Route | Included Player | Verification |
 | --- | --- | --- |
-| Windows x86-64 | 0.8.1.1-sb5, v0.3.3 PortAudio patch | Final MOD/menu/save/retry replays; title MIDI startup with audio enabled through an inaudible SDL dummy device |
-| Native Linux x86-64 | 0.8.1.1-sb5, bundled helper libraries | Headless tests passed 36 replay cases on Debian 11, Arch and Ubuntu 24.04 containers. All 18 generated save states matched Windows. A separate normal-speed replay matched Windows on all three systems (nine images). Timeline and save-name checks also matched all 111 images and 36 generated save states. MIDI produced nonzero audio through a virtual disk driver. Launcher paths with spaces and save/config storage passed. Physical Steam Deck, Proton and desktop display/audio drivers remain untested. |
-| Steam / Proton | Included Windows Player | AryaNetwork supplied the verified crash fix; our tests did not run Proton |
-| Steam Deck native | Included Linux Player | Container tests only; physical Deck controls, display and audio unverified |
+| Windows x86-64 | 0.8.1.1-sb6, unchanged patched libraries | Focused menu hover, keyboard handoff, click, title/file/number/sign and MOD checks; source-bound native bonus menu |
+| Native Linux x86-64 | 0.8.1.1-sb6, bundled helper libraries | One controlled headless hover/click/keyboard replay on Debian 11, from the same final source as Windows |
+| Steam / Proton | Included Windows Player | Earlier PortAudio crash fix retained; Proton not run here |
+| Steam Deck native | Included Linux Player | Physical controls, display and audio unverified |
 
-The native build was compiled on Debian 11. It requires GLIBC_2.29, GLIBCXX_3.4.26, CXXABI_1.3.9, zlib and working system display/audio drivers. A version number alone does not prove every distribution works. Keep **native-linux/lib** together with its Player.
+The native build uses Debian 11 and requires GLIBC_2.29, GLIBCXX_3.4.26, CXXABI_1.3.9, zlib and working system display/audio drivers. Symbol requirements do not prove universal distribution support. Keep **native-linux/lib** with Player.
 
-Turbo screenshots sometimes differed during transition frames; the exact image comparisons above used normal speed.
+Earlier v0.3.3 sb5 tests covered 36 replay cases on Debian 11/Arch/Ubuntu containers, 18 matching states, nine exact normal-speed images, 111 controlled images and 36 states. Those are earlier-build evidence, not another test pass for sb6. Unchanged game content, libraries and launchers retain their exact earlier receipts. No full playthrough or physical audio-device check is claimed.
 
-Native MIDI uses FluidLite with an available soundfont, otherwise the built-in FM synthesizer. The shipped game uses MIDI, MP3 and WAV; module-music playback is not enabled in this native build. No physical audio-device check is claimed.
+Native MIDI uses FluidLite with an available soundfont, otherwise the included FM synthesizer. MIDI, MP3 and WAV remain supported; module-music playback remains disabled in this native build.
 
 ## Saves
 

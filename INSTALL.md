@@ -1,4 +1,4 @@
-# Install or update v0.3.3
+# Install or update v0.3.4
 
 ## Fresh installation
 
@@ -12,7 +12,7 @@ Keep Player.exe, its DLLs, **native-linux**, game data and launchers together. [
 
 1. Close the game. Back up the old **saves** and **config** folders.
 2. Extract the new full-game ZIP into a new folder.
-3. Copy **saves** and **config** from the old installation to the new one. If an older installation stored **SaveXX.lsd** directly in its game folder, copy those files into the new **saves** folder.
+3. Copy **saves** and **config** from the old installation to the new one. Keep the new release's **EasyRPG.ini**. If an older installation stored **SaveXX.lsd** directly in its game folder, copy those files into the new **saves** folder.
 4. Start the new installation and load your usual save before removing the old one.
 
 The old launcher's **--save-path** decides where its saves are stored. If it used a custom folder, copy from that folder. Do not guess from the game directory alone.

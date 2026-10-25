@@ -1,8 +1,8 @@
 {
-  "releaseTag": "v0.3.3",
-  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/",
+  "releaseTag": "v0.3.4",
+  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/",
   "sourceBundle": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip",
-  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip",
+  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip",
   "packages": [
     {
       "pkgbase": "mingw-w64-readline",
@@ -953,25 +953,25 @@
     }
   ],
   "verification": "Exact archive/base/version and embedded source/patch SHA256 checked; no PGP signatures or rebuild verified.",
-  "playerRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+  "playerRevision": "eb421f52e66ccffd0871587a352037c4e31982f6",
   "linuxLiblcfRevision": "92c4450a1bc1acb58bd02bbb99b57e5036919cdf",
   "nativeLinux": {
-    "playerVersion": "0.8.1.1-sb5",
+    "playerVersion": "0.8.1.1-sb6",
     "manifest": "native-linux/BUNDLED-LIBS.tsv",
     "sourceManifest": "native-linux/DEPENDENCY-SOURCES.tsv",
-    "sourceArchive": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip",
+    "sourceArchive": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip",
     "sdlVersion": "2.30.9",
     "fluidLiteRevision": "4a01cf1c67419e71da971d209f2855bbf4f3bab8",
     "dependencySourceArchives": 68,
     "verification": "Build source and binary hashes recorded; runtime check scope is documented in COMPATIBILITY.md.",
-    "playerSha256": "f881a14a3591f27e4b36a027d095a0089554395038202f4a27f4a3e424d747fd",
-    "playerSourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+    "playerSha256": "84e3121d43a3625d7e4d2adc6fa855e195e697a150823bc942871d9e5cfe1402",
+    "playerSourceRevision": "eb421f52e66ccffd0871587a352037c4e31982f6",
     "requiredSymbolVersions": [
       "GLIBC_2.29",
       "GLIBCXX_3.4.26",
       "CXXABI_1.3.9"
     ],
-    "manifestSha256": "9c7310eaff5fa21bbea897a5abc84b9b147c0710de153c769c963701ab82fe4e"
+    "manifestSha256": "2b127ca26c269866449ae26f00dec6b8486917d62e244ceb59b3b15d7a971794"
   },
   "windowsDependencyVersions": {
     "mingw-w64-x86_64-brotli": "1.2.0-1",
@@ -1052,7 +1052,7 @@
     "libvorbisfile-3.dll": "78559fbab64af27b66bd0904bdee7afb16190e66ca3d67323958aa59d2687c8d",
     "libwinpthread-1.dll": "c26528202c73151e4bff49d0fae08c7e6dd6b78c0d45278253d46e33f2f1417e",
     "libxmp.dll": "679c54430a5c26b0e3b64d013dc9a4e949fa30266957f1659e401f432d56b51d",
-    "Player.exe": "f3ddae1195a0f58acb7d474e3f332a82041bcd880d0dd000ed4652ef28c744df",
+    "Player.exe": "7d8253d0aaba9113e887a1b46a30307becbc75bcd5b98547db791d7beed45fce",
     "SDL2.dll": "47a3b27654832d9f7e5719c88078210a3dbfd6407b559c5a3c4eb8ab7d0ebdb6",
     "SDL3.dll": "dc90ef64c7c2efb5e4464058e18276879f9532588066a70074a0edf40aff316f",
     "zlib1.dll": "93e9243a44c29200eeacaf9658efe2558581770e4b11ca4b500e18e424a6e3b5"
@@ -1065,21 +1065,21 @@
   },
   "playerBinaries": {
     "currentWindows": {
-      "version": "0.8.1.1-sb5",
-      "sourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+      "version": "0.8.1.1-sb6",
+      "sourceRevision": "eb421f52e66ccffd0871587a352037c4e31982f6",
       "sourcePath": "Player/",
-      "sha256": "f3ddae1195a0f58acb7d474e3f332a82041bcd880d0dd000ed4652ef28c744df",
+      "sha256": "7d8253d0aaba9113e887a1b46a30307becbc75bcd5b98547db791d7beed45fce",
       "releaseTags": [
-        "v0.3.3"
+        "v0.3.4"
       ]
     },
     "currentLinux": {
-      "version": "0.8.1.1-sb5",
-      "sourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+      "version": "0.8.1.1-sb6",
+      "sourceRevision": "eb421f52e66ccffd0871587a352037c4e31982f6",
       "sourcePath": "Player/",
-      "sha256": "f881a14a3591f27e4b36a027d095a0089554395038202f4a27f4a3e424d747fd",
+      "sha256": "84e3121d43a3625d7e4d2adc6fa855e195e697a150823bc942871d9e5cfe1402",
       "releaseTags": [
-        "v0.3.3"
+        "v0.3.4"
       ]
     },
     "historicalWindowsSb4": {
@@ -1092,5 +1092,31 @@
         "v0.3.2"
       ]
     }
+  },
+  "previousPlayerRelease": {
+    "releaseTag": "v0.3.3",
+    "sourceArchive": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip",
+    "sourceArchiveSha256": "6bb9951b225b85adba40da4d6a40c4fb58d036503b38cf8cf1436e66390e7bc1",
+    "binaries": {
+      "currentWindows": {
+        "version": "0.8.1.1-sb5",
+        "sourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+        "sourcePath": "Player/",
+        "sha256": "f3ddae1195a0f58acb7d474e3f332a82041bcd880d0dd000ed4652ef28c744df",
+        "releaseTags": [
+          "v0.3.3"
+        ]
+      },
+      "currentLinux": {
+        "version": "0.8.1.1-sb5",
+        "sourceRevision": "0cb855fe592235fdb083ac5c6ac7b946fccc0c87",
+        "sourcePath": "Player/",
+        "sha256": "f881a14a3591f27e4b36a027d095a0089554395038202f4a27f4a3e424d747fd",
+        "releaseTags": [
+          "v0.3.3"
+        ]
+      }
+    },
+    "note": "Earlier binaries retain their exact separate v0.3.3 corresponding-source asset; current source is not substituted."
   }
 }
