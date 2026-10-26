@@ -8,6 +8,8 @@ These entries describe the release named in each heading. An old limitation or p
 <a name="release-history"></a>
 ## Release history
 
+<img src="docs/img/banners/releases.png" width="900" alt="Release notes">
+
 <details><summary>v0.3.8 — saved commands and English corrections</summary>
 
 saved manual encounter commands in English DC/Altered with explicit R or optional Auto-button start and stop on Windows/native Linux; the idle button defaults Off under F1 > Engine; Stop remains visible during replay; four approved English wording corrections (three matching Altered passages), and one directly translated DC picture card. Existing saves, battle rules and the separate experimental UI are unchanged.

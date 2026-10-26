@@ -10,6 +10,7 @@
 <p><a href="#modes">Game modes</a> · <a href="#arrange">Altered settings</a> · <a href="#healing-controls">Healing</a> · <a href="#shop-compare">Shop comparison</a> · <a href="#battle-labels">Battle labels</a></p>
 <a name="modes"></a>
 <h2 id="section-1">Choose an Altered mode</h2>
+<figure><img src="docs/img/banners/altered.png" width="900" alt="The Altered build (EN + MOD + Altered)" style="max-width:100%;height:auto"></figure>
 <p>Choose a <strong>build</strong> when downloading, then a <strong>mode</strong> when starting an Altered game. DC builds have no mode choice: they use Original-style rules.</p>
 <div class="table-scroll"><table>
 <tr><th>Altered New Game choice</th><th>What to expect</th></tr>
@@ -19,6 +20,7 @@
 </table></div>
 <p><strong>New Game+</strong> with bonus picks is available after clearing, in every mode.</p>
 <figure><img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange" style="max-width:100%;height:auto"></figure>
+<p><strong>Full Arrange detail:</strong> the limit is <strong>five of each item per fight</strong>. Full HP recovery is free; TP still uses the <strong>SUP.TP reserve</strong>.</p>
 <p>Settings can be changed later in native Config, Config page 3 and MOD → ARRANGE. To reach <strong>DEEP SETTING</strong> (MANY / BATTLE), hold <strong>Shift for about six seconds inside Config</strong>. Free Full HP after battle and reserve-funded HP Auto Fill are independent; both start Off in new Extra Content games. With free healing Off, Supplement shows HP and TP reserves and their Auto Fill controls. <a href="#healing-controls">Healing steps</a>.</p>
 <a name="new-game-presets"></a>
 <details><summary>Exact settings for each New Game choice</summary>
@@ -52,6 +54,7 @@
 </table></div>
 </details>
 <a name="original-trip"></a>
+<figure><img src="docs/img/banners/trip-original.png" width="900" alt="A dungeon trip: Original rules" style="max-width:100%;height:auto"></figure>
 <details><summary>Worked example — one dungeon under Original rules</summary>
 <p>Same party, same dungeon, same three fights and one boss. This worked example shows both the rules and the decisions they create. No story content. Assumes the MOD&#x27;s &quot;Escape always works&quot; row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). This is the Original-style attrition loop. Extra Content starts the five ARRANGE options and HP Auto Fill Off, while retaining Altered’s other changes; see <a href="#healing-controls">healing controls</a>.</p>
 <figure><img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking" style="max-width:100%;height:auto"></figure>
@@ -88,16 +91,17 @@
 <p><strong>Result:</strong> the hard part is the journey. You ration a pool across many fights, and the boss is an endurance test you can brute-force with items.</p>
 </details>
 <a name="arrange-trip"></a>
+<figure><img src="docs/img/banners/trip-arrange.png" width="900" alt="A dungeon trip: Arrange rules" style="max-width:100%;height:auto"></figure>
 <details><summary>Worked example — the same dungeon under Full Arrange rules</summary>
 <figure><img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking" style="max-width:100%;height:auto"></figure>
 <ol start="1">
 <li><strong>You enter the dungeon.</strong> Full HP, full pools, 12 heals.</li>
 </ol>
-<p>   - &quot;The pools barely matter; each fight is on its own.&quot;</p>
+<p>   - &quot;HP is not my trip budget here. TP still draws on SUP.TP.&quot;</p>
 <ol start="2">
 <li><strong>Fight 1, three weak enemies.</strong> You take 300 damage. After the win your HP is full again; the pool is untouched.</li>
 </ol>
-<p>   - &quot;Free. The only cost of a fight is the time it takes.&quot;</p>
+<p>   - &quot;HP refills for free; any TP I spend still uses its reserve.&quot;</p>
 <ol start="3">
 <li><strong>Fight 2, a tougher pair.</strong> Slow lands on you. Your counterattack sphere now triggers whenever it is allowed to, not on a roll; crits land on more moves.</li>
 </ol>
@@ -108,9 +112,9 @@
 <p>   - &quot;Not worth fighting. Gone.&quot;</p>
 <h3>Before and after the boss</h3>
 <ol start="5">
-<li><strong>Between fights.</strong> HP is full. Nothing to decide.</li>
+<li><strong>Between fights.</strong> HP is full; check the TP reserve before the boss.</li>
 </ol>
-<p>   - &quot;Straight to the boss.&quot;</p>
+<p>   - &quot;Enough SUP.TP left? Then straight to the boss.&quot;</p>
 <ol start="6">
 <li><strong>Boss.</strong> You start at full HP. You may use at most 5 of each item in this fight. Ailments now work on the boss; the chain and break gauges reward attacking in rhythm.</li>
 </ol>

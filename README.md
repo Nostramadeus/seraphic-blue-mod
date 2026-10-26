@@ -14,6 +14,8 @@ An English retranslation of **Seraphic Blue**, Tempura’s 2004 RPG Maker 2000 g
 
 **First time playing? [Download English + MOD + Altered — v0.3.8](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-EN-Altered-v0.3.8.zip).**
 
+<img src="docs/img/banners/downloads.png" width="900" alt="Downloads">
+
 1. Download the ZIP above. No original game, patching or extra runtime download is needed.
 2. Right-click the ZIP → **Extract All**. Open **SeraphicBlue-Altered** and keep its files together.
 3. **Windows:** double-click **PLAY.cmd**. **Linux:** open a terminal in that folder and run **sh play-linux.sh**.
@@ -54,8 +56,23 @@ The **v0.3.8 ZIPs include empty saves and config folders**. Blank Launch Options
 
 </details>
 
+<a name="choose-altered-mode"></a>
+## Choose an Altered mode
+
+<img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick">
+
+In the Altered edition, choose **Extra Content** for a first play, **Original Mode** for Director’s Cut rules, or **Arrange Mode** for Altered’s battle rules. These are New Game choices, separate from the three download editions above.
+
+<img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
+
+**Full Arrange detail:** the limit is **five of each item per fight**. Full HP recovery is free; TP still uses the **SUP.TP reserve**.
+
+[Full mode comparison and settings](PLAYER-GUIDE.md#modes) · [View the diagram full size](docs/img/mode-picker.svg)
+
 <a name="controls"></a>
 ## Controls
+
+<img src="docs/img/banners/controls.png" width="900" alt="Controls">
 
 <details open><summary>Keyboard, mouse and controller shortcuts</summary>
 
@@ -73,7 +90,7 @@ The **v0.3.8 ZIPs include empty saves and config folders**. Blank Launch Options
 | Battle spell or item page | **Left / Right**, mouse wheel, or click the page arrows. |
 | Status / Gear / Ability tabs | **Page Up / Page Down**, or click a top tab. Left / Right still changes character. |
 | Message history — last 100 boxes | **Page Up** or mouse wheel **up** while a message shows or while walking. Scroll with Up / Down or the wheel; page with Page Up / Down; close with Escape or right-click. It includes your chosen answers, clears on load/new game, and is not saved. |
-| Fast-forward | Hold **F** for **3×** or **G** for **10×**. Both speeds are adjustable in **Settings → Input**. Controller: right trigger. |
+| Fast-forward | Hold <img src="docs/img/keys/f.svg" height="22" alt="F"> **F** for **3×** or <img src="docs/img/keys/g.svg" height="22" alt="G"> **G** for **10×**. Both speeds are adjustable in **Settings → Input**. Controller: right trigger. |
 
 ### More menu shortcuts
 
@@ -93,6 +110,8 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 
 <a name="keep-your-saves"></a>
 ## Update and keep your saves
+
+<img src="docs/img/banners/saves.png" width="900" alt="Keep your saves">
 
 **Keep DC saves on DC. Keep Altered saves on Altered.** Altered saves from v0.2.0 onward load in v0.3.8. DC also accepts saves from the Japanese original, the 2016 patch and earlier MOD tests.
 
@@ -154,6 +173,8 @@ On Steam Deck, Steam Input can map F1 to a chosen button; these physical binding
 
 <a name="quick-tutorials"></a>
 ## Quick tutorials
+
+<img src="docs/img/banners/tutorials.png" width="900" alt="Quick tutorials">
 
 <details open><summary>Five ways to move through the game</summary>
 
@@ -218,6 +239,8 @@ On Steam Deck, Steam Input can map F1 to a chosen button; these physical binding
 
 <a name="mod-menu"></a>
 ## MOD menu and native Config
+
+<img src="docs/img/banners/modmenu.png" width="900" alt="MOD menu">
 
 <details open><summary>Open the menu, change settings, and use optional cheats</summary>
 
@@ -290,6 +313,8 @@ Enable the CHEATS page when asked. Select an action and confirm. **Save first be
 
 <a name="help"></a>
 ## Help and credits
+
+<img src="docs/img/banners/credits.png" width="900" alt="Credits">
 
 **Bug reports and questions:** [GitHub Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues) · **Contact:** [afrotankrob@gmail.com](mailto:afrotankrob@gmail.com)
 

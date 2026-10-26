@@ -13,6 +13,7 @@
 <a name="downloads"></a>
 <h2 id="section-1">Download and start</h2>
 <p><strong>First time playing? <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-EN-Altered-v0.3.8.zip">Download English + MOD + Altered — v0.3.8</a>.</strong></p>
+<figure><img src="docs/img/banners/downloads.png" width="900" alt="Downloads" style="max-width:100%;height:auto"></figure>
 <ol start="1">
 <li>Download the ZIP above. No original game, patching or extra runtime download is needed.</li>
 <li>Right-click the ZIP → <strong>Extract All</strong>. Open <strong>SeraphicBlue-Altered</strong> and keep its files together.</li>
@@ -44,8 +45,16 @@
 <p><strong>Already have a working Steam shortcut? Keep its paths.</strong> The old <code>--save-path saves</code> option fails if that folder does not exist. Direct <strong>Player.exe</strong> shortcuts bypass the launcher that creates it, and may save <strong>SaveNN.lsd</strong> beside Player.exe. Changing the save path later can hide existing saves from the load menu. <a href="STEAM-DECK.html#section-2">Details</a>.</p>
 <p>The <strong>v0.3.8 ZIPs include empty saves and config folders</strong>. Blank Launch Options remain the recommended Proton setup.</p>
 </details>
+<a name="choose-altered-mode"></a>
+<h2 id="section-3">Choose an Altered mode</h2>
+<figure><img src="docs/img/banners/mode.png" width="900" alt="Which mode to pick" style="max-width:100%;height:auto"></figure>
+<p>In the Altered edition, choose <strong>Extra Content</strong> for a first play, <strong>Original Mode</strong> for Director’s Cut rules, or <strong>Arrange Mode</strong> for Altered’s battle rules. These are New Game choices, separate from the three download editions above.</p>
+<figure><img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange" style="max-width:100%;height:auto"></figure>
+<p><strong>Full Arrange detail:</strong> the limit is <strong>five of each item per fight</strong>. Full HP recovery is free; TP still uses the <strong>SUP.TP reserve</strong>.</p>
+<p><a href="PLAYER-GUIDE.html#modes">Full mode comparison and settings</a> · <a href="docs/img/mode-picker.svg">View the diagram full size</a></p>
 <a name="controls"></a>
-<h2 id="section-3">Controls</h2>
+<h2 id="section-4">Controls</h2>
+<figure><img src="docs/img/banners/controls.png" width="900" alt="Controls" style="max-width:100%;height:auto"></figure>
 <details open><summary>Keyboard, mouse and controller shortcuts</summary>
 <div class="table-scroll"><table>
 <tr><th>Action</th><th>Keyboard</th><th>Mouse</th></tr>
@@ -60,7 +69,7 @@
 <tr><td>Battle spell or item page</td><td><strong>Left / Right</strong>, mouse wheel, or click the page arrows.</td></tr>
 <tr><td>Status / Gear / Ability tabs</td><td><strong>Page Up / Page Down</strong>, or click a top tab. Left / Right still changes character.</td></tr>
 <tr><td>Message history — last 100 boxes</td><td><strong>Page Up</strong> or mouse wheel <strong>up</strong> while a message shows or while walking. Scroll with Up / Down or the wheel; page with Page Up / Down; close with Escape or right-click. It includes your chosen answers, clears on load/new game, and is not saved.</td></tr>
-<tr><td>Fast-forward</td><td>Hold <strong>F</strong> for <strong>3×</strong> or <strong>G</strong> for <strong>10×</strong>. Both speeds are adjustable in <strong>Settings → Input</strong>. Controller: right trigger.</td></tr>
+<tr><td>Fast-forward</td><td>Hold <img src="docs/img/keys/f.svg" height="22" alt="F" style="vertical-align:middle"> <strong>F</strong> for <strong>3×</strong> or <img src="docs/img/keys/g.svg" height="22" alt="G" style="vertical-align:middle"> <strong>G</strong> for <strong>10×</strong>. Both speeds are adjustable in <strong>Settings → Input</strong>. Controller: right trigger.</td></tr>
 </table></div>
 <h3>More menu shortcuts</h3>
 <div class="table-scroll"><table>
@@ -74,7 +83,8 @@
 <p><strong>Need a visual example?</strong> See <a href="#quick-tutorials">Quick tutorials</a>, <a href="#shop-compare">shop comparison</a>, or the <a href="#battle-labels">battle-label guide</a>.</p>
 </details>
 <a name="keep-your-saves"></a>
-<h2 id="section-4">Update and keep your saves</h2>
+<h2 id="section-5">Update and keep your saves</h2>
+<figure><img src="docs/img/banners/saves.png" width="900" alt="Keep your saves" style="max-width:100%;height:auto"></figure>
 <p><strong>Keep DC saves on DC. Keep Altered saves on Altered.</strong> Altered saves from v0.2.0 onward load in v0.3.8. DC also accepts saves from the Japanese original, the 2016 patch and earlier MOD tests.</p>
 <h3>Included updater</h3>
 <div class="table-scroll"><table>
@@ -93,7 +103,7 @@
 </ol>
 <p>The included launchers store saves in <strong>saves</strong> inside the extracted game folder. A custom <code>--save-path</code> or direct Player shortcut may use another location: copy from the location you actually used. <a href="INSTALL.html#section-3">Full migration instructions</a> · <a href="README-HISTORY.html#old-updates">Archived test-release patches</a>.</p>
 <a name="whats-new"></a>
-<h2 id="section-5">What is new in v0.3.8</h2>
+<h2 id="section-6">What is new in v0.3.8</h2>
 <p><strong>Saved battle commands:</strong> win manually, then press <strong>R</strong> at the start of a matching encounter. The idle on-screen button starts hidden; enable <strong>F1 → Engine → Show Auto button</strong> if wanted. The update also includes four English wording corrections (three matching Altered passages) and one directly translated <strong>DC-only</strong> picture card.</p>
 <p>The experimental modern UI remains unfinished and is <strong>not included</strong>. The additional translation review is separate and incomplete. This release does not claim a full playthrough or a complete new translation audit.</p>
 <details><summary>Auto / R — how recording, replay and stopping work</summary>
@@ -118,7 +128,8 @@
 </table></div>
 <p>On Steam Deck, Steam Input can map F1 to a chosen button; these physical bindings have not been tested here. Optional cheats remain under <strong>Esc → MOD → CHEATS</strong>.</p>
 <a name="quick-tutorials"></a>
-<h2 id="section-6">Quick tutorials</h2>
+<h2 id="section-7">Quick tutorials</h2>
+<figure><img src="docs/img/banners/tutorials.png" width="900" alt="Quick tutorials" style="max-width:100%;height:auto"></figure>
 <details open><summary>Five ways to move through the game</summary><div class="tutorials">
 <p><strong>Use the included Player for these controls:</strong> Windows, native Linux, or Windows through Proton. Deck buttons assume the <a href="STEAM-DECK.html#section-3">suggested Steam Input bindings</a>, not a bundled preset.</p>
 <table>
@@ -177,7 +188,8 @@
 </ul>
 </div></details>
 <a name="mod-menu"></a>
-<h2 id="section-7">MOD menu and native Config</h2>
+<h2 id="section-8">MOD menu and native Config</h2>
+<figure><img src="docs/img/banners/modmenu.png" width="900" alt="MOD menu" style="max-width:100%;height:auto"></figure>
 <details open><summary>Open the menu, change settings, and use optional cheats</summary>
 <p><strong>Two menus:</strong> Press <strong>Escape</strong> to open the game menu, select <strong>MOD</strong>, then use the key below.</p>
 <div class="table-scroll"><table>
@@ -223,7 +235,7 @@
 </table></div>
 </details>
 <a name="altered-build-en--mod--altered"></a>
-<h2 id="section-8">More help while playing</h2>
+<h2 id="section-9">More help while playing</h2>
 <p><strong>Altered modes and settings:</strong> <a href="PLAYER-GUIDE.html#modes">compare Original, Extra Content and Full Arrange</a>, or read <a href="PLAYER-GUIDE.html#altered">what the Altered fan patch changes</a>.</p>
 <a name="healing-controls"></a>
 <p><strong>Healing:</strong> free <strong>Full HP after battle</strong> and reserve-funded <strong>HP Auto Fill</strong> are separate. Both start Off in new Extra Content games. <a href="PLAYER-GUIDE.html#healing-controls">Change healing on an existing save</a>.</p>
@@ -232,7 +244,8 @@
 <a name="battle-labels"></a>
 <p><strong>Battle labels:</strong> <a href="PLAYER-GUIDE.html#battle-labels">illustrated, spoiler-free guide to AR / AE / AC / AWT, WT, HP / TP and common stats</a>.</p>
 <a name="help"></a>
-<h2 id="section-9">Help and credits</h2>
+<h2 id="section-10">Help and credits</h2>
+<figure><img src="docs/img/banners/credits.png" width="900" alt="Credits" style="max-width:100%;height:auto"></figure>
 <p><strong>Bug reports and questions:</strong> <a href="https://github.com/Nostramadeus/seraphic-blue-mod/issues">GitHub Issues</a> · <strong>Contact:</strong> <a href="mailto:afrotankrob@gmail.com">afrotankrob@gmail.com</a></p>
 <div class="table-scroll"><table>
 <tr><th>Project</th><th>Creators</th></tr>

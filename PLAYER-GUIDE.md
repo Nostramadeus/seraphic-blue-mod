@@ -8,6 +8,8 @@
 <a name="modes"></a>
 ## Choose an Altered mode
 
+<img src="docs/img/banners/altered.png" width="900" alt="The Altered build (EN + MOD + Altered)">
+
 Choose a **build** when downloading, then a **mode** when starting an Altered game. DC builds have no mode choice: they use Original-style rules.
 
 | Altered New Game choice | What to expect |
@@ -19,6 +21,8 @@ Choose a **build** when downloading, then a **mode** when starting an Altered ga
 **New Game+** with bonus picks is available after clearing, in every mode.
 
 <img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange">
+
+**Full Arrange detail:** the limit is **five of each item per fight**. Full HP recovery is free; TP still uses the **SUP.TP reserve**.
 
 Settings can be changed later in native Config, Config page 3 and MOD → ARRANGE. To reach **DEEP SETTING** (MANY / BATTLE), hold **Shift for about six seconds inside Config**. Free Full HP after battle and reserve-funded HP Auto Fill are independent; both start Off in new Extra Content games. With free healing Off, Supplement shows HP and TP reserves and their Auto Fill controls. [Healing steps](#healing-controls).
 
@@ -60,6 +64,8 @@ Settings can be changed later in native Config, Config page 3 and MOD → ARRANG
 </details>
 
 <a name="original-trip"></a>
+
+<img src="docs/img/banners/trip-original.png" width="900" alt="A dungeon trip: Original rules">
 <details><summary>Worked example — one dungeon under Original rules</summary>
 
 Same party, same dungeon, same three fights and one boss. This worked example shows both the rules and the decisions they create. No story content. Assumes the MOD's "Escape always works" row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). This is the Original-style attrition loop. Extra Content starts the five ARRANGE options and HP Auto Fill Off, while retaining Altered’s other changes; see [healing controls](#healing-controls).
@@ -89,22 +95,24 @@ Same party, same dungeon, same three fights and one boss. This worked example sh
 </details>
 
 <a name="arrange-trip"></a>
+
+<img src="docs/img/banners/trip-arrange.png" width="900" alt="A dungeon trip: Arrange rules">
 <details><summary>Worked example — the same dungeon under Full Arrange rules</summary>
 
 <img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking">
 
 1. **You enter the dungeon.** Full HP, full pools, 12 heals.
-   - "The pools barely matter; each fight is on its own."
+   - "HP is not my trip budget here. TP still draws on SUP.TP."
 2. **Fight 1, three weak enemies.** You take 300 damage. After the win your HP is full again; the pool is untouched.
-   - "Free. The only cost of a fight is the time it takes."
+   - "HP refills for free; any TP I spend still uses its reserve."
 3. **Fight 2, a tougher pair.** Slow lands on you. Your counterattack sphere now triggers whenever it is allowed to, not on a roll; crits land on more moves.
    - "Cure or hit? Hitting is better here, my counters are doing half the work."
 4. **Fight 3, an ambush.** You pick Escape. It works whenever escape is allowed at all.
    - "Not worth fighting. Gone."
 ### Before and after the boss
 
-5. **Between fights.** HP is full. Nothing to decide.
-   - "Straight to the boss."
+5. **Between fights.** HP is full; check the TP reserve before the boss.
+   - "Enough SUP.TP left? Then straight to the boss."
 6. **Boss.** You start at full HP. You may use at most 5 of each item in this fight. Ailments now work on the boss; the chain and break gauges reward attacking in rhythm.
    - "Five of each healing item, so each use must be timed. Can I Slow him? Yes. Break gauge is at 60 percent, two more hits and his guard drops. Pattern, not endurance."
 7. **After the boss.** Full HP again.

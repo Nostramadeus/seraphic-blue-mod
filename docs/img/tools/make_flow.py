@@ -1,6 +1,7 @@
 """Draw the README battle-flow diagrams and the mode picker as SVG.
 
     python make_flow.py SOURCE.md [OUT_ROOT]
+    python docs/img/tools/make_flow.py docs/img/tools/flow-source.md [OUT_ROOT]  # current guide
 
 SOURCE.md is the battle-flow text (the README section "How a dungeon trip
 feels", or the file it was written in). The script reads, from it:
@@ -69,7 +70,9 @@ PICKER = [
         "name": "Full Arrange",
         "role": "For a second run, if you want a smoother, modern-feeling run.",
         "setup": "BATTLE + MANY, switches On.",
-        "line_from": "Arrange",
+        # PLAYER-GUIDE.md#mode-comparison: the cap is per item; TP uses SUP.TP.
+        "line": "The hard part is each boss. Each fight has a limit of five of each item. "
+                "HP recovery is free after battle; TP still uses the SUP.TP reserve.",
         "icon": "2694",
         "accent": "arr",
     },
