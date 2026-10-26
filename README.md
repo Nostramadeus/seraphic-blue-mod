@@ -621,6 +621,16 @@ English game content and retained original manual/credits are included. The JP +
 
 </details>
 
+<details><summary>Known source questions (parked)</summary>
+
+- **Recap wording, Map 27:** the original Japanese leaves the person requesting help unstated. The current English follows one plausible reading. A wider source search did not settle it, so the wording is retained as an unresolved context question, not a confirmed translation error.
+- **Missing Map 550 reference:** an old event points to a map file absent from the checked original Japanese releases. The checked normal scene uses another route. No player-triggerable failure has been demonstrated, and no authentic replacement file was found.
+- **Missing Map 824 reference:** a reference to another absent map appears in an event labelled “discarded draft.” The checked normal scene uses a different exit. No player-triggerable failure or authentic replacement file has been established.
+
+These original-source questions are parked. No substitute maps or speculative script changes have been added. Reconsider them if a reproducible gameplay failure or authentic new source appears.
+
+</details>
+
 <details><summary>For modders and forks</summary>
 
 [Modding notes](https://github.com/Nostramadeus/seraphic-blue-mod/blob/main/docs/MODDING-NOTES.md): what broke when this MOD met the Altered fan patch, how each problem was found, the fix, and the build order that worked. Docs images are script-generated ([docs/img/tools](docs/img/tools), licences in [docs/img/LICENSES.md](docs/img/LICENSES.md)).
