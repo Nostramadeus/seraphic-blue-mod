@@ -627,6 +627,24 @@ English game content and retained original manual/credits are included. The JP +
 - **Missing Map 550 reference:** an old event points to a map file absent from the checked original Japanese releases. The checked normal scene uses another route. No player-triggerable failure has been demonstrated, and no authentic replacement file was found.
 - **Missing Map 824 reference:** a reference to another absent map appears in an event labelled “discarded draft.” The checked normal scene uses a different exit. No player-triggerable failure or authentic replacement file has been established.
 
+<details><summary>One story reply — spoilers; chapter information hidden</summary>
+
+<details><summary>Reveal chapter information (spoiler)</summary>
+
+The exact chapter is not established for this stored dialogue fragment. A related page's episode condition is not enough to date this fragment, so no chapter number is assigned here.
+
+</details>
+
+<details><summary>Reveal the passage and decision (story spoilers)</summary>
+
+The Japanese reply **何が分かると？** remains **“Understand what?”** in English. It returns to an earlier “I understand” claim after an argument about the speaker's credibility. The stored fragment does not establish exactly what is understood, which can make the question feel disconnected even in Japanese.
+
+The source event is labelled “dialogue stock.” This does not by itself prove that every route leaves it unused. The current English preserves the source's elliptical reply; no extra explanation or stronger accusation has been added. This wording is retained unless new source evidence changes the reading.
+
+</details>
+
+</details>
+
 These original-source questions are parked. No substitute maps or speculative script changes have been added. Reconsider them if a reproducible gameplay failure or authentic new source appears.
 
 </details>
