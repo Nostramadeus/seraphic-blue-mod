@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.8
+
+Optional saved encounter commands in English DC/Altered on Windows/native Linux: latest fully manual victory, same enemy group and ordered party, explicit R or optional Auto-button start before the first action, default-Off idle button under F1 > Engine (Stop remains visible during replay), Auto/R/Cancel stop with no restart that fight, and safe stop on unusable/exhausted commands. Battle rules and game-save format remain unchanged. Four approved English DC wording corrections, three matching Altered corrections, and one directly translated DC picture card. Modern UI remains excluded. GUI updater1.1 is bundled in each game ZIP and preserves Auto recordings; separate v0.3.7 updater downloads remain available for older installs. Player-first README with linked detailed guide/history; fresh ZIPs include empty saves/config folders so old explicit paths no longer fail solely because the folders are missing.
+
 ## v0.3.7
 
 Clearer established font on 83 additional English DC picture cards and 75 matching Altered cards. Full words/original heights retained; eight widths grow by 1–20 pixels. Japanese pictures and unresolved source/edition cases stay unchanged. Adds an optional song title banner, default Off, under F1 > Engine. Full music filename titles paginate; safe wall-time display pauses behind dialogue/menus/battle/transitions. Experimental modern UI excluded. Save format and game rules unchanged.

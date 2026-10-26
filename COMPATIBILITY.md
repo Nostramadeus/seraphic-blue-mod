@@ -1,3 +1,11 @@
+# v0.3.8 additions
+
+The saved-command feature is bound to the accepted English DC/Altered battle sources and uses the native permission, resource, target and command-commit paths. Windows native fixtures covered both editions and a four-character nine-action mix of ability, item, defend and ordinary attacks. Stop, unavailable targets/items/TP and exhausted commands were checked. An independent bounded Windows check exercised truncated newer recording data, a newer unavailable-record tombstone, equal-generation conflicts and a blocked write without losing the earlier valid file.
+
+Native Debian11 fixtures recorded and replayed ALT3, DC4 and DC four-character9 actions. Saved record contents matched Windows; per-character command sequences matched; Auto left the manual recording unchanged. The four persistence cases and bounded store/JSON checks passed. Final v0.3.8 labels rebuilt only version.cpp and the executable link; focused final native Auto checks passed. JSON3.9.1-1 is header-only and adds corresponding source/notices, not another shared runtime library. Existing dependencies were retained unchanged. Required symbol versions remain GLIBC_2.29, GLIBCXX_3.4.26 and CXXABI_1.3.9.
+
+The English data delta is four DC maps and one DC PNG, with three matching Altered maps. The retained dialogue-reply map and Japanese game data are unchanged. Full wording and picture surroundings were checked in controlled native displays. No full resource-state identity, every-command/mode combination, power-cut simulation, complete new translation audit, full playthrough, physical Steam Deck or Proton claim is made. The experimental modern UI is separate and unfinished.
+
 # v0.3.7 additions
 
 The picture update changes only the approved English PNGs: 83 DC and 75 matching Altered cards. Native/reference checks found no newly covered text below the eight widened cards. It adds no Japanese meaning-review claim.

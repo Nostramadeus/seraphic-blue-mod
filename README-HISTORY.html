@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Seraphic Blue — release history</title><style>
+:root{color-scheme:light;--ink:#182b40;--muted:#52677d;--blue:#155993;--line:#cedbe7;--paper:#fff;--wash:#f3f7fa}
+*{box-sizing:border-box}html{scroll-padding-top:20px}body{margin:0;background:var(--wash);color:var(--ink);font:17px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:960px;margin:0 auto;background:var(--paper);padding:32px 40px 60px}h1{font-size:36px;line-height:1.15;margin:24px 0 16px;letter-spacing:-.03em}h2{font-size:27px;line-height:1.25;margin:44px 0 18px;padding-top:10px;border-top:2px solid var(--line);letter-spacing:-.02em}h3{font-size:20px;line-height:1.35;margin:24px 0 12px}p{margin:14px 0;overflow-wrap:anywhere}a{color:var(--blue);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{color:#083963}a:focus-visible,summary:focus-visible{outline:3px solid #d49317;outline-offset:4px}strong{color:#153c60}figure{margin:20px 0}figure:first-child{margin:0 0 16px}img{max-width:100%;height:auto}img[height="22"]{max-width:none;height:22px;width:auto;vertical-align:middle}ul,ol{padding-left:25px}li{margin:8px 0}pre{overflow:auto;background:#eaf1f7;border:1px solid var(--line);padding:14px;border-radius:8px;white-space:pre-wrap;font:14px/1.6 ui-monospace,Consolas,monospace}code{font: .92em ui-monospace,Consolas,monospace;background:#edf3f7;padding:1px 4px;border-radius:3px}pre code{background:none;padding:0}details{border:1px solid var(--line);border-radius:10px;margin:18px 0;padding:0 18px;background:#fbfdff}summary{cursor:pointer;font-weight:650;line-height:1.4;padding:16px 0;color:#173c60}details[open]>summary{border-bottom:1px solid var(--line);margin-bottom:16px}details details{background:white}table{border-collapse:collapse;width:100%;margin:16px 0;font-size:16px;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:12px;border:1px solid var(--line);overflow-wrap:anywhere}th{background:#eaf1f7;font-weight:650}tr:nth-child(even){background:#f6f9fb}.table-scroll{overflow-x:auto}.tutorials table{border-collapse:separate;border-spacing:0 20px;margin:0}.tutorials td{border:0;padding:0 18px 12px 0}.tutorials td:last-child{padding-right:0}.tutorials tr:nth-child(even){background:none}.tutorials img{border-radius:5px}.tutorials ul{padding-left:19px}.tutorials li{font-size:16px}.jump{display:flex;gap:10px;flex-wrap:wrap}.footer{border-top:1px solid var(--line);margin-top:40px;padding-top:15px;color:var(--muted);font-size:14px}
+@media(max-width:600px){body{font-size:16px}main{padding:18px 18px 40px}h1{font-size:29px}h2{font-size:23px;margin-top:34px}h3{font-size:19px}details{padding:0 12px}table{font-size:14px}th,td{padding:9px 8px}img[height="22"]{height:19px}.tutorials table,.tutorials tbody,.tutorials tr,.tutorials td{display:block;width:100%!important}.tutorials td{padding:0 0 12px}.tutorials tr{margin-bottom:20px}.tutorials img{max-width:100%}.table-scroll{margin-left:-3px;margin-right:-3px}summary{padding:14px 0}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style></head><body><main><a name="history"></a>
+<h1>Seraphic Blue — README history</h1>
+<p><a href="README.html#downloads">Back to current setup</a> · <a href="RELEASE-NOTES.html">Full release notes</a> · <a href="CHANGELOG.md">Changelog</a></p>
+<p>These entries describe the release named in each heading. An old limitation or pending item is <strong>not</strong> a statement about the current game. Use the current <a href="PLAYER-GUIDE.html">player guide</a> and <a href="COMPATIBILITY.html">compatibility notes</a> for present behavior.</p>
+<a name="release-history"></a>
+<h2 id="section-1">Release history</h2>
+<details><summary>v0.3.8 — saved commands and English corrections</summary>
+<p>saved manual encounter commands in English DC/Altered with explicit R or optional Auto-button start and stop on Windows/native Linux; the idle button defaults Off under F1 &gt; Engine; Stop remains visible during replay; four approved English wording corrections (three matching Altered passages), and one directly translated DC picture card. Existing saves, battle rules and the separate experimental UI are unchanged.</p>
+</details>
+<details><summary>v0.3.7 — picture text and optional song titles</summary>
+<p>English DC received 83 additional clearer-font cards; Altered received the 75 matching cards. Eight were widened by 1–20 pixels, with complete wording and original heights retained. One source card remained unresolved <strong>at that release</strong>; v0.3.8 translates it directly in DC. Eight Altered absences/revisions remained untouched.</p>
+<p>The optional <strong>F1 → Engine → Song title banner</strong> starts Off. It shows the music filename after a track change, uses multiple pages for long names, and pauses while dialogue, menus, battle or transitions hide it. Fast-forward does not shorten its four-second display. It is an engine preference, separate from game saves. <a href="RELEASE-NOTES.html">Full v0.3.7 entry</a>.</p>
+</details>
+<details><summary>v0.3.6 — mouse interaction, comparison and healing</summary>
+<p>The following features shipped in v0.3.6. An earlier README placed them under v0.3.7; the <a href="RELEASE-NOTES.html">release notes</a> record their correct version.</p>
+<ul>
+<li>Mouse selection follows visible character artwork, native counter interaction and a unique adjacent exit. Arrival handling retains touch transfers during a pure speed adjustment.</li>
+<li>English shops add <strong>Tab Compare</strong> for weapons and frames, using native calculations without purchases or equipment changes.</li>
+<li>Altered: Shift dash preserves mouse movement; MOD hover updates its hint; HP Supplement controls appear with free healing Off; new Extra Content HP Auto Fill starts Off; manual FREE rewards stay ordinary.</li>
+<li>English: 101 approved font cards per edition use a consistent face; 108 title calls keep their complete names inside the screen; one minor Counter Attack wording correction. 84 mixed-layout cards remain unchanged.</li>
+</ul>
+</details>
+<details><summary>v0.3.5 (Altered only)</summary>
+<ul>
+<li>Restores missing Map0022 (Turku Inn upstairs) and Map0088. Existing saves work; Player, Linux runtime and the DC builds are unchanged. This urgent map-only hotfix received file-integrity checks, without a new gameplay test.</li>
+</ul>
+</details>
+<details><summary>v0.3.4 (all three builds)</summary>
+<ul>
+<li>Consistent menu hover, native keyboard handoff and click confirmation. No game text, pictures, event data or save-format changes. Same sb6 source for Windows/native Linux; focused current-release tests. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip">Matching Player source</a>.</li>
+</ul>
+</details>
+<details><summary>v0.3.3 (all three builds)</summary>
+<ul>
+<li><strong>Proton title-screen crash:</strong> bundled PortAudio library patched using AryaNetwork&#x27;s diagnosis and verified fix (<a href="https://github.com/Nostramadeus/seraphic-blue-mod/issues/1">issue #1</a>); Windows regression checked, Proton and physical Deck hardware not tested here.</li>
+<li><strong>Current native Linux Player:</strong> the same 0.8.1.1-sb5 source and custom features as Windows. <a href="LINUX.html">Setup and exact test limits</a>.</li>
+<li><strong>Credits and source:</strong> Altered now shows the 2016 translator/proofreader cards; <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip">current Player source</a> accompanies the release.</li>
+<li><strong>English content and battle labels:</strong> Eight dictionary captions corrected, full Poison label and the full Blue-Haired Woman save name. DC restores its native battle controls; Altered gains full timeline names. The DC English build restores 132 dialogue corrections missed by earlier packages, with 11 extra message boxes to retain the full wording. Altered also fixes three lines that used outdated translation inputs. Both English builds translate six remaining Daisy, Gerard and Owen portrait captions.</li>
+<li><strong>Retained Japanese material:</strong> The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered&#x27;s manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.</li>
+</ul>
+</details>
+<details><summary>v0.3.2 (all three builds)</summary>
+<ul>
+<li><strong>Menu labels (English builds):</strong> 12 menu labels that were still Japanese in v0.3.1 are now in English (Altered; 6 of them in DC EN too): the three magic types of the Ability menu, Qty to Make, Discount, Qty to Sell, Paralysis, Ailment Trigger Rate / Defense Rate and the three magic-level labels of the Status menu, and Poison as <strong>PSN</strong>. Labels that did not fit in the game font use a narrower font, not a shortened word. DC EN Status screen: the movement stat reads <strong>MOV</strong> (the 2016 label said &quot;DEX&quot;), and &quot;Field Mutation Element&quot; replaces the 2016 label &quot;Element Physical Cast&quot;. Both English ZIPs carry <strong>MENU-LABEL-NOTES.txt</strong> with the list.</li>
+<li><strong>Story pictures and credits (English builds):</strong> All remaining story pictures redrawn in English (Altered 32 files, DC EN 43): 12 explanation screens, episode title cards, battle chant pictures, the Panorama menus (temporary save, organize, EXT bonus, shop line-up), the title-screen labels (DC EN), one battle background, unused leftover pictures, two dictionary titles and end-credits cards. End credits: the music credits card follows the Japanese list (both English builds); a DC EN credits card now carries the Japanese music credit together with the 2016 team; the 2016 translator credits card now also shows in the DC EN credits sequence that lacked it. One glossary term is written out in its full form in 2 boxes (both English builds).</li>
+<li><strong>New text file (Altered ZIP):</strong> The Altered ZIP adds <strong>HIDDEN-DICTIONARY-ENTRIES (SPOILERS).txt</strong>: 3 unreachable dictionary entries written for an unfinished sequel, in a spoiler-marked text file. The game itself is unchanged; the entries stay unreachable in game.</li>
+<li><strong>Other:</strong> JP + MOD (DC): no content changes; it carries the new version number so the three builds stay in step. Player: unchanged from v0.3.1 (Windows Player 0.8.1.1-sb4; native Linux Player = the older test.2 build). Clicking an ally target in battle is now tested with a two-member party (passed).</li>
+<li><strong>Known gaps:</strong> The native Linux Player (<strong>play-linux.sh</strong>) is unchanged and has none of the v0.3.1 Player features (use Player.exe on Windows, or Proton on Linux and Steam Deck). The Altered build&#x27;s credits do not show the 2016 translator card. The game&#x27;s own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.</li>
+<li><strong>Saves:</strong> Altered saves from v0.2.0 to v0.3.1 load. DC saves load as before (no save-format change). DC saves do not move to the Altered build.</li>
+</ul>
+</details>
+<a name="v031"></a>
+<details><summary>v0.3.1 (all three builds)</summary>
+<ul>
+<li><strong>New Windows Player 0.8.1.1-sb4</strong> in all three ZIPs. Battle mouse on the Altered build: command grid, enemy targets with hover, ability and item rows with hover, page change by mouse wheel, category tabs, ally targets. MOD menu, SPEED page: new rows <strong>Text speed</strong> (1x / 2x / 4x / Instant) and <strong>Text pauses</strong> (1x / 2x / 4x; shortens the pauses inside messages, never removes them). Choice guard: for a third of a second a choice window ignores Enter that is held down or pressed repeatedly, so the Skip prompts are not skipped by accident. Cancel is unaffected. Save-slot placeholder name now reads &quot;Blue-Hair Lady&quot; (DC EN).</li>
+<li><strong>English builds:</strong> Dictionary (Character Profiles and Glossary) re-sorted into English alphabetical tabs A-C ... Y-Z (182 entries). Empty tabs cannot be entered. Unlocks and saves are unchanged. 24 menu tile strips in English (272 words), including the party names of the Altered Ability menu. 14 menu words given more tiles or a ruled short form (10 by extra map tiles, 4 by a short form such as &quot;Owned&quot;); the 8 element labels of the Status menu now use two-letter codes (Fi Wa Wi Ea Li Da He Br). 27 pictures redrawn: place-name banners, world-map guides, ending-screen panels, shop and inn signs. Actor-name strings use the spelling Yancy. 108 story cards and labels redrawn (pulled cards corrected, Er and Sieg continuation text, dictionary labels, chapter titles, staff credits, Panorama menus).</li>
+<li><strong>Linux:</strong> The new Player features need <strong>Player.exe</strong>: on Windows, or on Linux and Steam Deck through Proton. The native Linux Player (<strong>play-linux.sh</strong>) is unchanged from earlier releases (the older test.2 build) and has none of them.</li>
+<li>37 text pictures still carry the 2016 wording or Japanese and come in the next release: 12 explanation screens, the Panorama menus (temporary save, organize, status, EXT bonus and shop line-up), the title-screen labels, a few art-background titles and message cards. In the menus, nine labels stay Japanese for now (the three magic-level labels of the Ability menu, Poison, Paralysis and four shop quantity labels: their English needs more room than the screen layout gives).</li>
+<li><strong>Known gaps:</strong> Three dictionary detail pages that no list row reaches (Gaia, Alma, Seraphic Blue Amplifier) stay as the Altered authors left them. Clicking an ally target in battle was tested with a one-member party only. The game&#x27;s own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.</li>
+<li><strong>Saves:</strong> Altered saves from v0.2.0 to v0.3.0 load. DC saves load as before (no save-format change). DC saves do not move to the Altered build.</li>
+</ul>
+</details>
+<details><summary>v0.3.0 (all three builds)</summary>
+<ul>
+<li><strong>DC builds rebuilt</strong> (EN + MOD and JP + MOD) through the same release pipeline as the Altered build: full game folders verified file by file, the text file <strong>IMPORTANT README (MUST READ).txt</strong> at the ZIP root, and PLAY.cmd starts the Player by its full path. Saves load as before in both DC builds; DC saves still do not move to the Altered build.</li>
+<li><strong>EN + MOD (DC)</strong> also gets the 23 retranslated opening quote cards (the same cards as Altered v0.2.3) and the newer text of three maps (Map0025, Map0026, Map0140: corrections from 2026-10-22 that the shipped game had but the source folder had lost). JP + MOD (DC) keeps its 141 standard RPG Maker asset files.</li>
+<li><strong>Redrawn text pictures in the English builds</strong> (Altered 78 files, EN + MOD DC 73 files): 25 episode title cards (titles now carry the complete Japanese title; the English episode-number row and the German row are unchanged), 15 Er explanation cards that were still Japanese in the Altered build, 18 report and diary cards, dictionary term labels (Altered 9, DC 17), 3 item description boxes and 1 item name, 1 place-name card (Revelstoke Mountains), the F12 menu label (now &quot;Quit Game&quot;), 1 party-member name label in the DC build. Report cards and dictionary labels use the game&#x27;s own 12 px pixel font instead of the 2016 smoothed font.</li>
+<li><strong>Known gaps:</strong> some text pictures still carry the 2016 wording or Japanese and come in the next release (the party-name tiles of the Altered Ability menu, the report-card continuation cards, several dictionary and place-name cards, the chapter title cards 2 and 4, a few menu tile strips). The game&#x27;s own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose. One EN + MOD (DC) save-slot name still has the old spelling.</li>
+<li>Unchanged from v0.2.3: click-to-walk is on in the Altered build; the New Game choice <strong>Extra Content (Recommended)</strong>.</li>
+</ul>
+</details>
+<details><summary>v0.2.1 (Altered build only)</summary>
+<ul>
+<li><strong>ARRANGE page</strong> in the MOD menu: five switches that turn single Arrange battle rules back to the original rules (see <a href="PLAYER-GUIDE.html#altered">Altered build</a>).</li>
+<li><strong>First-play recommendation:</strong> MANY on, BATTLE off, all five switches Off.</li>
+<li><strong>+ marker</strong> on the name pictures of gear that exists only in Altered&#x27;s extra content.</li>
+<li>Saves from the v0.2.0 Altered build carry over. The EN + MOD (DC) and JP + MOD (DC) builds are unchanged (v0.2.0).</li>
+</ul>
+</details>
+<details><summary>v0.2.0</summary>
+<ul>
+<li><strong>Three builds:</strong> EN + MOD (DC, same game data as test.13), EN + MOD + Altered (new), JP + MOD (DC, full game).</li>
+<li><strong>Altered build:</strong> see <a href="PLAYER-GUIDE.html#altered">Altered build</a>. New game only.</li>
+<li>No changes to the DC game files since test.13.</li>
+</ul>
+</details>
+<details><summary>test.13</summary>
+<ul>
+<li><strong>22 dialogue boxes corrected</strong> after an outside check: while the <a href="https://nostramadeus.github.io/seraphic-blue-mod/">comparison page</a> was being built, its reviewers compared our lines with the Japanese and flagged the few where ours was weaker (a dropped qualifier, a Japanese idiom flattened into plain English, one word read in the wrong sense). Those are fixed. 4 boxes also had a pause moved to the line end (cosmetic).</li>
+<li>Changed files: 22 map files. No Player, picture or save changes.</li>
+</ul>
+</details>
+<details><summary>test.12</summary>
+<ul>
+<li><strong>63 more dialogue boxes corrected to match the Japanese.</strong> This completes the audit of all 3,013 &quot;full&quot; four-line boxes (the ones most likely to have been shortened to fit): 89 of them had lost a qualifier, a hedge, a clause or a Japanese idiom&#x27;s image, and all are restored. 2 of the new corrections use two boxes instead of one shortened box.</li>
+<li>Changed files: 45 map files. No Player, picture or save changes.</li>
+<li><strong>Old saves work.</strong> A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the <strong>saves</strong> folder.</li>
+</ul>
+</details>
+<details><summary>test.11</summary>
+<ul>
+<li><strong>Message history (Windows Player):</strong> scroll back through the last 100 message boxes you read, with the choice you picked. Open it with <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel" style="vertical-align:middle"> <strong>up</strong> or <strong>Page Up</strong> while a message is showing or while you walk on the field; scroll with the <img src="docs/img/keys/mouse-wheel.svg" height="22" alt="Mouse wheel" style="vertical-align:middle"> wheel or <img src="docs/img/keys/up.svg" height="22" alt="Up" style="vertical-align:middle"> / <img src="docs/img/keys/down.svg" height="22" alt="Down" style="vertical-align:middle">, page with Page Up / Page Down, close with <strong><img src="docs/img/keys/escape.svg" height="22" alt="Escape" style="vertical-align:middle"> / B / <img src="docs/img/keys/mouse-right-click.svg" height="22" alt="Right click" style="vertical-align:middle"></strong>. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.</li>
+<li><strong>67 dialogue boxes corrected to match the Japanese</strong> (dropped qualifiers or hedges restored, Japanese idioms kept as their own image, 14 names and terms made consistent with the in-game dictionary). 7 of them now use two boxes instead of one shortened box. All 585 boxes whose English was identical to the 2016 patch were checked against the Japanese and found correct.</li>
+<li>Changed files: Player.exe and 43 map files. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.</li>
+</ul>
+</details>
+<details><summary>test.10</summary>
+<ul>
+<li>One opening dialogue line corrected to match the Japanese.</li>
+</ul>
+</details>
+<details><summary>test.9</summary>
+<ul>
+<li><strong>55 picture cards retranslated from the Japanese:</strong> 52 history timeline cards (names and terms now match the rest of the game; 10 cards had the wrong meaning), the two opening chant cards and the opening poem card.</li>
+<li>No Player, map or save changes.</li>
+</ul>
+</details>
+<details><summary>test.8</summary>
+<ul>
+<li><strong>MOD settings from the very start:</strong> while the story still locks the game menu (the opening chapters), Cancel / <img src="docs/img/keys/escape.svg" height="22" alt="Esc" style="vertical-align:middle"> / Deck B opens the MOD screen directly; Cancel returns to the same spot. After the menu unlocks, nothing changes. This early window exists on the DC builds; the Altered build unlocks the menu right after the opening, so Cancel there opens the normal menu.</li>
+<li><strong>Clicking to walk now works in the opening rooms</strong> (it needed the unlocked game menu before).</li>
+<li><strong>Opening poem card:</strong> the second card of the opening poem is retranslated to match the Japanese.</li>
+<li>Both need the included Windows Player (Windows, Proton, Steam Deck). The native Linux Player and the stock Mac Player keep the older behaviour.</li>
+</ul>
+<p><a href="RELEASE-NOTES.html">Full release notes</a> · <a href="CHANGELOG.md">Changelog</a></p>
+</details>
+<a name="old-updates"></a>
+<h2 id="section-2">Archived update procedures</h2>
+<p><strong>For archived test releases only.</strong> For a current installation, use the <a href="README.html#keep-your-saves">four-step full-game update</a>. These old patch links and file lists are retained for reference.</p>
+<details><summary>Test-release patch ZIPs — original sequence</summary>
+<ol start="1">
+<li>Close the game. Keep a backup of your actual save folder.</li>
+<li>On test.6 or older, first apply the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip">test.7 image update</a> (extract beside <strong>RPG_RT.ldb</strong>, replace the Picture files).</li>
+<li>On test.7 or older, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-update-v0.1.0-test.8.zip">download the test.8 update</a>. Extract it into your game folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of <strong>Player.exe</strong>, <strong>RPG_RT.ldb</strong>, <strong>Map0003.lmu</strong> and one <strong>Picture</strong> file. If your Player.exe lives in another folder (older patch installs), copy the new Player.exe there instead.</li>
+<li>On test.8 or older, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.9/seraphic-blue-update-v0.1.0-test.9.zip">download the test.9 picture update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of the 55 <strong>Picture</strong> files.</li>
+<li>On test.9 or older, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.10/seraphic-blue-update-v0.1.0-test.10.zip">download the test.10 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of <strong>Map0507.lmu</strong>.</li>
+</ol>
+<h3>Later test releases</h3>
+<ol start="6">
+<li>On test.10 or older, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip">download the test.11 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of <strong>Player.exe</strong> and the 43 <strong>Map</strong> files.</li>
+<li>On test.11, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip">download the test.12 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of the 45 <strong>Map</strong> files.</li>
+<li><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.13/seraphic-blue-update-v0.1.0-test.13.zip">Download the test.13 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of the 22 <strong>Map</strong> files.</li>
+<li>On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.8 EN + MOD (DC) build, extract it to a new folder and copy your <strong>saves</strong> and <strong>config</strong> folders into it. Keep the new <strong>EasyRPG.ini</strong>.</li>
+<li>Copy your <strong>saves</strong> and <strong>config</strong> folders. Keep the new release&#x27;s <strong>EasyRPG.ini</strong> so its current controls and label tables remain enabled. Saves from earlier tests load normally.</li>
+</ol>
+</details>
+<details><summary>test.1–test.5 — optional historical engine upgrade</summary>
+<p>Skip this if you installed the test.6 or test.7 full game: the test.8 update above already replaces Player.exe.</p>
+<ol start="1">
+<li>Close the game and back up the <strong>saves</strong> folder (or your existing custom save location).</li>
+<li>Download the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-windows-x86_64-v0.1.0-test.6.zip">test.6 Windows Player ZIP</a> for Windows or Proton (the newest Player ZIP with all DLLs). Extract it separately.</li>
+<li>Copy <strong>Player.exe and all .dll files from that same ZIP</strong> into the folder containing your old Player.exe. Replace those files only. Keep saves, EasyRPG.ini and game data.</li>
+<li>Then apply the test.7 image update and the test.8 update from the section above; the test.8 Player.exe replaces the test.6 one and uses the same DLLs.</li>
+</ol>
+<p>Native Linux now uses the same Player source as Windows; see <a href="LINUX.html">Linux setup and tested limits</a>. Existing patch-based installations can continue using their current game/save paths.</p>
+</details><p class="footer"><a href="README.html#downloads">Download and start</a> · <a href="PLAYER-GUIDE.html">Player guide</a> · <a href="README-HISTORY.html">History</a></p></main></body></html>

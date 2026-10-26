@@ -1,4 +1,4 @@
-# Install or update v0.3.7
+# Install or update v0.3.8
 
 ## Fresh installation
 
@@ -43,3 +43,5 @@ Arrows move and select. Enter confirms. Escape or right-click goes back. Hover h
 The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered's manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.
 
 [Compatibility and tested limits](COMPATIBILITY.md). Keep the old game and verified save backup for rollback.
+
+Saved Auto commands: copy sb-repeat-a.json and sb-repeat-b.json too if they are beside Player.exe. The GUI updater v1.1 preserves them automatically. Files inside saves are included when you copy that folder.

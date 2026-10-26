@@ -1,3 +1,21 @@
+# v0.3.8 — saved encounter commands and English corrections
+
+Available in the **English DC and Altered builds** on Windows and native Linux. The Japanese build includes the updated Player; its battle data is outside these two accepted Auto profiles.
+
+**Repeat a manual victory:** win a supported encounter entirely manually. Before your first action in the same enemy group with the same ordered party, press **R**. The idle Auto button defaults Off; enable **F1 → Engine → Show Auto button** to display it. Stop appears while replay runs. It executes that saved command sequence through the normal battle rules.
+
+**Stop:** click **[R] Stop**, press R, or press Cancel. The current committed action can finish; Auto stays stopped for the rest of that fight. Missing items, insufficient TP, changed targets or an exhausted sequence stop it with a message. It does not invent replacement actions or guarantee a win. A fight using Auto does not replace the manual recording.
+
+Windows and native Linux Players are included in all three full-game downloads. English DC has four approved wording corrections; Altered has the three matching passages. One previously Japanese DC picture card is directly translated in the established font with complete wording. The stored dialogue reply discussed in the README stays unchanged. The broad modern UI experiment is excluded.
+
+**Clearer instructions:** downloads and first-play steps are at the top of the README. Detailed controls/settings and release history remain in linked guides. Fresh ZIPs include empty **saves** and **config** folders; Proton users can leave **Launch Options blank**. Existing working shortcuts can stay unchanged.
+
+**Update safely:** GUI updater v1.1 is included in the **updater-v1.1** folder of every game ZIP; no separate download is needed. It can install into a neighboring version folder while preserving saves/settings/Auto recordings and the old copy. For a manual update, copy saves/config from the same edition; also retain root SaveNN.lsd and sb-repeat-a/b.json files if present. Keep the new EasyRPG.ini. [Update steps](INSTALL.md#update-and-keep-saves).
+
+Focused native checks cover both editions, a four-character mixed-command battle, manual recording/replay and damaged/conflicting/unwritable recording files. Final builds preserve the accepted battle replay rules and pass focused native Auto checks. The new display preference also passed Windows F1 On/Off saving checks and native Linux Off/On checks. These are controlled fixtures, not a full playthrough, a physical Steam Deck/Proton test, or a complete new translation audit. The larger optional wording review remains separate. [Scope and limits](COMPATIBILITY.md).
+
+## Earlier release — v0.3.7
+
 # v0.3.7 — clearer picture text and optional song titles
 
 English DC has 83 additional picture cards redrawn in the established clearer font. English Altered has the 75 matching cards. Full wording and original card heights are retained. Eight cards are widened by 1–20 pixels, with checked picture references and no newly covered text below them. The Japanese edition’s pictures are unchanged. One unresolved Japanese source card and eight edition-specific absences or revisions remain untouched.

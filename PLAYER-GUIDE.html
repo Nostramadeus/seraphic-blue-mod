@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Seraphic Blue — player guide</title><style>
+:root{color-scheme:light;--ink:#182b40;--muted:#52677d;--blue:#155993;--line:#cedbe7;--paper:#fff;--wash:#f3f7fa}
+*{box-sizing:border-box}html{scroll-padding-top:20px}body{margin:0;background:var(--wash);color:var(--ink);font:17px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:960px;margin:0 auto;background:var(--paper);padding:32px 40px 60px}h1{font-size:36px;line-height:1.15;margin:24px 0 16px;letter-spacing:-.03em}h2{font-size:27px;line-height:1.25;margin:44px 0 18px;padding-top:10px;border-top:2px solid var(--line);letter-spacing:-.02em}h3{font-size:20px;line-height:1.35;margin:24px 0 12px}p{margin:14px 0;overflow-wrap:anywhere}a{color:var(--blue);text-underline-offset:3px;overflow-wrap:anywhere}a:hover{color:#083963}a:focus-visible,summary:focus-visible{outline:3px solid #d49317;outline-offset:4px}strong{color:#153c60}figure{margin:20px 0}figure:first-child{margin:0 0 16px}img{max-width:100%;height:auto}img[height="22"]{max-width:none;height:22px;width:auto;vertical-align:middle}ul,ol{padding-left:25px}li{margin:8px 0}pre{overflow:auto;background:#eaf1f7;border:1px solid var(--line);padding:14px;border-radius:8px;white-space:pre-wrap;font:14px/1.6 ui-monospace,Consolas,monospace}code{font: .92em ui-monospace,Consolas,monospace;background:#edf3f7;padding:1px 4px;border-radius:3px}pre code{background:none;padding:0}details{border:1px solid var(--line);border-radius:10px;margin:18px 0;padding:0 18px;background:#fbfdff}summary{cursor:pointer;font-weight:650;line-height:1.4;padding:16px 0;color:#173c60}details[open]>summary{border-bottom:1px solid var(--line);margin-bottom:16px}details details{background:white}table{border-collapse:collapse;width:100%;margin:16px 0;font-size:16px;line-height:1.5}th,td{text-align:left;vertical-align:top;padding:12px;border:1px solid var(--line);overflow-wrap:anywhere}th{background:#eaf1f7;font-weight:650}tr:nth-child(even){background:#f6f9fb}.table-scroll{overflow-x:auto}.tutorials table{border-collapse:separate;border-spacing:0 20px;margin:0}.tutorials td{border:0;padding:0 18px 12px 0}.tutorials td:last-child{padding-right:0}.tutorials tr:nth-child(even){background:none}.tutorials img{border-radius:5px}.tutorials ul{padding-left:19px}.tutorials li{font-size:16px}.jump{display:flex;gap:10px;flex-wrap:wrap}.footer{border-top:1px solid var(--line);margin-top:40px;padding-top:15px;color:var(--muted);font-size:14px}
+@media(max-width:600px){body{font-size:16px}main{padding:18px 18px 40px}h1{font-size:29px}h2{font-size:23px;margin-top:34px}h3{font-size:19px}details{padding:0 12px}table{font-size:14px}th,td{padding:9px 8px}img[height="22"]{height:19px}.tutorials table,.tutorials tbody,.tutorials tr,.tutorials td{display:block;width:100%!important}.tutorials td{padding:0 0 12px}.tutorials tr{margin-bottom:20px}.tutorials img{max-width:100%}.table-scroll{margin-left:-3px;margin-right:-3px}summary{padding:14px 0}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style></head><body><main><a name="guide"></a>
+<h1>Seraphic Blue — player guide</h1>
+<p><a href="README.html#downloads">Back to download and start</a></p>
+<p><a href="#modes">Game modes</a> · <a href="#arrange">Altered settings</a> · <a href="#healing-controls">Healing</a> · <a href="#shop-compare">Shop comparison</a> · <a href="#battle-labels">Battle labels</a></p>
+<a name="modes"></a>
+<h2 id="section-1">Choose an Altered mode</h2>
+<p>Choose a <strong>build</strong> when downloading, then a <strong>mode</strong> when starting an Altered game. DC builds have no mode choice: they use Original-style rules.</p>
+<div class="table-scroll"><table>
+<tr><th>Altered New Game choice</th><th>What to expect</th></tr>
+<tr><td><strong>Extra Content — recommended first play</strong></td><td>Extra maps, chatter, gear and shops. MANY On; BATTLE Off; five ARRANGE switches Off. Weak-enemy skip and the fewer-members EXP bonus start Off.</td></tr>
+<tr><td><strong>Original Mode</strong></td><td>Director’s Cut rules plus the fixes listed below, at NORMAL difficulty. MANY and BATTLE Off.</td></tr>
+<tr><td><strong>Arrange Mode / Full Arrange</strong></td><td>MANY and BATTLE On, ARRANGE switches On. An option for a second run with Altered’s battle rules.</td></tr>
+</table></div>
+<p><strong>New Game+</strong> with bonus picks is available after clearing, in every mode.</p>
+<figure><img src="docs/img/mode-picker.svg" width="900" alt="Which mode to pick: Original, Extra content with the five ARRANGE switches Off (first play, recommended), Full Arrange" style="max-width:100%;height:auto"></figure>
+<p>Settings can be changed later in native Config, Config page 3 and MOD → ARRANGE. To reach <strong>DEEP SETTING</strong> (MANY / BATTLE), hold <strong>Shift for about six seconds inside Config</strong>. Free Full HP after battle and reserve-funded HP Auto Fill are independent; both start Off in new Extra Content games. With free healing Off, Supplement shows HP and TP reserves and their Auto Fill controls. <a href="#healing-controls">Healing steps</a>.</p>
+<a name="new-game-presets"></a>
+<details><summary>Exact settings for each New Game choice</summary>
+<div class="table-scroll"><table>
+<tr><th>Setting</th><th>Original Mode</th><th>Extra Content</th><th>Arrange Mode</th></tr>
+<tr><td>MANY (extra content)</td><td>Off</td><td>On</td><td>On</td></tr>
+<tr><td>BATTLE (Altered battle rules)</td><td>Off</td><td>Off</td><td>On</td></tr>
+<tr><td>Five ARRANGE switches (MOD menu)</td><td>On (no effect while MANY and BATTLE are off)</td><td>Off (Original)</td><td>On (Altered)</td></tr>
+<tr><td>Skip Battles with Weak Enemies (Config page 3)</td><td>OFF</td><td>OFF</td><td>ON</td></tr>
+<tr><td>Character EXP Gain (Config page 3)</td><td>ON1</td><td>ON1</td><td>ON2</td></tr>
+<tr><td>HP Auto Fill</td><td>Off</td><td>Off</td><td>On</td></tr>
+<tr><td>TP Auto Fill</td><td>Off</td><td>Off</td><td>On</td></tr>
+<tr><td>Save from the game menu</td><td>Off</td><td>On</td><td>On</td></tr>
+</table></div>
+<figure><img src="docs/images/arrange-config-panel.png" width="400" alt="Config, DEEP SETTING panel: Arrange Mode row with MANY shaded and BATTLE off" style="max-width:100%;height:auto"></figure>
+<figure><img src="docs/images/arrange-switches-off.png" width="400" alt="MOD menu, page ARRANGE: all five switches set to Off (Original)" style="max-width:100%;height:auto"></figure>
+</details>
+<a name="mode-comparison"></a>
+<details><summary>Original and Full Arrange — rules at a glance</summary>
+<div class="table-scroll"><table>
+<tr><th></th><th>Original</th><th>Full Arrange (BATTLE + MANY)</th></tr>
+<tr><td>Design</td><td>Attrition: the challenge lives between fights</td><td>Per-encounter: the challenge lives inside each boss fight</td></tr>
+<tr><td>HP after a fight</td><td>Carries over to the next fight</td><td>Full HP after every fight</td></tr>
+<tr><td>Refills</td><td>The SUP.HP / SUP.TP pools refill you and can run dry</td><td>Full HP recovery is free; TP still uses the SUP.TP reserve</td></tr>
+<tr><td>Items</td><td>Your buffer, no per-battle limit</td><td>5 of each item per fight</td></tr>
+<tr><td>Escape</td><td>Can fail</td><td>Always works</td></tr>
+<tr><td>Counterattacks</td><td>A dice roll</td><td>Always fire</td></tr>
+<tr><td>Ailments on bosses</td><td>Bosses resist them</td><td>Ailments work on bosses</td></tr>
+<tr><td>Turn order at the start</td><td>Fixed rules</td><td>Random opening turn order</td></tr>
+<tr><td>Gear and shops</td><td>As designed</td><td>50 new items, rebuilt shops</td></tr>
+</table></div>
+</details>
+<a name="original-trip"></a>
+<details><summary>Worked example — one dungeon under Original rules</summary>
+<p>Same party, same dungeon, same three fights and one boss. This worked example shows both the rules and the decisions they create. No story content. Assumes the MOD&#x27;s &quot;Escape always works&quot; row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). This is the Original-style attrition loop. Extra Content starts the five ARRANGE options and HP Auto Fill Off, while retaining Altered’s other changes; see <a href="#healing-controls">healing controls</a>.</p>
+<figure><img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking" style="max-width:100%;height:auto"></figure>
+<ol start="1">
+<li><strong>You enter the dungeon.</strong> HP is full, the SUP.HP / SUP.TP pools are full (your refill reserve), the bag holds 12 heals.</li>
+</ol>
+<p>   - &quot;The pools are my budget for this whole trip. Every point I spend comes out of them.&quot;</p>
+<ol start="2">
+<li><strong>Fight 1, three weak enemies.</strong> You take 300 damage. After the win, HP stays where it is. If you switched on the game&#x27;s own Auto Fill option, HP refills and the SUP.HP pool pays for it 1:1 (Auto Fill starts off in both Original and Extra Content modes).</li>
+</ol>
+<p>   - &quot;Fine, cheap fight. Refill now from the pool, or carry the damage and save the pool? Pool first, it is early.&quot;</p>
+<ol start="3">
+<li><strong>Fight 2, a tougher pair.</strong> One enemy inflicts Slow. You weigh curing it or hitting harder.</li>
+</ol>
+<p>   - &quot;If I cure, that is an action lost. If I ignore it, I take two more hits. Cure, the boss is still ahead.&quot;</p>
+<ol start="4">
+<li><strong>Fight 3, an ambush.</strong> You try to escape. The roll fails. You take a round of damage, then it works.</li>
+</ol>
+<p>   - &quot;Escape is a dice roll. Burned a turn and 400 HP. The pool will not cover the boss if this keeps up.&quot;</p>
+<h3>Before and after the boss</h3>
+<ol start="5">
+<li><strong>Between fights.</strong> The pool is at 30 percent. You check the bag.</li>
+</ol>
+<p>   - &quot;Use heals now, or save them for the boss? Turn back to the save tree and refill the pools, or push on?&quot;</p>
+<p>   - This is the decision the original game is built around.</p>
+<ol start="6">
+<li><strong>Boss.</strong> HP starts wherever you left it. You can throw as many heals as you own. The boss shrugs off your ailment spells; your counterattack sphere triggers now and then, on its roll.</li>
+</ol>
+<p>   - &quot;Ailments won&#x27;t stick on him. It comes down to his elemental weakness, my stats and my heal count. Spam heals, outlast, keep everyone alive.&quot;</p>
+<ol start="7">
+<li><strong>After the boss.</strong> Pools nearly empty, bag half gone.</li>
+</ol>
+<p>   - &quot;Back to a save tree before the next area. I need the refill.&quot;</p>
+<p><strong>Result:</strong> the hard part is the journey. You ration a pool across many fights, and the boss is an endurance test you can brute-force with items.</p>
+</details>
+<a name="arrange-trip"></a>
+<details><summary>Worked example — the same dungeon under Full Arrange rules</summary>
+<figure><img src="docs/img/flow-arrange.svg" width="900" alt="Arrange rules: the seven steps below as a diagram, what the game does and what the player is thinking" style="max-width:100%;height:auto"></figure>
+<ol start="1">
+<li><strong>You enter the dungeon.</strong> Full HP, full pools, 12 heals.</li>
+</ol>
+<p>   - &quot;The pools barely matter; each fight is on its own.&quot;</p>
+<ol start="2">
+<li><strong>Fight 1, three weak enemies.</strong> You take 300 damage. After the win your HP is full again; the pool is untouched.</li>
+</ol>
+<p>   - &quot;Free. The only cost of a fight is the time it takes.&quot;</p>
+<ol start="3">
+<li><strong>Fight 2, a tougher pair.</strong> Slow lands on you. Your counterattack sphere now triggers whenever it is allowed to, not on a roll; crits land on more moves.</li>
+</ol>
+<p>   - &quot;Cure or hit? Hitting is better here, my counters are doing half the work.&quot;</p>
+<ol start="4">
+<li><strong>Fight 3, an ambush.</strong> You pick Escape. It works whenever escape is allowed at all.</li>
+</ol>
+<p>   - &quot;Not worth fighting. Gone.&quot;</p>
+<h3>Before and after the boss</h3>
+<ol start="5">
+<li><strong>Between fights.</strong> HP is full. Nothing to decide.</li>
+</ol>
+<p>   - &quot;Straight to the boss.&quot;</p>
+<ol start="6">
+<li><strong>Boss.</strong> You start at full HP. You may use at most 5 of each item in this fight. Ailments now work on the boss; the chain and break gauges reward attacking in rhythm.</li>
+</ol>
+<p>   - &quot;Five of each healing item, so each use must be timed. Can I Slow him? Yes. Break gauge is at 60 percent, two more hits and his guard drops. Pattern, not endurance.&quot;</p>
+<ol start="7">
+<li><strong>After the boss.</strong> Full HP again.</li>
+</ol>
+<p>   - &quot;On to the next area.&quot;</p>
+<p><strong>Result:</strong> this example puts more pressure on each boss and the limit of five of each item per fight. Full HP recovery is free; TP still uses the SUP.TP reserve, as the comparison table states.</p>
+<p><strong>With the five ARRANGE switches Off</strong> in Extra Content, the example uses the Original-style HP/item/escape/counter rules above while keeping the extra maps, gear and shops. The remaining Arrange formula changes (crit rules, the Charge command, guard math, stat coefficients) stay on; they change numbers, not this flow.</p>
+</details>
+<a name="altered"></a>
+<h2 id="section-2">About DC Altered</h2>
+<p><strong>Seraphic Blue (DC Altered Version) Ver2.13</strong> is an unofficial Director’s Cut fan patch by <strong>腐林檎</strong> (Rotten Apple) and <strong>時空転移プリン</strong> (Space-Time Warp Pudding, ◆YuikkIDGis). <strong>Tempura (Sakaki) was not involved.</strong> The authors ask players not to contact Sakaki or the Blue Field boards about Altered.</p>
+<p><strong>Included:</strong> the whole game in English (Altered&#x27;s new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).</p>
+<p><strong>New Altered game, or an existing Altered save from v0.2.0 onward.</strong> Keep DC saves on the EN + MOD (DC) build (v0.3.8; earlier DC saves load there). The ZIP extracts to its own <strong>SeraphicBlue-Altered</strong> folder; read <strong>IMPORTANT README (MUST READ).txt</strong> first.</p>
+<a name="altered-credits"></a>
+<h2 id="section-3">Altered contributors</h2>
+<p>Credits from the included Japanese Altered manual (<strong>ManualAlt</strong>, <strong>改造版マニュアル.htm</strong>):</p>
+<div class="table-scroll"><table>
+<tr><th>Contribution</th><th>Credit</th></tr>
+<tr><td>Music</td><td>氷石彩亜 (FREEDOM HOUSE 2nd), 星野春日 (Muzie), 煉獄小僧 (煉獄庭園), Ciel (Le Ciel Bleu)</td></tr>
+<tr><td>Sound effects</td><td>WEB WAVE LIB</td></tr>
+<tr><td>Backgrounds</td><td>aska (Silverry moon light)</td></tr>
+<tr><td>Battle-animation graphics</td><td>Character Maker Pro (Enterbrain)</td></tr>
+<tr><td>Help</td><td>2ch Blue Field threads and 風邪薬 ◆RohTo3cNBI</td></tr>
+</table></div>
+<p><a href="CREDITS.md">Full original credits</a> · <a href="README.html#help">MOD credits and contact</a></p>
+<a name="arrange"></a>
+<h2 id="section-4">ARRANGE switches</h2>
+<p>Each row is <strong>On (Altered)</strong> or <strong>Off (Original)</strong>. The default is On in Arrange Mode; the Extra Content choice starts them Off. The HP and counter rows use <strong>MANY or BATTLE</strong>. The item-limit and extra escape-rule rows use <strong>MANY</strong>. The enemy row controls selected MANY/shared changes. With both native modes off, these overrides have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.</p>
+<div class="table-scroll"><table>
+<tr><th>Switch</th><th>On (Altered, default)</th><th>Off (Original)</th></tr>
+<tr><td>Full HP after battle</td><td>Free full-HP recovery after battle</td><td>Free recovery is disabled. Separate HP Auto Fill can still spend SUP.HP to refill HP</td></tr>
+<tr><td>Item limit per battle</td><td>At most 5 of each item in a battle (20 when the item limit is lifted); the rest returns after the battle</td><td>No per-battle limit</td></tr>
+<tr><td>Escape always succeeds</td><td>Escaping works whenever escape is allowed</td><td>The original escape roll (the MOD&#x27;s own &quot;Escape always works&quot; row still applies)</td></tr>
+<tr><td>Counterattack always fires</td><td>A counterattack always triggers when it can</td><td>The original counter chance</td></tr>
+<tr><td>Enemy stats and resistances</td><td>Altered&#x27;s enemy data</td><td>The original enemy data (enemies that are new in Altered keep theirs)</td></tr>
+</table></div>
+<ul>
+<li><strong>With BATTLE on, the Escape and Enemy rows follow BATTLE&#x27;s own rules.</strong></li>
+<li><strong>Not switchable through these five MOD switches</strong> (retained in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns. Altered&#x27;s own Config can switch off the random turn order, the luck elements and the timing hits.</li>
+</ul>
+<a name="healing-controls"></a>
+<h2 id="section-5">Change healing on an existing save</h2>
+<p><strong>Two separate healing settings.</strong> <strong>Full HP after battle</strong> provides free recovery. <strong>HP Auto Fill</strong> spends one point of <strong>SUP.HP</strong> for each HP restored and stops when the reserve runs out. Both start <strong>Off</strong> in new Extra Content games (introduced before this release). Existing saves keep their settings.</p>
+<ol start="1">
+<li>To disable free recovery, open <strong>Escape &gt; MOD &gt; Confirm</strong>, change to <strong>ARRANGE</strong>, and set <strong>Full HP after battle: Off (Original)</strong>.</li>
+<li>Open <strong>Supplement</strong>. With free recovery Off, both <strong>SUP.HP</strong> and <strong>SUP.TP</strong> are visible. Press <strong>Shift</strong> to select the Auto Fill controls, select <strong>HP</strong>, then press <strong>Confirm</strong> to toggle it.</li>
+<li><strong>Auto Fill Short Notice</strong> in native Config only changes the announcement. It does not enable or disable healing.</li>
+</ol>
+<p><strong>TP is separate:</strong> abilities spend TP; TP Auto Fill draws from SUP.TP when enabled. Supplement level-ups raise capacity without refilling the current reserve. Rest/refill sources replenish reserves. The earlier MANY screen hid HP controls; the repaired screen shows them whenever free healing is Off. Turning healing Off does not increase monster stats: native <strong>BATTLE</strong> and <strong>Enemy stats and resistances</strong> control different rules.</p>
+<p><strong>Loaded saves keep their own settings.</strong> Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.</p>
+<ul>
+<li><strong>+ marks gear that exists only in Altered&#x27;s extra content.</strong></li>
+<li><strong>Altered saves from v0.2.0 onward load in v0.3.8.</strong> Extract the new game to a new folder and copy the old <strong>saves</strong> and <strong>config</strong> folders into it. Keep the new <strong>EasyRPG.ini</strong>. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.</li>
+</ul>
+<a name="original-fixes"></a>
+<details><summary>Original Mode — Director’s Cut plus these fixes</summary>
+<ul>
+<li>Opposite buffs and debuffs resolve sanely (for example a speed-up on a slowed unit cancels instead of failing).</li>
+<li>Enemy phase changes are measured as a share of max HP (a DC oversight where an enemy had extra HP).</li>
+<li>Overflow safety for extreme numbers (damage calculation order, caps of 300 on HIT / CRT / AVD / AGL / MOV).</li>
+<li>Reflex Guard halves damage once, as in DC (Altered halved it twice in Original mode).</li>
+</ul>
+<h3>Mode defaults and remaining corrections</h3>
+<ul>
+<li>Sickness, five boss rewards and the key-item money bonus are back to their DC rules in Original mode (Arrange keeps Altered&#x27;s).</li>
+<li>A new game started as <strong>Original Mode</strong> begins with Config &gt; &quot;Skip Battles with Weak Enemies&quot; OFF, &quot;Auto Fill&quot; OFF and &quot;Character EXP Gain&quot; without the fewer-members bonus, and Config &quot;Default&quot; resets the first and the third to match. A new game started as <strong>Arrange Mode</strong> begins with all three ON, as Altered does. The separate <strong>Extra Content</strong> choice keeps weak-enemy skip and the fewer-members EXP bonus OFF; its HP Auto Fill starts OFF.</li>
+<li>Clever on a Forgetful unit still gives x1.3 as in DC (the Altered manual says x1.0; the game data says x1.3).</li>
+</ul>
+</details>
+<a name="altered-menu"></a>
+<details><summary>Altered menu differences and display notes</summary>
+<div class="table-scroll"><table>
+<tr><th>MOD row</th><th>On the Altered build</th></tr>
+<tr><td>Walk speed, Hold Shift to run</td><td>Use Config &gt; Dash Movement (page 1). Shift is the dash modifier for both native dash modes and keeps click-to-walk active. Stationary Shift retains native secondary actions.</td></tr>
+<tr><td>Battle speed</td><td>Not in the MOD menu: use Config &gt; Battle Speed (page 3; FAST2 also skips skippable effects)</td></tr>
+<tr><td>Menu fade</td><td>Not in the MOD menu: use Config &gt; Screen Speed of Menus (page 2)</td></tr>
+<tr><td>Save anywhere (cheat)</td><td>Not in the MOD menu: use Config &gt; Normal Save Method: MENU (page 1)</td></tr>
+<tr><td>MOD button</td><td>Menu slot 9. With Save Method MENU, slot 9 asks Save / MOD / Break</td></tr>
+<tr><td>ARRANGE page (v0.2.1)</td><td>Altered build only: <a href="#arrange">the five ARRANGE switches</a>. Pages: SPEED, BATTLE, ARRANGE, CHEATS, INFO</td></tr>
+<tr><td>Random-battle intro, Cutscene speed, Text speed, Text pauses, Random battles 1/N, Rewards follow the rate, Escape always works, Retry lost battles, Full heal, Return to world map, +10,000 DEAR, Level up party, early MOD access</td><td>As on the DC build. Retry also gives back the items Arrange&#x27;s per-fight limit held back. In Arrange mode, Full heal does not revive KO members (Altered&#x27;s own heal rule); in Original mode it does.</td></tr>
+</table></div>
+<ul>
+<li><strong>Steps Left</strong> (Altered Config, Arrange Mode panel) counts the MOD encounter rate: at 1/2 it shows twice the steps. The display only has a hundreds digit of 1 or 2, so a count of 300 or more shows as 2xx, and with random battles Off it shows a 2 followed by the last two digits of a very large number.</li>
+<li><strong>Menu hover (v0.3.4):</strong> Move the pointer to highlight a menu choice or inspect its help. Hover does not confirm, buy, equip, apply a setting or move the player. Click or press Enter to choose. Keyboard/gamepad navigation takes control until the pointer moves again. Unavailable choices keep their native restrictions.</li>
+<li><strong>Battle mouse on the Altered build (v0.3.1):</strong> command grid, enemy targets with hover, ability and item rows with hover, page change by mouse wheel, category tabs, ally targets.</li>
+<li><strong>Battle timeline:</strong> DC and Altered show full participant names. Altered uses its own battle layout and keeps its DRIVE/red marker variants. DC keeps its native battle panel. Click-to-walk, mouse controls, message history and fast-forward are enabled.</li>
+<li><strong>Database naming note:</strong> the original README reports that one party member’s name uses this translation’s chosen spelling instead of the 2016 data’s spelling in Altered, while EN + MOD (DC) retains the 2016 spelling. That note does not identify the character. The <a href="README-HISTORY.html#v031">v0.3.1 history</a> separately records the spelling Yancy; these notes do not establish that they refer to the same character.</li>
+</ul>
+</details>
+<a name="shop-compare"></a>
+<h2 id="section-6">Compare equipment before buying</h2>
+<p><strong>English builds: highlight a weapon or frame, then press Tab or click [Tab] Compare.</strong> The new panel shows the selected character’s <strong>Now / After / Delta</strong> totals for all 11 stats. Opening it does not buy, sell or equip anything.</p>
+<figure><img src="docs/images/shop-compare.png" width="640" alt="Weapon comparison showing Now, After and Delta for all eleven stats" style="max-width:100%;height:auto;image-rendering:pixelated"></figure>
+<ol start="1">
+<li>Highlight the weapon or frame in the shop. The native bottom-left colors still mean <strong>red = improvement</strong>, <strong>blue = worse</strong>.</li>
+<li>Press <strong>Tab</strong> or click <strong>[Tab] Compare</strong>. Read the numerical changes. <strong>Lower ATKWT is better.</strong> Hidden item data stays hidden.</li>
+<li>Press <strong>Left / Right</strong> for details, including sphere slots a lower-capacity frame would remove. <strong>Up / Down</strong> pages an unusually long item-name card.</li>
+<li>Press <strong>Tab</strong>, <strong>Cancel</strong>, or <strong>right-click</strong> to close. Use the native <strong>Shift</strong> hint to change character after closing. Confirm still opens the purchase quantity screen separately.</li>
+</ol>
+<p>The new panel is for <strong>English shop weapons and frames</strong>. Spheres need a specific replacement slot, so they do not have a direct shop comparison. The <strong>Equipment</strong> screen already shows numerical totals with a selected character and slot. Inventory items have no selected comparison character. The Japanese build keeps its native preview.</p>
+<a name="battle-labels"></a>
+<h2 id="section-7">Battle labels — spoiler-free</h2>
+<p>Start with this example ability card: <strong>AR: Single · AE: — · AC: — · AWT: +120</strong>. The labels describe its target, element, field requirement and delay. The ability list’s separate number is its <strong>TP cost</strong>.</p>
+<figure style="margin:16px 0"><img src="docs/img/battle-guide/ability-card.svg" width="720" alt="Example ability card: Single target, no listed AE element, no AC field requirement, AWT plus 120 adds to character ATKWT" style="max-width:100%;height:auto"></figure>
+<div class="table-scroll"><table>
+<tr><th>Ability-card label</th><th>Meaning</th></tr>
+<tr><td><strong>AR — Ability Range</strong></td><td><strong>Single</strong> = one target; <strong>All</strong> = the whole target side. A single/all ability lets you switch with Up/Down while choosing its target.</td></tr>
+<tr><td><strong>AE — Ability Element</strong></td><td>The ability’s element; using it shifts <strong>FE</strong> toward that element. <strong>—</strong> means no ability element is listed.</td></tr>
+<tr><td><strong>AC — Ability Component</strong></td><td>The <strong>field element needed to activate</strong> it. That FE is used up toward neutral. <strong>—</strong> means no FE requirement; the ability may still cost TP.</td></tr>
+<tr><td><strong>AWT — Ability WT</strong></td><td>Wait added <strong>after</strong> acting. <strong>+120</strong> means <strong>ATKWT + 120</strong>. A plain number such as <strong>650</strong> means a fixed <strong>650 WT</strong>.</td></tr>
+</table></div>
+<p><strong>When can I act again?</strong> <strong>WT</strong> means <strong>Waiting Time</strong>. Icons move left on the battle timeline; a unit acts at the left end, then moves right by its action’s WT. More wait means a later next turn. <strong>WT is not seconds.</strong></p>
+<figure style="margin:16px 0"><img src="docs/img/battle-guide/waiting-time.svg" width="720" alt="WT cycle: reach the left end, act, add the action wait, then move left again at a speed set by AGL; WT is not seconds" style="max-width:100%;height:auto"></figure>
+<div class="table-scroll"><table>
+<tr><th>Timing label</th><th>Read it as</th></tr>
+<tr><td><strong>WT — Waiting Time</strong></td><td>Remaining wait until the unit can act.</td></tr>
+<tr><td><strong>ATKWT — Attack Waiting Time</strong></td><td>The character’s normal physical attack delay. Example: ATKWT <strong>300</strong> and AWT <strong>+120</strong> give <strong>420 WT</strong> after the ability.</td></tr>
+<tr><td><strong>AGL — Agility</strong></td><td>How fast the unit’s WT decreases.</td></tr>
+<tr><td><strong>MOV — Moving</strong></td><td>Affects starting WT, preemptive/surprise chances, escape and reactions. It is separate from AGL.</td></tr>
+<tr><td>Resource / field label</td><td>Meaning</td></tr>
+<tr><td><strong>HP</strong></td><td>Health, shown as current / maximum. At zero the unit is incapacitated.</td></tr>
+<tr><td><strong>TP — Technical Points</strong></td><td>Spent to use abilities. Check the listed cost before choosing one.</td></tr>
+<tr><td><strong>FE — Field Element</strong></td><td>Elements currently present on the battlefield. AE changes them; some abilities need an AC element already present.</td></tr>
+<tr><td><strong>SPC — Sphere Capacity</strong></td><td>How many spheres the character can equip.</td></tr>
+<tr><td>Common stat labels</td><td>Meaning</td></tr>
+<tr><td><strong>ATK / DEF</strong></td><td>Physical attack / physical defense.</td></tr>
+<tr><td><strong>MEN / MDF</strong></td><td>Mental ability power / mental defense.</td></tr>
+<tr><td><strong>HIT / AVD</strong></td><td>Physical hit / avoidance ratings. They affect hit chance; a rating is not itself a guaranteed hit percentage.</td></tr>
+<tr><td><strong>CRT</strong></td><td>Critical-hit rating for normal physical attacks.</td></tr>
+</table></div>
+<p><strong>Element codes on Status:</strong> <strong>Fi / Wa</strong> = Fire / Water; <strong>Wi / Ea</strong> = Wind / Earth; <strong>Li / Da</strong> = Light / Dark; <strong>He / Br</strong> = Heaven / Break. Element offense and resistance describe how strongly an element affects damage, not a chance to inflict it.</p>
+<p>These definitions follow Tempura’s included Playing Manual: <strong>Abilities</strong>, <strong>Battle: Overview / Mechanics / Actions</strong>, and <strong>Status</strong>. Altered can change individual abilities and battle rules; read the actual card’s numbers.</p>
+<a name="menu-labels"></a>
+<details><summary>English menu labels and retained artwork</summary>
+<p>Menu labels are pictures with a fixed width. Where the full English did not fit in the game font, the label uses a code or a narrower font instead of a shortened word. The same list ships in the ZIPs as <strong>MENU-LABEL-NOTES.txt</strong>.</p>
+<ul>
+<li><strong>Poison</strong> is written in full across two lines, <strong>Poi / son</strong>, in the Status screen&#x27;s 16 px tile. Trigger and defense values stay aligned, including 100%.</li>
+<li><strong>Two-letter element codes</strong> on the Status screen: Fi Wa Wi Ea Li Da He Br.</li>
+<li><strong>Narrower font, full English kept:</strong> Attack Magic and Support Magic (Abilities screen), Qty to Make (Extend screen), Discount and Qty to Sell (shop screen); in the Altered build also Paralysis, Ailment Trigger Rate / Defense Rate and Support Magic Lv (Status screen); two long dictionary titles.</li>
+<li><strong>MOV</strong> (DC EN Status screen) = the movement stat (&quot;Moving&quot;); the 2016 label said &quot;DEX&quot;. &quot;Field Mutation Element&quot; replaces the 2016 label &quot;Element Physical Cast&quot;.</li>
+<li><strong>Spoiler file (Altered ZIP):</strong> <strong>HIDDEN-DICTIONARY-ENTRIES (SPOILERS).txt</strong> holds 3 unreachable dictionary entries written for an unfinished sequel. Read it only after finishing the game.</li>
+</ul>
+</details><p class="footer"><a href="README.html#downloads">Download and start</a> · <a href="PLAYER-GUIDE.html">Player guide</a> · <a href="README-HISTORY.html">History</a></p></main></body></html>
