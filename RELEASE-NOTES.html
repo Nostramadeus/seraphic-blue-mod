@@ -1,4 +1,10 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Seraphic Blue MOD — quick start</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid #c8d6e6}th{background:#dceaf7}tr:nth-child(even){background:#eaf1f8}pre{line-height:1.5;white-space:pre-wrap}strong{color:#102e50}</style><h1>v0.3.6 — mouse interaction, equipment comparison and healing controls</h1>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Seraphic Blue MOD — quick start</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid #c8d6e6}th{background:#dceaf7}tr:nth-child(even){background:#eaf1f8}pre{line-height:1.5;white-space:pre-wrap}strong{color:#102e50}</style><h1>v0.3.7 — clearer picture text and optional song titles</h1>
+<p>English DC has 83 additional picture cards redrawn in the established clearer font. English Altered has the 75 matching cards. Full wording and original card heights are retained. Eight cards are widened by 1–20 pixels, with checked picture references and no newly covered text below them. The Japanese edition’s pictures are unchanged. One unresolved Japanese source card and eight edition-specific absences or revisions remain untouched.</p>
+<p><strong>Optional song title banner:</strong> press <strong>F1 → Engine → Song title banner</strong>. It starts <strong>Off</strong>. When enabled, a small lower-left banner shows the music filename after an actual track change. Long names use multiple pages. The banner pauses while dialogue, menus, battle or transitions hide it; fast-forward does not shorten its four-second display. This is an engine preference, separate from game saves.</p>
+<p>All three full-game downloads include Windows and native Linux Players with the matching corresponding source and dependency build material. The broad experimental menu/battle UI is excluded. Save format and game rules are unchanged. Extract to a new folder, copy <strong>saves</strong> and <strong>config</strong> from the matching edition, and preserve the new <strong>EasyRPG.ini</strong>. <a href="INSTALL.md#update-and-keep-saves">Update steps</a>.</p>
+<p>This update uses the completed card visual/reference checks and focused song-banner tests. It does not claim another whole-script translation review, a full playthrough, or physical Steam Deck/Proton testing. <a href="COMPATIBILITY.md">Recorded limits</a>.</p>
+<h2 id="section-1">Earlier release — v0.3.6</h2>
+<h1>v0.3.6 — mouse interaction, equipment comparison and healing controls</h1>
 <p>All three full-game downloads include Windows and native Linux Player 0.8.1.1-sb7. English builds gain numerical shop comparison, corrected title placement and the approved font-card replacements.</p>
 <ul>
 <li><strong>Mouse interaction:</strong> clicking visible characters uses their displayed artwork and native interaction rules, including counters. Blocked clicks immediately beside one native exit can select that exit. Pure speed adjustments no longer suppress an arrival transfer. These changes retain native event conditions and collision rules.</li>
@@ -9,7 +15,7 @@
 <p><strong>Update and keep your progress:</strong> close the old game, extract the matching new full game into a new folder, and copy your <strong>saves</strong> and <strong>config</strong> folders. Keep the new <strong>EasyRPG.ini</strong>. DC saves stay on DC; Altered saves from v0.2.0 onward stay on Altered. Keep the old installation until your usual save loads.</p>
 <p>Read the refurbished <a href="https://github.com/Nostramadeus/seraphic-blue-mod#readme">README</a> for mode selection, healing controls, illustrated battle labels and comparison controls. Matching source and dependency information accompany the release.</p>
 <p>Focused Windows checks covered the arrival-race reproduction, actual Turku clerk/exit, and numerical shop comparison in both English editions. Exact earlier receipts are retained for unchanged paths; the final Windows binary passed DC Buy with the full inventory and native actor values unchanged. One controlled headless Debian 11 shop comparison/Cancel replay passed, including numerical values and unchanged native state. The final native build retains that path across two source-bound DC copy-range corrections verified on Windows; no second Linux replay is claimed. No full playthrough, physical Steam Deck or Proton test is claimed. <a href="COMPATIBILITY.md">Recorded scope and limits</a>.</p>
-<h2 id="section-1">Earlier release — v0.3.4</h2>
+<h2 id="section-2">Earlier release — v0.3.4</h2>
 <h1>v0.3.4 — consistent menu hover</h1>
 <p>Menus now respond consistently to pointer movement in the English Altered build and both DC builds. Native lists, title/save screens and number/sign editors give keyboard and gamepad input priority. Custom battle, field, shop, dictionary, MOD and configuration menus keep their own native selection, help and permission rules.</p>
 <p>Move the pointer to highlight a menu choice or inspect its help. Hover does not confirm, buy, equip, apply a setting or move the player. Click or press Enter to choose. Keyboard/gamepad navigation takes control until the pointer moves again. Unavailable choices keep their native restrictions.</p>
@@ -17,81 +23,81 @@
 <p>Game text, pictures, event data and save formats are unchanged from v0.3.3. Extract into a new folder and copy your <strong>saves</strong> and <strong>config</strong> folders. Keep DC saves with DC and Altered saves with Altered. Preserve the new release&#x27;s <strong>EasyRPG.ini</strong>.</p>
 <p>The matching <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip">Player source</a> includes build recipes and dependency source information. Earlier releases and their exact matching source assets remain available. <a href="COMPATIBILITY.md">Setup and limits</a>.</p>
 <p>Recorded additional Japanese-meaning review remains partial: 1,915 Altered-specific entries have origin/application evidence without matching review records; 22,137 DC entries lack matching records for the additional review pass. The 11,328 shared-English transfers remain separate. This hover release makes no new translation changes or whole-script review claim.</p>
-<h2 id="section-2">Earlier release — v0.3.3</h2>
-<h2 id="section-3">Builds and saves</h2>
+<h2 id="section-3">Earlier release — v0.3.3</h2>
+<h2 id="section-4">Builds and saves</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.3.3.zip</strong> — EN + MOD + Altered. New game or an Altered save from v0.2.0 onward.</li>
 <li><strong>seraphic-blue-fullgame-EN-v0.3.3.zip</strong> — EN + MOD (DC). Earlier DC saves load as before.</li>
 <li><strong>seraphic-blue-fullgame-JP-v0.3.3.zip</strong> — JP + MOD (DC). Earlier DC saves load as before.</li>
 </ul>
 <p>DC saves do not move into Altered. Back up <strong>saves</strong> and <strong>config</strong> before updating.</p>
-<h2 id="section-4">Proton title-screen crash</h2>
+<h2 id="section-5">Proton title-screen crash</h2>
 <p>The bundled PortAudio library includes <a href="https://github.com/Nostramadeus/seraphic-blue-mod/issues/1">AryaNetwork&#x27;s fix for issue #1</a>. FluidSynth was starting PortAudio to enumerate devices; that device listing crashed under Wine. The patch makes <strong>Pa_Initialize</strong> report that PortAudio is unavailable. Player audio uses SDL, so it does not need PortAudio. The final Windows Player passed title-screen MIDI startup with audio enabled through an inaudible SDL dummy device. We did not run Proton or physical Steam Deck hardware.</p>
-<h2 id="section-5">Native Linux and source</h2>
+<h2 id="section-6">Native Linux and source</h2>
 <p>The native Linux Player now uses the same <strong>0.8.1.1-sb5</strong> source as Windows, including mouse controls, click-to-walk, history, Text speed and Text pauses. Run <strong>sh play-linux.sh</strong>. Helper libraries and notices are in <strong>native-linux</strong>. Headless tests passed 36 replay cases on Debian 11, Arch and Ubuntu 24.04 containers. All 18 generated save states matched Windows. A separate normal-speed replay matched Windows on all three systems (nine images). Timeline and save-name checks also matched all 111 images and 36 generated save states. MIDI produced nonzero audio through a virtual disk driver. Launcher paths with spaces and save/config storage passed. Physical Steam Deck, Proton and desktop display/audio drivers remain untested.</p>
 <p>MIDI uses an available soundfont through FluidLite or the included FM synthesizer. No soundfont download is required to play; FM instruments sound different. <a href="LINUX.md">Requirements and setup</a>.</p>
 <p>The <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip">Player source asset</a> exports current Player <strong>0cb855f</strong>, a separate historical sb4 <strong>a13da25</strong> tree, and native liblcf <strong>92c4450</strong>, with build recipes, timeline asset generators and exact dependency-source information. Git history is not included.</p>
-<h2 id="section-6">Credits and English content</h2>
+<h2 id="section-7">Credits and English content</h2>
 <p>Both DC builds restore mouse controls, the native battle panel and timeline name tables/assets. Altered gains full timeline names, including DRIVE/red markers and conditional Er names. English save slots retain the full “Blue-Haired Woman” name beside all four faces.</p>
 <p>Altered now shows the two 2016 English-team cards already present in DC: Special Thanks, translator <strong>eplipswich</strong>, and proofreader <strong>kumada</strong>. Thanks also to kumada for the original proofreading.</p>
 <p>Both English builds have eight dictionary captions corrected to the ruled names and roles, with the complete wording retained. Cilia is listed under A-C and Person under P-R; unlock switches and target pages are unchanged. The Status menu now spells out Poison instead of PSN, including at 100% trigger and defense rates. Altered choice-guard checks passed for held Enter, repeated presses and Cancel, with unguarded controls checked too.</p>
 <p>The DC English build restores 132 dialogue corrections missed by earlier packages, with 11 extra message boxes to retain the full wording. Altered also fixes three lines that used outdated translation inputs. Both English builds translate six remaining Daisy, Gerard and Owen portrait captions.</p>
-<h2 id="section-7">Known limits</h2>
+<h2 id="section-8">Known limits</h2>
 <p>The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered&#x27;s manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.</p>
 <p>Application checks confirm that approved wording reached the game files. The additional review of English against Japanese remains incomplete. <a href="COMPATIBILITY.md#translation-review-scope">Review scope and counts</a>.</p>
 <p>No full-playthrough, physical Steam Deck or Proton verification is claimed. Windows and Linux replays check specific paths and saved states. <a href="COMPATIBILITY.md">Compatibility</a>.</p>
 <h1>Release notes — v0.3.2</h1>
-<h2 id="section-8">Build</h2>
+<h2 id="section-9">Build</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.3.2.zip</strong> — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.3.1 Altered builds.</li>
 <li><strong>seraphic-blue-fullgame-EN-v0.3.2.zip</strong> — EN + MOD (DC). Saves from the earlier EN + MOD (DC) builds load as before (no save-format change).</li>
 <li><strong>seraphic-blue-fullgame-JP-v0.3.2.zip</strong> — JP + MOD (DC). Saves from the earlier JP + MOD (DC) builds load as before (no save-format change).</li>
 <li>DC saves still do not move to the Altered build.</li>
 </ul>
-<h2 id="section-9">Menu labels (English builds)</h2>
+<h2 id="section-10">Menu labels (English builds)</h2>
 <ul>
 <li>12 menu labels that were still Japanese in v0.3.1 are now in English (Altered; 6 of them in DC EN too): the three magic types of the Ability menu, Qty to Make, Discount, Qty to Sell, Paralysis, Ailment Trigger Rate / Defense Rate and the three magic-level labels of the Status menu, and Poison as <strong>PSN</strong>. Labels that did not fit in the game font use a narrower font, not a shortened word. DC EN Status screen: the movement stat reads <strong>MOV</strong> (the 2016 label said &quot;DEX&quot;), and &quot;Field Mutation Element&quot; replaces the 2016 label &quot;Element Physical Cast&quot;. Both English ZIPs carry <strong>MENU-LABEL-NOTES.txt</strong> with the list.</li>
 </ul>
-<h2 id="section-10">Story pictures and credits (English builds)</h2>
+<h2 id="section-11">Story pictures and credits (English builds)</h2>
 <ul>
 <li>All remaining story pictures redrawn in English (Altered 32 files, DC EN 43): 12 explanation screens, episode title cards, battle chant pictures, the Panorama menus (temporary save, organize, EXT bonus, shop line-up), the title-screen labels (DC EN), one battle background, unused leftover pictures, two dictionary titles and end-credits cards.</li>
 <li>End credits: the music credits card follows the Japanese list (both English builds); a DC EN credits card now carries the Japanese music credit together with the 2016 team; the 2016 translator credits card now also shows in the DC EN credits sequence that lacked it.</li>
 <li>One glossary term is written out in its full form in 2 boxes (both English builds).</li>
 </ul>
-<h2 id="section-11">New text file (Altered ZIP)</h2>
+<h2 id="section-12">New text file (Altered ZIP)</h2>
 <ul>
 <li>The Altered ZIP adds <strong>HIDDEN-DICTIONARY-ENTRIES (SPOILERS).txt</strong>: 3 unreachable dictionary entries written for an unfinished sequel, in a spoiler-marked text file. The game itself is unchanged; the entries stay unreachable in game.</li>
 </ul>
-<h2 id="section-12">Other</h2>
+<h2 id="section-13">Other</h2>
 <ul>
 <li>JP + MOD (DC): no content changes; it carries the new version number so the three builds stay in step.</li>
 <li>Player: unchanged from v0.3.1 (Windows Player 0.8.1.1-sb4; native Linux Player = the older test.2 build).</li>
 <li>Clicking an ally target in battle is now tested with a two-member party (passed).</li>
 </ul>
-<h2 id="section-13">Known gaps</h2>
+<h2 id="section-14">Known gaps</h2>
 <ul>
 <li>The native Linux Player (<strong>play-linux.sh</strong>) is unchanged and has none of the v0.3.1 Player features (use Player.exe on Windows, or Proton on Linux and Steam Deck). The Altered build&#x27;s credits do not show the 2016 translator card. The game&#x27;s own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.</li>
 </ul>
-<h2 id="section-14">Saves</h2>
+<h2 id="section-15">Saves</h2>
 <ul>
 <li>Altered saves from v0.2.0 to v0.3.1 load. DC saves load as before (no save-format change). DC saves do not move to the Altered build.</li>
 </ul>
 <h1>Release notes — v0.3.1</h1>
-<h2 id="section-15">Build</h2>
+<h2 id="section-16">Build</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.3.1.zip</strong> — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.3.0 Altered builds.</li>
 <li><strong>seraphic-blue-fullgame-EN-v0.3.1.zip</strong> — EN + MOD (DC). Saves from the earlier EN + MOD (DC) builds load as before (no save-format change).</li>
 <li><strong>seraphic-blue-fullgame-JP-v0.3.1.zip</strong> — JP + MOD (DC). Saves from the earlier JP + MOD (DC) builds load as before (no save-format change).</li>
 <li>DC saves still do not move to the Altered build.</li>
 </ul>
-<h2 id="section-16">New Windows Player 0.8.1.1-sb4 (all three ZIPs)</h2>
+<h2 id="section-17">New Windows Player 0.8.1.1-sb4 (all three ZIPs)</h2>
 <ul>
 <li>Battle mouse on the Altered build: command grid, enemy targets with hover, ability and item rows with hover, page change by mouse wheel, category tabs, ally targets.</li>
 <li>MOD menu, SPEED page: new rows <strong>Text speed</strong> (1x / 2x / 4x / Instant) and <strong>Text pauses</strong> (1x / 2x / 4x; shortens the pauses inside messages, never removes them).</li>
 <li>Choice guard: for a third of a second a choice window ignores Enter that is held down or pressed repeatedly, so the Skip prompts are not skipped by accident. Cancel is unaffected.</li>
 <li>Save-slot placeholder name now reads &quot;Blue-Hair Lady&quot; (DC EN).</li>
 </ul>
-<h2 id="section-17">English builds</h2>
+<h2 id="section-18">English builds</h2>
 <ul>
 <li>Dictionary (Character Profiles and Glossary) re-sorted into English alphabetical tabs A-C ... Y-Z (182 entries). Empty tabs cannot be entered. Unlocks and saves are unchanged.</li>
 <li>24 menu tile strips in English (272 words), including the party names of the Altered Ability menu. 14 menu words given more tiles or a ruled short form (10 by extra map tiles, 4 by a short form such as &quot;Owned&quot;); the 8 element labels of the Status menu now use two-letter codes (Fi Wa Wi Ea Li Da He Br).</li>
@@ -99,11 +105,11 @@
 <li>Actor-name strings use the spelling Yancy.</li>
 <li>108 story cards and labels redrawn (pulled cards corrected, Er and Sieg continuation text, dictionary labels, chapter titles, staff credits, Panorama menus).</li>
 </ul>
-<h2 id="section-18">Linux</h2>
+<h2 id="section-19">Linux</h2>
 <ul>
 <li>The new Player features need <strong>Player.exe</strong>: on Windows, or on Linux and Steam Deck through Proton. The native Linux Player (<strong>play-linux.sh</strong>) is unchanged from earlier releases (the older test.2 build) and has none of them.</li>
 </ul>
-<h2 id="section-19">Known gaps</h2>
+<h2 id="section-20">Known gaps</h2>
 <ul>
 <li>The native Linux Player is unchanged (see Linux above); the new Player features are Windows and Proton only unless a native Linux build follows.</li>
 <li>37 text pictures still carry the 2016 wording or Japanese and come in the next release: 12 explanation screens, the Panorama menus (temporary save, organize, status, EXT bonus and shop line-up), the title-screen labels, a few art-background titles and message cards. In the menus, nine labels stay Japanese for now (the three magic-level labels of the Ability menu, Poison, Paralysis and four shop quantity labels: their English needs more room than the screen layout gives).</li>
@@ -111,25 +117,25 @@
 <li>Clicking an ally target in battle was tested with a one-member party only.</li>
 <li>The game&#x27;s own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.</li>
 </ul>
-<h2 id="section-20">Saves</h2>
+<h2 id="section-21">Saves</h2>
 <ul>
 <li>Altered saves from v0.2.0 to v0.3.0 load. DC saves load as before (no save-format change). DC saves do not move to the Altered build.</li>
 </ul>
 <h1>Release notes — v0.3.0</h1>
-<h2 id="section-21">Build</h2>
+<h2 id="section-22">Build</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.3.0.zip</strong> — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.2.3 Altered builds.</li>
 <li><strong>seraphic-blue-fullgame-EN-v0.3.0.zip</strong> — EN + MOD (DC). Saves from the earlier EN + MOD (DC) builds load as before (no save-format change).</li>
 <li><strong>seraphic-blue-fullgame-JP-v0.3.0.zip</strong> — JP + MOD (DC). Saves from the earlier JP + MOD (DC) builds load as before (no save-format change).</li>
 <li>DC saves still do not move to the Altered build.</li>
 </ul>
-<h2 id="section-22">DC builds</h2>
+<h2 id="section-23">DC builds</h2>
 <ul>
 <li>Both DC builds are rebuilt through the same release pipeline as the Altered build: full game folders verified file by file, the text file <strong>IMPORTANT README (MUST READ).txt</strong> at the ZIP root, and PLAY.cmd starts the Player by its full path (the v0.2.2 fix).</li>
 <li>EN + MOD (DC) also gets the 23 retranslated opening quote cards (the same cards as Altered v0.2.3) and the newer text of three maps (Map0025, Map0026, Map0140): corrections from 2026-10-22 that the shipped game had but the source folder had lost.</li>
 <li>JP + MOD (DC) keeps its 141 standard RPG Maker asset files.</li>
 </ul>
-<h2 id="section-23">Pictures</h2>
+<h2 id="section-24">Pictures</h2>
 <ul>
 <li>Redrawn text pictures in the English builds: Altered 78 files, DC EN 73 files. The same picture ships under both builds&#x27; names where both have it.</li>
 <li>25 episode title cards: the titles now carry the complete Japanese title. The English episode-number row and the German row are kept pixel for pixel.</li>
@@ -142,47 +148,47 @@
 <li>1 party-member name label in DC EN.</li>
 <li>Report cards and dictionary labels use the game&#x27;s own 12 px pixel font (the Japanese cards&#x27; font) instead of the 2016 smoothed font.</li>
 </ul>
-<h2 id="section-24">Known gaps</h2>
+<h2 id="section-25">Known gaps</h2>
 <ul>
 <li>Some text pictures still carry the 2016 wording or Japanese and come in the next release: the party-name tiles of the Altered Ability menu (katakana), the report-card continuation cards, several dictionary cards and place-name cards, the chapter title cards 2 and 4, a few menu tile strips.</li>
 <li>The game&#x27;s own manuals (Manual/, ManualAlt/ and the two Japanese history text files) ship in Japanese on purpose.</li>
 <li>One DC EN save-slot name still has the old spelling.</li>
 </ul>
-<h2 id="section-25">Unchanged</h2>
+<h2 id="section-26">Unchanged</h2>
 <ul>
 <li>From v0.2.3: click-to-walk is on in the Altered build, and the New Game choice reads <strong>Extra Content (Recommended)</strong>.</li>
 </ul>
 <h1>Release notes — v0.2.3</h1>
-<h2 id="section-26">Build</h2>
+<h2 id="section-27">Build</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.2.3.zip</strong> — EN + MOD + Altered. New game, or a save from the v0.2.0 to v0.2.2 Altered builds.</li>
 <li>The EN + MOD (DC) and JP + MOD (DC) builds are unchanged: download them from <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0">v0.2.0</a>.</li>
 </ul>
-<h2 id="section-27">Click-to-walk (Altered build)</h2>
+<h2 id="section-28">Click-to-walk (Altered build)</h2>
 <ul>
 <li>Click-to-walk is now on in the Altered build (EasyRPG.ini: ClickWalk=1). Left-click ground to route there, click an NPC&#x27;s feet to approach it, right-click or a direction key to stop; the green destination square shows the target (README, Quick tutorials). Battle-screen mouse rows and the timeline names stay off on Altered.</li>
 <li>It had been held back by a test-rig error: the rig replayed a click as Enter plus click on one frame, which Altered&#x27;s dash routine reads as an Enter press. A real click never does that. Nothing in the game data was changed for it.</li>
 </ul>
-<h2 id="section-28">Opening quote cards (Altered build)</h2>
+<h2 id="section-29">Opening quote cards (Altered build)</h2>
 <ul>
 <li>The 23 character quote cards of the opening (Picture/Ep00_M*) were still the 2016 patch&#x27;s pictures with its loose wording. They are redrawn with the current script lines (each card = the same sentence as its message box in this translation), in the same condensed italic face as the opening poem cards. One card (Vene) has no message-box source in the script and carries a new translation of its Japanese.</li>
 <li>The DC builds (EN + MOD, JP + MOD) get the same cards with their next release.</li>
 </ul>
-<h2 id="section-29">Label</h2>
+<h2 id="section-30">Label</h2>
 <ul>
 <li>The New Game option now reads <strong>Extra Content (Recommended)</strong>, so a first-time player sees the recommendation on the screen itself. Map0004 only.</li>
 </ul>
-<h2 id="section-30">Game data</h2>
+<h2 id="section-31">Game data</h2>
 <ul>
 <li>Changed against v0.2.2: Map0004, the 23 Ep00_M* pictures, EasyRPG.ini. Saves from the v0.2.0 to v0.2.2 Altered builds load. Everything else as v0.2.2 (below).</li>
 </ul>
 <h1>Release notes — v0.2.2</h1>
-<h2 id="section-31">Build</h2>
+<h2 id="section-32">Build</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.2.2.zip</strong> — EN + MOD + Altered. New game, or a save from the v0.2.0 / v0.2.1 Altered build.</li>
 <li>The EN + MOD (DC) and JP + MOD (DC) builds are unchanged: download them from <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0">v0.2.0</a>.</li>
 </ul>
-<h2 id="section-32">New: the Extra Content choice (Altered build)</h2>
+<h2 id="section-33">New: the Extra Content choice (Altered build)</h2>
 <ul>
 <li>New Game now offers four options: About Game Modes, Original Mode, <strong>Extra Content</strong>, Arrange Mode.</li>
 <li><strong>Extra Content</strong> is the first-play setup in one choice: MANY on, BATTLE off, the five ARRANGE switches Off (Original), Skip Battles with Weak Enemies OFF, Character EXP Gain ON1, HP Auto Fill on, TP Auto Fill off. It equals the six manual steps the v0.2.1 README described, verified by a full switch-and-variable comparison of the two saves (0 differences).</li>
@@ -190,24 +196,24 @@
 <li>About Game Modes has a new page 3/6 for Extra Content. The &quot;Game Mode Selection&quot; title now shows on its own before the four choices (one extra key press).</li>
 <li>Game data changed: Map0004 only. Saves from the v0.2.0 and v0.2.1 Altered builds load.</li>
 </ul>
-<h2 id="section-33">ZIP</h2>
+<h2 id="section-34">ZIP</h2>
 <ul>
 <li>PLAY.cmd starts the Player by its full path. Before, with the Windows setting NoDefaultCurrentDirectoryInExePath on, the game did not start (exit 9009).</li>
 <li>The root text file (IMPORTANT README) names the Extra Content choice.</li>
 </ul>
-<h2 id="section-34">Docs</h2>
+<h2 id="section-35">Docs</h2>
 <ul>
 <li>The early MOD screen (Cancel while the story locks the menu) is a feature of the DC builds&#x27; opening; the Altered build unlocks the menu right after its opening.</li>
 <li>Rewards are capped at 999,999 per fight by the engine; at 1/10 in the late game a scaled reward can be trimmed.</li>
 <li>In Arrange mode, Full heal does not revive KO members (Altered&#x27;s own heal rule, kept on purpose).</li>
 </ul>
 <h1>Release notes — v0.2.1</h1>
-<h2 id="section-35">Build</h2>
+<h2 id="section-36">Build</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.2.1.zip</strong> — EN + MOD + Altered. New game, or a save from the v0.2.0 Altered build.</li>
 <li>The EN + MOD (DC) and JP + MOD (DC) builds are unchanged: download them from <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.2.0">v0.2.0</a> (<strong>seraphic-blue-fullgame-EN-v0.2.0.zip</strong>, <strong>seraphic-blue-fullgame-JP-v0.2.0.zip</strong>).</li>
 </ul>
-<h2 id="section-36">New: ARRANGE switches (Altered build)</h2>
+<h2 id="section-37">New: ARRANGE switches (Altered build)</h2>
 <ul>
 <li>New MOD menu page <strong>ARRANGE</strong> (pages: SPEED, BATTLE, ARRANGE, CHEATS, INFO) with five rows. Each is On (Altered) or Off (Original); the default is On.</li>
 </ul>
@@ -227,19 +233,19 @@
 <li>MOD: new games start with Escape always works Off; existing saves keep their setting. (The EN + MOD and JP + MOD builds get this with the next DC release.)</li>
 <li>Checked by scripted runs: battles with the rows Off and On under MANY only and in Original mode (item counts, held-back items, how HP is refilled), the retry cycle, escapes with the Escape row Off (a failed escape seen), a v0.2.0 save, enemy data with the Enemy row Off and On, the ARRANGE page on screen. The Counterattack row was checked in the game data; its Off chance was not measured in play. Not a full playthrough.</li>
 </ul>
-<h2 id="section-37">Known items and issues</h2>
+<h2 id="section-38">Known items and issues</h2>
 <ul>
 <li>v0.2.0 listed a DC retry issue after story battles; it could not be reproduced from normal play. Please report it with a save if you see it.</li>
 <li>Other known items: unchanged from v0.2.0 (below).</li>
 </ul>
 <h1>Earlier: release notes — v0.2.0</h1>
-<h2 id="section-38">Builds</h2>
+<h2 id="section-39">Builds</h2>
 <ul>
 <li><strong>seraphic-blue-fullgame-EN-v0.2.0.zip</strong> — EN + MOD (DC). Same game files as test.13 (re-tagged; only the documents and checksums inside the ZIP are new). Old saves keep working.</li>
 <li><strong>seraphic-blue-fullgame-EN-Altered-v0.2.0.zip</strong> — EN + MOD + Altered (DC Altered Ver2.13 fan patch, translated). <strong>New game only.</strong></li>
 <li><strong>seraphic-blue-fullgame-JP-v0.2.0.zip</strong> — JP + MOD (DC), full Japanese game with the Japanese MOD menu.</li>
 </ul>
-<h2 id="section-39">Altered build</h2>
+<h2 id="section-40">Altered build</h2>
 <ul>
 <li>All Altered text in English; its Japanese picture text redrawn in English; the MOD menu adapted (rows Altered already has are left to its Config; see the README).</li>
 <li>Original mode = DC + bug fixes; first play: Original, NORMAL. Full Arrange (BATTLE + MANY) for a second play; MANY alone not recommended. (Superseded by the v0.2.1 recommendation above.)</li>
@@ -247,75 +253,75 @@
 <li>EasyRPG Player only (8,040 variables, picture ids up to 78); RPG_RT.exe is not included.</li>
 <li>Checked by scripted runs: new game to the first map, the MOD screen, losing and retrying battles many times and then winning (Original and Arrange; items, money and MOD settings unchanged, Arrange item-limit items given back), the return-to-world-map cheat. Not a full playthrough.</li>
 </ul>
-<h2 id="section-40">Known items to check (play test)</h2>
+<h2 id="section-41">Known items to check (play test)</h2>
 <ul>
 <li>The text-input door on Map0746.</li>
 <li>The scene on Map0524 with the added second box.</li>
 <li>Pictures 187, 327, 531, 532, 533, 542, 558, 559.</li>
 <li>Pictures drawn with tighter letter spacing: 342, 343, 510, 516, 518, 523, 527, 532, 533, 536, 538, 540, 542, 567, 568, 569, 570, 571, 572, 573, 576, 600, 601, 620, 622, 681, 682, 683, 687, 750, 758, 774, 780, 844, 865.</li>
 </ul>
-<h2 id="section-41">Known issues</h2>
+<h2 id="section-42">Known issues</h2>
 <ul>
 <li>EN + MOD (DC) build: after losing a story or boss battle, <strong>Retry</strong> may not respond; choose Accept defeat or load a save. Random-battle Retry works. (Shipped since test.10.) Update: this could not be reproduced from normal play (see v0.2.1 above); report it with a save if you see it.</li>
 </ul>
-<h2 id="section-42">Next</h2>
+<h2 id="section-43">Next</h2>
 <ul>
 <li>Planned for v0.2.1: MOD switches to turn off the Arrange battle rules (full HP after battle, item limit, always-escape, always-counter, enemy stat changes) one by one, so you can play the extra content with the original battle rules.</li>
 <li>Next DC text release: the derived review data for three Map0746 boxes is shifted by one box (the shipped game text is correct).</li>
 </ul>
 <h1>Earlier: release notes — v0.1.0-test.13</h1>
-<h2 id="section-43">Translation corrections from the comparison review</h2>
+<h2 id="section-44">Translation corrections from the comparison review</h2>
 <ul>
 <li><strong>22 dialogue boxes corrected</strong> after an outside check: while the <a href="https://nostramadeus.github.io/seraphic-blue-mod/">comparison page</a> was being built, its reviewers compared our lines with the Japanese and flagged the few where ours was weaker (a dropped qualifier, a Japanese idiom flattened into plain English, one word read in the wrong sense). Those are fixed. 4 boxes also had a pause moved to the line end (cosmetic).</li>
 <li>Changed files: 22 map files. No Player, picture or save changes.</li>
 </ul>
-<h2 id="section-44">Update safely</h2>
+<h2 id="section-45">Update safely</h2>
 <p>1. Close the game and back up the actual save folder used by your launcher.</p>
 <p>2. Easiest: download <strong>seraphic-blue-fullgame-EN-v0.1.0-test.13.zip</strong>, extract it, and copy your old <strong>saves</strong> folder into it.</p>
 <p>3. Or, on test.11 or test.12: extract <strong>seraphic-blue-update-v0.1.0-test.13.zip</strong> into the game folder containing <strong>RPG_RT.ldb</strong> and replace the 22 map files. On test.10 or older, apply the test.11 update first (it carries the Player).</p>
 <p>4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.</p>
-<h2 id="section-45">Known limits</h2>
+<h2 id="section-46">Known limits</h2>
 <ul>
 <li>Map data only; the Player is unchanged since test.11.</li>
 <li>Verified by whole-page replay checks against the translation sources and a file-level verifier, not a full playthrough.</li>
 </ul>
 <h1>Earlier: release notes — v0.1.0-test.12</h1>
-<h2 id="section-46">Translation corrections, part two</h2>
+<h2 id="section-47">Translation corrections, part two</h2>
 <ul>
 <li><strong>63 more dialogue boxes corrected to match the Japanese.</strong> This completes the audit of all 3,013 &quot;full&quot; four-line boxes (the ones most likely to have been shortened to fit): 89 of them had lost a qualifier, a hedge, a clause or a Japanese idiom&#x27;s image, and all are restored. 2 of the new corrections use two boxes instead of one shortened box.</li>
 <li>Changed files: 45 map files. No Player, picture or save changes.</li>
 <li><strong>Old saves work.</strong> A save from the Japanese original, from the 2016 English patch or from any test release loads in this version: copy your SaveXX.lsd files into the <strong>saves</strong> folder.</li>
 </ul>
-<h2 id="section-47">Update safely</h2>
+<h2 id="section-48">Update safely</h2>
 <p>1. Close the game and back up the actual save folder used by your launcher.</p>
 <p>2. Easiest: download <strong>seraphic-blue-fullgame-EN-v0.1.0-test.12.zip</strong>, extract it, and copy your old <strong>saves</strong> folder into it.</p>
 <p>3. Or, on test.11: extract <strong>seraphic-blue-update-v0.1.0-test.12.zip</strong> into the game folder containing <strong>RPG_RT.ldb</strong> and replace the 45 map files. On test.10 or older, apply the test.11 update first (it carries the Player).</p>
 <p>4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.</p>
-<h2 id="section-48">Known limits</h2>
+<h2 id="section-49">Known limits</h2>
 <ul>
 <li>Map data only; the message-history Player from test.11 is unchanged.</li>
 <li>Verified by whole-page replay checks against the translation sources and a file-level verifier, not a full playthrough.</li>
 </ul>
 <h1>Earlier: release notes — v0.1.0-test.11</h1>
-<h2 id="section-49">Message history and translation corrections</h2>
+<h2 id="section-50">Message history and translation corrections</h2>
 <ul>
 <li><strong>Message history (Windows Player):</strong> scroll back through the last 100 message boxes you read, with the choice you picked. Open it with <strong>mouse wheel up</strong> or <strong>Page Up</strong> while a message is showing or while you walk on the field; scroll with the wheel or Up / Down, page with Page Up / Page Down, close with <strong>Escape / B / right click</strong>. It is cleared when you load or start a game and is never saved. The native Linux Player and the Mac Player do not have it.</li>
 <li><strong>67 dialogue boxes corrected to match the Japanese</strong> (dropped qualifiers or hedges restored, Japanese idioms kept as their own image, 14 names and terms made consistent with the in-game dictionary). 7 of them now use two boxes instead of one shortened box. All 585 boxes whose English was identical to the 2016 patch were checked against the Japanese and found correct.</li>
 <li>Changed files: Player.exe and 43 map files. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.</li>
 </ul>
-<h2 id="section-50">Update safely</h2>
+<h2 id="section-51">Update safely</h2>
 <p>1. Close the game and back up the actual save folder used by your launcher.</p>
 <p>2. Easiest: download <strong>seraphic-blue-fullgame-EN-v0.1.0-test.11.zip</strong>, extract it, and copy your old <strong>saves</strong> folder into it.</p>
 <p>3. Or, on test.8 or newer: extract <strong>seraphic-blue-update-v0.1.0-test.11.zip</strong> into the game folder containing <strong>RPG_RT.ldb</strong> and replace <strong>Player.exe</strong> and the 43 map files. If your Player.exe is in a different folder (older patch installs), copy the new Player.exe there.</p>
 <p>4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.</p>
-<h2 id="section-51">Known limits</h2>
+<h2 id="section-52">Known limits</h2>
 <ul>
 <li>Message history needs the included Windows Player (Windows, Linux/Deck through Proton). The native Linux Player and the stock Mac Player keep the older behaviour.</li>
 <li>The history holds completed message pages only; it never shows text you have not reached yet. It is not stored in save files.</li>
 <li>Verified with the Player&#x27;s own automated tests and scripted off-screen runs, not a full playthrough or hardware test.</li>
 </ul>
 <h1>Earlier: release notes — v0.1.0-test.8</h1>
-<h2 id="section-52">Early MOD access and opening fixes</h2>
+<h2 id="section-53">Early MOD access and opening fixes</h2>
 <ul>
 <li><strong>MOD settings from the very start.</strong> While the story still locks the game menu (the opening chapters), Cancel / Esc / controller B (Steam Deck B) opens the MOD screen directly. Cancel returns to the field at the same spot. The CHEATS page is skipped there because no party menu exists yet. After the normal unlock, Cancel opens the ordinary menu with its MOD button, exactly as before.</li>
 <li>Cancel inside message boxes, choices and scenes does nothing new: the Player only lets the press through while you have free control of the field (no message, no running or starting event, no map transfer).</li>
@@ -323,13 +329,13 @@
 <li><strong>Opening poem card</strong> (Picture/Ep00_Mes05-02.png): the second card of the opening poem is retranslated to match the Japanese.</li>
 <li>Changed files: Player.exe, RPG_RT.ldb, Map0003.lmu, Picture/Ep00_Mes05-02.png. Saves, config and EasyRPG.ini are untouched; earlier saves load normally.</li>
 </ul>
-<h2 id="section-53">Update safely</h2>
+<h2 id="section-54">Update safely</h2>
 <p>1. Close the game and back up the actual save folder used by your launcher.</p>
 <p>2. If you are on test.6 or older, first extract <strong>seraphic-blue-image-update-v0.1.0-test.7.zip</strong> from the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.1.0-test.7">test.7 release</a>.</p>
 <p>3. Extract <strong>seraphic-blue-update-v0.1.0-test.8.zip</strong> into the game folder containing <strong>RPG_RT.ldb</strong> and replace the included files. If your Player.exe is in a different folder (older patch installs), copy the new Player.exe there.</p>
 <p>4. Keep your saves, config, EasyRPG.ini and DLLs. Launch as usual.</p>
 <p>New players can use <strong>seraphic-blue-fullgame-EN-v0.1.0-test.8.zip</strong>.</p>
-<h2 id="section-54">Known limits</h2>
+<h2 id="section-55">Known limits</h2>
 <ul>
 <li>Early MOD access and the opening click-walk fix need the included Windows Player (Windows, Linux/Deck through Proton). The native Linux Player (test.2) and the stock Mac Player keep the older behaviour: MOD opens after the story unlocks the menu, and clicks do not walk.</li>
 <li>English build only; the Japanese patch is not updated in this release.</li>

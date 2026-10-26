@@ -2,11 +2,12 @@
 
 ## Current and historical Players
 
-[seraphic-blue-player-source-v0.3.6.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-player-source-v0.3.6.zip) contains the current exact source and the historical sb4 tree:
+[seraphic-blue-player-source-v0.3.7.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-player-source-v0.3.7.zip) contains the current exact source and the historical sb4 tree:
 
 | Binary | Matching source | Player revision |
 | --- | --- | --- |
-| v0.3.6 Windows/native Linux, 0.8.1.1-sb7 | Current export, Player/ | 77f13975ce79a592286a09eba271136741eb780e |
+| v0.3.7 Windows/native Linux, 0.8.1.1-sb7 | Current export, Player/ | 978c64562d3b6a0b4061ba82bfb39aaa41b2d24b |
+| v0.3.6 Windows/native Linux, 0.8.1.1-sb7 | [Earlier sb7 source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-player-source-v0.3.6.zip), Player/ | 77f13975ce79a592286a09eba271136741eb780e |
 | v0.3.4 / Altered v0.3.5, 0.8.1.1-sb6 | [Earlier sb6 source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip), Player/ | eb421f52e66ccffd0871587a352037c4e31982f6 |
 | v0.3.3 Windows/native Linux, 0.8.1.1-sb5 | [Earlier source asset](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip), Player/ | 0cb855fe592235fdb083ac5c6ac7b946fccc0c87 |
 | v0.3.1/v0.3.2 Windows, 0.8.1.1-sb4 | Current export, historical/sb4/Player/ | a13da2571b9e435462023ecf58085c77fc1cebcf |

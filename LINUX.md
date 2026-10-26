@@ -2,7 +2,7 @@
 
 ## Native Linux Player
 
-1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip) and extract it.
+1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-EN-v0.3.7.zip) and extract it.
 2. Open a terminal in the extracted **SeraphicBlue** folder.
 3. Run **sh play-linux.sh**.
 

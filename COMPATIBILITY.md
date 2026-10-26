@@ -1,3 +1,13 @@
+# v0.3.7 additions
+
+The picture update changes only the approved English PNGs: 83 DC and 75 matching Altered cards. Native/reference checks found no newly covered text below the eight widened cards. It adds no Japanese meaning-review claim.
+
+The song title banner is optional and defaults Off (F1 > Engine). Windows checks covered persisted On/Off, normal and x10 timing, long Japanese filenames, silent loads, missing-track behavior, and unchanged gameplay save data apart from the native save-title timestamp. These checks use controlled native fixtures; they are not a full playthrough or an audio-quality test. The experimental modern UI is excluded.
+
+Native Linux also passed the final normal-speed song fixture on Debian 11: seven paired On/Off screenshots differed only inside the banner, and gameplay save data matched apart from the normal title timestamp. The exact source and unchanged dependency versions were checked. Required symbol versions remain GLIBC_2.29, GLIBCXX_3.4.26 and CXXABI_1.3.9.
+
+The following v0.3.6 feature checks and platform limits remain applicable.
+
 # Compatibility — v0.3.6
 
 | Route | Included Player | Verification |

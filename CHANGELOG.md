@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.7
+
+Clearer established font on 83 additional English DC picture cards and 75 matching Altered cards. Full words/original heights retained; eight widths grow by 1–20 pixels. Japanese pictures and unresolved source/edition cases stay unchanged. Adds an optional song title banner, default Off, under F1 > Engine. Full music filename titles paginate; safe wall-time display pauses behind dialogue/menus/battle/transitions. Experimental modern UI excluded. Save format and game rules unchanged.
+
 ## v0.3.6
 
 All three builds use Player 0.8.1.1-sb7. Visible-character click targeting, native counter interaction, unique adjacent transfer targeting and pure-speed arrival handling are repaired. English shops add a read-only Tab comparison for weapon/frame totals. Altered retains click destinations while using Shift dash, updates the MOD hover hint, exposes HP Supplement controls when free healing is off, starts new Extra Content HP Auto Fill off, and gives ordinary rewards for manual FREE encounters. Encounter countdowns refresh after an actual rate change. HP refill notices and Sphere descriptions/results follow the selected free-healing setting. English titles keep their full text on screen; 101 approved font cards per English edition are replaced, with 84 mixed-layout cards held unchanged. One minor Counter Attack wording correction is included. Save format unchanged; existing saves retain their settings.

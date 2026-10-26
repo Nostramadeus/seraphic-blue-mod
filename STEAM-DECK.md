@@ -6,7 +6,7 @@ Earlier v0.3.3 sb5 container tests covered Debian 11, Arch and Ubuntu 24.04: 36 
 
 ## Native Linux
 
-1. Switch to **Desktop Mode**. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip) and extract it.
+1. Switch to **Desktop Mode**. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-EN-v0.3.7.zip) and extract it.
 2. Open a terminal in **SeraphicBlue** (or **SeraphicBlue-Altered** for the Altered ZIP). Run **sh play-linux.sh**.
 3. To launch through Steam, make **play-linux.sh** and **native-linux/Player** executable: **chmod +x play-linux.sh native-linux/Player**.
 4. In Steam choose **Games → Add a Non-Steam Game → Browse**, show all files, and select **play-linux.sh**. Set **Start In** to the game folder. Leave forced Proton compatibility off for this native shortcut.

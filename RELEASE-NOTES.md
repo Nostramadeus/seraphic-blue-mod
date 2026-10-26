@@ -1,3 +1,15 @@
+# v0.3.7 — clearer picture text and optional song titles
+
+English DC has 83 additional picture cards redrawn in the established clearer font. English Altered has the 75 matching cards. Full wording and original card heights are retained. Eight cards are widened by 1–20 pixels, with checked picture references and no newly covered text below them. The Japanese edition’s pictures are unchanged. One unresolved Japanese source card and eight edition-specific absences or revisions remain untouched.
+
+**Optional song title banner:** press **F1 → Engine → Song title banner**. It starts **Off**. When enabled, a small lower-left banner shows the music filename after an actual track change. Long names use multiple pages. The banner pauses while dialogue, menus, battle or transitions hide it; fast-forward does not shorten its four-second display. This is an engine preference, separate from game saves.
+
+All three full-game downloads include Windows and native Linux Players with the matching corresponding source and dependency build material. The broad experimental menu/battle UI is excluded. Save format and game rules are unchanged. Extract to a new folder, copy **saves** and **config** from the matching edition, and preserve the new **EasyRPG.ini**. [Update steps](INSTALL.md#update-and-keep-saves).
+
+This update uses the completed card visual/reference checks and focused song-banner tests. It does not claim another whole-script translation review, a full playthrough, or physical Steam Deck/Proton testing. [Recorded limits](COMPATIBILITY.md).
+
+## Earlier release — v0.3.6
+
 # v0.3.6 — mouse interaction, equipment comparison and healing controls
 
 All three full-game downloads include Windows and native Linux Player 0.8.1.1-sb7. English builds gain numerical shop comparison, corrected title placement and the approved font-card replacements.

@@ -4,9 +4,9 @@
 
 *Seraphic Blue* (Tempura, 2004, RPG Maker 2000), in English again: every dialogue box retranslated from the Japanese, a MOD menu (fewer random battles, speed, cheats, message history, mouse play), and an optional English build of the *DC Altered* fan patch. One ZIP per build; no original game, patching or extra downloads needed.
 
-**Status:** released. Current version: **v0.3.6 for all three builds**. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
+**Status:** released. Current version: **v0.3.7 for all three builds**. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
 
-**v0.3.6:** mouse interaction fixes, numerical weapon/frame comparison, visible HP Supplement controls when free healing is off, and corrected English title placement. **Update without restarting:** extract the matching new full game into a new folder, copy your **saves** and **config** folders, and keep the new **EasyRPG.ini**. DC saves stay on DC; Altered saves stay on Altered. [Update steps](INSTALL.md#update-and-keep-saves).
+**v0.3.7:** clearer English picture text on 83 DC cards and 75 matching Altered cards, plus an optional song title banner. Turn it on with **F1 → Engine → Song title banner**; it starts **Off**. The experimental menu redesign is not included. **Update without restarting:** extract the matching new full game into a new folder, copy your **saves** and **config** folders, and keep the new **EasyRPG.ini**. DC saves stay on DC; Altered saves stay on Altered. [Update steps](INSTALL.md#update-and-keep-saves).
 
 **Open MOD or Altered’s Config.** Press **Escape** to open the game menu, select **MOD**, then choose the key below.
 
@@ -141,9 +141,9 @@ Same party, same dungeon, same three fights and one boss. Each step: what the ga
 
 | Build | What it is | Download |
 | --- | --- | --- |
-| **EN + MOD + Altered** (v0.3.6) ★ **Recommended for a first play** | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 onward Altered builds. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.3.6.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-Altered-v0.3.6.zip)** |
-| **EN + MOD (DC)** (v0.3.6) | The English Director's Cut with English corrections and the MOD. Earlier DC saves keep working. | **[seraphic-blue-fullgame-EN-v0.3.6.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip)** |
-| **JP + MOD (DC)** (v0.3.6) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.3.6.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-JP-v0.3.6.zip)** |
+| **EN + MOD + Altered** (v0.3.7) ★ **Recommended for a first play** | The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 onward Altered builds. [What is Altered?](#altered-build-en--mod--altered) | **[seraphic-blue-fullgame-EN-Altered-v0.3.7.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-EN-Altered-v0.3.7.zip)** |
+| **EN + MOD (DC)** (v0.3.7) | The English Director's Cut with English corrections and the MOD. Earlier DC saves keep working. | **[seraphic-blue-fullgame-EN-v0.3.7.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-EN-v0.3.7.zip)** |
+| **JP + MOD (DC)** (v0.3.7) | The Japanese Director's Cut with the MOD (Japanese MOD menu). | **[seraphic-blue-fullgame-JP-v0.3.7.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-JP-v0.3.7.zip)** |
 
 [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases). Each ZIP includes its game, the Windows and native Linux Players (0.8.1.1-sb7), and launchers.
 
@@ -175,12 +175,12 @@ Download → Extract All → double-click PLAY.cmd → Play
 **Keep your saves:** three steps.
 
 1. Close the game.
-2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip) (EN + MOD, DC) and extract it.
+2. [Download the new full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-EN-v0.3.7.zip) (EN + MOD, DC) and extract it.
 3. Copy the **saves** and **config** folders from your old game folder into the new one. Done.
 
 Dropped the game years ago? Saves from the Japanese original or the 2016 English patch load here too: copy your **SaveXX.lsd** files into the **saves** folder.
 
-Altered build: saves from v0.2.0 onward load in v0.3.6 the same way. Copy the **saves** and **config** folders from the old SeraphicBlue-Altered folder; keep the new **EasyRPG.ini**. DC saves do not load in the Altered build; keep them on the EN + MOD (DC) build.
+Altered build: saves from v0.2.0 onward load in v0.3.7 the same way. Copy the **saves** and **config** folders from the old SeraphicBlue-Altered folder; keep the new **EasyRPG.ini**. DC saves do not load in the Altered build; keep them on the EN + MOD (DC) build.
 
 <details><summary>Smaller download: update ZIPs instead (step by step, test releases only)</summary>
 
@@ -192,7 +192,7 @@ Altered build: saves from v0.2.0 onward load in v0.3.6 the same way. Copy the **
 6. On test.10 or older, [download the test.11 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe** and the 43 **Map** files.
 7. On test.11, [download the test.12 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 45 **Map** files.
 8. [Download the test.13 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.13/seraphic-blue-update-v0.1.0-test.13.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 22 **Map** files.
-9. On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.6 EN + MOD (DC) build, extract it to a new folder and copy your **saves** and **config** folders into it. Keep the new **EasyRPG.ini**.
+9. On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.7 EN + MOD (DC) build, extract it to a new folder and copy your **saves** and **config** folders into it. Keep the new **EasyRPG.ini**.
 10. Copy your **saves** and **config** folders. Keep the new release's **EasyRPG.ini** so its current controls and label tables remain enabled. Saves from earlier tests load normally.
 
 </details>
@@ -219,7 +219,7 @@ Native Linux now uses the same Player source as Windows; see [Linux setup and te
 
 **What this build adds:** the whole game in English (Altered's new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).
 
-**New Altered game, or an existing Altered save from v0.2.0 onward.** Keep DC saves on the EN + MOD (DC) build (v0.3.6; earlier DC saves load there). The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
+**New Altered game, or an existing Altered save from v0.2.0 onward.** Keep DC saves on the EN + MOD (DC) build (v0.3.7; earlier DC saves load there). The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
 
 ### ARRANGE switches (MOD menu, Altered build only)
 
@@ -236,7 +236,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 - **With BATTLE on, the Escape and Enemy rows follow BATTLE's own rules.**
 - **Not switchable** (always Altered in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns. Altered's own Config can switch off the random turn order, the luck elements and the timing hits.
 <a name="healing-controls"></a>
-**Two separate healing settings.** **Full HP after battle** provides free recovery. **HP Auto Fill** spends one point of **SUP.HP** for each HP restored and stops when the reserve runs out. Both start **Off** in new Extra Content games in v0.3.6. Existing saves keep their settings.
+**Two separate healing settings.** **Full HP after battle** provides free recovery. **HP Auto Fill** spends one point of **SUP.HP** for each HP restored and stops when the reserve runs out. Both start **Off** in new Extra Content games in v0.3.7. Existing saves keep their settings.
 
 1. To disable free recovery, open **Escape > MOD > Confirm**, change to **ARRANGE**, and set **Full HP after battle: Off (Original)**.
 2. Open **Supplement**. With free recovery Off, both **SUP.HP** and **SUP.TP** are visible. Press **Shift** to select the Auto Fill controls, select **HP**, then press **Confirm** to toggle it.
@@ -247,7 +247,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 **Loaded saves keep their own settings.** Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.
 
 - **+ marks gear that exists only in Altered's extra content.**
-- **Altered saves from v0.2.0 onward load in v0.3.6.** Extract the new game to a new folder and copy the old **saves** and **config** folders into it. Keep the new **EasyRPG.ini**. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.
+- **Altered saves from v0.2.0 onward load in v0.3.7.** Extract the new game to a new folder and copy the old **saves** and **config** folders into it. Keep the new **EasyRPG.ini**. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.
 
 ### Original mode = DC + these fixes
 
@@ -484,9 +484,9 @@ Menu labels are pictures with a fixed width. Where the full English did not fit 
 
 **Release notes and translation comparison.** How does this translation compare to the 2016 patch? [Side-by-side page: Japanese, 2016 English, this English, and why](https://nostramadeus.github.io/seraphic-blue-mod/) for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. **Spoiler warning:** it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind. Opening and Episode 2 only, with later sections hidden until selected: [early-game corrections](EARLY-GAME-CORRECTIONS.html).
 
-<details><summary>Open: what changed in each version (v0.3.6 back to test.8)</summary>
+<details><summary>Open: what changed in each version (v0.3.7 back to test.8)</summary>
 
-**New in v0.3.6 (all three builds; English-only comparison and font/title changes):**
+**New in v0.3.7 (all three builds; English-only comparison and font/title changes):**
 
 - Mouse selection follows visible character artwork, native counter interaction and a unique adjacent exit. Arrival handling retains touch transfers during a pure speed adjustment.
 - English shops add **Tab Compare** for weapons and frames, using native calculations without purchases or equipment changes.
@@ -590,7 +590,7 @@ Thank you to **腐林檎** and **時空転移プリン** for *Seraphic Blue (DC 
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-fullgame-EN-v0.3.7.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh
@@ -617,7 +617,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 - [Advanced patch installation / older-version migration](INSTALL.md).
 - [Original credits](CREDITS.md), [licenses](LICENSES.md), and [corresponding source](SOURCE-ACCESS.md).
 
-English game content and retained original manual/credits are included. The JP + MOD full game (v0.3.6) is available for Japanese players. Native Linux uses Player 0.8.1.1-sb7. No full-playthrough or physical Deck verification is claimed. The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered's manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.
+English game content and retained original manual/credits are included. The JP + MOD full game (v0.3.7) is available for Japanese players. Native Linux uses Player 0.8.1.1-sb7. No full-playthrough or physical Deck verification is claimed. The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered's manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.
 
 </details>
 
