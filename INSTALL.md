@@ -8,15 +8,18 @@
 
 Keep Player.exe, its DLLs, **native-linux**, game data and launchers together. [Windows](WINDOWS.md) · [Linux](LINUX.md) · [Steam Deck](STEAM-DECK.md).
 
-## Windows GUI updater
+## GUI updater and optional startup checks
 
-1. Close the game. [Download the updater](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.0.0.zip) and extract it into its own folder.
-2. Open **SeraphicBlue-Update.exe**. Click **Choose...** and select the old game folder containing **PLAY.cmd**.
-3. Click **Update to latest**. After the checksum, extracted files and copied saves/settings are verified, click **Play updated copy**.
+1. Close the game. Download the [Windows updater v1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.1.0.zip) or [Linux startup updater](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-linux-v1.1.0.zip), then extract the complete folder.
+2. On Windows, open **SeraphicBlue-Update.exe**, click **Choose...**, and select the old game folder containing **PLAY.cmd**. Click **Update to latest** when you want to update now.
+3. For checks when starting the game, click **Enable startup checks**. On Linux, open **Startup-settings.desktop**, choose the game folder, and select **Enable**. Linux needs Python 3 and zenity or kdialog.
+4. Start through **PLAY.cmd** on Windows or **play-linux.sh** on Linux. A newer matching stable release offers **Install update** or **Play current**. Checks are optional; the setup can disable them and restore the original launcher.
 
-The old game stays in place. The updater keeps a separate verified save/settings backup, creates a new same-edition folder and preserves its new **EasyRPG.ini**. Keep **Update.ps1** beside the updater program. No Python installation is needed. Already on the latest version? It says so without reinstalling.
+The updater checks free space before download and extraction. It creates a neighboring version folder, verifies downloaded files and copied saves/settings, and keeps the old copy plus a separate backup. It preserves the new **EasyRPG.ini**. Already current? It does not reinstall. Offline checks and check errors fall back to the current game.
 
-This supports stable full-game releases with an intact **fullgame-manifest.json** and the standard launcher paths. Historical patch-only copies, modified databases, custom save locations, Linux and Steam Deck use the manual steps below. [Updater details and source](updater/README.md).
+Keep the complete extracted updater folder together. Direct **Player.exe** or **native-linux/Player** shortcuts bypass startup checks. Steam shortcuts are not rewritten automatically; point them to the desired version folder's launcher if you want startup checks. Native Linux helper checks passed; physical Steam Deck, Proton setup and real Linux desktop dialogs have not been verified. Existing working Proton shortcuts can stay as they are.
+
+Supported: stable full-game releases with an intact **fullgame-manifest.json** and standard launcher paths. Historical patch-only copies, modified databases and custom save paths use the manual steps below. DC and Altered saves stay on their own editions. Use v1.1 instead of the older updater v1.0; v1.1 also corrects destination-folder handling. [Instructions and source](updater-v1.1/README.md).
 
 ## Update and keep saves
 

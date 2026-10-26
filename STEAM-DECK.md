@@ -17,11 +17,11 @@ Keep the extracted files together. Native MIDI uses an available soundfont or th
 
 1. Add **Player.exe** from the same game folder as a Non-Steam Game.
 2. Open **Properties → Compatibility**, enable the forced compatibility tool, and select **Proton Experimental**.
-3. In **Shortcut**, set **Start In** to the game folder and **Launch Options** to:
+3. In **Shortcut**, set **Start In** to the game folder. **Leave Launch Options blank.**
 
-```text
---project-path . --save-path saves --config-path config --encoding 932 --window
-```
+The earlier instructions supplied `--save-path saves` without creating that folder. The Player rejects a save folder that does not exist, which can prevent a fresh installation from starting. The Windows **PLAY.cmd** creates the folder, but a Steam shortcut to **Player.exe** does not run that launcher. This failure was reproduced with the shipped Windows Player; physical Deck/Proton testing remains unverified.
+
+With no custom save path, the Player normally saves **SaveNN.lsd** in the game folder. If you have already played successfully, keep that working shortcut. Do not add a different save path afterward: existing saves will stay in their original folder and may disappear from the load menu until the path is restored. Back up both loose **SaveNN.lsd** files and any **saves** folder when updating.
 
 v0.3.3 includes AryaNetwork's PortAudio library fix for the title-screen MIDI crash ([issue #1](https://github.com/Nostramadeus/seraphic-blue-mod/issues/1)). Windows regression tests passed; we did not run the patched build on physical Deck hardware or Proton.
 

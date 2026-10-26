@@ -1,0 +1,15 @@
+{
+  "version": "candidate-1",
+  "files": {
+    "CheckRelease.ps1": "8e0157bba8a89a16ede4f1517cf1268464a94462135206dc3b8859dde4d0364f",
+    "Install-startup-checks.ps1": "e21d5cd319dfc85cb732393f61d26bb129a1c99e6a6114e37d716c7204e79904",
+    "install_startup.py": "b9a8764aeb0de5d88130f661c138fb10ac516cf078a8e5472593043a3278d8db",
+    "LICENSE-MIT.txt": "d67d97581a31b0b7222b3a47efd5ed3148c8c639f6fe278b16d648292e7d01f8",
+    "play-linux.startup.sh": "12b345651f15c867e1b7be665dfea0d858861b9bbf84defef3e4346959ff1809",
+    "PLAY.startup.cmd": "ac499650f59b4397bd50884c763d959f01ba4c4400109c904f38849cad7fb9fc",
+    "SafeWrite.cs": "f75e0175344a1a45a394dd9eca9d690d318384d24086e5ad493e164e8a2deeee",
+    "Startup.ps1": "62b0c1db36e27191905eb2b89d445eaa58e2dcde15a839ecd9f78de370b09645",
+    "startup_update.py": "d5482a660ea5caf8fecd802c6e06e0966b43fea03a6d88b15b51608955577c0f",
+    "Update.ps1": "176cd0d6f203ac00e3416eeb15f52840b8fa09b220b6c268ca143fee3a775f72"
+  }
+}

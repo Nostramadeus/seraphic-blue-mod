@@ -10,8 +10,9 @@
 <h2 id="section-2">Windows Player through Proton</h2>
 <p>1. Add <strong>Player.exe</strong> from the same game folder as a Non-Steam Game.</p>
 <p>2. Open <strong>Properties → Compatibility</strong>, enable the forced compatibility tool, and select <strong>Proton Experimental</strong>.</p>
-<p>3. In <strong>Shortcut</strong>, set <strong>Start In</strong> to the game folder and <strong>Launch Options</strong> to:</p>
-<pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>--project-path . --save-path saves --config-path config --encoding 932 --window</code></pre>
+<p>3. In <strong>Shortcut</strong>, set <strong>Start In</strong> to the game folder. <strong>Leave Launch Options blank.</strong></p>
+<p>The earlier instructions supplied `--save-path saves` without creating that folder. The Player rejects a save folder that does not exist, which can prevent a fresh installation from starting. The Windows <strong>PLAY.cmd</strong> creates the folder, but a Steam shortcut to <strong>Player.exe</strong> does not run that launcher. This failure was reproduced with the shipped Windows Player; physical Deck/Proton testing remains unverified.</p>
+<p>With no custom save path, the Player normally saves <strong>SaveNN.lsd</strong> in the game folder. If you have already played successfully, keep that working shortcut. Do not add a different save path afterward: existing saves will stay in their original folder and may disappear from the load menu until the path is restored. Back up both loose <strong>SaveNN.lsd</strong> files and any <strong>saves</strong> folder when updating.</p>
 <p>v0.3.3 includes AryaNetwork&#x27;s PortAudio library fix for the title-screen MIDI crash (<a href="https://github.com/Nostramadeus/seraphic-blue-mod/issues/1">issue #1</a>). Windows regression tests passed; we did not run the patched build on physical Deck hardware or Proton.</p>
 <h2 id="section-3">Suggested Steam Input controls</h2>
 <div class="table-scroll"><table>

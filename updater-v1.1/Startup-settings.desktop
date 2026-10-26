@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Seraphic Blue Startup Checks
+Comment=Enable or disable optional update checks for a selected game folder
+Exec=python3 -c "import pathlib,runpy,sys,urllib.parse; a=sys.argv[1]; u=urllib.parse.urlparse(a); p=pathlib.Path(urllib.parse.unquote(u.path) if u.scheme=='file' else a); f=p.parent/'install_startup.py'; sys.argv=[str(f),'--gui']; runpy.run_path(str(f),run_name='__main__')" %k
+Terminal=false
+Icon=system-software-update
+Categories=Game;

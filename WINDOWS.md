@@ -8,7 +8,7 @@ Player.exe is the game-running program. Its DLL helper files are already include
 
 ## Updating an existing installation
 
-[Download the Windows GUI updater](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.0.0.zip) and extract it. Open **SeraphicBlue-Update.exe**, choose the old game folder, and click **Update to latest**. It creates a new same-edition copy, verifies saves/settings, and keeps the old installation and a separate backup. Keep **Update.ps1** beside the program.
+[Download the Windows GUI updater v1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.1.0.zip) and extract the complete folder. Open **SeraphicBlue-Update.exe**, choose the old game folder, and click **Update to latest**. It checks disk space, creates a new same-edition copy, verifies saves/settings, and keeps the old installation plus a backup. Click **Enable startup checks** if you want **PLAY.cmd** to offer new releases before playing. Checks can be disabled from the same GUI. Keep the complete updater folder together. Direct **Player.exe** shortcuts bypass these checks. [Details and source](updater-v1.1/README.md).
 
 Historical patch installs and custom save paths use the [manual update steps](INSTALL.md#update-and-keep-saves). DC and Altered saves stay on their matching editions.
 
