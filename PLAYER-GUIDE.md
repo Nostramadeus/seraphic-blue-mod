@@ -131,7 +131,7 @@ Same party, same dungeon, same three fights and one boss. This worked example sh
 
 **Included:** the whole game in English (Altered's new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).
 
-**New Altered game, or an existing Altered save from v0.2.0 onward.** Keep DC saves on the EN + MOD (DC) build (v0.3.8; earlier DC saves load there). The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
+**New Altered game, or an existing Altered save from v0.2.0 onward.** Keep DC saves on the EN + MOD (DC) build (v0.3.9; earlier DC saves load there). The ZIP extracts to its own **SeraphicBlue-Altered** folder; read **IMPORTANT README (MUST READ).txt** first.
 
 <a name="altered-credits"></a>
 ## Altered contributors
@@ -178,7 +178,7 @@ Each row is **On (Altered)** or **Off (Original)**. The default is On in Arrange
 **Loaded saves keep their own settings.** Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.
 
 - **+ marks gear that exists only in Altered's extra content.**
-- **Altered saves from v0.2.0 onward load in v0.3.8.** Extract the new game to a new folder and copy the old **saves** and **config** folders into it. Keep the new **EasyRPG.ini**. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.
+- **Altered saves from v0.2.0 onward load in v0.3.9.** Extract the new game to a new folder and copy the old **saves** and **config** folders into it. Keep the new **EasyRPG.ini**. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.
 
 <a name="original-fixes"></a>
 <details><summary>Original Mode — Director’s Cut plus these fixes</summary>

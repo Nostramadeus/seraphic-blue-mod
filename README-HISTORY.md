@@ -10,6 +10,12 @@ These entries describe the release named in each heading. An old limitation or p
 
 <img src="docs/img/banners/releases.png" width="900" alt="Release notes">
 
+<details><summary>v0.3.9 — final English wording corrections</summary>
+
+Final English wording corrections from the additional Japanese/English review. The 23 reviewed findings are corrected, with established neutral terminology applied consistently across profile variants. Exact matching passages are updated in Altered; edition-specific text stays separate. Complete meaning, control codes and conditional versions are preserved. The verified v0.3.8 engines and bundled GUI updater are retained. No modern UI experiment is shipped.
+
+</details>
+
 <details><summary>v0.3.8 — saved commands and English corrections</summary>
 
 saved manual encounter commands in English DC/Altered with explicit R or optional Auto-button start and stop on Windows/native Linux; the idle button defaults Off under F1 > Engine; Stop remains visible during replay; four approved English wording corrections (three matching Altered passages), and one directly translated DC picture card. Existing saves, battle rules and the separate experimental UI are unchanged.
@@ -172,7 +178,7 @@ The following features shipped in v0.3.6. An earlier README placed them under v0
 6. On test.10 or older, [download the test.11 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of **Player.exe** and the 43 **Map** files.
 7. On test.11, [download the test.12 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 45 **Map** files.
 8. [Download the test.13 update](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.13/seraphic-blue-update-v0.1.0-test.13.zip). Extract it into the same folder, beside **RPG_RT.ldb**, and allow replacement of the 22 **Map** files.
-9. On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.8 EN + MOD (DC) build, extract it to a new folder and copy your **saves** and **config** folders into it. Keep the new **EasyRPG.ini**.
+9. On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.9 EN + MOD (DC) build, extract it to a new folder and copy your **saves** and **config** folders into it. Keep the new **EasyRPG.ini**.
 10. Copy your **saves** and **config** folders. Keep the new release's **EasyRPG.ini** so its current controls and label tables remain enabled. Saves from earlier tests load normally.
 
 </details>

@@ -1,4 +1,4 @@
-# Install or update v0.3.8
+# Install or update v0.3.9
 
 ## Fresh installation
 

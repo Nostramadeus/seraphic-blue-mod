@@ -2,11 +2,11 @@
 
 ## Current and historical Players
 
-[seraphic-blue-player-source-v0.3.8.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-player-source-v0.3.8.zip) contains the current exact source and the historical sb4 tree:
+[seraphic-blue-player-source-v0.3.9.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-player-source-v0.3.9.zip) contains the current exact source and the historical sb4 tree:
 
 | Binary | Matching source | Player revision |
 | --- | --- | --- |
-| v0.3.8 Windows/native Linux, 0.8.1.1-sb7 | Current export, Player/ | 5e7419fb42d306ad91a9207bf263541555a294c5 |
+| v0.3.9 Windows/native Linux, 0.8.1.1-sb7 | Current export, Player/ | 5e7419fb42d306ad91a9207bf263541555a294c5 |
 | v0.3.7 Windows/native Linux, 0.8.1.1-sb7 | [Earlier sb7 source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-player-source-v0.3.7.zip), Player/ | 978c64562d3b6a0b4061ba82bfb39aaa41b2d24b |
 | v0.3.6 Windows/native Linux, 0.8.1.1-sb7 | [Earlier sb7 source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-player-source-v0.3.6.zip), Player/ | 77f13975ce79a592286a09eba271136741eb780e |
 | v0.3.4 / Altered v0.3.5, 0.8.1.1-sb6 | [Earlier sb6 source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip), Player/ | eb421f52e66ccffd0871587a352037c4e31982f6 |
@@ -32,3 +32,5 @@ Player is GPLv3; liblcf is MIT. Dependencies retain their own licenses and notic
 ## Earlier source exports
 
 The [test.8 source export](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.8/seraphic-blue-player-source-v0.1.0-test.8.zip) applies to the earlier test.8 Player, and includes its three-file change note. The [test.6 source export](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.6/seraphic-blue-player-source-v0.1.0-test.6.zip) remains archived. The old test.2 native Player used its own separate source; it is replaced in v0.3.3.
+
+The v0.3.9 game-data release reuses the exact v0.3.8 engine binaries. Their build label remains v0.3.8. The current source export adds the guarded v0.3.8-to-v0.3.9 wording helper and data; no new engine revision is implied.

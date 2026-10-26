@@ -1,3 +1,7 @@
+# v0.3.9 scope
+
+Game text only: final reviewed English corrections, including source-matched Altered equivalents. Windows/native Linux engines are byte-identical to v0.3.8, so their version label remains v0.3.8. Focused message/choice rendering and exact command-splice checks supplement the inherited engine tests. Japanese game data and save format are unchanged. Modern UI is excluded.
+
 # v0.3.8 additions
 
 The saved-command feature is bound to the accepted English DC/Altered battle sources and uses the native permission, resource, target and command-commit paths. Windows native fixtures covered both editions and a four-character nine-action mix of ability, item, defend and ordinary attacks. Stop, unavailable targets/items/TP and exhausted commands were checked. An independent bounded Windows check exercised truncated newer recording data, a newer unavailable-record tombstone, equal-generation conflicts and a blocked write without losing the earlier valid file.

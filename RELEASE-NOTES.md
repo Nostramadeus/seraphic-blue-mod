@@ -1,3 +1,15 @@
+# v0.3.9 — final English wording corrections
+
+Final English wording corrections from the additional Japanese/English review. The 23 reviewed findings are corrected, with established neutral terminology applied consistently across profile variants. Exact matching passages are updated in Altered; edition-specific text stays separate. Complete meaning, control codes and conditional versions are preserved.
+
+This is a **game-data update**. It keeps the verified Windows and native Linux engines from v0.3.8, including saved encounter commands, the optional Auto button and song banner. The engine About/version label therefore still says v0.3.8; the game package and updater identify this release as v0.3.9. The modern UI prototype is excluded. Japanese game data is unchanged.
+
+**Update:** use the bundled **updater-v1.1** GUI, or extract to a neighboring folder and copy saves/settings from the same edition. Keep the new EasyRPG.ini. The README retains the restored mode diagram, illustrated headings and current setup/controls.
+
+Validation covers exact message/choice command changes, complete wording and controls, focused native text rendering and guarded application. This is not a new full playthrough or a physical Steam Deck test.
+
+## Earlier release — v0.3.8
+
 # v0.3.8 — saved encounter commands and English corrections
 
 Available in the **English DC and Altered builds** on Windows and native Linux. The Japanese build includes the updated Player; its battle data is outside these two accepted Auto profiles.

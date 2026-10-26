@@ -1,8 +1,8 @@
 {
-  "releaseTag": "v0.3.8",
-  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/",
+  "releaseTag": "v0.3.9",
+  "releaseAssets": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/",
   "sourceBundle": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.2/seraphic-blue-dependency-sources-v0.1.0-test.2.zip",
-  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-player-source-v0.3.8.zip",
+  "playerSource": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-player-source-v0.3.9.zip",
   "packages": [
     {
       "pkgbase": "mingw-w64-readline",
@@ -959,7 +959,7 @@
     "playerVersion": "0.8.1.1-sb7",
     "manifest": "native-linux/BUNDLED-LIBS.tsv",
     "sourceManifest": "native-linux/DEPENDENCY-SOURCES.tsv",
-    "sourceArchive": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-player-source-v0.3.8.zip",
+    "sourceArchive": "https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-player-source-v0.3.9.zip",
     "sdlVersion": "2.30.9",
     "fluidLiteRevision": "4a01cf1c67419e71da971d209f2855bbf4f3bab8",
     "dependencySourceArchives": 71,
@@ -1076,7 +1076,7 @@
       "sourcePath": "Player/",
       "sha256": "289e36e40dca85ac0bb3101716ab5b0a564aa196f9cc6a2e5596a6df27e28d7f",
       "releaseTags": [
-        "v0.3.8"
+        "v0.3.9"
       ]
     },
     "currentLinux": {
@@ -1085,7 +1085,7 @@
       "sourcePath": "Player/",
       "sha256": "bb27ca32c31293bebc6e5e4521be888914e24a3a58d711daefbba8a99bfe4713",
       "releaseTags": [
-        "v0.3.8"
+        "v0.3.9"
       ]
     },
     "historicalWindowsSb4": {
@@ -1246,5 +1246,6 @@
       },
       "note": "Earlier sb6 Windows/native Linux binaries retain their matching v0.3.4 source. The Altered v0.3.5 hotfix used the same binaries."
     }
-  ]
+  ],
+  "engineReuseNote": "Game-data release; exact Windows/Linux engine binaries and engine build label retained from v0.3.8."
 }

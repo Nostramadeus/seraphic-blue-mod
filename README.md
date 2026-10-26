@@ -5,14 +5,16 @@
 
 An English retranslation of **Seraphic Blue**, Tempura’s 2004 RPG Maker 2000 game. Includes mouse controls, message history, speed settings, fewer random battles and optional cheats. You can also play the **DC Altered** fan patch in English.
 
-**v0.3.8** · Complete game downloads · Windows and Linux Players included
+**v0.3.9** · Complete game downloads · Windows and Linux Players included
+
+Final reviewed English wording fixes. Includes the bundled GUI updater; the existing game interface is retained.
 
 [Download & start](#downloads) · [Controls](#controls) · [Update](#keep-your-saves) · [Player guide](PLAYER-GUIDE.md) · [Help & credits](#help)
 
 <a name="downloads"></a>
 ## Download and start
 
-**First time playing? [Download English + MOD + Altered — v0.3.8](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-EN-Altered-v0.3.8.zip).**
+**First time playing? [Download English + MOD + Altered — v0.3.9](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-Altered-v0.3.9.zip).**
 
 <img src="docs/img/banners/downloads.png" width="900" alt="Downloads">
 
@@ -29,11 +31,11 @@ That choice keeps Altered’s extra maps, chatter, gear and shops with Original-
 
 | Download | Use it for |
 | --- | --- |
-| **[English + MOD + Altered](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-EN-Altered-v0.3.8.zip)** | DC Altered Ver2.13 in English. A new game, or an Altered save from v0.2.0 onward. |
-| **[English + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-EN-v0.3.8.zip)** | Director’s Cut. Keeps DC saves from earlier tests, the 2016 English patch and the Japanese original. |
-| **[Japanese + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-JP-v0.3.8.zip)** | Japanese Director’s Cut with a Japanese MOD menu. |
+| **[English + MOD + Altered](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-Altered-v0.3.9.zip)** | DC Altered Ver2.13 in English. A new game, or an Altered save from v0.2.0 onward. |
+| **[English + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-v0.3.9.zip)** | Director’s Cut. Keeps DC saves from earlier tests, the 2016 English patch and the Japanese original. |
+| **[Japanese + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-JP-v0.3.9.zip)** | Japanese Director’s Cut with a Japanese MOD menu. |
 
-All three downloads are **v0.3.8**. Each ZIP contains the full game, Windows and native Linux Players **0.8.1.1-sb7**, and launchers. DC builds use Original-style rules and have no mode choice. **DC saves do not transfer to Altered.**
+All three downloads are **v0.3.9**. Each ZIP contains the full game, Windows and native Linux Players **0.8.1.1-sb7**, and launchers. DC builds use Original-style rules and have no mode choice. **DC saves do not transfer to Altered.**
 
 [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases) · [Compare the three Altered modes](PLAYER-GUIDE.md#modes) · [Detailed installation](INSTALL.md)
 
@@ -52,7 +54,7 @@ All three downloads are **v0.3.8**. Each ZIP contains the full game, Windows and
 
 **Already have a working Steam shortcut? Keep its paths.** The old `--save-path saves` option fails if that folder does not exist. Direct **Player.exe** shortcuts bypass the launcher that creates it, and may save **SaveNN.lsd** beside Player.exe. Changing the save path later can hide existing saves from the load menu. [Details](STEAM-DECK.md#windows-player-through-proton).
 
-The **v0.3.8 ZIPs include empty saves and config folders**. Blank Launch Options remain the recommended Proton setup.
+The **v0.3.9 ZIPs include empty saves and config folders**. Blank Launch Options remain the recommended Proton setup.
 
 </details>
 
@@ -113,7 +115,7 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 
 <img src="docs/img/banners/saves.png" width="900" alt="Keep your saves">
 
-**Keep DC saves on DC. Keep Altered saves on Altered.** Altered saves from v0.2.0 onward load in v0.3.8. DC also accepts saves from the Japanese original, the 2016 patch and earlier MOD tests.
+**Keep DC saves on DC. Keep Altered saves on Altered.** Altered saves from v0.2.0 onward load in v0.3.9. DC also accepts saves from the Japanese original, the 2016 patch and earlier MOD tests.
 
 ### Included updater
 
@@ -124,7 +126,7 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 
 The updater checks free space, verifies the download and copied saves/settings/Auto recordings, and installs into a **neighboring version folder**. It keeps the old game and a verified backup, and preserves the new **EasyRPG.ini**. Startup checks offer **Install update** or **Play current**; offline checks and check errors continue the current game. You can disable checks in the setup tool.
 
-The updater is included in every v0.3.8 game ZIP; the separate downloads above are only needed for older installs. Keep its complete folder together. Direct **Player.exe** / **native-linux/Player** shortcuts skip startup checks. Steam shortcuts are not changed automatically: point them at the desired version’s launcher if you want checks. Existing working Proton shortcuts can stay as they are. [Updater instructions and limits](updater-v1.1/README.md).
+The updater is included in every v0.3.9 game ZIP; the separate downloads above are only needed for older installs. Keep its complete folder together. Direct **Player.exe** / **native-linux/Player** shortcuts skip startup checks. Steam shortcuts are not changed automatically: point them at the desired version’s launcher if you want checks. Existing working Proton shortcuts can stay as they are. [Updater instructions and limits](updater-v1.1/README.md).
 
 ### Manual update — four steps
 
@@ -136,7 +138,7 @@ The updater is included in every v0.3.8 game ZIP; the separate downloads above a
 The included launchers store saves in **saves** inside the extracted game folder. A custom `--save-path` or direct Player shortcut may use another location: copy from the location you actually used. [Full migration instructions](INSTALL.md#update-and-keep-saves) · [Archived test-release patches](README-HISTORY.md#old-updates).
 
 <a name="whats-new"></a>
-## What is new in v0.3.8
+## What is new in v0.3.9
 
 **Saved battle commands:** win manually, then press **R** at the start of a matching encounter. The idle on-screen button starts hidden; enable **F1 → Engine → Show Auto button** if wanted. The update also includes four English wording corrections (three matching Altered passages) and one directly translated **DC-only** picture card.
 
@@ -376,7 +378,7 @@ These original-source questions are parked. No substitute maps or speculative sc
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.8/seraphic-blue-fullgame-EN-v0.3.8.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-v0.3.9.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh
