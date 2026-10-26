@@ -8,7 +8,9 @@ Player.exe is the game-running program. Its DLL helper files are already include
 
 ## Updating an existing installation
 
-Close the game. Download the new full game ZIP, extract it, and copy the **saves** folder from your old game folder into the new one. Saves from any earlier test release, the 2016 English patch or the Japanese original load as they are. Details: [Keep your saves](README.md#keep-your-saves).
+[Download the Windows GUI updater](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.0.0.zip) and extract it. Open **SeraphicBlue-Update.exe**, choose the old game folder, and click **Update to latest**. It creates a new same-edition copy, verifies saves/settings, and keeps the old installation and a separate backup. Keep **Update.ps1** beside the program.
+
+Historical patch installs and custom save paths use the [manual update steps](INSTALL.md#update-and-keep-saves). DC and Altered saves stay on their matching editions.
 
 ## Controls
 

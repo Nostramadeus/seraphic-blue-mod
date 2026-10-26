@@ -6,7 +6,7 @@
 
 **Status:** released. Current version: **v0.3.7 for all three builds**. Bug reports and questions: [Issues](https://github.com/Nostramadeus/seraphic-blue-mod/issues).
 
-**v0.3.7:** clearer English picture text on 83 DC cards and 75 matching Altered cards, plus an optional song title banner. Turn it on with **F1 → Engine → Song title banner**; it starts **Off**. The experimental menu redesign is not included. **Update without restarting:** extract the matching new full game into a new folder, copy your **saves** and **config** folders, and keep the new **EasyRPG.ini**. DC saves stay on DC; Altered saves stay on Altered. [Update steps](INSTALL.md#update-and-keep-saves).
+**v0.3.7:** clearer English picture text on 83 DC cards and 75 matching Altered cards, plus an optional song title banner. Turn it on with **F1 → Engine → Song title banner**; it starts **Off**. The experimental menu redesign is not included. **Windows GUI updater:** [download the updater](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.0.0.zip), extract it, and open **SeraphicBlue-Update.exe**. Choose the old game folder, then click **Update to latest**. It creates a new matching-edition copy with verified saves/settings and keeps the old folder. **Linux / manual update:** extract the matching new full game into a new folder, copy **saves** and **config**, and keep the new **EasyRPG.ini**. DC saves stay on DC; Altered saves stay on Altered. [Update steps](INSTALL.md#update-and-keep-saves).
 
 **Open MOD or Altered’s Config.** Press **Escape** to open the game menu, select **MOD**, then choose the key below.
 

@@ -8,6 +8,16 @@
 
 Keep Player.exe, its DLLs, **native-linux**, game data and launchers together. [Windows](WINDOWS.md) · [Linux](LINUX.md) · [Steam Deck](STEAM-DECK.md).
 
+## Windows GUI updater
+
+1. Close the game. [Download the updater](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.0.0.zip) and extract it into its own folder.
+2. Open **SeraphicBlue-Update.exe**. Click **Choose...** and select the old game folder containing **PLAY.cmd**.
+3. Click **Update to latest**. After the checksum, extracted files and copied saves/settings are verified, click **Play updated copy**.
+
+The old game stays in place. The updater keeps a separate verified save/settings backup, creates a new same-edition folder and preserves its new **EasyRPG.ini**. Keep **Update.ps1** beside the updater program. No Python installation is needed. Already on the latest version? It says so without reinstalling.
+
+This supports stable full-game releases with an intact **fullgame-manifest.json** and the standard launcher paths. Historical patch-only copies, modified databases, custom save locations, Linux and Steam Deck use the manual steps below. [Updater details and source](updater/README.md).
+
 ## Update and keep saves
 
 1. Close the game. Back up the old **saves** and **config** folders.
