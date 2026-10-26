@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.6
+
+All three builds use Player 0.8.1.1-sb7. Visible-character click targeting, native counter interaction, unique adjacent transfer targeting and pure-speed arrival handling are repaired. English shops add a read-only Tab comparison for weapon/frame totals. Altered retains click destinations while using Shift dash, updates the MOD hover hint, exposes HP Supplement controls when free healing is off, starts new Extra Content HP Auto Fill off, and gives ordinary rewards for manual FREE encounters. Encounter countdowns refresh after an actual rate change. HP refill notices and Sphere descriptions/results follow the selected free-healing setting. English titles keep their full text on screen; 101 approved font cards per English edition are replaced, with 84 mixed-layout cards held unchanged. One minor Counter Attack wording correction is included. Save format unchanged; existing saves retain their settings.
+
+## v0.3.5
+
+Altered-only two-map hotfix: restores Map0022 and Map0088, including Turku Inn upstairs. Windows/native Linux Player and DC downloads unchanged from v0.3.4.
+
+## v0.3.4
+
+All three builds use Player 0.8.1.1-sb6. Consistent menu hover, keyboard handoff and click confirmation. Game text, images, event data and save format unchanged from v0.3.3.
+
 ## v0.3.3
 
 All three builds. Proton title-screen crash fix from AryaNetwork (issue #1), checked with audio-enabled title startup on the final Windows Player through an inaudible SDL dummy device. Native Linux Player rebuilt from the same sb5 source as Windows; custom controls and text settings included. Altered credits now show the 2016 translator/proofreader cards. Current Player source export and build information supplied. Setup and compatibility docs updated. Both DC builds restore the shipped mouse controls, native battle panel and timeline name tables/assets. Altered gains full timeline names, including DRIVE/red markers and conditional Er names. English save slots retain the full “Blue-Haired Woman” name beside all four faces. Physical Steam Deck/Proton unverified. Retained bilingual labels, original artwork and partially Japanese DC EN manual are documented.

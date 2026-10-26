@@ -1,4 +1,4 @@
-# Install or update v0.3.4
+# Install or update v0.3.6
 
 ## Fresh installation
 

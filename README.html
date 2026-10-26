@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Seraphic Blue MOD — quick start</title><style>body{max-width:960px;margin:24px auto;padding:22px;font:17px/1.65 system-ui;color:#172337;background:#f4f7fb}h1{font-size:30px;line-height:1.25}h2{margin-top:32px;font-size:24px}a{color:#155b9e;overflow-wrap:anywhere}nav{display:flex;gap:12px;flex-wrap:wrap;background:#e1eaf5;padding:16px}li{margin:9px 0}p{overflow-wrap:anywhere}@media(max-width:600px){body{padding:16px}h1{font-size:27px}}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{padding:12px;text-align:left;vertical-align:top;border:1px solid #c8d6e6}th{background:#dceaf7}tr:nth-child(even){background:#eaf1f8}pre{line-height:1.5;white-space:pre-wrap}strong{color:#102e50}</style><figure><img src="docs/img/banners/hero.png" width="900" alt="Seraphic Blue MOD: English retranslation, MOD menu, DC Altered build" style="max-width:100%;height:auto"></figure>
 <p><strong>Contact:</strong> <a href="mailto:afrotankrob@gmail.com">afrotankrob@gmail.com</a></p>
 <p>*Seraphic Blue* (Tempura, 2004, RPG Maker 2000), in English again: every dialogue box retranslated from the Japanese, a MOD menu (fewer random battles, speed, cheats, message history, mouse play), and an optional English build of the *DC Altered* fan patch. One ZIP per build; no original game, patching or extra downloads needed.</p>
-<p><strong>Status:</strong> released. Current versions: <strong>Altered v0.3.5</strong>; <strong>DC EN / JP v0.3.4</strong>. Bug reports and questions: <a href="https://github.com/Nostramadeus/seraphic-blue-mod/issues">Issues</a>.</p>
-<p><strong>Altered v0.3.5 hotfix:</strong> restores two missing maps, including the upstairs map in Turku Inn. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.5/seraphic-blue-fullgame-EN-Altered-v0.3.5.zip">Download the corrected Altered game</a>, or get the small repair ZIP from the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/tag/v0.3.5">hotfix release</a>. For an existing v0.3.4 installation, copy <strong>Map0022.lmu</strong> and <strong>Map0088.lmu</strong> into the game folder beside <strong>Player.exe</strong>. Keep your saves. The DC builds and Player are unchanged.</p>
+<p><strong>Status:</strong> released. Current version: <strong>v0.3.6 for all three builds</strong>. Bug reports and questions: <a href="https://github.com/Nostramadeus/seraphic-blue-mod/issues">Issues</a>.</p>
+<p><strong>v0.3.6:</strong> mouse interaction fixes, numerical weapon/frame comparison, visible HP Supplement controls when free healing is off, and corrected English title placement. <strong>Update without restarting:</strong> extract the matching new full game into a new folder, copy your <strong>saves</strong> and <strong>config</strong> folders, and keep the new <strong>EasyRPG.ini</strong>. DC saves stay on DC; Altered saves stay on Altered. <a href="INSTALL.md#update-and-keep-saves">Update steps</a>.</p>
 <p><strong>Open MOD or Altered’s Config.</strong> Press <strong>Escape</strong> to open the game menu, select <strong>MOD</strong>, then choose the key below.</p>
 <div class="table-scroll"><table>
 <tr><th>While MOD is selected</th><th>What opens</th></tr>
@@ -24,7 +24,7 @@
 <ul>
 <li><strong>Extra content = first play (recommended): MANY on, BATTLE off, all five ARRANGE switches Off.</strong> That is Altered’s extra content (side maps, chatter, gear, shops) with Original-style battle settings: BATTLE off and the five ARRANGE options Off.</li>
 </ul>
-<p><strong>New Game &gt; Extra Content (Recommended).</strong> That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift" style="vertical-align:middle"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu&#x27;s ARRANGE page. TP Auto Fill is in the Supplement screen. <strong>Full HP after battle</strong> and <strong>HP Auto Fill</strong> are separate: Extra Content starts with free full-HP recovery <strong>Off</strong>, but reserve-funded HP Auto Fill <strong>On</strong>. See the healing note below.</p>
+<p><strong>New Game &gt; Extra Content (Recommended).</strong> That is the whole setup. The choice itself turns MANY on, keeps BATTLE off, sets the five ARRANGE switches to Off (Original) and starts the weak-enemy skip and the fewer-members EXP bonus off, like Original. Everything stays changeable later: Config (hold <img src="docs/img/keys/shift.svg" height="22" alt="Shift" style="vertical-align:middle"> Shift about six seconds for the hidden DEEP SETTING panel: MANY / BATTLE), Config page 3, and the MOD menu&#x27;s ARRANGE page. <strong>Full HP after battle</strong> and reserve-funded <strong>HP Auto Fill</strong> are separate. <strong>Both start Off in new Extra Content games.</strong> With free recovery Off, the Supplement screen shows both HP and TP reserves and their Auto Fill controls. <a href="#healing-controls">Change healing on an existing save</a>.</p>
 <figure><img src="docs/images/new-game-choice.png" width="480" alt="New Game choice box: About Game Modes, Original Mode, Extra Content (Recommended), Arrange Mode" style="max-width:100%;height:auto"></figure>
 <details><summary>&lt;b&gt;Open: what each New Game choice sets&lt;/b&gt;</summary>
 <div class="table-scroll"><table>
@@ -34,7 +34,7 @@
 <tr><td>Five ARRANGE switches (MOD menu)</td><td>On (no effect while MANY and BATTLE are off)</td><td>Off (Original)</td><td>On (Altered)</td></tr>
 <tr><td>Skip Battles with Weak Enemies (Config page 3)</td><td>OFF</td><td>OFF</td><td>ON</td></tr>
 <tr><td>Character EXP Gain (Config page 3)</td><td>ON1</td><td>ON1</td><td>ON2</td></tr>
-<tr><td>HP Auto Fill</td><td>Off</td><td>On</td><td>On</td></tr>
+<tr><td>HP Auto Fill</td><td>Off</td><td>Off</td><td>On</td></tr>
 <tr><td>TP Auto Fill</td><td>Off</td><td>Off</td><td>On</td></tr>
 <tr><td>Save from the game menu</td><td>Off</td><td>On</td><td>On</td></tr>
 </table></div>
@@ -63,11 +63,11 @@
 </details>
 <figure><img src="docs/img/banners/trip-original.png" width="900" alt="A dungeon trip: Original rules" style="max-width:100%;height:auto"></figure>
 <details><summary>&lt;b&gt;Open: A dungeon trip, Original rules: the seven steps as a diagram and as text&lt;/b&gt;</summary>
-<p>Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD&#x27;s &quot;Escape always works&quot; row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). This is the Original-style attrition loop. Extra Content uses the five ARRANGE options Off, but starts HP Auto Fill On and retains Altered’s other changes; see the healing note under ARRANGE.</p>
+<p>Same party, same dungeon, same three fights and one boss. Each step: what the game does, then what the player is thinking. No story content. Assumes the MOD&#x27;s &quot;Escape always works&quot; row is Off (the default on the Altered build since v0.2.1; the DC builds start it On until v0.2.2, so turn it Off in the MOD menu there). This is the Original-style attrition loop. Extra Content starts the five ARRANGE options and HP Auto Fill Off, while retaining Altered’s other changes; see the healing note under ARRANGE.</p>
 <figure><img src="docs/img/flow-original.svg" width="900" alt="Original rules: the seven steps below as a diagram, what the game does and what the player is thinking" style="max-width:100%;height:auto"></figure>
 <p>1. <strong>You enter the dungeon.</strong> HP is full, the SUP.HP / SUP.TP pools are full (your refill reserve), the bag holds 12 heals.</p>
 <p>   - &quot;The pools are my budget for this whole trip. Every point I spend comes out of them.&quot;</p>
-<p>2. <strong>Fight 1, three weak enemies.</strong> You take 300 damage. After the win, HP stays where it is. If you switched on the game&#x27;s own Auto Fill option, HP refills and the SUP.HP pool pays for it 1:1 (Auto Fill is off at new game in Original mode; on in extra-content mode).</p>
+<p>2. <strong>Fight 1, three weak enemies.</strong> You take 300 damage. After the win, HP stays where it is. If you switched on the game&#x27;s own Auto Fill option, HP refills and the SUP.HP pool pays for it 1:1 (Auto Fill starts off in both Original and Extra Content modes).</p>
 <p>   - &quot;Fine, cheap fight. Refill now from the pool, or carry the damage and save the pool? Pool first, it is early.&quot;</p>
 <p>3. <strong>Fight 2, a tougher pair.</strong> One enemy inflicts Slow. You weigh curing it or hitting harder.</p>
 <p>   - &quot;If I cure, that is an action lost. If I ignore it, I take two more hits. Cure, the boss is still ahead.&quot;</p>
@@ -107,11 +107,11 @@
 <p><strong>Downloads:</strong> one ZIP per build. Pick the row that matches your choice above.</p>
 <div class="table-scroll"><table>
 <tr><th>Build</th><th>What it is</th><th>Download</th></tr>
-<tr><td><strong>EN + MOD + Altered</strong> (v0.3.5) ★ <strong>Recommended for a first play</strong></td><td>The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 to v0.3.3 Altered builds. <a href="#altered-build-en--mod--altered">What is Altered?</a></td><td><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.5/seraphic-blue-fullgame-EN-Altered-v0.3.5.zip">seraphic-blue-fullgame-EN-Altered-v0.3.5.zip</a></strong></td></tr>
-<tr><td><strong>EN + MOD (DC)</strong> (v0.3.4)</td><td>The English Director&#x27;s Cut with English corrections and the MOD. Earlier DC saves keep working.</td><td><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-v0.3.4.zip">seraphic-blue-fullgame-EN-v0.3.4.zip</a></strong></td></tr>
-<tr><td><strong>JP + MOD (DC)</strong> (v0.3.4)</td><td>The Japanese Director&#x27;s Cut with the MOD (Japanese MOD menu).</td><td><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-JP-v0.3.4.zip">seraphic-blue-fullgame-JP-v0.3.4.zip</a></strong></td></tr>
+<tr><td><strong>EN + MOD + Altered</strong> (v0.3.6) ★ <strong>Recommended for a first play</strong></td><td>The English *DC Altered* Ver2.13 fan patch with the MOD. New game, or a save from the v0.2.0 onward Altered builds. <a href="#altered-build-en--mod--altered">What is Altered?</a></td><td><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-Altered-v0.3.6.zip">seraphic-blue-fullgame-EN-Altered-v0.3.6.zip</a></strong></td></tr>
+<tr><td><strong>EN + MOD (DC)</strong> (v0.3.6)</td><td>The English Director&#x27;s Cut with English corrections and the MOD. Earlier DC saves keep working.</td><td><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip">seraphic-blue-fullgame-EN-v0.3.6.zip</a></strong></td></tr>
+<tr><td><strong>JP + MOD (DC)</strong> (v0.3.6)</td><td>The Japanese Director&#x27;s Cut with the MOD (Japanese MOD menu).</td><td><strong><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-JP-v0.3.6.zip">seraphic-blue-fullgame-JP-v0.3.6.zip</a></strong></td></tr>
 </table></div>
-<p><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases">All downloads</a>. Each ZIP includes its game, the Windows and native Linux Players (0.8.1.1-sb6), and launchers. v0.3.5 is a map-only Altered hotfix; the DC downloads remain v0.3.4.</p>
+<p><a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases">All downloads</a>. Each ZIP includes its game, the Windows and native Linux Players (0.8.1.1-sb7), and launchers.</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>Download → Extract All → double-click PLAY.cmd → Play</code></pre>
 <p><strong>Setup:</strong> <a href="WINDOWS.md">Windows</a> · <a href="LINUX.md">Linux / Proton</a> · <a href="STEAM-DECK.md">Steam Deck</a>. On Windows, double-click <strong>PLAY.cmd</strong>. On Linux, run <strong>sh play-linux.sh</strong>. The linked Linux and Deck guides explain both native and Proton setup.</p>
 <p><strong>Controls:</strong> <img src="docs/img/keys/enter.svg" height="22" alt="Enter" style="vertical-align:middle"> confirms; <img src="docs/img/keys/escape.svg" height="22" alt="Esc" style="vertical-align:middle"> goes back. <strong>Fast-forward:</strong> hold <img src="docs/img/keys/f.svg" height="22" alt="F" style="vertical-align:middle"> for 3x speed, hold <img src="docs/img/keys/g.svg" height="22" alt="G" style="vertical-align:middle"> for 10x (EasyRPG Player feature; both speeds adjustable in Settings &gt; Input, controller: right trigger).</p>
@@ -130,10 +130,10 @@
 <figure><img src="docs/img/banners/saves.png" width="900" alt="Keep your saves" style="max-width:100%;height:auto"></figure>
 <p><strong>Keep your saves:</strong> three steps.</p>
 <p>1. Close the game.</p>
-<p>2. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-v0.3.4.zip">Download the new full game</a> (EN + MOD, DC) and extract it.</p>
+<p>2. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip">Download the new full game</a> (EN + MOD, DC) and extract it.</p>
 <p>3. Copy the <strong>saves</strong> and <strong>config</strong> folders from your old game folder into the new one. Done.</p>
 <p>Dropped the game years ago? Saves from the Japanese original or the 2016 English patch load here too: copy your <strong>SaveXX.lsd</strong> files into the <strong>saves</strong> folder.</p>
-<p>Altered build: saves from the v0.2.0 to v0.3.3 Altered builds load in v0.3.4 the same way (copy the <strong>saves</strong> folder from the old SeraphicBlue-Altered folder). DC saves do not load in the Altered build; keep them on the EN + MOD (DC) build.</p>
+<p>Altered build: saves from v0.2.0 onward load in v0.3.6 the same way. Copy the <strong>saves</strong> and <strong>config</strong> folders from the old SeraphicBlue-Altered folder; keep the new <strong>EasyRPG.ini</strong>. DC saves do not load in the Altered build; keep them on the EN + MOD (DC) build.</p>
 <details><summary>Smaller download: update ZIPs instead (step by step, test releases only)</summary>
 <p>1. Close the game. Keep a backup of your actual save folder.</p>
 <p>2. On test.6 or older, first apply the <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.7/seraphic-blue-image-update-v0.1.0-test.7.zip">test.7 image update</a> (extract beside <strong>RPG_RT.ldb</strong>, replace the Picture files).</p>
@@ -143,7 +143,7 @@
 <p>6. On test.10 or older, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.11/seraphic-blue-update-v0.1.0-test.11.zip">download the test.11 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of <strong>Player.exe</strong> and the 43 <strong>Map</strong> files.</p>
 <p>7. On test.11, <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.12/seraphic-blue-update-v0.1.0-test.12.zip">download the test.12 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of the 45 <strong>Map</strong> files.</p>
 <p>8. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.1.0-test.13/seraphic-blue-update-v0.1.0-test.13.zip">Download the test.13 update</a>. Extract it into the same folder, beside <strong>RPG_RT.ldb</strong>, and allow replacement of the 22 <strong>Map</strong> files.</p>
-<p>9. On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.4 EN + MOD (DC) build, extract it to a new folder and copy your <strong>saves</strong> folder into it (v0.3.4 adds consistent menu hover; the earlier English corrections and saves are unchanged).</p>
+<p>9. On test.13, v0.2.0, v0.3.0 or v0.3.1 (DC): download the v0.3.6 EN + MOD (DC) build, extract it to a new folder and copy your <strong>saves</strong> and <strong>config</strong> folders into it. Keep the new <strong>EasyRPG.ini</strong>.</p>
 <p>10. Copy your <strong>saves</strong> and <strong>config</strong> folders. Keep the new release&#x27;s <strong>EasyRPG.ini</strong> so its current controls and label tables remain enabled. Saves from earlier tests load normally.</p>
 </details>
 <details><summary>Older install (test.1 to test.5): optional engine upgrade</summary>
@@ -159,7 +159,7 @@
 <details><summary>Open: The Altered build: what the fan patch is, what this build adds, the ARRANGE switches, Original-mode fixes, MOD menu differences</summary>
 <p><strong>What it is.</strong> *Seraphic Blue (DC Altered Version) Ver2.13* is an unofficial fan patch for the Director&#x27;s Cut by <strong>腐林檎</strong> (&quot;Rotten Apple&quot;) and <strong>時空転移プリン</strong> (&quot;Space-Time Warp Pudding&quot;, ◆YuikkIDGis). Tempura (Sakaki), the original author, was not involved; the Altered authors ask players not to contact Sakaki or the Blue Field boards about it. Credits from the Altered manual: music by 氷石彩亜 (FREEDOM HOUSE 2nd), 星野春日 (Muzie), 煉獄小僧 (煉獄庭園) and Ciel (Le Ciel Bleu); sound effects by WEB WAVE LIB; backgrounds by aska (Silverry moon light); battle-animation graphics from Character Maker Pro (Enterbrain); help from the 2ch Blue Field threads and 風邪薬 ◆RohTo3cNBI. The Altered manual (Japanese) is included in the ZIP (<strong>ManualAlt</strong>, <strong>改造版マニュアル.htm</strong>).</p>
 <p><strong>What this build adds:</strong> the whole game in English (Altered&#x27;s new text translated, its Japanese picture text redrawn in English), the MOD menu, the Original-mode choices below, and the standard RPG Maker files the game expects (so no separate runtime install is needed). EasyRPG Player is included and required: the database has 8,040 variables and picture ids up to 78, which the old RPG_RT.exe cannot run (it is not included).</p>
-<p><strong>New game only</strong> (saves from the v0.2.0 to v0.3.3 Altered builds carry over). Start a new game in this build. Keep DC saves on the EN + MOD (DC) build (v0.3.4; test.13, v0.2.0, v0.3.0 and v0.3.1 saves load there). The ZIP extracts to its own <strong>SeraphicBlue-Altered</strong> folder; read <strong>IMPORTANT README (MUST READ).txt</strong> first.</p>
+<p><strong>New Altered game, or an existing Altered save from v0.2.0 onward.</strong> Keep DC saves on the EN + MOD (DC) build (v0.3.6; earlier DC saves load there). The ZIP extracts to its own <strong>SeraphicBlue-Altered</strong> folder; read <strong>IMPORTANT README (MUST READ).txt</strong> first.</p>
 <h3>ARRANGE switches (MOD menu, Altered build only)</h3>
 <p>Each row is <strong>On (Altered)</strong> or <strong>Off (Original)</strong>. The default is On in Arrange Mode; the Extra Content choice starts them Off. The HP and counter rows use <strong>MANY or BATTLE</strong>. The item-limit and extra escape-rule rows use <strong>MANY</strong>. The enemy row controls selected MANY/shared changes. With both native modes off, these overrides have no effect. These five switches restore the listed rule groups; Altered’s other fixes and native BATTLE mechanics remain. The enemy-stat option does not turn BATTLE off; Extra Content keeps BATTLE off separately.</p>
 <div class="table-scroll"><table>
@@ -174,11 +174,16 @@
 <li><strong>With BATTLE on, the Escape and Enemy rows follow BATTLE&#x27;s own rules.</strong></li>
 <li><strong>Not switchable</strong> (always Altered in Arrange mode): critical hits, Charge, guard, pre-emptive odds, low-difficulty areas, Quick/Slow and Clever/Forgetful checks, value caps, HP/TP display, level-learned abilities, sphere duplicate bonus, stat coefficients, battle result multipliers, full-heal bottles, revive heals survivors, single-target hit roll, village patterns. Altered&#x27;s own Config can switch off the random turn order, the luck elements and the timing hits.</li>
 </ul>
-<p><strong>Why HP can refill with “Full HP after battle” Off.</strong> That switch controls <strong>free</strong> recovery. The game’s separate <strong>HP Auto Fill</strong> spends one point of <strong>SUP.HP</strong> for each HP restored, stopping when the reserve runs out. Extra Content starts with this Auto Fill on. MANY’s native Supplement screen shows <strong>only SUP.TP</strong> and offers only the TP Auto Fill toggle, so the HP reserve can be used without being shown there. <strong>TP is separate:</strong> abilities spend TP; TP Auto Fill draws from SUP.TP when enabled. A Supplement level-up raises the reserve’s capacity; it does not refill its current amount. Rest/refill sources replenish the reserves.</p>
+<a name="healing-controls"></a>
+<p><strong>Two separate healing settings.</strong> <strong>Full HP after battle</strong> provides free recovery. <strong>HP Auto Fill</strong> spends one point of <strong>SUP.HP</strong> for each HP restored and stops when the reserve runs out. Both start <strong>Off</strong> in new Extra Content games in v0.3.6. Existing saves keep their settings.</p>
+<p>1. To disable free recovery, open <strong>Escape &gt; MOD &gt; Confirm</strong>, change to <strong>ARRANGE</strong>, and set <strong>Full HP after battle: Off (Original)</strong>.</p>
+<p>2. Open <strong>Supplement</strong>. With free recovery Off, both <strong>SUP.HP</strong> and <strong>SUP.TP</strong> are visible. Press <strong>Shift</strong> to select the Auto Fill controls, select <strong>HP</strong>, then press <strong>Confirm</strong> to toggle it.</p>
+<p>3. <strong>Auto Fill Short Notice</strong> in native Config only changes the announcement. It does not enable or disable healing.</p>
+<p><strong>TP is separate:</strong> abilities spend TP; TP Auto Fill draws from SUP.TP when enabled. Supplement level-ups raise capacity without refilling the current reserve. Rest/refill sources replenish reserves. The earlier MANY screen hid HP controls; the repaired screen shows them whenever free healing is Off. Turning healing Off does not increase monster stats: native <strong>BATTLE</strong> and <strong>Enemy stats and resistances</strong> control different rules.</p>
 <p><strong>Loaded saves keep their own settings.</strong> Choosing Extra Content for a new game does not change a save you load. You can change the MOD ARRANGE switches on an existing save; a new game is not required.</p>
 <ul>
 <li><strong>+ marks gear that exists only in Altered&#x27;s extra content.</strong></li>
-<li><strong>Altered saves from v0.2.0 to v0.3.4 load in v0.3.5.</strong> Extract the new game to a new folder and copy the old <strong>saves</strong> folder into it. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.</li>
+<li><strong>Altered saves from v0.2.0 onward load in v0.3.6.</strong> Extract the new game to a new folder and copy the old <strong>saves</strong> and <strong>config</strong> folders into it. Keep the new <strong>EasyRPG.ini</strong>. Existing ARRANGE choices stay as they were. Only older saves that have never initialized these five switches receive their all-On starting values; that does not overwrite an already configured save.</li>
 </ul>
 <h3>Original mode = DC + these fixes</h3>
 <ul>
@@ -187,13 +192,13 @@
 <li>Overflow safety for extreme numbers (damage calculation order, caps of 300 on HIT / CRT / AVD / AGL / MOV).</li>
 <li>Reflex Guard halves damage once, as in DC (Altered halved it twice in Original mode).</li>
 <li>Sickness, five boss rewards and the key-item money bonus are back to their DC rules in Original mode (Arrange keeps Altered&#x27;s).</li>
-<li>A new game started as <strong>Original Mode</strong> begins with Config &gt; &quot;Skip Battles with Weak Enemies&quot; OFF, &quot;Auto Fill&quot; OFF and &quot;Character EXP Gain&quot; without the fewer-members bonus, and Config &quot;Default&quot; resets the first and the third to match. A new game started as <strong>Arrange Mode</strong> begins with all three ON, as Altered does. The separate <strong>Extra Content</strong> choice keeps weak-enemy skip and the fewer-members EXP bonus OFF; its HP Auto Fill starts ON.</li>
+<li>A new game started as <strong>Original Mode</strong> begins with Config &gt; &quot;Skip Battles with Weak Enemies&quot; OFF, &quot;Auto Fill&quot; OFF and &quot;Character EXP Gain&quot; without the fewer-members bonus, and Config &quot;Default&quot; resets the first and the third to match. A new game started as <strong>Arrange Mode</strong> begins with all three ON, as Altered does. The separate <strong>Extra Content</strong> choice keeps weak-enemy skip and the fewer-members EXP bonus OFF; its HP Auto Fill starts OFF.</li>
 <li>Clever on a Forgetful unit still gives x1.3 as in DC (the Altered manual says x1.0; the game data says x1.3).</li>
 </ul>
 <h3>MOD menu on the Altered build</h3>
 <div class="table-scroll"><table>
 <tr><th>MOD row</th><th>On the Altered build</th></tr>
-<tr><td>Walk speed, Hold Shift to run</td><td>Not in the MOD menu: use Config &gt; Dash Movement (page 1)</td></tr>
+<tr><td>Walk speed, Hold Shift to run</td><td>Use Config &gt; Dash Movement (page 1). Shift is the dash modifier for both native dash modes and keeps click-to-walk active. Stationary Shift retains native secondary actions.</td></tr>
 <tr><td>Battle speed</td><td>Not in the MOD menu: use Config &gt; Battle Speed (page 3; FAST2 also skips skippable effects)</td></tr>
 <tr><td>Menu fade</td><td>Not in the MOD menu: use Config &gt; Screen Speed of Menus (page 2)</td></tr>
 <tr><td>Save anywhere (cheat)</td><td>Not in the MOD menu: use Config &gt; Normal Save Method: MENU (page 1)</td></tr>
@@ -285,7 +290,7 @@
 <div class="table-scroll"><table>
 <tr><th>Setting</th><th>Try / result</th></tr>
 <tr><td>Random battles</td><td>Choose 1/2–1/10 for fewer fights, or Off for none.</td></tr>
-<tr><td>Rewards follow the rate</td><td>On scales EXP, DEAR and SUP.EXP to compensate for fewer random fights. The engine caps each reward at 999,999 per fight, so at 1/10 in the late game a scaled reward can be trimmed.</td></tr>
+<tr><td>Rewards follow the rate</td><td>On scales EXP, DEAR and SUP.EXP to compensate for fewer automatic NORMAL random fights. Manually requested Shift fights in native FREE mode give ordinary rewards. The engine caps each reward at 999,999 per fight, so at 1/10 in the late game a scaled reward can be trimmed.</td></tr>
 <tr><td>Escape always works</td><td>On guarantees escape from random battles; story battles stay unchanged.</td></tr>
 <tr><td>Retry lost battles</td><td>On offers a retry after defeat. <strong>Items spent in the lost fight stay spent.</strong></td></tr>
 </table></div>
@@ -325,12 +330,13 @@
 <p>Native name-entry and number-entry keep their original keyboard controls.</p>
 <a name="shop-compare"></a>
 <h3>Shop comparison before buying</h3>
-<p>The native shop preview uses <strong>colored stat labels</strong>, not numerical before/after values.</p>
-<p>1. Highlight a weapon or frame, then press <strong>Enter / Confirm once</strong> to open the quantity/preview screen.</p>
-<p>2. Check the stat labels at the <strong>bottom left</strong>: <strong>red = improvement</strong>, <strong>blue = worse</strong>. The colors do not show the size of the change.</p>
-<p>3. Press <strong>Shift</strong> to change the character being compared. A walking character sprite means that character can equip the item.</p>
-<p>4. Press <strong>Cancel</strong> to leave without buying. Confirming the purchase is a separate action.</p>
-<p>Spheres do not have a direct one-for-one comparison in the native shop because several can be equipped. The included Playing Manual’s <strong>Shop</strong> page describes these controls.</p>
+<p><strong>English builds: highlight a weapon or frame, then press Tab or click [Tab] Compare.</strong> The new panel shows the selected character’s <strong>Now / After / Delta</strong> totals for all 11 stats. Opening it does not buy, sell or equip anything.</p>
+<figure><img src="docs/images/shop-compare.png" width="640" alt="Weapon comparison showing Now, After and Delta for all eleven stats" style="max-width:100%;height:auto;image-rendering:pixelated"></figure>
+<p>1. Highlight the weapon or frame in the shop. The native bottom-left colors still mean <strong>red = improvement</strong>, <strong>blue = worse</strong>.</p>
+<p>2. Press <strong>Tab</strong> or click <strong>[Tab] Compare</strong>. Read the numerical changes. <strong>Lower ATKWT is better.</strong> Hidden item data stays hidden.</p>
+<p>3. Press <strong>Left / Right</strong> for details, including sphere slots a lower-capacity frame would remove. <strong>Up / Down</strong> pages an unusually long item-name card.</p>
+<p>4. Press <strong>Tab</strong>, <strong>Cancel</strong>, or <strong>right-click</strong> to close. Use the native <strong>Shift</strong> hint to change character after closing. Confirm still opens the purchase quantity screen separately.</p>
+<p>The new panel is for <strong>English shop weapons and frames</strong>. Spheres need a specific replacement slot, so they do not have a direct shop comparison. The <strong>Equipment</strong> screen already shows numerical totals with a selected character and slot. Inventory items have no selected comparison character. The Japanese build keeps its native preview.</p>
 <a name="battle-labels"></a>
 <h3>Battle labels — spoiler-free guide</h3>
 <p>Start with this example ability card: <strong>AR: Single · AE: — · AC: — · AWT: +120</strong>. The labels describe its target, element, field requirement and delay. The ability list’s separate number is its <strong>TP cost</strong>.</p>
@@ -375,7 +381,14 @@
 </ul>
 <figure><img src="docs/img/banners/releases.png" width="900" alt="Release notes" style="max-width:100%;height:auto"></figure>
 <p><strong>Release notes and translation comparison.</strong> How does this translation compare to the 2016 patch? <a href="https://nostramadeus.github.io/seraphic-blue-mod/">Side-by-side page: Japanese, 2016 English, this English, and why</a> for several hundred dialogue boxes, plus a separate section on lines the 2016 patch softened. <strong>Spoiler warning:</strong> it quotes dialogue from the whole game. It is gated by story part, but skip it if you want to go in blind. Opening and Episode 2 only, with later sections hidden until selected: <a href="EARLY-GAME-CORRECTIONS.html">early-game corrections</a>.</p>
-<details><summary>Open: what changed in each version (v0.3.5 back to test.8)</summary>
+<details><summary>Open: what changed in each version (v0.3.6 back to test.8)</summary>
+<p><strong>New in v0.3.6 (all three builds; English-only comparison and font/title changes):</strong></p>
+<ul>
+<li>Mouse selection follows visible character artwork, native counter interaction and a unique adjacent exit. Arrival handling retains touch transfers during a pure speed adjustment.</li>
+<li>English shops add <strong>Tab Compare</strong> for weapons and frames, using native calculations without purchases or equipment changes.</li>
+<li>Altered: Shift dash preserves mouse movement; MOD hover updates its hint; HP Supplement controls appear with free healing Off; new Extra Content HP Auto Fill starts Off; manual FREE rewards stay ordinary.</li>
+<li>English: 101 approved font cards per edition use a consistent face; 108 title calls keep their complete names inside the screen; one minor Counter Attack wording correction. 84 mixed-layout cards remain unchanged.</li>
+</ul>
 <p><strong>New in v0.3.5 (Altered only):</strong></p>
 <ul>
 <li>Restores missing Map0022 (Turku Inn upstairs) and Map0088. Existing saves work; Player, Linux runtime and the DC builds are unchanged. This urgent map-only hotfix received file-integrity checks, without a new gameplay test.</li>
@@ -475,7 +488,7 @@
 <a name="macos-experimental-keyboard-route"></a>
 <details><summary>macOS: experimental keyboard route</summary>
 <p>Use the latest game-data MOD with the <strong>official Mac EasyRPG Player</strong>. A custom Mac Player is not included.</p>
-<p>1. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-v0.3.4.zip">Download the full game</a> and extract it. Keep the <strong>SeraphicBlue</strong> folder together.</p>
+<p>1. <a href="https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip">Download the full game</a> and extract it. Keep the <strong>SeraphicBlue</strong> folder together.</p>
 <p>2. Install <a href="https://brew.sh/">Homebrew</a> if needed. In Terminal, run:</p>
 <pre style="overflow:auto;background:#e1eaf5;padding:14px"><code>brew install easyrpg-player</code></pre>
 <p>3. In Terminal, type `cd ` (including the space), drag the extracted <strong>SeraphicBlue</strong> folder into Terminal, and press <img src="docs/img/keys/enter.svg" height="22" alt="Enter" style="vertical-align:middle">. Run:</p>
@@ -491,7 +504,7 @@ easyrpg-player --project-path . --save-path saves --config-path config --encodin
 <li><a href="INSTALL.md">Advanced patch installation / older-version migration</a>.</li>
 <li><a href="CREDITS.md">Original credits</a>, <a href="LICENSES.md">licenses</a>, and <a href="SOURCE-ACCESS.md">corresponding source</a>.</li>
 </ul>
-<p>English game content and retained original manual/credits are included. The JP + MOD full game (v0.3.4) is available for Japanese players. Native Linux now uses Player 0.8.1.1-sb6. No full-playthrough or physical Deck verification is claimed. The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered&#x27;s manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.</p>
+<p>English game content and retained original manual/credits are included. The JP + MOD full game (v0.3.6) is available for Japanese players. Native Linux uses Player 0.8.1.1-sb7. No full-playthrough or physical Deck verification is claimed. The English DC manual is mostly the 2016 English translation; four pages remain Japanese and two are mixed. Altered&#x27;s manual and update history are Japanese. Some status labels keep an English word with a Japanese gloss; character reading captions, original artist-name credits and small background/sprite lettering remain as retained artwork. These exceptions are documented; this is not a claim that every image and manual page is English.</p>
 </details>
 <details><summary>For modders and forks</summary>
 <p><a href="https://github.com/Nostramadeus/seraphic-blue-mod/blob/main/docs/MODDING-NOTES.md">Modding notes</a>: what broke when this MOD met the Altered fan patch, how each problem was found, the fix, and the build order that worked. Docs images are script-generated (<a href="docs/img/tools">docs/img/tools</a>, licences in <a href="docs/img/LICENSES.md">docs/img/LICENSES.md</a>).</p>

@@ -1,15 +1,15 @@
-# Compatibility — v0.3.4
+# Compatibility — v0.3.6
 
 | Route | Included Player | Verification |
 | --- | --- | --- |
-| Windows x86-64 | 0.8.1.1-sb6, unchanged patched libraries | Focused menu hover, keyboard handoff, click, title/file/number/sign and MOD checks; source-bound native bonus menu |
-| Native Linux x86-64 | 0.8.1.1-sb6, bundled helper libraries | One controlled headless hover/click/keyboard replay on Debian 11, from the same final source as Windows |
+| Windows x86-64 | 0.8.1.1-sb7, unchanged patched libraries | Focused arrival and Turku clerk/exit checks; English weapon/frame comparison. Final Windows DC Buy preserves native actor and full inventory state; unchanged earlier paths retain exact receipts. |
+| Native Linux x86-64 | 0.8.1.1-sb7, bundled helper libraries | One controlled headless Altered shop comparison/Cancel replay on Debian 11. Final source differs only by two bound DC copy-range corrections verified on Windows; no second Linux replay claimed. |
 | Steam / Proton | Included Windows Player | Earlier PortAudio crash fix retained; Proton not run here |
 | Steam Deck native | Included Linux Player | Physical controls, display and audio unverified |
 
 The native build uses Debian 11 and requires GLIBC_2.29, GLIBCXX_3.4.26, CXXABI_1.3.9, zlib and working system display/audio drivers. Symbol requirements do not prove universal distribution support. Keep **native-linux/lib** with Player.
 
-Earlier v0.3.3 sb5 tests covered 36 replay cases on Debian 11/Arch/Ubuntu containers, 18 matching states, nine exact normal-speed images, 111 controlled images and 36 states. Those are earlier-build evidence, not another test pass for sb6. Unchanged game content, libraries and launchers retain their exact earlier receipts. No full playthrough or physical audio-device check is claimed.
+Earlier v0.3.3 sb5 tests covered 36 replay cases on Debian 11/Arch/Ubuntu containers, 18 matching states, nine exact normal-speed images, 111 controlled images and 36 states. Those are earlier-build evidence, not another test pass for sb7. Unchanged libraries, launchers and individual game-file hashes retain their earlier receipts. The v0.3.6 game data includes the explicitly listed settings, comparison bindings, English title placement, font cards and minor wording change. No full playthrough or physical audio-device check is claimed.
 
 Native MIDI uses FluidLite with an available soundfont, otherwise the included FM synthesizer. MIDI, MP3 and WAV remain supported; module-music playback remains disabled in this native build.
 
@@ -28,6 +28,14 @@ Application checks confirm that approved wording reached the game files. Meaning
 - **Altered-specific text:** 1,613 of 3,528 entries have matching review records: 982 independent, 623 earlier and 8 targeted mode checks. The other 1,915 have origin and application evidence.
 - **Shared English text:** 11,328 transfers have separate origin and application checks. They are recorded separately from new meaning reviews.
 - **DC text:** 22,137 entries lack matching records for the additional Japanese-meaning review pass. Earlier general retranslation and review work remains recorded separately.
+
+The later basic screen is complete for all **24,052 requested text locations**: **22,942** had comparable source text and **1,110** were unassessable. A location is a saved message or entry and can contain more than one displayed line. The screen covered **21,090 distinct Japanese/English pairs** in 211 batches; repeated locations can share one pair. One confirmed minor Counter Attack wording issue was corrected; no major mistranslation was confirmed in this screen. Unassessable entries are not passes. This basic screen does not replace the separate additional meaning-review records above.
+
+## Remaining source and artwork limits
+
+The English editions replace 101 approved font cards each. Another 84 mixed-layout cards remain unchanged because their layout or artwork needs a separate decision. The completed geometry pass keeps all 108 bound location-title calls on screen without shortening their words.
+
+Original DC and Altered both contain references to missing maps 550 and 824. The static scan found conditional routes but did not establish that players can reach them. No replacement maps have been invented. The separately reported Turku Inn missing-map problem was repaired in v0.3.5 and that repair is retained.
 
 ## JP resource-check scope
 

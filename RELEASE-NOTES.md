@@ -1,3 +1,21 @@
+# v0.3.6 — mouse interaction, equipment comparison and healing controls
+
+All three full-game downloads include Windows and native Linux Player 0.8.1.1-sb7. English builds gain numerical shop comparison, corrected title placement and the approved font-card replacements.
+
+- **Mouse interaction:** clicking visible characters uses their displayed artwork and native interaction rules, including counters. Blocked clicks immediately beside one native exit can select that exit. Pure speed adjustments no longer suppress an arrival transfer. These changes retain native event conditions and collision rules.
+- **English shop comparison:** highlight a weapon or frame, then press **Tab** or click **[Tab] Compare**. Read **Now / After / Delta** for all 11 stats. Left/Right opens details, including sphere slots removed by a lower-capacity frame. Tab, Cancel or right-click closes. The panel does not purchase or equip anything; hidden item data stays hidden. Spheres retain their native shop behavior.
+- **Altered settings:** Shift supports both native dash modes without canceling mouse movement. Hovering MOD updates its help. With free full-HP recovery Off, Supplement exposes HP reserve and HP Auto Fill controls. New Extra Content games start HP Auto Fill Off; loaded saves retain their settings. Manual FREE encounters give ordinary rewards. The separate Auto Fill Short Notice setting only changes messages.
+- **English presentation:** 101 approved font cards per English edition use a consistent face; 84 mixed-layout cards remain unchanged. Location titles retain complete words within the screen. One minor Counter Attack wording correction is included. The two-map Turku Inn hotfix is retained.
+
+**Update and keep your progress:** close the old game, extract the matching new full game into a new folder, and copy your **saves** and **config** folders. Keep the new **EasyRPG.ini**. DC saves stay on DC; Altered saves from v0.2.0 onward stay on Altered. Keep the old installation until your usual save loads.
+
+Read the refurbished [README](https://github.com/Nostramadeus/seraphic-blue-mod#readme) for mode selection, healing controls, illustrated battle labels and comparison controls. Matching source and dependency information accompany the release.
+
+Focused Windows checks covered the arrival-race reproduction, actual Turku clerk/exit, and numerical shop comparison in both English editions. Exact earlier receipts are retained for unchanged paths; the final Windows binary passed DC Buy with the full inventory and native actor values unchanged. One controlled headless Debian 11 shop comparison/Cancel replay passed, including numerical values and unchanged native state. The final native build retains that path across two source-bound DC copy-range corrections verified on Windows; no second Linux replay is claimed. No full playthrough, physical Steam Deck or Proton test is claimed. [Recorded scope and limits](COMPATIBILITY.md).
+
+
+## Earlier release — v0.3.4
+
 # v0.3.4 — consistent menu hover
 
 Menus now respond consistently to pointer movement in the English Altered build and both DC builds. Native lists, title/save screens and number/sign editors give keyboard and gamepad input priority. Custom battle, field, shop, dictionary, MOD and configuration menus keep their own native selection, help and permission rules.

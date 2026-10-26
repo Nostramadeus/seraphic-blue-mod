@@ -2,15 +2,16 @@
 
 ## Current and historical Players
 
-[seraphic-blue-player-source-v0.3.4.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip) contains the current exact source and the historical sb4 tree:
+[seraphic-blue-player-source-v0.3.6.zip](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-player-source-v0.3.6.zip) contains the current exact source and the historical sb4 tree:
 
 | Binary | Matching source | Player revision |
 | --- | --- | --- |
-| v0.3.4 Windows/native Linux, 0.8.1.1-sb6 | Current export, Player/ | eb421f52e66ccffd0871587a352037c4e31982f6 |
+| v0.3.6 Windows/native Linux, 0.8.1.1-sb7 | Current export, Player/ | 77f13975ce79a592286a09eba271136741eb780e |
+| v0.3.4 / Altered v0.3.5, 0.8.1.1-sb6 | [Earlier sb6 source](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-player-source-v0.3.4.zip), Player/ | eb421f52e66ccffd0871587a352037c4e31982f6 |
 | v0.3.3 Windows/native Linux, 0.8.1.1-sb5 | [Earlier source asset](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.3/seraphic-blue-player-source-v0.3.3.zip), Player/ | 0cb855fe592235fdb083ac5c6ac7b946fccc0c87 |
 | v0.3.1/v0.3.2 Windows, 0.8.1.1-sb4 | Current export, historical/sb4/Player/ | a13da2571b9e435462023ecf58085c77fc1cebcf |
 
-The historical sb4 Windows Player SHA256 is `fc307c880021e02d9e72266776d8d73a309d86556b5e3b38eb3dfcf7ae735235`. SOURCES.json maps current binary hashes to source revisions. The export separately preserves historical build flags and recipes; sb6 is not substituted for earlier binaries' source.
+The historical sb4 Windows Player SHA256 is `fc307c880021e02d9e72266776d8d73a309d86556b5e3b38eb3dfcf7ae735235`. SOURCES.json maps current binary hashes to source revisions. The export separately preserves historical build flags and recipes; sb7 is not substituted for earlier binaries' source.
 
 The native Linux liblcf tree is **92c4450a1bc1acb58bd02bbb99b57e5036919cdf**. Windows liblcf is the separately packaged MSYS2 0.8.1-3 library; its exact source remains in the Windows dependency-source bundle below. Build recipes, the Windows PortAudio patch and timeline asset generators/tables are included; no Git history is exported. No byte-identical rebuild is claimed.
 

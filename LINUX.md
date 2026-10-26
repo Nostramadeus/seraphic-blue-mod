@@ -2,15 +2,15 @@
 
 ## Native Linux Player
 
-1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.4/seraphic-blue-fullgame-EN-v0.3.4.zip) and extract it.
+1. [Download the complete English game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.6/seraphic-blue-fullgame-EN-v0.3.6.zip) and extract it.
 2. Open a terminal in the extracted **SeraphicBlue** folder.
 3. Run **sh play-linux.sh**.
 
 The Altered ZIP uses **SeraphicBlue-Altered** instead. The launcher selects its own game folder even when the path contains spaces. Saves go in **saves** and Player settings in **config**, inside that folder. If extraction removed executable permissions, run **chmod +x native-linux/Player** and try again.
 
-The native x86-64 Player is **0.8.1.1-sb6**, from the same Player source as Windows. It includes the custom mouse controls, click-to-walk, message history, Text speed and Text pauses. Its helper libraries are in **native-linux/lib**; keep that folder with Player.
+The native x86-64 Player is **0.8.1.1-sb7**, from the same Player source as Windows. It includes the custom mouse controls, click-to-walk, message history, Text speed and Text pauses. Its helper libraries are in **native-linux/lib**; keep that folder with Player.
 
-Built on Debian 11. Required symbol versions include **GLIBC_2.29**, **GLIBCXX_3.4.26** and **CXXABI_1.3.9**, plus the system's display/audio drivers and zlib. These requirements alone do not prove compatibility with every Linux distribution. The current sb6 build passed one controlled headless hover/click/keyboard replay on Debian 11. Earlier v0.3.3 sb5 tests passed 36 replay cases on Debian 11, Arch and Ubuntu 24.04 containers. All 18 generated save states matched Windows. A separate normal-speed replay matched Windows on all three systems (nine images). Timeline and save-name checks also matched all 111 images and 36 generated save states. MIDI produced nonzero audio through a virtual disk driver. Launcher paths with spaces and save/config storage passed. Physical Steam Deck, Proton and desktop display/audio drivers remain untested.
+Built on Debian 11. Required symbol versions include **GLIBC_2.29**, **GLIBCXX_3.4.26** and **CXXABI_1.3.9**, plus the system's display/audio drivers and zlib. These requirements alone do not prove compatibility with every Linux distribution. The earlier sb6 build passed one controlled headless hover/click/keyboard replay on Debian 11. One controlled headless Debian 11 shop comparison/Cancel replay passed, including numerical values and unchanged native state. The final native build retains that path across two source-bound DC copy-range corrections verified on Windows; no second Linux replay is claimed. Earlier v0.3.3 sb5 tests passed 36 replay cases on Debian 11, Arch and Ubuntu 24.04 containers. All 18 generated save states matched Windows. A separate normal-speed replay matched Windows on all three systems (nine images). Timeline and save-name checks also matched all 111 images and 36 generated save states. MIDI produced nonzero audio through a virtual disk driver. Launcher paths with spaces and save/config storage passed. Physical Steam Deck, Proton and desktop display/audio drivers remain untested.
 
 MIDI uses FluidLite when a compatible soundfont is available, otherwise the included FM synthesizer. No soundfont download is required to start playing. The two synthesizers sound different. Physical desktop audio and Steam Deck hardware were not tested here.
 
