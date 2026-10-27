@@ -9,6 +9,11 @@ An English retranslation of **Seraphic Blue**, Tempura’s 2004 RPG Maker 2000 g
 
 Final reviewed English wording fixes. Includes the bundled GUI updater; the existing game interface is retained.
 
+> [!WARNING]
+> **The Windows updater is broken. Use the [manual update](#manual-update) instead.**
+> **SeraphicBlue-Update.exe** downloads the new version, then stops with *"Update stopped: The property 'Text' cannot be found on this object."* Your old game and saves are not changed. A fixed updater will follow.
+> The updater leaves a **.sb-update-download-…** folder next to your game folder. It holds the full new ZIP: extract that for the manual update, or delete the folder.
+
 [Download & start](#downloads) · [Controls](#controls) · [Update](#keep-your-saves) · [Player guide](PLAYER-GUIDE.md) · [Help & credits](#help)
 
 <a name="downloads"></a>
@@ -119,6 +124,9 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 
 ### Included updater
 
+> [!WARNING]
+> **The Windows updater currently fails after downloading ("The property 'Text' cannot be found on this object"). Use the [manual update](#manual-update) below until a fixed updater is released.**
+
 | Platform | What to click |
 | --- | --- |
 | **[Windows updater v1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.1.0.zip)** | Open the included **updater-v1.1** folder → **SeraphicBlue-Update.exe** → **Choose** your old game folder → **Update to latest**. Optional **Enable startup checks** checks when you launch **PLAY.cmd**. |
@@ -128,6 +136,7 @@ The updater checks free space, verifies the download and copied saves/settings/A
 
 The updater is included in every v0.3.9 game ZIP; the separate downloads above are only needed for older installs. Keep its complete folder together. Direct **Player.exe** / **native-linux/Player** shortcuts skip startup checks. Steam shortcuts are not changed automatically: point them at the desired version’s launcher if you want checks. Existing working Proton shortcuts can stay as they are. [Updater instructions and limits](updater-v1.1/README.md).
 
+<a name="manual-update"></a>
 ### Manual update — four steps
 
 1. Close the game. Back up its **saves** and **config** folders, plus any **SaveNN.lsd** files beside Player.exe.
