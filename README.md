@@ -13,13 +13,13 @@ Final reviewed English wording fixes. Includes the bundled GUI updater; the exis
 > **Updating on Windows? Get the fixed updater first: [download updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).**
 > The updater inside your game folder (**updater-v1.1**) has a bug. It downloads the update, then stops with *"Update stopped: The property 'Text' cannot be found on this object."* Your old game and saves are not changed when this happens.
 >
-> 1. Download the ZIP above. Right-click it → **Extract All**. Put it anywhere; it does not go inside the game.
-> 2. Open the new **SeraphicBlue-Updater-v1.1.1** folder → double-click **SeraphicBlue-Update.exe**.
-> 3. **Choose…** → select your game folder (the one with **PLAY.cmd**) → **Update to latest**.
+> 1. Download the ZIP above. Right-click it → **Extract All**. Any place works, Downloads is fine.
+> 2. In File Explorer, open the extracted **SeraphicBlue-Updater-v1.1.1** folder and double-click **SeraphicBlue-Update.exe**. The updater window opens.
+> 3. In the updater window, click **Choose…** and select your game folder (the one with **PLAY.cmd**). Then click **Update to latest**.
 >
 > Did the old updater fail for you? It left a **.sb-update-download-…** folder next to your game folder. You can delete it. Prefer doing it by hand? Use the [manual update](#manual-update).
 
-<img src="docs/img/update-the-updater.svg" width="900" alt="Step 1: right-click seraphic-blue-updater-windows-v1.1.1.zip and choose Extract All. Step 2: open the SeraphicBlue-Updater-v1.1.1 folder and double-click SeraphicBlue-Update.exe. Step 3: click Choose, pick your game folder with PLAY.cmd, click Update to latest. Any folder works; do not use the old updater-v1.1 folder inside your game.">
+<img src="docs/img/update-the-updater.svg" width="900" alt="Step 1: right-click seraphic-blue-updater-windows-v1.1.1.zip and choose Extract All. Step 2: in File Explorer, open the SeraphicBlue-Updater-v1.1.1 folder and double-click SeraphicBlue-Update.exe; the updater window opens. Step 3: in the updater window, click Choose, pick your game folder with PLAY.cmd, click Update to latest. Extract it anywhere; use this new updater, not the old updater-v1.1 folder inside your game.">
 
 [Download & start](#downloads) · [Controls](#controls) · [Update](#keep-your-saves) · [Player guide](PLAYER-GUIDE.md) · [Help & credits](#help)
 
@@ -132,7 +132,7 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 ### Included updater
 
 > [!IMPORTANT]
-> **Windows: use [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).** The **updater-v1.1** folder inside v0.3.9 and older games fails after downloading ("The property 'Text' cannot be found on this object"). Extract v1.1.1 anywhere and run it from there. [Step-by-step picture](#start).
+> **Windows: use [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).** The **updater-v1.1** folder inside v0.3.9 and older games fails after downloading ("The property 'Text' cannot be found on this object"). Extract v1.1.1 anywhere, double-click its **SeraphicBlue-Update.exe**, then choose your game folder in the window that opens. [Step-by-step picture](#start).
 
 | Platform | What to click |
 | --- | --- |
