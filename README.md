@@ -9,10 +9,17 @@ An English retranslation of **Seraphic Blue**, Tempura’s 2004 RPG Maker 2000 g
 
 Final reviewed English wording fixes. Includes the bundled GUI updater; the existing game interface is retained.
 
-> [!WARNING]
-> **The Windows updater is broken. Use the [manual update](#manual-update) instead.**
-> **SeraphicBlue-Update.exe** downloads the new version, then stops with *"Update stopped: The property 'Text' cannot be found on this object."* Your old game and saves are not changed. A fixed updater will follow.
-> The updater leaves a **.sb-update-download-…** folder next to your game folder. It holds the full new ZIP: extract that for the manual update, or delete the folder.
+> [!IMPORTANT]
+> **Updating on Windows? Get the fixed updater first: [download updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).**
+> The updater inside your game folder (**updater-v1.1**) has a bug. It downloads the update, then stops with *"Update stopped: The property 'Text' cannot be found on this object."* Your old game and saves are not changed when this happens.
+>
+> 1. Download the ZIP above. Right-click it → **Extract All**. Put it anywhere; it does not go inside the game.
+> 2. Open the new **SeraphicBlue-Updater-v1.1.1** folder → double-click **SeraphicBlue-Update.exe**.
+> 3. **Choose…** → select your game folder (the one with **PLAY.cmd**) → **Update to latest**.
+>
+> Did the old updater fail for you? It left a **.sb-update-download-…** folder next to your game folder. You can delete it. Prefer doing it by hand? Use the [manual update](#manual-update).
+
+<img src="docs/img/update-the-updater.svg" width="900" alt="Step 1: right-click seraphic-blue-updater-windows-v1.1.1.zip and choose Extract All. Step 2: open the SeraphicBlue-Updater-v1.1.1 folder and double-click SeraphicBlue-Update.exe. Step 3: click Choose, pick your game folder with PLAY.cmd, click Update to latest. Any folder works; do not use the old updater-v1.1 folder inside your game.">
 
 [Download & start](#downloads) · [Controls](#controls) · [Update](#keep-your-saves) · [Player guide](PLAYER-GUIDE.md) · [Help & credits](#help)
 
@@ -124,12 +131,12 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 
 ### Included updater
 
-> [!WARNING]
-> **The Windows updater currently fails after downloading ("The property 'Text' cannot be found on this object"). Use the [manual update](#manual-update) below until a fixed updater is released.**
+> [!IMPORTANT]
+> **Windows: use [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).** The **updater-v1.1** folder inside v0.3.9 and older games fails after downloading ("The property 'Text' cannot be found on this object"). Extract v1.1.1 anywhere and run it from there. [Step-by-step picture](#start).
 
 | Platform | What to click |
 | --- | --- |
-| **[Windows updater v1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-windows-v1.1.0.zip)** | Open the included **updater-v1.1** folder → **SeraphicBlue-Update.exe** → **Choose** your old game folder → **Update to latest**. Optional **Enable startup checks** checks when you launch **PLAY.cmd**. |
+| **[Windows updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip)** | Extract it anywhere → open **SeraphicBlue-Updater-v1.1.1** → **SeraphicBlue-Update.exe** → **Choose** your old game folder → **Update to latest**. Optional **Enable startup checks** checks when you launch **PLAY.cmd**. |
 | **[Linux startup updater v1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-linux-v1.1.0.zip)** | Open the included **updater-v1.1** folder → **Startup-settings.desktop** → select your game folder → **Enable startup checks**. Launch **play-linux.sh** to check. There is no separate Linux **Update now** button. Requires Python 3 and zenity or kdialog. |
 
 The updater checks free space, verifies the download and copied saves/settings/Auto recordings, and installs into a **neighboring version folder**. It keeps the old game and a verified backup, and preserves the new **EasyRPG.ini**. Startup checks offer **Install update** or **Play current**; offline checks and check errors continue the current game. You can disable checks in the setup tool.

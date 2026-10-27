@@ -192,12 +192,12 @@ function Copy-PersonalData([string]$Source, [string]$Destination, $Snapshot) {
     }
 }
 
-function Install-VerifiedUpdate([string]$OldFolder, [string]$Archive, [string]$ExpectedSHA256, [string]$Tag, [scriptblock]$Status = {}) {
+function Install-VerifiedUpdate([string]$OldFolder, [string]$Archive, [string]$ExpectedSHA256, [string]$Tag, [scriptblock]$OnStatus = {}) {
     $old = Get-Installation $OldFolder
     if ($Tag -notmatch '^v\d+\.\d+\.\d+$' -or $ExpectedSHA256 -notmatch '^[a-f0-9]{64}$') { throw 'Invalid release metadata.' }
     if ($old.Tag -eq $Tag) { throw ('This copy already has ' + $Tag + '.') }
     if ([version]$Tag.Substring(1) -lt [version]$old.Tag.Substring(1)) { throw 'The available release is older than this installation. No downgrade was performed.' }
-    & $Status 'Verifying the download...'
+    & $OnStatus 'Verifying the download...'
     if ((Get-Digest $Archive) -cne $ExpectedSHA256) { throw 'Download checksum mismatch. The old game was not changed.' }
     $parent = [IO.Path]::GetDirectoryName($old.Root)
     $output = Join-Path $parent ('SeraphicBlue-' + $old.Edition + '-' + $Tag)
@@ -208,14 +208,14 @@ function Install-VerifiedUpdate([string]$OldFolder, [string]$Archive, [string]$E
     $before = Get-SaveSnapshot $old.Root
     $expectedPersonal = Get-NormalizedSnapshot $before
     try {
-        & $Status 'Making a verified save/settings backup...'
+        & $OnStatus 'Making a verified save/settings backup...'
         [IO.Directory]::CreateDirectory($backup) | Out-Null
         Copy-PersonalData $old.Root $backup $before
         Assert-SnapshotEqual $expectedPersonal (Get-SaveSnapshot $backup)
         Assert-SnapshotEqual $before (Get-SaveSnapshot $old.Root)
-        & $Status 'Extracting and checking the new game...'
+        & $OnStatus 'Extracting and checking the new game...'
         Expand-CheckedArchive $Archive $stage $old.Edition $Tag
-        & $Status 'Copying saves and settings...'
+        & $OnStatus 'Copying saves and settings...'
         # Copy from the verified snapshot backup, whose root-level saves have already been migrated.
         $backupSnapshot = Get-SaveSnapshot $backup
         Assert-SnapshotEqual $expectedPersonal $backupSnapshot
