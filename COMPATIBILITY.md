@@ -1,3 +1,7 @@
+# v0.3.10 scope
+
+Bundled updater only: the updater-v1.1 folder now holds updater v1.1.1 (Windows GUI fix). Game data, Windows/native Linux engines and save format are byte-identical to v0.3.9, so the engine label remains v0.3.8. Checks: member-level comparison with the v0.3.9 ZIPs, fresh-extract boot/load, and one real headless update with the bundled updater.
+
 # v0.3.9 scope
 
 Game text only: final reviewed English corrections, including source-matched Altered equivalents. Windows/native Linux engines are byte-identical to v0.3.8, so their version label remains v0.3.8. Focused message/choice rendering and exact command-splice checks supplement the inherited engine tests. Japanese game data and save format are unchanged. Modern UI is excluded.

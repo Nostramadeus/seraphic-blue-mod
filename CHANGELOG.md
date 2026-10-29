@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.10
+
+The Windows GUI updater bundled in every game ZIP (folder **updater-v1.1**) is now **v1.1.1**. Updater v1.1, shipped inside v0.3.8 and v0.3.9, stopped after downloading with *"The property 'Text' cannot be found on this object"*; v1.1.1 fixes that. Game data, Windows and native Linux engines, saves and battle rules are byte-identical to v0.3.9. Documents are refreshed for v0.3.10.
+
 ## v0.3.9
 
 Final English wording corrections from the additional Japanese/English review. The 23 reviewed findings are corrected, with established neutral terminology applied consistently across profile variants. Exact matching passages are updated in Altered; edition-specific text stays separate. Complete meaning, control codes and conditional versions are preserved. Windows/Linux engine binaries, saves, battle rules and bundled updater remain unchanged from v0.3.8. This final update excludes the modern UI experiment.

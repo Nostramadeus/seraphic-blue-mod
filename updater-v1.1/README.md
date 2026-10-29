@@ -1,4 +1,6 @@
-# Seraphic Blue Updater v1.1.0
+# Seraphic Blue Updater v1.1.1
+
+v1.1.1 (2026-10-27) fixes the Windows GUI update that stopped after downloading with "The property 'Text' cannot be found on this object".
 
 Extract the whole ZIP into its own folder. Keep payload/ and launchers/ together. Close the game before updating. The updater supports matching full-game releases; custom launchers and linked folders need manual handling.
 

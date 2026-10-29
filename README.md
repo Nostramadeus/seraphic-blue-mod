@@ -5,28 +5,19 @@
 
 An English retranslation of **Seraphic Blue**, Tempura’s 2004 RPG Maker 2000 game. Includes mouse controls, message history, speed settings, fewer random battles and optional cheats. You can also play the **DC Altered** fan patch in English.
 
-**v0.3.9** · Complete game downloads · Windows and Linux Players included
+**v0.3.10** · Complete game downloads · Windows and Linux Players included
 
-Final reviewed English wording fixes. Includes the bundled GUI updater; the existing game interface is retained.
+The fixed Windows updater (v1.1.1) is now inside every game ZIP. Game content, engines and wording are unchanged from v0.3.9.
 
 > [!IMPORTANT]
-> **Updating on Windows? Get the fixed updater first: [download updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).**
-> The updater inside your game folder (**updater-v1.1**) has a bug. It downloads the update, then stops with *"Update stopped: The property 'Text' cannot be found on this object."* Your old game and saves are not changed when this happens.
->
-> 1. Download the ZIP above. Right-click it → **Extract All**. Any place works, Downloads is fine.
-> 2. In File Explorer, open the extracted **SeraphicBlue-Updater-v1.1.1** folder and double-click **SeraphicBlue-Update.exe**. The updater window opens.
-> 3. In the updater window, click **Choose…** and select your game folder (the one with **PLAY.cmd**). Then click **Update to latest**.
->
-> Did the old updater fail for you? It left a **.sb-update-download-…** folder next to your game folder. You can delete it. Prefer doing it by hand? Use the [manual update](#manual-update).
-
-<img src="docs/img/update-the-updater.svg" width="900" alt="Step 1: right-click seraphic-blue-updater-windows-v1.1.1.zip and choose Extract All. Step 2: in File Explorer, open the SeraphicBlue-Updater-v1.1.1 folder and double-click SeraphicBlue-Update.exe; the updater window opens. Step 3: in the updater window, click Choose, pick your game folder with PLAY.cmd, click Update to latest. Extract it anywhere; use this new updater, not the old updater-v1.1 folder inside your game.">
+> **Updating from v0.3.9 or older on Windows?** The **updater-v1.1** folder inside those games stops after downloading (*"The property 'Text' cannot be found on this object"*). For that one update use the fixed [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-updater-windows-v1.1.1.zip): extract it anywhere, double-click **SeraphicBlue-Update.exe**, click **Choose…**, pick your game folder (the one with **PLAY.cmd**), click **Update to latest**. [Picture guide](docs/img/update-the-updater.svg) · [Manual update](#manual-update). Games from v0.3.10 on already contain the fixed updater.
 
 [Download & start](#downloads) · [Controls](#controls) · [Update](#keep-your-saves) · [Player guide](PLAYER-GUIDE.md) · [Help & credits](#help)
 
 <a name="downloads"></a>
 ## Download and start
 
-**First time playing? [Download English + MOD + Altered — v0.3.9](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-Altered-v0.3.9.zip).**
+**First time playing? [Download English + MOD + Altered — v0.3.10](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-fullgame-EN-Altered-v0.3.10.zip).**
 
 <img src="docs/img/banners/downloads.png" width="900" alt="Downloads">
 
@@ -43,11 +34,11 @@ That choice keeps Altered’s extra maps, chatter, gear and shops with Original-
 
 | Download | Use it for |
 | --- | --- |
-| **[English + MOD + Altered](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-Altered-v0.3.9.zip)** | DC Altered Ver2.13 in English. A new game, or an Altered save from v0.2.0 onward. |
-| **[English + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-v0.3.9.zip)** | Director’s Cut. Keeps DC saves from earlier tests, the 2016 English patch and the Japanese original. |
-| **[Japanese + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-JP-v0.3.9.zip)** | Japanese Director’s Cut with a Japanese MOD menu. |
+| **[English + MOD + Altered](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-fullgame-EN-Altered-v0.3.10.zip)** | DC Altered Ver2.13 in English. A new game, or an Altered save from v0.2.0 onward. |
+| **[English + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-fullgame-EN-v0.3.10.zip)** | Director’s Cut. Keeps DC saves from earlier tests, the 2016 English patch and the Japanese original. |
+| **[Japanese + MOD (DC)](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-fullgame-JP-v0.3.10.zip)** | Japanese Director’s Cut with a Japanese MOD menu. |
 
-All three downloads are **v0.3.9**. Each ZIP contains the full game, Windows and native Linux Players **0.8.1.1-sb7**, and launchers. DC builds use Original-style rules and have no mode choice. **DC saves do not transfer to Altered.**
+All three downloads are **v0.3.10**. Each ZIP contains the full game, Windows and native Linux Players **0.8.1.1-sb7**, and launchers. DC builds use Original-style rules and have no mode choice. **DC saves do not transfer to Altered.**
 
 [All downloads](https://github.com/Nostramadeus/seraphic-blue-mod/releases) · [Compare the three Altered modes](PLAYER-GUIDE.md#modes) · [Detailed installation](INSTALL.md)
 
@@ -66,7 +57,7 @@ All three downloads are **v0.3.9**. Each ZIP contains the full game, Windows and
 
 **Already have a working Steam shortcut? Keep its paths.** The old `--save-path saves` option fails if that folder does not exist. Direct **Player.exe** shortcuts bypass the launcher that creates it, and may save **SaveNN.lsd** beside Player.exe. Changing the save path later can hide existing saves from the load menu. [Details](STEAM-DECK.md#windows-player-through-proton).
 
-The **v0.3.9 ZIPs include empty saves and config folders**. Blank Launch Options remain the recommended Proton setup.
+The **v0.3.10 ZIPs include empty saves and config folders**. Blank Launch Options remain the recommended Proton setup.
 
 </details>
 
@@ -127,21 +118,21 @@ Native name-entry and number-entry keep their original keyboard controls. Keyboa
 
 <img src="docs/img/banners/saves.png" width="900" alt="Keep your saves">
 
-**Keep DC saves on DC. Keep Altered saves on Altered.** Altered saves from v0.2.0 onward load in v0.3.9. DC also accepts saves from the Japanese original, the 2016 patch and earlier MOD tests.
+**Keep DC saves on DC. Keep Altered saves on Altered.** Altered saves from v0.2.0 onward load in v0.3.10. DC also accepts saves from the Japanese original, the 2016 patch and earlier MOD tests.
 
 ### Included updater
 
-> [!IMPORTANT]
-> **Windows: use [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip).** The **updater-v1.1** folder inside v0.3.9 and older games fails after downloading ("The property 'Text' cannot be found on this object"). Extract v1.1.1 anywhere, double-click its **SeraphicBlue-Update.exe**, then choose your game folder in the window that opens. [Step-by-step picture](#start).
+> [!NOTE]
+> Games **v0.3.9 and older** contain the broken **updater-v1.1** (it stops after downloading). For that one update use [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-updater-windows-v1.1.1.zip) from any folder; see the box at the [top](#start). From v0.3.10 on, the included **updater-v1.1** folder is the fixed version.
 
 | Platform | What to click |
 | --- | --- |
-| **[Windows updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-updater-windows-v1.1.1.zip)** | Extract it anywhere → open **SeraphicBlue-Updater-v1.1.1** → **SeraphicBlue-Update.exe** → **Choose** your old game folder → **Update to latest**. Optional **Enable startup checks** checks when you launch **PLAY.cmd**. |
+| **Windows updater v1.1.1** (included as **updater-v1.1** in v0.3.10 games; [separate download](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-updater-windows-v1.1.1.zip) for older installs) | Open **updater-v1.1** → **SeraphicBlue-Update.exe** → **Choose** your old game folder → **Update to latest**. Optional **Enable startup checks** checks when you launch **PLAY.cmd**. |
 | **[Linux startup updater v1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.7/seraphic-blue-updater-linux-v1.1.0.zip)** | Open the included **updater-v1.1** folder → **Startup-settings.desktop** → select your game folder → **Enable startup checks**. Launch **play-linux.sh** to check. There is no separate Linux **Update now** button. Requires Python 3 and zenity or kdialog. |
 
 The updater checks free space, verifies the download and copied saves/settings/Auto recordings, and installs into a **neighboring version folder**. It keeps the old game and a verified backup, and preserves the new **EasyRPG.ini**. Startup checks offer **Install update** or **Play current**; offline checks and check errors continue the current game. You can disable checks in the setup tool.
 
-The updater is included in every v0.3.9 game ZIP; the separate downloads above are only needed for older installs. Keep its complete folder together. Direct **Player.exe** / **native-linux/Player** shortcuts skip startup checks. Steam shortcuts are not changed automatically: point them at the desired version’s launcher if you want checks. Existing working Proton shortcuts can stay as they are. [Updater instructions and limits](updater-v1.1/README.md).
+The updater is included in every v0.3.10 game ZIP; the separate downloads above are only needed for older installs. Keep its complete folder together. Direct **Player.exe** / **native-linux/Player** shortcuts skip startup checks. Steam shortcuts are not changed automatically: point them at the desired version’s launcher if you want checks. Existing working Proton shortcuts can stay as they are. [Updater instructions and limits](updater-v1.1/README.md).
 
 <a name="manual-update"></a>
 ### Manual update — four steps
@@ -154,7 +145,9 @@ The updater is included in every v0.3.9 game ZIP; the separate downloads above a
 The included launchers store saves in **saves** inside the extracted game folder. A custom `--save-path` or direct Player shortcut may use another location: copy from the location you actually used. [Full migration instructions](INSTALL.md#update-and-keep-saves) · [Archived test-release patches](README-HISTORY.md#old-updates).
 
 <a name="whats-new"></a>
-## What is new in v0.3.9
+## What is new in v0.3.10
+
+**Fixed updater bundled:** the **updater-v1.1** folder in every ZIP is now updater v1.1.1, which fixes the Windows GUI update that stopped after downloading. Game data and engines are byte-identical to v0.3.9 (final English wording corrections). Earlier highlights:
 
 **Saved battle commands:** win manually, then press **R** at the start of a matching encounter. The idle on-screen button starts hidden; enable **F1 → Engine → Show Auto button** if wanted. The update also includes four English wording corrections (three matching Altered passages) and one directly translated **DC-only** picture card.
 
@@ -394,7 +387,7 @@ These original-source questions are parked. No substitute maps or speculative sc
 
 Use the latest game-data MOD with the **official Mac EasyRPG Player**. A custom Mac Player is not included.
 
-1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.9/seraphic-blue-fullgame-EN-v0.3.9.zip) and extract it. Keep the **SeraphicBlue** folder together.
+1. [Download the full game](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-fullgame-EN-v0.3.10.zip) and extract it. Keep the **SeraphicBlue** folder together.
 2. Install [Homebrew](https://brew.sh/) if needed. In Terminal, run:
 
 ```sh

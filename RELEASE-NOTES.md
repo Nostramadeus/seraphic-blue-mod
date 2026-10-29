@@ -1,3 +1,15 @@
+# v0.3.10 — fixed Windows updater bundled
+
+The Windows GUI updater bundled in every game ZIP (folder **updater-v1.1**) is now **v1.1.1**. Updater v1.1, shipped inside v0.3.8 and v0.3.9, stopped after downloading with *"The property 'Text' cannot be found on this object"*; v1.1.1 fixes that. Game data, Windows and native Linux engines, saves and battle rules are byte-identical to v0.3.9.
+
+This is a **packaging update**. The engine About/version label still says v0.3.8 (the engines are unchanged since then); the game package and updater identify this release as v0.3.10. Japanese game data is unchanged. The modern UI prototype remains excluded.
+
+**Update from v0.3.9 or older on Windows:** the updater inside those games fails, so use the separate [updater v1.1.1](https://github.com/Nostramadeus/seraphic-blue-mod/releases/download/v0.3.10/seraphic-blue-updater-windows-v1.1.1.zip) once: extract it anywhere, open **SeraphicBlue-Update.exe**, choose your game folder, click **Update to latest**. Or extract the new ZIP to a neighboring folder and copy saves/settings from the same edition (keep the new EasyRPG.ini). From v0.3.10 on, the bundled **updater-v1.1** folder is the fixed version. The Linux startup updater is unaffected.
+
+Validation: every ZIP member outside the updater folder, the refreshed documents and the generated manifest/checksum files is byte-identical to v0.3.9; fresh-extract boot and save-load checks on all three ZIPs; a headless real update from a v0.3.9 game folder with the bundled v1.1.1 updater. This is not a new full playthrough or a physical Steam Deck test.
+
+## Earlier release — v0.3.9
+
 # v0.3.9 — final English wording corrections
 
 Final English wording corrections from the additional Japanese/English review. The 23 reviewed findings are corrected, with established neutral terminology applied consistently across profile variants. Exact matching passages are updated in Altered; edition-specific text stays separate. Complete meaning, control codes and conditional versions are preserved.
